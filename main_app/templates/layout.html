@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if title %}
+        <title>{{ title }}</title>
+    {% else %}
+        <title>SACCO</title>
+    {% endif %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/styles.css') }}">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    {% endblock %}
+</head>
+
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2><i class="fas fa-chart-line"></i> SACCO Dashboard</h2>
+            <nav></nav>
+                <ul>
+                    <li><a href="{{ url_for('home') }}" class="active"><i class="fas fa-home"></i> Overview</a></li>
+                    <li><a href="{{ url_for('transaction') }}"><i class="fas fa-exchange-alt"></i> Transactions</a></li>
+                    <li><a href="{{ url_for('application') }}"><i class="fas fa-file-invoice"></i> Loan Application</a></li>
+                    <li><a href="{{ url_for('deposit') }}"><i class="fas fa-piggy-bank"></i> Deposits</a></li>
+                    <li><a href="{{ url_for('withdrawals') }}"><i class="fas fa-money-bill-wave"></i> Withdrawals</a></li>
+                    <li><a href="{{ url_for('statements') }}"><i class="fas fa-receipt"></i> Statements</a></li>
+                    <li><a href="{{ url_for('profile') }}"><i class="fas fa-user"></i> Profile</a></li>
+                    <li><a href="{{ url_for('news') }}"><i class="fas fa-newspaper"></i> News/Announcements</a></li>
+                    <li><a href="{{ url_for('support') }}"><i class="fas fa-headset"></i> Support</a></li>
+                    <li><a href="{{ url_for('logout') }}"><i class="fas fa-user"></i> Sign Out</a></li>   
+                </ul>
+            </nav>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Navigation Bar -->
+            <header>
+                <div class="user-info">
+                    <img src="{{ url_for('static', filename='/assets/user.jpg') }}" alt="User" class="user-icon">
+                    <span class="user-name">{{ current_user.username }}</span>
+                </div>
+                <div class="header-icons">
+                    <i class="notification-icon fas fa-bell" onclick="showNotificationPopup()"></i>
+                    <i class="settings-icon fas fa-cog"></i>
+                </div>
+            </header>
+            <!-- Main Body -->
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 SACCO. All rights reserved. | Designed by SACCO IT Team</p>
+    </footer>
+    <script src="{{ url_for('static', filename='/js/main.js') }}"></script>
+    {% block endBody %}{% endblock %}
+</body>
+
+</html>

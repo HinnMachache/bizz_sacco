@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+{% block content %}
+  <!-- Withdrawals Details -->
+  <div class="withdrawals">
+    <h1>Withdrawals</h1>
+    <p>Manage your withdrawals here.</p>
+    
+    <!-- Withdrawal Form -->
+    <div class="withdrawal-form">
+        <h2>Request New Withdrawal</h2>
+        <form action="submit-withdrawal.php" method="post">
+            <label for="amount">Withdrawal Amount:</label>
+            <input type="text" id="amount" name="amount" placeholder="KES 0.00" required>
+
+            <label for="withdrawal-method">Withdrawal Method:</label>
+            <select id="withdrawal-method" name="withdrawal-method" required>
+                <option value="">Select Method</option>
+                <option value="bank_transfer">Bank Transfer</option>
+                <option value="mobile_money">Mobile Money</option>
+                <option value="cash">Cash</option>
+            </select>
+
+            <label for="account">Withdraw From:</label>
+            <select id="account" name="account" required>
+                <option value="">Select Account</option>
+                <option value="savings_account">Savings Account</option>
+                <option value="checking_account">Checking Account</option>
+            </select>
+
+            <label for="reference">Reference (Optional):</label>
+            <input type="text" id="reference" name="reference" placeholder="Reference (if any)">
+
+            <button type="submit">Submit Withdrawal</button>
+        </form>
+    </div>
+
+    <!-- Recent Withdrawals Section -->
+    <div class="recent-withdrawals">
+        <h2>Recent Withdrawals</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Method</th>
+                    <th>Account</th>
+                    <th>Reference</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example rows; these should be dynamically populated from your backend -->
+                <tr>
+                    <td>Aug 25, 2024</td>
+                    <td>KES 10,000.00</td>
+                    <td>Bank Transfer</td>
+                    <td>Savings Account</td>
+                    <td>Ref12345</td>
+                </tr>
+                <tr>
+                    <td>Aug 22, 2024</td>
+                    <td>KES 5,000.00</td>
+                    <td>Mobile Money</td>
+                    <td>Checking Account</td>
+                    <td>Ref67890</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Withdrawal Summary Section -->
+    <div class="withdrawal-summary">
+        <h2>Withdrawal Summary</h2>
+        <div class="summary-item">
+            <h3>Total Withdrawals (This Month)</h3>
+            <p>KES 15,000.00</p>
+        </div>
+        <div class="summary-item">
+            <h3>Total Withdrawals (Last Month)</h3>
+            <p>KES 12,000.00</p>
+        </div>
+        <div class="summary-item">
+            <h3>Average Withdrawal Amount</h3>
+            <p>KES 7,500.00</p>
+        </div>
+    </div>
+</div>
+{% endblock content %}

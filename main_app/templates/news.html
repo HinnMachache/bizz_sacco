@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block content %}
+<!-- News/Announcements -->
+<div class="news">
+    <h1>News/Announcements</h1>
+    <p>Stay updated with the latest news and announcements.</p>
+    <!-- Announcements List -->
+    <div class="announcements-list">
+        <div class="announcement-item">
+            <img src="{{ url_for('static', filename='/assets/maintain.jpeg') }}" alt="System Maintenance" class="announcement-image">
+            <div class="announcement-content">
+                <h2>System Maintenance Notice</h2>
+                <p>Our system will undergo maintenance on March 20, 2024, from 2:00 AM to 4:00 AM. Please plan accordingly.</p>
+                <span class="date">March 15, 2024</span>
+            </div>
+        </div>
+        <div class="announcement-item">
+            <img src="{{ url_for('static', filename='/assets/feature.jpeg') }}" alt="New Feature Release" class="announcement-image">
+            <div class="announcement-content">
+                <h2>New Feature Release</h2>
+                <p>We're excited to introduce a new feature in our app that allows you to track your spending more effectively.</p>
+                <span class="date">March 10, 2024</span>
+            </div>
+        </div>
+        <!-- Add more announcements here -->
+    </div>
+
+</div>
+{% endblock content %}

@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+{% block content %}
+<!-- Support -->
+<div class="support">
+    <h1>Support</h1>
+    <p>If you need assistance, please use the contact form below to get in touch with our support team. We'll get back to you as soon as possible.</p>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="John Doe" readonly>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="john.doe@example.com" readonly>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Enter your message here..."></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <p>Find answers to common questions below. If you need further assistance, feel free to contact us.</p>
+
+        <div class="faq-item">
+            <h3 class="faq-question">What is SACCO?</h3>
+            <div class="faq-answer">SACCO stands for Savings and Credit Cooperative Organization, which is a member-based financial institution that provides savings, credit, and other financial services.</div>
+        </div>
+        <hr>
+        <div class="faq-item">
+            <h3 class="faq-question">How can I apply for a loan?</h3>
+            <div class="faq-answer">To apply for a loan, navigate to the loan application section on your dashboard and fill out the required details. You can also contact our support team for assistance.</div>
+        </div>
+        <hr>
+        <div class="faq-item">
+            <h3 class="faq-question">What documents are required for loan applications?</h3>
+            <div class="faq-answer">Typically, you will need to provide proof of income, a valid ID, and any other documents required based on the type of loan you are applying for. Please check the specific requirements on the loan application page.</div>
+        </div>
+        <hr>
+        <div class="faq-item">
+            <h3 class="faq-question">How can I reset my password?</h3>
+            <div class="faq-answer">If you need to reset your password, click on the "Forgot Password" link on the login page. Follow the instructions to reset your password via email.</div>
+        </div>
+        <hr>
+        <div class="faq-item">
+            <h3 class="faq-question">How can I contact support?</h3>
+            <div class="faq-answer">You can contact support by using the contact form provided on this page or by emailing us at support@example.com.</div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
