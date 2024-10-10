@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+{% block content %}
+<!-- Profile Details -->
+<div class="profile">
+    <h1>Profile</h1>
+    <p>View and update your profile information here.</p>
+
+    <!-- Profile Form -->
+    <div class="profile-form">
+        <form method="post" action="" enctype="multipart/form-data">
+            {{ form.hidden_tag() }}
+            <!-- Username -->
+            <div class="form-group">
+                <label>{{ form.username.label }}</label>
+                {% if form.username.errors %}
+                    {{ form.username() }}
+                    <div class="invalid-feedback">
+                        {% for error in form.username.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                    {% else %}
+                        {{ form.username() }}
+                    {% endif %}
+            </div>
+
+            <!-- Profile Picture Upload -->
+            <div class="form-group">
+                <label for="profile-picture">{{ form.user_profile.label }}</label>
+                {{ form.user_profile() }}
+                <div class="image-preview">
+                    <img id="profile-picture-preview" src="{{ image_file }}"
+                        alt="Profile Preview">
+                </div>
+            </div>
+
+            <button type="submit">{{ form.submit.label }}</button>
+        </form>
+    </div>
+
+</div>
+</script>
+{% endblock %}

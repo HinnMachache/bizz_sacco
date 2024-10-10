@@ -1,85 +1,36 @@
 {% extends "layout.html" %}
 {% block content %}
- <!-- Profile Details -->
- <div class="profile">
+<!-- Profile Details -->
+<div class="profile">
     <h1>Profile</h1>
     <p>View and update your profile information here.</p>
-    
-    <!-- Profile Form -->
-    <div class="profile-form">
-        <form action="update-profile.php" method="post" enctype="multipart/form-data">
-            <!-- Profile Picture Upload -->
-            <div class="form-group">
-                <label for="profile-picture">Profile Picture:</label>
-                <input type="file" id="profile-picture" name="profile-picture" accept="image/*" onchange="previewImage()">
-                <div class="image-preview">
-                    <img id="profile-picture-preview" src="{{ url_for('static', filename='/assets/user.jpg')}}" alt="Profile Preview">
-                </div>
-            </div>
 
-            <!-- Username -->
-            <div class="form-group">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" value="JohnDoe" required>
-            </div>
+    <a href="{{ url_for('update_password') }}" class="profile-link">
+        <div class="profile">
+            <h1>Security</h1>
+            <p>Manage Password</p>
+        </div>
+    </a>
 
-            <!-- Email -->
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" value="john.doe@example.com" required>
-            </div>
+    <a href="{{ url_for('update_account') }}" class="profile-link">
+        <div class="profile">
+            <h1>Account</h1>
+            <p>Manage Account</p>
+        </div>
+    </a>
 
-            <!-- Password -->
-            <div class="form-group">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" placeholder="********" required>
-            </div>
+</div>
 
-            <!-- Confirm Password -->
-            <div class="form-group">
-                <label for="confirm-password">Confirm Password:</label>
-                <input type="password" id="confirm-password" name="confirm-password" placeholder="********" required>
-            </div>
 
-            <!-- Contact Details -->
-            <div class="form-group">
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" value="+1 234 567 8900">
-            </div>
-
-            <div class="form-group">
-                <label for="address">Address:</label>
-                <input type="text" id="address" name="address" value="123 Main St, Anytown, USA">
-            </div>
-
-            <!-- Security Settings -->
-            <div class="form-group">
-                <label for="security-question">Security Question:</label>
-                <select id="security-question" name="security-question">
-                    <option value="pet">What is your pet's name?</option>
-                    <option value="mother-maiden">What is your mother's maiden name?</option>
-                    <option value="first-school">What was the name of your first school?</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="security-answer">Security Answer:</label>
-                <input type="text" id="security-answer" name="security-answer">
-            </div>
-
-            <button type="submit">Update Profile</button>
-        </form>
-    </div>
-
-    <!-- Additional Information -->
-    <div class="additional-info">
-        <h2>Account Activity</h2>
-        <ul>
-            <li><i class="fas fa-sign-in-alt"></i> Last Login: January 10, 2024</li>
-            <li><i class="fas fa-clock"></i> Last Password Change: December 15, 2023</li>
-            <li><i class="fas fa-envelope"></i> Last Email Update: November 5, 2023</li>
-        </ul>
-    </div>
+<!-- Additional Information -->
+<div class="profile">
+    <h1>Account Activity</h1>
+    <ul>
+        <li><i class="fas fa-sign-in-alt"></i> Last Login: January 10, 2024</li>
+        <li><i class="fas fa-clock"></i> Last Password Change: December 15, 2023</li>
+        <li><i class="fas fa-envelope"></i> Last Email Update: November 5, 2023</li>
+    </ul>
+</div>
 </div>
 {% endblock content %}
 {% block endBody %}
@@ -89,7 +40,7 @@
         const preview = document.getElementById('profile-picture-preview');
         const reader = new FileReader();
 
-        reader.onload = function(e) {
+        reader.onload = function (e) {
             preview.src = e.target.result;
         }
 
