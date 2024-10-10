@@ -2,7 +2,8 @@ from main_app import app, db, bcrypt, mail
 from flask import render_template, flash, request, url_for, redirect
 from main_app.models import User, User_personalData
 from main_app.forms import (RegistrationForm, LoginForm, ApplicationForm,
-                            ResetPasswordRequestForm, ResetPasswordForm)
+                            ResetPasswordRequestForm, ResetPasswordForm,
+                            ChangePasswordForm, UpdateAccountForm)
 from flask_login import login_user, logout_user, current_user, login_required
 from flask_mail import Message
 
@@ -66,3 +67,34 @@ def personal_data():
         db.session.commit()
         return redirect(url_for('home'))
     return render_template("applicationform.html", form=form, title="Application Form")
+
+
+
+@app.route("/update_password", methods=['POST', 'GET'])
+@login_required
+def update_password():
+    form = ChangePasswordForm()
+    if form.validate_on_submit():
+        if bcrypt.check_password_hash(current_user.password, form.current_password.data):
+            hash_pw = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
+            current_user.password = hash_pw
+            db.session.commit()
+            flash("Your password has been updated!")
+            return redirect(url_for('home'))
+        else:
+            flash('Old password is incorrect', 'danger')
+    return render_template("changePassword.html", form=form)
+
+
+@app.route("/update_acoount", methods=['POST', 'GET'])
+@login_required
+def update_account():
+    form=UpdateAccountForm()
+    if form.validate_on_submit():
+        current_user.username = form.username.data
+        db.session.commit()
+        flash("Your account has been updated!")
+        return redirect(url_for('update_account'))
+    elif request.method == 'GET':
+        form.username.data = current_user.username
+    return render_template("updateUser.html", form=form)
