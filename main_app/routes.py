@@ -53,6 +53,53 @@ def logout():
     return redirect('login')
 
 
+def send_password_reset_email(user):
+    token = user.get_reset_password_token()
+    msg = Message('Password Reset Request',
+                  sender='noreply@demo.com',
+                  recipients=[user.email])
+    # html_msg = render_template('password_reset.html', user=user, token=token)
+    # msg.html = html_msg
+    msg.body = f'''To reset your password, visit the following link:
+{url_for('reset_token', token=token, _external=True)}
+
+If you did not make this request then simply ignore this email and no changes will be made.
+'''
+    mail.send(msg)
+
+
+
+@app.route("/reset_password", methods=['POST', 'GET'])
+def reset_request():
+     if current_user.is_authenticated:
+        return redirect(url_for('home'))
+     form = ResetPasswordRequestForm()
+     if form.validate_on_submit():
+        user = User.query.filter_by(email=form.email.data).first()
+        if user:
+            send_password_reset_email(user)
+        flash('An email with reset instuction has been sent to your email', 'info') 
+        return redirect(url_for('login'))
+     return render_template('reset_request.html', form=form)
+
+@app.route("/reset_password/<token>", methods=['POST', 'GET'])
+def reset_token(token):
+    if current_user.is_authenticated:
+        return redirect(url_for('home'))
+    user = User.verify_reset_password_token(token)
+    if user is None:
+        flash('Invalid or Expired Token', 'danger')
+        return redirect(url_for('reset_request'))
+    form = ResetPasswordForm()
+    if form.validate_on_submit():
+        hash_pw = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
+        user.password = hash_pw
+        db.session.commit()
+        flash("Your password has been updated! You are now able to sign in")
+        return redirect(url_for('login'))
+    return render_template('reset_password.html', form=form)
+
+
 @app.route("/personal_data", methods=['POST', 'GET'])
 @login_required
 def personal_data():
