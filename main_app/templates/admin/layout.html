@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/Adminstyles.css') }}">
+    
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    {% endblock %}
+</head>
+<body>
+    <div class="admin-dashboard">
+        <header class="dashboard-header">
+            <div class="logo">{{ logo_name }}</div>
+            <div class="profile-icon" onclick="toggleDropdown()">My Profile 👤</div>
+            <div class="dropdown-menu" id="dropdownMenu">
+                <a href="#">Profile</a>
+                <a href="#">Settings</a>
+                <a href="#">Logout</a>
+            </div>
+        </header>
+
+        <aside class="dashboard-sidebar">
+            <nav class="sidebar-nav">
+                <a href="{{ url_for('admin_index')}}" class="sidebar-item">Dashboard</a>
+                <a href="{{ url_for('admin_members')}}" class="sidebar-item">Members</a>
+                <a href="{{ url_for('admin_staff')}}" class="sidebar-item">Staff</a>
+                <a href="{{ url_for('admin_loans')}}" class="sidebar-item">Loans</a>
+                <a href="{{ url_for('admin_reports')}}" class="sidebar-item">Reports</a>
+                <a href="{{ url_for('admin_settings')}}" class="sidebar-item">Settings</a>
+            </nav>
+        </aside>
+
+        <main class="dashboard-main-content">
+            {% block main_cont %}{% endblock %}
+            
+        </main>
+    </div>
+    {% block script %}{% endblock %}
+    
+</body>
+</html>

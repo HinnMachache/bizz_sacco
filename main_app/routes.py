@@ -16,7 +16,7 @@ from flask_mail import Message
 # Admin Section
 @app.route("/admin")
 def admin_index():
-    return render_template("admin/index.html")
+    return render_template("admin/index.html", title="Admin Dashboard", logo_name="Admin Panel")
 
 @app.route("/admin/loans")
 def admin_loans():
@@ -24,19 +24,19 @@ def admin_loans():
 
 @app.route("/admin/members")
 def admin_members():
-    return render_template("admin/members.html")
+    return render_template("admin/members.html", title="Members Management", logo_name="Members Management")
 
 @app.route("/admin/settings")
 def admin_settings():
-    return render_template("admin/settings.html")
+    return render_template("admin/settings.html", title="Settings - Admin Dashboard", logo_name="Admin Panel")
 
 @app.route("/admin/staff")
 def admin_staff():
-    return render_template("admin/staff.html")
+    return render_template("admin/staff.html", title="Staff Management", logo_name="Staff Management")
 
 @app.route("/admin/reports")
 def admin_reports():
-    return render_template("admin/reports.html")
+    return render_template("admin/reports.html", title="Reports - Admin Dashboard", logo_name="Admin Panel")
 
 
 # User Section

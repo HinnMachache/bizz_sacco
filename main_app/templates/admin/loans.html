@@ -24,12 +24,12 @@
 
         <aside class="dashboard-sidebar">
             <nav class="sidebar-nav">
-                <a href="index.html" class="sidebar-item">Dashboard</a>
-                <a href="members.html" class="sidebar-item">Members</a>
-                <a href="staff.html" class="sidebar-item">Staff</a>
-                <a href="loans.html" class="sidebar-item">Loans</a>
-                <a href="reports.html" class="sidebar-item">Reports</a>
-                <a href="settings.html" class="sidebar-item">Settings</a>
+                <a href="{{ url_for('admin_index')}}" class="sidebar-item">Dashboard</a>
+                <a href="{{ url_for('admin_members')}}" class="sidebar-item">Members</a>
+                <a href="{{ url_for('admin_staff')}}" class="sidebar-item">Staff</a>
+                <a href="{{ url_for('admin_loans')}}" class="sidebar-item">Loans</a>
+                <a href="{{ url_for('admin_reports')}}" class="sidebar-item">Reports</a>
+                <a href="{{ url_for('admin_settings')}}" class="sidebar-item">Settings</a>
             </nav>
         </aside>
 
