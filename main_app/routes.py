@@ -16,25 +16,25 @@ from flask_mail import Message
 @app.route("/overview")
 @login_required
 def home():
-    return render_template("overview.html", title="Overview | SACCO Dashboard")
+    return render_template("user/overview.html", title="Overview | SACCO Dashboard")
 
 
 @app.route("/application", methods=['POST', 'GET'])
 @login_required
 def application():
-    return render_template("notifications.html", title="Notifications | SACCO Dashboard")
+    return render_template("user/notifications.html", title="Notifications | SACCO Dashboard")
 
 
 @app.route("/notification")
 @login_required
 def notification():
-    return render_template("notifications.html", title="Notifications | SACCO Dashboard")
+    return render_template("user/notifications.html", title="Notifications | SACCO Dashboard")
 
 
 @app.route("/profile")
 @login_required
 def profile():
-    return render_template("profile.html")
+    return render_template("user/profile.html")
 
 
 @app.route("/register", methods=['POST', 'GET'])
@@ -50,7 +50,7 @@ def register():
         db.session.commit()
         flash("Your Account Has been created succesfully!")
         return redirect(url_for('login'))
-    return render_template("registration.html", form=form)
+    return render_template("user/registration.html", form=form)
 
 
 @app.route("/login", methods=['POST', 'GET'])
@@ -69,7 +69,7 @@ def login():
             return redirect(next_page) if next_page else redirect(url_for('home'))
         else:
             flash("Log In unsuccessful, please check email and password!")
-    return render_template("login.html", form=form)
+    return render_template("user/login.html", form=form)
 
 
 @app.route("/logout")   # TODO Update Log Out Icon
@@ -80,32 +80,32 @@ def logout():
 @app.route("/deposit", methods=['POST', 'GET'])
 @login_required
 def deposit():
-    return render_template("deposits.html", title="Deposits | SACCO Dashboard")
+    return render_template("user/deposits.html", title="Deposits | SACCO Dashboard")
 
 @app.route("/transaction", methods=['POST', 'GET'])
 @login_required
 def transaction():
-    return render_template("transactions.html", title="Transactions | SACCO Dashboard")
+    return render_template("user/transactions.html", title="Transactions | SACCO Dashboard")
 
 @app.route("/withdrawals", methods=['POST', 'GET'])
 @login_required
 def withdrawals():
-    return render_template("withdrawals.html", title="Withdrawals | SACCO Dashboard")
+    return render_template("user/withdrawals.html", title="Withdrawals | SACCO Dashboard")
 
 @app.route("/statements", methods=['POST', 'GET'])
 @login_required
 def statements():
-    return render_template("statements.html", title="Statements | SACCO Dashboard")
+    return render_template("user/statements.html", title="Statements | SACCO Dashboard")
 
 @app.route("/news", methods=['POST', 'GET'])
 @login_required
 def news():
-    return render_template("news.html", title="News/Announcements | SACCO Dashboard")
+    return render_template("user/news.html", title="News/Announcements | SACCO Dashboard")
 
 @app.route("/support", methods=['POST', 'GET'])
 @login_required
 def support():
-    return render_template("support.html", title="Support | SACCO Dashboard")
+    return render_template("user/support.html", title="Support | SACCO Dashboard")
 
 
 def send_password_reset_email(user):
@@ -135,7 +135,7 @@ def reset_request():
             send_password_reset_email(user)
         flash('An email with reset instuction has been sent to your email', 'info') 
         return redirect(url_for('login'))
-     return render_template('reset_request.html', form=form)
+     return render_template('user/reset_request.html', form=form)
 
 @app.route("/reset_password/<token>", methods=['POST', 'GET'])
 def reset_token(token):
@@ -152,7 +152,7 @@ def reset_token(token):
         db.session.commit()
         flash("Your password has been updated! You are now able to sign in")
         return redirect(url_for('login'))
-    return render_template('reset_password.html', form=form)
+    return render_template('user/reset_password.html', form=form)
 
 
 @app.route("/update_password", methods=['POST', 'GET'])
@@ -168,7 +168,7 @@ def update_password():
             return redirect(url_for('profile'))
         else:
             flash('Old password is incorrect', 'danger')
-    return render_template("changePassword.html", form=form)
+    return render_template("user/changePassword.html", form=form)
 
 
 def save_picture(form_picture):
@@ -212,7 +212,7 @@ def update_account():
     elif request.method == 'GET':
         form.username.data = current_user.username
     image_file = url_for('static', filename='assets/' + current_user.personal_data.user_profile)
-    return render_template("updateUser.html", form=form, image_file=image_file)
+    return render_template("user/updateUser.html", form=form, image_file=image_file)
 
 
 
@@ -244,4 +244,4 @@ def personal_data():
         except Exception as e:
             db.session.rollback()
             print("Error saving personal data: " + str(e), "danger")
-    return render_template("applicationform.html", form=form, title="Application Form")
+    return render_template("user/applicationform.html", form=form, title="Application Form")
