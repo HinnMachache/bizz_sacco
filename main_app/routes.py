@@ -13,6 +13,33 @@ from flask_login import login_user, logout_user, current_user, login_required
 from flask_mail import Message
 
 
+# Admin Section
+@app.route("/admin")
+def admin_index():
+    return render_template("admin/index.html")
+
+@app.route("/admin/loans")
+def admin_loans():
+    return render_template("admin/loans.html")
+
+@app.route("/admin/members")
+def admin_members():
+    return render_template("admin/members.html")
+
+@app.route("/admin/settings")
+def admin_settings():
+    return render_template("admin/settings.html")
+
+@app.route("/admin/staff")
+def admin_staff():
+    return render_template("admin/staff.html")
+
+@app.route("/admin/reports")
+def admin_reports():
+    return render_template("admin/reports.html")
+
+
+# User Section
 @app.route("/overview")
 @login_required
 def home():

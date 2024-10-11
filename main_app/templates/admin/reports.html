@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reports.css">
-    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/reports.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/Adminstyles.css') }}">
     <title>Reports - Admin Dashboard</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -91,7 +92,7 @@
             </section>
         </main>
     </div>
-
-    <script src="reports.js"></script>
+    
+    <script src="{{ url_for('static', filename='/js/reports.js') }}"></script>
 </body>
 </html>
