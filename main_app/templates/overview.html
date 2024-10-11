@@ -84,7 +84,7 @@
             <!-- Navigation Bar -->
             <header>
                 <div class="user-info">
-                    <img src="{{ url_for('static', filename='/assets/user.jpg') }}" alt="User" class="user-icon">
+                    <img src="{{ url_for('static', filename='assets/' + current_user.personal_data.user_profile) }}" alt="User" class="user-icon">
                     <span class="user-name">{{ current_user.username }}</span>
                 </div>
                 <div class="header-icons">

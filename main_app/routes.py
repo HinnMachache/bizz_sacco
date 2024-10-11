@@ -1,5 +1,10 @@
+import secrets
+import os
+from uuid import uuid4
+from werkzeug.utils import secure_filename
+from PIL import Image
 from main_app import app, db, bcrypt, mail
-from flask import render_template, flash, request, url_for, redirect
+from flask import render_template, flash, request, url_for, redirect, current_app
 from main_app.models import User, User_personalData
 from main_app.forms import (RegistrationForm, LoginForm, ApplicationForm,
                             ResetPasswordRequestForm, ResetPasswordForm,
@@ -7,10 +12,30 @@ from main_app.forms import (RegistrationForm, LoginForm, ApplicationForm,
 from flask_login import login_user, logout_user, current_user, login_required
 from flask_mail import Message
 
+
 @app.route("/overview")
 @login_required
 def home():
     return render_template("overview.html", title="Overview | SACCO Dashboard")
+
+
+@app.route("/application", methods=['POST', 'GET'])
+@login_required
+def application():
+    return render_template("notifications.html", title="Notifications | SACCO Dashboard")
+
+
+@app.route("/notification")
+@login_required
+def notification():
+    return render_template("notifications.html", title="Notifications | SACCO Dashboard")
+
+
+@app.route("/profile")
+@login_required
+def profile():
+    return render_template("profile.html")
+
 
 @app.route("/register", methods=['POST', 'GET'])
 def register():
@@ -20,7 +45,7 @@ def register():
     if form.validate_on_submit():
         hash_pw = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
         user = User(username=form.username.data, email=form.email.data, password=hash_pw)
-        db.create_all()
+
         db.session.add(user)
         db.session.commit()
         flash("Your Account Has been created succesfully!")
@@ -36,9 +61,9 @@ def login():
     if form.validate_on_submit():
         user = User.query.filter_by(email=form.email.data).first()
         if user and bcrypt.check_password_hash(user.password, form.password.data):
-            # if not user.personal_data_submitted:
-            #     return redirect(url_for('personal_data'))
             login_user(user) # TODO: Implement remember me.
+            if not user.personal_data:
+                return redirect(url_for('personal_data'))           
             next_page = request.args.get('next')    # Get next page in the url query
             flash("Sign In successfully!")
             return redirect(next_page) if next_page else redirect(url_for('home'))
@@ -51,6 +76,36 @@ def login():
 def logout():
     logout_user()
     return redirect('login')
+
+@app.route("/deposit", methods=['POST', 'GET'])
+@login_required
+def deposit():
+    return render_template("deposits.html", title="Deposits | SACCO Dashboard")
+
+@app.route("/transaction", methods=['POST', 'GET'])
+@login_required
+def transaction():
+    return render_template("transactions.html", title="Transactions | SACCO Dashboard")
+
+@app.route("/withdrawals", methods=['POST', 'GET'])
+@login_required
+def withdrawals():
+    return render_template("withdrawals.html", title="Withdrawals | SACCO Dashboard")
+
+@app.route("/statements", methods=['POST', 'GET'])
+@login_required
+def statements():
+    return render_template("statements.html", title="Statements | SACCO Dashboard")
+
+@app.route("/news", methods=['POST', 'GET'])
+@login_required
+def news():
+    return render_template("news.html", title="News/Announcements | SACCO Dashboard")
+
+@app.route("/support", methods=['POST', 'GET'])
+@login_required
+def support():
+    return render_template("support.html", title="Support | SACCO Dashboard")
 
 
 def send_password_reset_email(user):
@@ -100,23 +155,6 @@ def reset_token(token):
     return render_template('reset_password.html', form=form)
 
 
-@app.route("/personal_data", methods=['POST', 'GET'])
-@login_required
-def personal_data():
-    form = ApplicationForm()
-    if form.validate_on_submit():
-        user = current_user
-        p_data = User_personalData(user_id=current_user.user_id, surname=form.surname.data, other_names=form.other_names.data, dob=form.dob.data,
-                                   id_number=form.id_number.data, telephone_no=form.phone_number.data, address=form.address.data,
-                                   postal_code=form.postal_code.data, gender=form.gender.data, user=user)
-        db.create_all()
-        db.session.add(p_data)
-        db.session.commit()
-        return redirect(url_for('home'))
-    return render_template("applicationform.html", form=form, title="Application Form")
-
-
-
 @app.route("/update_password", methods=['POST', 'GET'])
 @login_required
 def update_password():
@@ -127,21 +165,83 @@ def update_password():
             current_user.password = hash_pw
             db.session.commit()
             flash("Your password has been updated!")
-            return redirect(url_for('home'))
+            return redirect(url_for('profile'))
         else:
             flash('Old password is incorrect', 'danger')
     return render_template("changePassword.html", form=form)
 
+
+def save_picture(form_picture):
+    random_hex = secrets.token_hex(8)
+    _, f_ext = os.path.split(form_picture.filename)
+    picture_fn = random_hex + f_ext
+    picture_path = os.path.join(current_app.root_path, 'static/assets', picture_fn)
+
+    output_size = (125, 125)
+    new_image = Image.open(form_picture)
+    new_image.thumbnail(output_size)
+    new_image.save(picture_path)
+
+    return picture_fn
+
+def save_identification(form_picture):
+    random_hex = secrets.token_hex(8)
+    _, f_ext = os.path.split(form_picture.filename)
+    picture_fn = random_hex + f_ext
+    picture_path = os.path.join(current_app.root_path, 'static/identification', picture_fn)
+
+    output_size = (125, 125)
+    new_image = Image.open(form_picture)
+    new_image.thumbnail(output_size)
+    new_image.save(picture_path)
+
+    return picture_fn
 
 @app.route("/update_acoount", methods=['POST', 'GET'])
 @login_required
 def update_account():
     form=UpdateAccountForm()
     if form.validate_on_submit():
+        if form.user_profile.data:
+            picture_file = save_picture(form.user_profile.data)
+            current_user.personal_data.user_profile = picture_file
         current_user.username = form.username.data
         db.session.commit()
         flash("Your account has been updated!")
-        return redirect(url_for('update_account'))
+        return redirect(url_for('profile'))
     elif request.method == 'GET':
         form.username.data = current_user.username
-    return render_template("updateUser.html", form=form)
+    image_file = url_for('static', filename='assets/' + current_user.personal_data.user_profile)
+    return render_template("updateUser.html", form=form, image_file=image_file)
+
+
+
+@app.route("/personal_data", methods=['POST', 'GET'])
+# @login_required
+def personal_data():
+    form = ApplicationForm()
+    if form.validate_on_submit():
+        user = current_user
+        p_data = User_personalData(user_id=current_user.user_id, surname=form.surname.data, other_names=form.other_names.data, dob=form.dob.data,
+                                   id_number=form.id_number.data, telephone_no=form.phone_number.data, address=form.address.data,
+                                   postal_code=form.postal_code.data, gender=form.gender.data, user=user)
+        
+        # Save passport photo
+        if form.passport_photo.data:
+            passport_photo_file = save_picture(form.passport_photo.data)
+            p_data.user_profile = passport_photo_file
+        
+        # Save copy of ID card/passport
+        if form.copy_photo.data:
+            copy_photo_file = save_identification(form.copy_photo.data)
+            p_data.id_profile = copy_photo_file
+
+        try:
+            db.session.add(p_data)
+            db.session.commit()
+            flash("Personal data saved successfully!")
+            return redirect(url_for('home'))
+        except Exception as e:
+            db.session.rollback()
+            print("Error saving personal data: " + str(e), "danger")
+    return render_template("applicationform.html", form=form, title="Application Form")

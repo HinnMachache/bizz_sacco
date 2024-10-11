@@ -15,8 +15,7 @@ class User(db.Model, UserMixin):
     username = db.Column(db.String(30), unique=True, nullable=False)
     email = db.Column(db.String(120), unique=True, nullable=False)
     password = db.Column(db.String, nullable=False)
-    personal_data_submitted = db.Column(db.Boolean, default=False)
-    user_profile = db.Column(db.String(20), nullable=False, default="profile.png")
+    # personal_data_submitted = db.Column(db.Boolean, default=False)
 
     def get_id(self):
         return self.user_id
@@ -38,7 +37,7 @@ class User(db.Model, UserMixin):
     
     
     def __repr__(self) -> str:
-        return f"{self.username} : {self.email} : {self.user_profile}"
+        return f"{self.username} : {self.email}"
     
 
 class User_personalData(db.Model):
@@ -53,9 +52,9 @@ class User_personalData(db.Model):
     address = db.Column(db.String(50), nullable=False)
     postal_code= db.Column(db.Integer, nullable=False)
     gender= db.Column(db.String(5), nullable=False)
-    passport_photo = db.Column(db.String(20), nullable=False, default="profile.png")
-    copy_id = db.Column(db.String(20), nullable=False, default="profile.png")
+    user_profile = db.Column(db.String(20), nullable=False, default="user.jpeg")
+    id_profile = db.Column(db.String(20), nullable=False, default="user.jpeg")
     
 
     def __repr__(self) -> str:
-        return f"{self.surname} : {self.other_names} : {self.passport_photo}"
+        return f"{self.surname} : {self.other_names} : {self.user_profile}"

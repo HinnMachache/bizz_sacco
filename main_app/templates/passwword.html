@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+{% block content %}
+<!-- Profile Details -->
+<div class="profile">
+    <h1>Profile</h1>
+    <p>View and update your profile information here.</p>
+
+    <!-- Profile Form -->
+    <div class="profile-form">
+        <form method="post" action="">
+            {{ form.hidden_tag() }}
+            <!-- Username -->
+            <div class="form-group">
+                <label>{{ form.current_password.label }}</label>
+                {% if form.current_password.errors %}
+                    {{ form.current_password() }}
+                    <div class="invalid-feedback">
+                        {% for error in form.current_password.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                    {% else %}
+                        {{ form.current_password() }}
+                    {% endif %}
+            </div>
+
+            <!-- Profile Picture Upload -->
+            <div class="form-group">
+                <label for="profile-picture">Profile Picture:</label>
+                <input type="file" id="profile-picture" name="profile-picture" accept="image/*"
+                    onchange="previewImage()">
+                <div class="image-preview">
+                    <img id="profile-picture-preview" src="{{ url_for('static', filename='/assets/user.jpg')}}"
+                        alt="Profile Preview">
+                </div>
+            </div>
+
+            <button type="submit">Update Profile</button>
+        </form>
+    </div>
+
+    <!-- Additional Information -->
+    <div class="additional-info">
+        <h2>Account Activity</h2>
+        <ul>
+            <li><i class="fas fa-sign-in-alt"></i> Last Login: January 10, 2024</li>
+            <li><i class="fas fa-clock"></i> Last Password Change: December 15, 2023</li>
+            <li><i class="fas fa-envelope"></i> Last Email Update: November 5, 2023</li>
+        </ul>
+    </div>
+</div>
+</script>
+{% endblock %}

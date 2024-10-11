@@ -4,9 +4,9 @@ from flask_wtf import FlaskForm
 from wtforms import (StringField, EmailField, PasswordField, IntegerField,
                      TelField, DateField, SubmitField, RadioField)
 from flask_wtf.file import FileField, FileAllowed
+from flask_login import current_user
 from wtforms.validators import DataRequired, Email, EqualTo, Length, ValidationError
 from main_app.models import User
-from flas_login import current_user
 
 
 
@@ -19,8 +19,8 @@ class ApplicationForm(FlaskForm):
     phone_number = TelField('Phone Number', validators=[DataRequired(), Length(min=10)])
     address = StringField('Address', validators=[DataRequired(), Length(min=2, max=30)])
     postal_code = IntegerField('Postal Code', validators=[DataRequired()])
-    passport_photo = FileField('Passport Photo', validators=[FileAllowed(['jpg, jpeg'])])
-    copy_photo = FileField('Copy of ID Card/Passport', validators=[FileAllowed(['jpg, jpeg'])])
+    passport_photo = FileField('Profile Picture', validators=[FileAllowed(['jpg', 'jpeg', 'png'])])
+    copy_photo = FileField('Copy of ID Card/Passport', validators=[DataRequired(), FileAllowed(['jpg', 'jpeg', 'png'])])
     gender = RadioField('Gender', choices=[('male', 'Male'), ('female', 'Female'), ('other', 'Other')])
     submit = SubmitField('Save Info')
     
@@ -57,6 +57,12 @@ class ResetPasswordRequestForm(FlaskForm):
         if user is None:
             raise ValidationError("There is no account with that email. You must register first.")  
 
+class ChangePasswordForm(FlaskForm):
+    current_password = PasswordField('Current Password', validators=[DataRequired()])
+    password = PasswordField('New Password', validators=[DataRequired()])
+    confirm_password = PasswordField('Confirm Password', validators=[DataRequired(), EqualTo('password')])
+    submit = SubmitField('Confirm')
+
 class ResetPasswordForm(FlaskForm):
     password = PasswordField('Password', validators=[DataRequired()])
     confirm_password = PasswordField('Confirm Password', validators=[DataRequired(), EqualTo('password')])
@@ -65,18 +71,11 @@ class ResetPasswordForm(FlaskForm):
 
 class UpdateAccountForm(FlaskForm):
     username = StringField('Username', validators=[DataRequired(), Length(min=2, max=30)])
-    user_profile = FileField('Copy of ID Card/Passport', validators=[FileAllowed(['jpg, jpeg'])])
-    submit = SubmitField('Update')
+    user_profile = FileField('Profile Picture:', validators=[FileAllowed(['jpg', 'jpeg', 'png'])])
+    submit = SubmitField('Update Profile')
 
     def validate_username(self, username):
         if username.data != current_user.username:
             user = User.query.filter_by(username=username.data).first()
             if user:
                 raise ValidationError("Username already exists. Please choose a different one.")
-            
-
-class ChangePasswordForm(FlaskForm):
-    current_password = PasswordField('Current Password', validators=[DataRequired()])
-    password = PasswordField('New Password', validators=[DataRequired()])
-    confirm_password = PasswordField('Confirm Password', validators=[DataRequired(), EqualTo('password')])
-    submit = SubmitField('Confirm')

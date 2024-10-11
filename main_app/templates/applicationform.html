@@ -1,278 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SACCO Membership Application Form</title>
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>SACCO</title>
+    {% endif %}
     <link rel="stylesheet" href="{{ url_for('static', filename='/css/styles.css') }}">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-      <!-- Font Awesome -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-      <link<!DOCTYPE html>
-      <html lang="en">
-      
-      <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          {% if title %}
-          <title>{{ title }}</title>
-          {% else %}
-          <title>SACCO</title>
-          {% endif %}
-          <link rel="stylesheet" href="{{ url_for('static', filename='/css/styles.css') }}">
-          <!-- Font Awesome -->
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-      </head>
-      
-      <body>
-          <!-- Profile Details -->
-          <div class="profile">
-              <h1>Profile Data</h1>
-              <p>Please fill your details</p>
-      
-              <!-- Profile Form -->
-              <div class="profile-form">
-                  <form method="POST" action="">
-                      {{ form.hidden_tag() }}
-                      <!-- First Name -->
-                      <div class="form-group">
-                          {{ form.other_names.label }}
-                          {{ form.other_names() }}
-                      </div>
-      
-                      <!-- Last Name -->
-                      <div class="form-group">
-                          {{ form.surname.label }}
-                          {{ form.surname() }}
-                      </div>
-      
-                      <!-- DOB -->
-                      <div class="form-group">
-                          {{ form.dob.label }}
-                          {{ form.dob() }}
-                      </div>
-      
-                      <!-- ID_No -->
-                      <div class="form-group">
-                          {{ form.id_number.label }}
-                          {{ form.id_number() }}
-                      </div>
-      
-                      <!-- Contact Details -->
-                      <div class="form-group">
-                          {{ form.phone_number.label }}
-                          {{ form.phone_number() }}
-                      </div>
-      
-                      <!-- Address -->
-                      <div class="form-group">
-                          {{ form.address.label }}
-                          {{ form.address() }}
-                      </div>
-      
-                      <!-- Postal Code -->
-                      <div class="form-group">
-                          {{ form.postal_code.label }}
-                          {{ form.postal_code() }}
-                      </div>
-      
-                      <div class="form-group"></div>
-                          {{ form.gender.label }}
-                          {{ form.gender }}
-                      </div>
-      
-                      <button type="submit">{{ form.submit.label }}</button>
-                  </form>
-              </div>
-          </div>
-      
-      </body>
-      
-      </html>
-      <!-- <script>
-              function previewImage() {
-                  const file = document.getElementById('profile-picture').files[0];
-                  const preview = document.getElementById('profile-picture-preview');
-                  const reader = new FileReader();
-      
-                  reader.onload = function (e) {
-                      preview.src = e.target.result;
-                  }
-      
-                  if (file) {
-                      reader.readAsDataURL(file);
-                  }
-              }
-          </script> --> rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
-    <div class="form-container">
-        <h1>Membership Application Form</h1>
-        <form action="" method="post" id="application-form">
-            {{ form.hidden_tag() }}
-            <!-- Row 1: Surname and Other Names -->
-            <div class="form-row">
+    <!-- Profile Details -->
+    <div class="profile">
+        <h1>Profile Data</h1>
+        <p>Please fill your details</p>
+
+        <!-- Profile Form -->
+        <div class="profile-form">
+            <form method="POST" action="">
+                {{ form.hidden_tag() }}
+                <!-- First Name -->
+                <div class="form-group">
+                    {{ form.other_names.label }}
+                    {{ form.other_names() }}
+                </div>
+
+                <!-- Last Name -->
                 <div class="form-group">
                     {{ form.surname.label }}
-                    {% if form.surname.errors %}
-                        {{ form.surname() }}
-                        <div class="invalid-feedback">
-                            {% for error in form.surname.errors%}
-                            <span>{{ error }}</span>
-                            {% endfor %}
-                        </div>
-                        
-                    {% else %}
-                        {{ form.surname() }}
-                    {%endif%}
-                    <!-- <label for="surname">Surname <span>*</span></label>
-                    <input type="text" id="surname" name="surname" placeholder="Enter your surname" required> -->
+                    {{ form.surname() }}
                 </div>
+
+                <!-- DOB -->
                 <div class="form-group">
-                    {{ form.other_names.label }}<span>*</span>
-                    {% if form.other_names.errors %}
-                        {{ form.other_names() }}
-                        <div class="invalid-feedback">
-                            {% for error in form.other_names.errors%}
-                            <span>{{ error }}</span>
-                            {% endfor %}
-                        </div>
-                        
-                    {% else %}
-                        {{ form.other_names() }}
-                    {%endif%}
-                    <!-- <label for="other-names">Other Names <span>*</span></label>
-                    <input type="text" id="other-names" name="other_names" placeholder="Enter your other names" required> -->
+                    {{ form.dob.label }}
+                    {{ form.dob() }}
                 </div>
-            </div>
 
-                        <!-- Row 3: ID Number and Telephone -->
-                        <div class="form-row">
-                            <div class="form-group">
-                                {{ form.id_number.label }}<span>*</span>
-                                {% if form.id_number.errors %}
-                                    {{ form.id_number() }}
-                                    <div class="invalid-feedback">
-                                        {% for error in form.id_number.errors%}
-                                        <span>{{ error }}</span>
-                                        {% endfor %}
-                                    </div>
-                                    
-                                {% else %}
-                                    {{ form.id_number() }}
-                                {%endif%}
-                                <!-- <label for="id-number">ID Number <span>*</span></label>
-                                <input type="text" id="id-number" name="id_number" placeholder="Enter your ID number" required> -->
-                            </div>
-                            <div class="form-group">
-                                {{ form.telephone.label }}<span>*</span>
-                                {% if form.telephone.errors %}
-                                    {{ form.telephone() }}
-                                    <div class="invalid-feedback">
-                                        {% for error in form.telephone.errors%}
-                                        <span>{{ error }}</span>
-                                        {% endfor %}
-                                    </div>
-                                    
-                                {% else %}
-                                    {{ form.telephone() }}
-                                {%endif%}
-                                <!-- <label for="telephone">Telephone Number <span>*</span></label>
-                                <input type="tel" id="telephone" name="telephone" placeholder="+254-Enter your phone number" required> -->
-                            </div>
-                        </div>
-
-            <!-- Row 2: Date of Birth and PIN No -->
-            <div class="form-row">
+                <!-- ID_No -->
                 <div class="form-group">
-                    {{ form.dob.label }}<span>*</span>
-                    {% if form.dob.errors %}
-                        {{ form.dob() }}
-                        <div class="invalid-feedback">
-                            {% for error in form.dob.errors%}
-                            <span>{{ error }}</span>
-                            {% endfor %}
-                        </div>
-                        
-                    {% else %}
-                        {{ form.dob() }}
-                    {%endif%}
-                    <!-- <label for="dob">Date of Birth <span>*</span></label>
-                    <input type="date" id="dob" name="dob" required> -->
+                    {{ form.id_number.label }}
+                    {{ form.id_number() }}
                 </div>
-            </div>
 
-            <!-- Row 4: Address and Postal Code -->
-            <div class="form-row">
+                <!-- Contact Details -->
                 <div class="form-group">
-                    {{ form.address.label }}<span>*</span>
-                    {% if form.address.errors %}
-                        {{ form.address() }}
-                        <div class="invalid-feedback">
-                            {% for error in form.address.errors%}
-                            <span>{{ error }}</span>
-                            {% endfor %}
-                        </div>
-                        
-                    {% else %}
-                        {{ form.address() }}
-                    {%endif%}
-                    <!-- <label for="address">Address <span>*</span></label>
-                    <input type="text" id="address" name="address" placeholder="Enter your address (e.g., P.O. Box)" required> -->
+                    {{ form.phone_number.label }}
+                    {{ form.phone_number() }}
                 </div>
+
+                <!-- Address -->
                 <div class="form-group">
-                    {{ form.postal_code.label }}<span>*</span>
-                    {% if form.postal_code.errors %}
-                        {{ form.postal_code() }}
-                        <div class="invalid-feedback">
-                            {% for error in form.postal_code.errors%}
-                            <span>{{ error }}</span>
-                            {% endfor %}
-                        </div>
-                        
-                    {% else %}
-                        {{ form.postal_code() }}
-                    {%endif%}
-                    <!-- <label for="postal-code">Postal Code <span>*</span></label>
-                    <input type="text" id="postal-code" name="postal_code" placeholder="Enter your postal code" required> -->
+                    {{ form.address.label }}
+                    {{ form.address() }}
                 </div>
-            </div>
 
-            <!-- Row 5: Email and Referred By -->
-
-            <!-- Row 6: File Uploads -->
-            <div class="form-row">
+                <!-- Postal Code -->
                 <div class="form-group">
-                    <label for="passport-photo">Passport Photo <span>*</span></label>
-                    <input type="file" id="passport-photo" name="passport-photo" accept="image/*">
+                    {{ form.postal_code.label }}
+                    {{ form.postal_code() }}
                 </div>
-                <div class="form-group">
-                    <label for="id-passport">Copy of ID Card/Passport <span>*</span></label>
-                    <input type="file" id="id-passport" name="id-passport" accept="image/*,application/pdf">
+
+                <div class="form-group"></div>
+                    {{ form.gender.label }}
+                    {{ form.gender }}
+
+                    {{ form.passport_photo.label }}
+                    {{ form.passport_photo() }}
+
+                    {{ form.copy_photo.label }}
+                    {{ form.copy_photo() }}
                 </div>
-            </div>
 
-            <!-- Row 7: Gender -->
-            <div class="form-group full-width">
-                <label>Gender <span>*</span></label>
-                <div class="gender-options">
-                    <input type="radio" id="male" name="gender" value="Male" required>
-                    <label for="male">Male</label>
-                    <input type="radio" id="female" name="gender" value="Female">
-                    <label for="female">Female</label>
-                </div>
-            </div>
+                <button type="submit">{{ form.submit.label }}</button>
+            </form>
+        </div>
 
-
-            <!-- Submit Button -->
-            <div class="form-group full-width">
-                <!-- {{ form.submit(class="submit-btn") }} -->
-                <button type="submit" class="submit-btn">{{ form.submit.label }}</button>
-            </div>
-        </form>
-    </div>
-
-    <script src="{{ url_for('static', filename='/js/main.js') }}"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
+
 </html>
+<!-- <script>
+        function previewImage() {
+            const file = document.getElementById('profile-picture').files[0];
+            const preview = document.getElementById('profile-picture-preview');
+            const reader = new FileReader();
+
+            reader.onload = function (e) {
+                preview.src = e.target.result;
+            }
+
+            if (file) {
+                reader.readAsDataURL(file);
+            }
+        }
+    </script> -->
