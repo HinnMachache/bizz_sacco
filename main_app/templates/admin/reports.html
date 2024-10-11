@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reports.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Reports - Admin Dashboard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="admin-dashboard">
+        <header class="dashboard-header">
+            <div class="logo">Admin Panel</div>
+            <div class="profile-icon" onclick="toggleDropdown()">My Profile 👤</div>
+            <div class="dropdown-menu" id="dropdownMenu">
+                <a href="#">Profile</a>
+                <a href="#">Settings</a>
+                <a href="#">Logout</a>
+            </div>
+        </header>
+        
+        <aside class="dashboard-sidebar">
+            <nav class="sidebar-nav">
+                <a href="index.html" class="sidebar-item">Dashboard</a>
+                <a href="members.html" class="sidebar-item">Members</a>
+                <a href="staff.html" class="sidebar-item">Staff</a>
+                <a href="loans.html" class="sidebar-item">Loans</a>
+                <a href="reports.html" class="sidebar-item active">Reports</a>
+                <a href="settings.html" class="sidebar-item">Settings</a>
+            </nav>
+        </aside>
+        
+        <main class="dashboard-main-content">
+            <h2>Reports Overview</h2>
+
+            <!-- Summary Cards -->
+            <section class="report-summary">
+                <div class="summary-card">
+                    <h3>Total Loans</h3>
+                    <p>150</p>
+                    <i class="fas fa-file-invoice-dollar"></i>
+                </div>
+                <div class="summary-card">
+                    <h3>New Members</h3>
+                    <p>50</p>
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="summary-card">
+                    <h3>Total Revenue</h3>
+                    <p>$25,000</p>
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="summary-card">
+                    <h3>Approved Loans</h3>
+                    <p>120</p>
+                    <i class="fas fa-thumbs-up"></i>
+                </div>
+            </section>
+
+            <!-- Filters and Export Options -->
+            <section class="report-controls">
+                <div class="filter-controls">
+                    <label for="date-range">Date Range:</label>
+                    <input type="date" id="start-date">
+                    <input type="date" id="end-date">
+                    <button class="filter-button">Filter</button>
+                </div>
+                <button class="export-button"><i class="fas fa-download"></i> Export Data</button>
+            </section>
+
+            <!-- Organized Charts Section -->
+            <section class="reports-overview">
+                <div class="chart-card">
+                    <h3>Total Loans Report</h3>
+                    <canvas id="totalLoansChart"></canvas>
+                </div>
+                <div class="chart-card">
+                    <h3>Members Growth</h3>
+                    <canvas id="membersGrowthChart"></canvas>
+                </div>
+                <div class="chart-card">
+                    <h3>Revenue Breakdown</h3>
+                    <canvas id="revenueChart"></canvas>
+                </div>
+                <div class="chart-card">
+                    <h3>Loan Approval vs. Rejection</h3>
+                    <canvas id="loanStatusChart"></canvas>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="reports.js"></script>
+</body>
+</html>

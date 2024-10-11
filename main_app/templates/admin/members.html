@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="members.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Members Management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="admin-dashboard">
+        <header class="dashboard-header">
+            <div class="logo">Members Management</div>
+            <div class="profile-icon" onclick="toggleDropdown()">My Profile 👤</div>
+            <div class="dropdown-menu" id="dropdownMenu">
+                <a href="#">Profile</a>
+                <a href="#">Settings</a>
+                <a href="#">Logout</a>
+            </div>
+        </header>
+
+        <aside class="dashboard-sidebar">
+            <nav class="sidebar-nav">
+                <a href="index.html" class="sidebar-item">Dashboard</a>
+                <a href="members.html" class="sidebar-item active">Members</a>
+                <a href="staff.html" class="sidebar-item">Staff</a>
+                <a href="loans.html" class="sidebar-item">Loans</a>
+                <a href="reports.html" class="sidebar-item">Reports</a>
+                <a href="settings.html" class="sidebar-item">Settings</a>
+            </nav>
+        </aside>
+
+        <main class="dashboard-main-content">
+            <h2 class="greeting">Manage Members</h2>
+
+            <div class="action-buttons">
+                <button class="action-button" onclick="openAddMemberModal()"><i class="fas fa-user-plus"></i> Add Member</button>
+                <input type="text" id="search" placeholder="Search Members..." oninput="filterMembers()">
+            </div>
+
+            <table class="members-table" id="membersTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Account Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="membersBody">
+                    <!-- Member rows will be dynamically populated here -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+    <!-- Add Member Modal -->
+    <div id="addMemberModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeAddMemberModal()">&times;</span>
+            <h2>Add New Member</h2>
+            <form id="addMemberForm" onsubmit="addMember(event)">
+                <input type="text" id="memberName" placeholder="Full Name" required>
+                <input type="email" id="memberEmail" placeholder="Email" required>
+                <input type="file" id="memberPhoto" accept="image/*">
+                <button type="submit">Add Member</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="members.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

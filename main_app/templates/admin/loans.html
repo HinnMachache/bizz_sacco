@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="loans.css">
+   
+    <title>Loans Management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+</head>
+<body>
+    <div class="admin-dashboard">
+        <header class="dashboard-header">
+            <div class="logo">Loans Management</div>
+            <div class="profile-icon" onclick="toggleDropdown()">My Profile 👤</div>
+            <div class="dropdown-menu" id="dropdownMenu">
+                <a href="#">Profile</a>
+                <a href="#">Settings</a>
+                <a href="#">Logout</a>
+            </div>
+        </header>
+
+        <aside class="dashboard-sidebar">
+            <nav class="sidebar-nav">
+                <a href="index.html" class="sidebar-item">Dashboard</a>
+                <a href="members.html" class="sidebar-item">Members</a>
+                <a href="staff.html" class="sidebar-item">Staff</a>
+                <a href="loans.html" class="sidebar-item">Loans</a>
+                <a href="reports.html" class="sidebar-item">Reports</a>
+                <a href="settings.html" class="sidebar-item">Settings</a>
+            </nav>
+        </aside>
+
+        <main class="dashboard-main-content">
+            <h2 class="greeting">Manage Loans</h2>
+            
+            <section class="dashboard-snapshot">
+                <div class="snapshot-card">Total Loans: <span id="totalLoans">200</span></div>
+                <div class="snapshot-card">Approved Loans: <span id="approvedLoans">150</span></div>
+                <div class="snapshot-card">Pending Loans: <span id="pendingLoans">30</span></div>
+                <div class="snapshot-card">Rejected Loans: <span id="rejectedLoans">20</span></div>
+            </section>
+            <div class="charts-section">
+                <div class="chart-container">
+                    <canvas id="loanStatusChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="loanApprovalTrendChart"></canvas>
+                </div>
+            </div>
+            <div class="chart-container">
+                <canvas id="totalLoanAmountChart" style="height: 250px;"></canvas> <!-- Set height directly for smaller bar graph -->
+            </div>
+
+            <section class="quick-actions">
+                <h3>Quick Actions</h3>
+                <div class="action-buttons">
+                    <button class="action-button" onclick="openAddLoanModal()"><i class="fas fa-plus"></i> Add Loan</button>
+                    <button class="action-button"><i class="fas fa-file-invoice"></i> Generate Report</button>
+                </div>
+            </section>
+
+            <section class="recent-activity">
+                <h3>Recent Loan Activity</h3>
+                <ul id="activityLog">
+                    <li>
+                        <span class="activity-item">Loan 1</span>
+                        <span class="activity-amount">KSh 50,000</span>
+                    </li>
+                    <li>
+                        <span class="activity-item">Loan 2</span>
+                        <span class="activity-amount">KSh 30,000</span>
+                    </li>
+                    <li>
+                        <span class="activity-item">Loan 3</span>
+                        <span class="activity-amount">KSh 75,000</span>
+                    </li>
+                    <!-- More activities can be dynamically populated here -->
+                </ul>
+            </section>
+            
+        </main>
+    </div>
+
+    <!-- Add Loan Modal -->
+    <div id="addLoanModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeAddLoanModal()">&times;</span>
+            <h2>Add New Loan</h2>
+            <form id="addLoanForm">
+                <input type="text" id="loanName" placeholder="Loan Name" required>
+                <input type="number" id="loanAmount" placeholder="Loan Amount" required>
+                <input type="text" id="loanStatus" placeholder="Status (approved/pending/rejected)" required>
+                <button type="submit">Add Loan</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="loans.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Admin Dashboard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="admin-dashboard">
+        <header class="dashboard-header">
+            <div class="logo">Admin Panel</div>
+            <button class="toggle-sidebar" aria-label="Toggle Sidebar">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="profile-icon" onclick="toggleDropdown()">My Profile 👤</div>
+            <div class="dropdown-menu" id="dropdownMenu">
+                <a href="#">Profile</a>
+                <a href="#">Settings</a>
+                <a href="#">Logout</a>
+            </div>
+        </header>
+        
+        <aside class="dashboard-sidebar">
+            <nav class="sidebar-nav">
+                <a href="#" class="sidebar-item">Dashboard</a>
+                <a href="members.html" class="sidebar-item">Members</a>
+                <a href="staff.html" class="sidebar-item">Staff</a>
+                <a href="loans.html" class="sidebar-item">Loans</a>
+                <a href="reports.html" class="sidebar-item">Reports</a>
+                <a href="settings.html" class="sidebar-item">Settings</a>
+            </nav>
+        </aside>
+
+        <main class="dashboard-main-content">
+            <h2 class="greeting">Good Morning! Kev</h2>
+            <section class="dashboard-snapshot">
+                <div class="snapshot-card">Total Members: <span id="totalMembers">150</span></div>
+                <div class="snapshot-card">Total Staff: <span id="totalStaff">10</span></div>
+                <div class="snapshot-card">Loans Approved: <span id="loansApproved">25</span></div>
+                <div class="snapshot-card">Pending Loans: <span id="pendingLoans">5</span></div>
+                <div class="snapshot-card">System Status: <span id="systemStatus">Online</span></div>
+                <div class="snapshot-card">Active Users Today: <span id="activeUsers">75</span></div>
+            </section>
+            <section class="dashboard-charts">
+                <div class="chart-container">
+                    <canvas id="loanApprovalChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="memberGrowthChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="pendingVsApprovedChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="userEngagementChart"></canvas>
+                </div>
+            </section>
+            <section class="quick-actions">
+                <h3>Quick Actions</h3>
+                <div class="action-buttons">
+                    <button class="action-button"><i class="fas fa-user-plus"></i> Add Member</button>
+                    <button class="action-button"><i class="fas fa-check-circle"></i> Approve Loans</button>
+                    <button class="action-button"><i class="fas fa-file-alt"></i> Generate Report</button>
+                </div>
+            </section>
+            <section class="recent-activity">
+                <h3>Recent Activity</h3>
+                <ul id="activityLog">
+                    <li><i class="fas fa-user-plus"></i> New member registered: John Doe</li>
+                    <li><i class="fas fa-check-circle"></i> Loan approved for: Jane Smith</li>
+                    <li><i class="fas fa-user-tie"></i> New staff added: Alex Johnson</li>
+                    <li><i class="fas fa-file-invoice-dollar"></i> Loan request received: Mike Brown</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
