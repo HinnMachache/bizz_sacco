@@ -4,14 +4,12 @@ from time import time
 from flask_login import UserMixin   # Manage sessions
 
 
-@login_manager.user_loader  # Reloading the user from user id stored in the session
+@login_manager.user_loader
 def load_user(user_id):
-    return User.query.get(int(user_id))
-
-
-@login_manager.user_loader  # Reloading the user from user id stored in the session
-def load_user(user_id):
-    return Admin.query.get(int(user_id))
+    user = User.query.get(int(user_id))
+    if user is None:
+        return Admin.query.get(int(user_id))
+    return user
 
 class User(db.Model, UserMixin):
     user_id = db.Column(db.Integer, primary_key=True)
@@ -96,7 +94,7 @@ class Admin(db.Model, UserMixin):
 class Admin_personalData(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     admin_id = db.Column(db.Integer, db.ForeignKey('admin.admin_id'), nullable=False)  # Foreign Key
-    user = db.relationship('Admin', back_populates='personal_data', lazy=True)
+    admin = db.relationship('Admin', back_populates='personal_data', lazy=True)
     surname = db.Column(db.String(30), unique=True, nullable=False)
     other_names = db.Column(db.String(120), unique=True, nullable=False)
     dob = db.Column(db.String(20), nullable=False)

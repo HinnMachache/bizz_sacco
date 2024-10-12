@@ -43,7 +43,13 @@
             <header>
                 <!-- url_for('static', filename='assets/' + current_user.personal_data.user_profile) -->
                 <div class="user-info">
-                    <img src="{{ url_for('static', filename='assets/' + current_user.personal_data.user_profile) }}" alt="User" class="user-icon">
+                    {% if current_user.personal_data %}
+                    <img src="{{ url_for('static', filename='assets/' + current_user.personal_data.user_profile) }}"
+                        alt="User" class="user-icon">
+                    {% else %}
+                    <img src="{{ url_for('static', filename='assets/user.jpeg') }}" alt="User" class="user-icon">
+                     <!-- Placeholder image -->
+                    {% endif %}    
                     <span class="user-name">{{ current_user.username }}</span>
                 </div>
                 <div class="header-icons">

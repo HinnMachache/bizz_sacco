@@ -1,6 +1,7 @@
 import secrets
 import os
-from uuid import uuid4
+import logging
+from functools import wraps
 from PIL import Image
 from main_app import app, db, bcrypt, mail
 from flask import render_template, flash, request, url_for, redirect, current_app
@@ -12,28 +13,54 @@ from flask_login import login_user, logout_user, current_user, login_required
 from flask_mail import Message
 
 
+# Role Required Decorator
+def role_required(role):
+    def wrapper(fn):
+        @wraps(fn)
+        def decorated_view(*args, **kwargs):
+            if not current_user.is_authenticated:
+                return redirect(url_for('login'))
+            if current_user.role != role:
+                flash("You do not have permission to access this page.")
+                return redirect(url_for('home'))
+            return fn(*args, **kwargs)
+        return decorated_view
+    return wrapper
+
 # Admin Section
 @app.route("/admin")
+@login_required
+@role_required('admin')
 def admin_index():
     return render_template("admin/index.html", title="Admin Dashboard", logo_name="Admin Panel")
 
 @app.route("/admin/loans")
+@login_required
+@role_required('admin')
 def admin_loans():
     return render_template("admin/loans.html")
 
 @app.route("/admin/members")
+@login_required
+@role_required('admin')
 def admin_members():
     return render_template("admin/members.html", title="Members Management", logo_name="Members Management")
 
 @app.route("/admin/settings")
+@login_required
+@role_required('admin')
 def admin_settings():
     return render_template("admin/settings.html", title="Settings - Admin Dashboard", logo_name="Admin Panel")
 
 @app.route("/admin/staff")
+@login_required
+@role_required('admin')
 def admin_staff():
     return render_template("admin/staff.html", title="Staff Management", logo_name="Staff Management")
 
 @app.route("/admin/reports")
+@login_required
+@role_required('admin')
 def admin_reports():
     return render_template("admin/reports.html", title="Reports - Admin Dashboard", logo_name="Admin Panel")
 
@@ -84,9 +111,12 @@ def register():
         return redirect(url_for('login'))
     return render_template("user/registration.html", form=form)
 
+# Set up logging configuration
+logging.basicConfig(filename='app.log', level=logging.DEBUG,  # Set the logging level to DEBUG
+                format='%(asctime)s - %(levelname)s - %(message)s') 
 
 @app.route("/login", methods=['POST', 'GET'])
-def login():
+def login():   
     if current_user.is_authenticated:
         return redirect(url_for('home'))
     form = LoginForm()
@@ -96,9 +126,9 @@ def login():
 
         if user and bcrypt.check_password_hash(user.password, form.password.data):
             login_user(user) # TODO: Implement remember me.
-            # if not user.personal_data:
-            #     return redirect(url_for('personal_data'))           
-            next_page = request.args.get('next')    # Get next page in the url query
+            logging.debug(f"Current User: {current_user.is_authenticated}")
+            logging.debug(f"Session: {session}")
+            next_page = request.args.get('next')
             flash("Sign In successfully!")
             return redirect(next_page) if next_page else redirect(url_for('home'))
         elif admin and bcrypt.check_password_hash(admin.password, form.password.data):
@@ -262,10 +292,9 @@ def update_account():
 def personal_data():
     form = ApplicationForm()
     if form.validate_on_submit():
-        user = current_user
         p_data = User_personalData(user_id=current_user.user_id, surname=form.surname.data, other_names=form.other_names.data, dob=form.dob.data,
                                    id_number=form.id_number.data, telephone_no=form.phone_number.data, address=form.address.data,
-                                   postal_code=form.postal_code.data, gender=form.gender.data, user=user)
+                                   postal_code=form.postal_code.data, gender=form.gender.data)
         
         # Save passport photo
         if form.passport_photo.data:

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -60,6 +61,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="dashboard">
         <!-- Sidebar -->
@@ -75,20 +77,27 @@
                 <li><a href="{{ url_for('profile') }}"><i class="fas fa-user"></i> Profile</a></li>
                 <li><a href="{{ url_for('news') }}"><i class="fas fa-newspaper"></i> News/Announcements</a></li>
                 <li><a href="{{ url_for('support') }}"><i class="fas fa-headset"></i> Support</a></li>
-                <li><a href="{{ url_for('logout') }}"><i class="fas fa-user"></i> Sign Out</a></li>   
+                <li><a href="{{ url_for('logout') }}"><i class="fas fa-user"></i> Sign Out</a></li>
             </ul>
         </div>
-        
+
         <!-- Main Content -->
         <div class="main-content">
-            <!-- Navigation Bar -->
+            <!-- Navigation Bar  + current_user.personal_data.user_profile)-->
             <header>
                 <div class="user-info">
-                    <img src="{{ url_for('static', filename='assets/' + current_user.personal_data.user_profile) }}" alt="User" class="user-icon">
+                    {% if current_user.personal_data %}
+                    <img src="{{ url_for('static', filename='assets/' + current_user.personal_data.user_profile) }}"
+                        alt="User" class="user-icon">
+                    {% else %}
+                    <img src="{{ url_for('static', filename='assets/user.jpeg') }}" alt="User" class="user-icon">
+                     <!-- Placeholder image -->
+                    {% endif %}       
                     <span class="user-name">{{ current_user.username }}</span>
                 </div>
                 <div class="header-icons">
-                    <a href="{{ url_for('notification') }}"><i class="notification-icon fas fa-bell" onclick="showNotificationPopup()"></i></a> 
+                    <a href="{{ url_for('notification') }}"><i class="notification-icon fas fa-bell"
+                            onclick="showNotificationPopup()"></i></a>
                     <i class="settings-icon fas fa-cog"></i>
                 </div>
             </header>
@@ -125,13 +134,15 @@
                     <h3>Savings</h3>
                     <p class="balance savings">KES 80,000.00</p>
                 </div>
-            </div>            
+            </div>
 
             <!-- Recent Transactions Section -->
             <div class="recent-transactions">
-                <h3>Recent Transactions <a class="transactions-link" href="{{ url_for('transaction') }}">Click here to view all transactions</a></h3>
+                <h3>Recent Transactions <a class="transactions-link" href="{{ url_for('transaction') }}">Click here to
+                        view all transactions</a></h3>
                 <ul class="transactions-list">
-                    <li class="transaction-card deposit" onclick="showPopup('Deposit', 'Aug 20, 2024', 'KES 5,000.00', 'Deposit made to savings account.')">
+                    <li class="transaction-card deposit"
+                        onclick="showPopup('Deposit', 'Aug 20, 2024', 'KES 5,000.00', 'Deposit made to savings account.')">
                         <i class="fas fa-arrow-up"></i>
                         <div class="transaction-info">
                             <div class="transaction-name">Deposit</div>
@@ -140,7 +151,8 @@
                             <div class="transaction-type">Deposit</div>
                         </div>
                     </li>
-                    <li class="transaction-card withdrawal" onclick="showPopup('Loan Payment', 'Aug 15, 2024', 'KES 10,000.00', 'Loan payment made.')">
+                    <li class="transaction-card withdrawal"
+                        onclick="showPopup('Loan Payment', 'Aug 15, 2024', 'KES 10,000.00', 'Loan payment made.')">
                         <i class="fas fa-arrow-down"></i>
                         <div class="transaction-info">
                             <div class="transaction-name">Loan Payment</div>
@@ -197,7 +209,7 @@
                     },
                     tooltip: {
                         callbacks: {
-                            label: function(tooltipItem) {
+                            label: function (tooltipItem) {
                                 return tooltipItem.label + ': KES ' + tooltipItem.raw;
                             }
                         }
@@ -254,4 +266,5 @@
         });
     </script>
 </body>
+
 </html>
