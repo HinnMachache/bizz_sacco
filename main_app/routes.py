@@ -4,7 +4,7 @@ import logging
 from functools import wraps
 from PIL import Image
 from main_app import app, db, bcrypt, mail
-from flask import render_template, flash, request, url_for, redirect, current_app
+from flask import render_template, flash, request, url_for, redirect, current_app, abort
 from main_app.models import User, User_personalData, Admin, Admin_personalData
 from main_app.forms import (RegistrationForm, LoginForm, ApplicationForm,
                             ResetPasswordRequestForm, ResetPasswordForm,
@@ -20,12 +20,40 @@ def role_required(role):
         def decorated_view(*args, **kwargs):
             if not current_user.is_authenticated:
                 return redirect(url_for('login'))
-            if current_user.role != role:
-                flash("You do not have permission to access this page.")
-                return redirect(url_for('home'))
+            try:
+                if current_user.role != role:
+                    flash("You do not have permission to access this page.")
+                    abort(404, description="You do not have permission to access this page.")
+                    return redirect(url_for('home'))                  
+            except AttributeError:
+                abort(404, description="You do not have permission to access this page. Access denied. Please contact Admin")
             return fn(*args, **kwargs)
         return decorated_view
     return wrapper
+
+from main_app import db
+from main_app.models import User, Admin
+
+
+def promote_user_to_admin(user_id):
+    user = User.query.get(user_id)
+
+    if user:
+        
+        new_admin = Admin(
+            username=user.username,
+            email=user.email,
+            password=user.password
+        )
+        
+
+        db.session.add(new_admin)
+        db.session.delete(user)
+        db.session.commit()
+        return True
+    else:
+        return False
+
 
 # Admin Section
 @app.route("/admin")
@@ -127,7 +155,6 @@ def login():
         if user and bcrypt.check_password_hash(user.password, form.password.data):
             login_user(user) # TODO: Implement remember me.
             logging.debug(f"Current User: {current_user.is_authenticated}")
-            logging.debug(f"Session: {session}")
             next_page = request.args.get('next')
             flash("Sign In successfully!")
             return redirect(next_page) if next_page else redirect(url_for('home'))
