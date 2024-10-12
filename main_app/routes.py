@@ -36,10 +36,14 @@ from main_app.models import User, Admin
 
 
 def promote_user_to_admin(user_id):
-    user = User.query.get(user_id)
+    user = User.query.filter_by(user_id=user_id).first()
 
     if user:
-        
+        existing_admin = Admin.query.filter_by(email=user.email).first()
+        if existing_admin:
+            return False  # User is already an admin
+
+        # Promote the user to admin
         new_admin = Admin(
             username=user.username,
             email=user.email,
@@ -54,11 +58,21 @@ def promote_user_to_admin(user_id):
     else:
         return False
 
+# @app.route("/change_user", methods=['POST', 'GET'])
+# @login_required
+# @role_required('admin')
+# def promote_user():
+#     form = RegistrationForm()
+#     user_admin = User.query.filter_by(email=form.email.data).first()
+
+#     if form.valida
+#     if user_admin:
+#         promote_user_to_admin(user_admin.user_id)
 
 # Admin Section
 @app.route("/admin")
 @login_required
-@role_required('admin')
+# @role_required('admin')
 def admin_index():
     return render_template("admin/index.html", title="Admin Dashboard", logo_name="Admin Panel")
 
@@ -229,8 +243,11 @@ def reset_request():
      form = ResetPasswordRequestForm()
      if form.validate_on_submit():
         user = User.query.filter_by(email=form.email.data).first()
+        admin = Admin.query.filter_by(email=form.email.data).first()
         if user:
             send_password_reset_email(user)
+        elif admin:
+            send_password_reset_email(admin)
         flash('An email with reset instuction has been sent to your email', 'info') 
         return redirect(url_for('login'))
      return render_template('user/reset_request.html', form=form)
@@ -240,13 +257,18 @@ def reset_token(token):
     if current_user.is_authenticated:
         return redirect(url_for('home'))
     user = User.verify_reset_password_token(token)
+    admin = Admin.verify_reset_password_token(token)
     if user is None:
+        flash('Invalid or Expired Token', 'danger')
+        return redirect(url_for('reset_request'))
+    elif admin is None:
         flash('Invalid or Expired Token', 'danger')
         return redirect(url_for('reset_request'))
     form = ResetPasswordForm()
     if form.validate_on_submit():
         hash_pw = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
         user.password = hash_pw
+        admin.password = hash_pw
         db.session.commit()
         flash("Your password has been updated! You are now able to sign in")
         return redirect(url_for('login'))

@@ -6,7 +6,7 @@ from wtforms import (StringField, EmailField, PasswordField, IntegerField,
 from flask_wtf.file import FileField, FileAllowed
 from flask_login import current_user
 from wtforms.validators import DataRequired, Email, EqualTo, Length, ValidationError
-from main_app.models import User
+from main_app.models import User, Admin
 
 
 
@@ -55,7 +55,8 @@ class ResetPasswordRequestForm(FlaskForm):
         
     def validate_email(self, email):
         user = User.query.filter_by(email=email.data).first()
-        if user is None:
+        admin = Admin.query.filter_by(email=email.data).first()
+        if user is None and admin is None:
             raise ValidationError("There is no account with that email. You must register first.")  
 
 class ChangePasswordForm(FlaskForm):

@@ -85,7 +85,7 @@ class Admin(db.Model, UserMixin):
                                 algorithms=['HS256'])['reset_password']
         except:
             return None
-        return User.query.get(usr_id)
+        return Admin.query.get(usr_id)
 
     def __repr__(self) -> str:
         return f"{self.username} : {self.email}"
