@@ -2,7 +2,7 @@
 """
 from flask_wtf import FlaskForm
 from wtforms import (StringField, EmailField, PasswordField, IntegerField,
-                     TelField, DateField, SubmitField, RadioField)
+                     TelField, DateField, SubmitField, RadioField, HiddenField)
 from flask_wtf.file import FileField, FileAllowed
 from flask_login import current_user
 from wtforms.validators import DataRequired, Email, EqualTo, Length, ValidationError
@@ -30,6 +30,7 @@ class RegistrationForm(FlaskForm):
     email = EmailField('Email', validators=[DataRequired(), Email()])
     password = PasswordField('Password', validators=[DataRequired()])
     confirm_password = PasswordField('Confirm Password', validators=[DataRequired(), EqualTo('password')])
+    role = HiddenField('Role', default='user')  # To determine Privileges
     submit = SubmitField('Sign Up')
 
     def validate_username(self, username):

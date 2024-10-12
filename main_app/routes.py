@@ -4,7 +4,7 @@ from uuid import uuid4
 from PIL import Image
 from main_app import app, db, bcrypt, mail
 from flask import render_template, flash, request, url_for, redirect, current_app
-from main_app.models import User, User_personalData
+from main_app.models import User, User_personalData, Admin, Admin_personalData
 from main_app.forms import (RegistrationForm, LoginForm, ApplicationForm,
                             ResetPasswordRequestForm, ResetPasswordForm,
                             ChangePasswordForm, UpdateAccountForm)
@@ -70,9 +70,15 @@ def register():
     form = RegistrationForm()
     if form.validate_on_submit():
         hash_pw = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
-        user = User(username=form.username.data, email=form.email.data, password=hash_pw)
+        role = form.role.data
 
-        db.session.add(user)
+        if role == 'user':
+            user = User(username=form.username.data, email=form.email.data, password=hash_pw)
+            db.session.add(user)
+        elif role == 'admin':
+            admin = Admin(username=form.username.data, email=form.email.data, password=hash_pw)
+            db.session.add(admin)
+
         db.session.commit()
         flash("Your Account Has been created succesfully!")
         return redirect(url_for('login'))
@@ -86,13 +92,22 @@ def login():
     form = LoginForm()
     if form.validate_on_submit():
         user = User.query.filter_by(email=form.email.data).first()
+        admin = Admin.query.filter_by(email=form.email.data).first()
+
         if user and bcrypt.check_password_hash(user.password, form.password.data):
             login_user(user) # TODO: Implement remember me.
-            if not user.personal_data:
-                return redirect(url_for('personal_data'))           
+            # if not user.personal_data:
+            #     return redirect(url_for('personal_data'))           
             next_page = request.args.get('next')    # Get next page in the url query
             flash("Sign In successfully!")
             return redirect(next_page) if next_page else redirect(url_for('home'))
+        elif admin and bcrypt.check_password_hash(admin.password, form.password.data):
+            login_user(admin) # TODO: Implement remember me.
+            # if not user.personal_data:
+            #     return redirect(url_for('personal_data'))           
+            next_page = request.args.get('next')    # Get next page in the url query
+            flash("Sign In successfully!")
+            return redirect(next_page) if next_page else redirect(url_for('admin_index'))
         else:
             flash("Log In unsuccessful, please check email and password!")
     return render_template("user/login.html", form=form)
@@ -223,7 +238,7 @@ def save_identification(form_picture):
 
     return picture_fn
 
-@app.route("/update_acoount", methods=['POST', 'GET'])
+@app.route("/update_acount", methods=['POST', 'GET'])
 @login_required
 def update_account():
     form=UpdateAccountForm()
