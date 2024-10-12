@@ -8,10 +8,8 @@ from flask_login import UserMixin   # Manage sessions
 def load_user(user_id):
     return User.query.get(int(user_id))
 
-
-class User(db.Model, UserMixin):
+class BaseUser(db.Model, UserMixin):
     user_id = db.Column(db.Integer, primary_key=True)
-    personal_data = db.relationship('User_personalData', back_populates='user', uselist=False)
     username = db.Column(db.String(30), unique=True, nullable=False)
     email = db.Column(db.String(120), unique=True, nullable=False)
     password = db.Column(db.String, nullable=False)
@@ -38,12 +36,25 @@ class User(db.Model, UserMixin):
     
     def __repr__(self) -> str:
         return f"{self.username} : {self.email}"
+
+class User(BaseUser):
+    user_id = db.Column(db.Integer, db.ForeignKey('base_user.user_id'), primary_key=True)
+    personal_data = db.relationship('User_personalData', back_populates='user', uselist=False)
+   
+    def __repr__(self) -> str:
+        return f"User: {self.username} : {self.email}"
     
 
-class User_personalData(db.Model):
+class Admin(BaseUser):
+    user_id = db.Column(db.Integer, db.ForeignKey('base_user.user_id'), primary_key=True)
+    personal_data = db.relationship('Admin_personalData', back_populates='user', uselist=False)
+   
+    def __repr__(self) -> str:
+        return f"Admin: {self.username} : {self.email}"
+    
+
+class BaseUser_personalData(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    user_id = db.Column(db.Integer, db.ForeignKey('user.user_id'), index=True)  # Foreign Key
-    user = db.relationship('User', back_populates='personal_data', lazy=True)
     surname = db.Column(db.String(30), unique=True, nullable=False)
     other_names = db.Column(db.String(120), unique=True, nullable=False)
     dob = db.Column(db.String(20), nullable=False)
@@ -54,7 +65,23 @@ class User_personalData(db.Model):
     gender= db.Column(db.String(5), nullable=False)
     user_profile = db.Column(db.String(20), nullable=False, default="user.jpeg")
     id_profile = db.Column(db.String(20), nullable=False, default="user.jpeg")
-    
 
     def __repr__(self) -> str:
         return f"{self.surname} : {self.other_names} : {self.user_profile}"
+
+class User_personalData(BaseUser_personalData):
+    user_id = db.Column(db.Integer, db.ForeignKey('user.user_id'), index=True)  # Foreign Key
+    user = db.relationship('User', back_populates='personal_data', lazy=True)
+    
+
+    def __repr__(self) -> str:
+        return f"User: {self.surname} : {self.other_names} : {self.user_profile}"
+
+
+class Admin_personalData(BaseUser_personalData):
+    user_id = db.Column(db.Integer, db.ForeignKey('admin.user_id'), index=True)  # Foreign Key
+    user = db.relationship('User', back_populates='personal_data', lazy=True)
+    
+
+    def __repr__(self) -> str:
+        return f"Admin: {self.surname} : {self.other_names} : {self.user_profile}"

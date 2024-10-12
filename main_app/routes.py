@@ -1,7 +1,6 @@
 import secrets
 import os
 from uuid import uuid4
-from werkzeug.utils import secure_filename
 from PIL import Image
 from main_app import app, db, bcrypt, mail
 from flask import render_template, flash, request, url_for, redirect, current_app
