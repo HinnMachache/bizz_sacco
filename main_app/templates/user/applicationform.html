@@ -22,8 +22,13 @@
 
         <!-- Profile Form -->
         <div class="profile-form">
-            <form method="POST" action="">
+            <form method="POST" action="" enctype="multipart/form-data">
                 {{ form.hidden_tag() }}
+                <!-- Email -->
+                <div class="form-group">
+                    {{ form.email.label }}
+                    {{ form.email() }}
+                </div>
                 <!-- First Name -->
                 <div class="form-group">
                     {{ form.other_names.label }}

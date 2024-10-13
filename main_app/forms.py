@@ -2,7 +2,8 @@
 """
 from flask_wtf import FlaskForm
 from wtforms import (StringField, EmailField, PasswordField, IntegerField,
-                     TelField, DateField, SubmitField, RadioField, HiddenField)
+                     TelField, DateField, SubmitField, RadioField, HiddenField,
+                     SelectField)
 from flask_wtf.file import FileField, FileAllowed
 from flask_login import current_user
 from wtforms.validators import DataRequired, Email, EqualTo, Length, ValidationError
@@ -12,6 +13,7 @@ from main_app.models import User, Admin
 
 class ApplicationForm(FlaskForm):
     """ Registration Form"""
+    email = SelectField("Email", validators=[DataRequired()])
     surname = StringField('Last Name', validators=[DataRequired(), Length(min=2, max=25)])
     other_names = StringField('First Name', validators=[DataRequired(), Length(min=2, max=50)])
     dob = DateField('Date of Birth', validators=[DataRequired()])
@@ -20,7 +22,7 @@ class ApplicationForm(FlaskForm):
     address = StringField('Address', validators=[DataRequired(), Length(min=2, max=30)])
     postal_code = IntegerField('Postal Code', validators=[DataRequired()])
     passport_photo = FileField('Profile Picture', validators=[FileAllowed(['jpg', 'jpeg', 'png'])])
-    copy_photo = FileField('Copy of ID Card/Passport', validators=[DataRequired(), FileAllowed(['jpg', 'jpeg', 'png'])])
+    copy_photo = FileField('Copy of ID Card/Passport', validators=[FileAllowed(['jpg', 'jpeg', 'png'])])
     gender = RadioField('Gender', choices=[('male', 'Male'), ('female', 'Female'), ('other', 'Other')])
     submit = SubmitField('Save Info')
     

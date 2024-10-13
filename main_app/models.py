@@ -1,4 +1,5 @@
 from main_app import db, login_manager, app
+from datetime import datetime
 import jwt
 from time import time
 from flask_login import UserMixin   # Manage sessions
@@ -53,8 +54,8 @@ class User_personalData(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.user_id'), nullable=False)  # Foreign Key
     user = db.relationship('User', back_populates='personal_data', lazy=True)
-    surname = db.Column(db.String(30), unique=True, nullable=False)
-    other_names = db.Column(db.String(120), unique=True, nullable=False)
+    surname = db.Column(db.String(30), nullable=False)
+    other_names = db.Column(db.String(120), nullable=False)
     dob = db.Column(db.String(20), nullable=False)
     id_number = db.Column(db.Integer, unique=True, nullable=False)
     telephone_no = db.Column(db.String(20), unique=True, nullable=False)
@@ -125,3 +126,10 @@ class Admin_personalData(db.Model):
 
     def __repr__(self) -> str:
         return f"Admin Data -> {self.surname} : {self.other_names} : {self.user_profile}"
+    
+# Show newly registered users to admin
+class Notification(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    user_email = db.Column(db.String(120), nullable=False)
+    created_at = db.Column(db.DateTime, default=datetime.now())
+    is_read = db.Column(db.Boolean, default=False)

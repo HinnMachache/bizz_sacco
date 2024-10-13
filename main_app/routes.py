@@ -1,16 +1,20 @@
 import secrets
 import os
 import logging
+from sqlalchemy.exc import IntegrityError
 from functools import wraps
 from PIL import Image
 from main_app import app, db, bcrypt, mail
 from flask import render_template, flash, request, url_for, redirect, current_app, abort
-from main_app.models import User, User_personalData, Admin, Admin_personalData
+from main_app.models import User, User_personalData, Admin, Admin_personalData, Notification
 from main_app.forms import (RegistrationForm, LoginForm, ApplicationForm,
                             ResetPasswordRequestForm, ResetPasswordForm,
                             ChangePasswordForm, UpdateAccountForm)
 from flask_login import login_user, logout_user, current_user, login_required
 from flask_mail import Message
+from main_app import db
+from main_app.models import User, Admin
+
 
 
 # Role Required Decorator
@@ -30,9 +34,6 @@ def role_required(role):
             return fn(*args, **kwargs)
         return decorated_view
     return wrapper
-
-from main_app import db
-from main_app.models import User, Admin
 
 
 def promote_user_to_admin(user_id):
@@ -58,16 +59,63 @@ def promote_user_to_admin(user_id):
     else:
         return False
 
-# @app.route("/change_user", methods=['POST', 'GET'])
-# @login_required
-# @role_required('admin')
-# def promote_user():
-#     form = RegistrationForm()
-#     user_admin = User.query.filter_by(email=form.email.data).first()
+# Set up logging configuration
+logging.basicConfig(filename='app.log', level=logging.DEBUG,  # Set the logging level to DEBUG
+                format='%(asctime)s - %(levelname)s - %(message)s') 
 
-#     if form.valida
-#     if user_admin:
-#         promote_user_to_admin(user_admin.user_id)
+# Add User data to database
+@app.route("/admin/personal_data", methods=["POST", "GET"])
+@login_required
+def add_personal_data():
+    form=ApplicationForm()
+
+    users = User.query.all()  # Fetch all users
+    form.email.choices = [(user.email, user.email) for user in users]
+
+    if form.validate_on_submit():
+        user_email = form.email.data
+        user = User.query.filter_by(email=user_email).first()
+
+        if user:
+            p_data = User_personalData(user_id=user.user_id, surname=form.surname.data, other_names=form.other_names.data, dob=form.dob.data,
+                                   id_number=form.id_number.data, telephone_no=form.phone_number.data, address=form.address.data,
+                                   postal_code=form.postal_code.data, gender=form.gender.data)
+
+            # Save passport photo
+            if form.passport_photo.data:
+                passport_photo_file = save_picture(form.passport_photo.data)
+                p_data.user_profile = passport_photo_file
+            
+            # Save copy of ID card/passport
+            if form.copy_photo.data:
+                copy_photo_file = save_identification(form.copy_photo.data)
+                p_data.id_profile = copy_photo_file
+
+            try:
+                db.session.add(p_data)
+                db.session.commit()
+                flash("Personal data added successfully!", 'success')
+
+                return redirect(url_for('admin_index'))
+            except Exception as e:
+                print("Error occured durin commit")
+                db.session.rollback()  # Rollback in case of error
+                print(f"Error committing data: {e}")
+                flash("An error occurred while saving personal data.", 'error')
+            except IntegrityError as e:
+                flash("IntegrityError occurred during commit")
+
+                db.session.rollback()  # Rollback in case of error
+                flash("An error occurred: Duplicate surname or telephone number entry. Please check these fields.", 'error')
+                # Check for which field caused the integrity error
+               
+                flash("An error occurred while saving personal data.", 'error')
+        else:
+            flash("User not found."), 404
+    else:
+        print("Form Failed")
+        logging.debug(f"Current User: {current_user.is_authenticated}")        
+    return render_template("user/applicationform.html", form=form, title="Application Form") 
 
 # Admin Section
 @app.route("/admin")
@@ -76,8 +124,28 @@ def promote_user_to_admin(user_id):
 def admin_index():
     member_count = User.query.count()
     staff_count = Admin.query.count()
+    notifications = Notification.query.filter_by(is_read=False).all()
+
     return render_template("admin/index.html", staff_count=staff_count, member_count=member_count,
-                           title="Admin Dashboard", logo_name="Admin Panel")
+                           notifications=notifications, title="Admin Dashboard", logo_name="Admin Panel")
+
+# View User registration state
+@app.route("/admin/view_user/<email>")
+@login_required
+def view_user_data(email):
+    user = User.query.filter_by(email=email).first()
+    return render_template("admin/view_user.html", user=user)
+
+# mark Notifications
+@app.route("/admin/mark_notification_read/<int:notification_id>", methods=["POST"])
+@login_required
+def mark_notification_read(notification_id):
+    notification = Notification.query.get(notification_id)
+    if notification:
+        notification.is_read = True
+        db.session.commit()
+    return redirect(url_for("admin_index"))
+
 
 @app.route("/admin/loans")
 @login_required
@@ -146,6 +214,7 @@ def register():
         return redirect(url_for('home'))
     form = RegistrationForm()
     if form.validate_on_submit():
+        email=request.form.get('email')
         hash_pw = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
         role = form.role.data
 
@@ -157,13 +226,15 @@ def register():
             db.session.add(admin)
 
         db.session.commit()
+
+        notification = Notification(user_email=email)
+        db.session.add(notification)
+        db.session.commit()
         flash("Your Account Has been created succesfully!")
         return redirect(url_for('login'))
     return render_template("user/registration.html", form=form)
 
-# Set up logging configuration
-logging.basicConfig(filename='app.log', level=logging.DEBUG,  # Set the logging level to DEBUG
-                format='%(asctime)s - %(levelname)s - %(message)s') 
+
 
 @app.route("/login", methods=['POST', 'GET'])
 def login():   
@@ -176,7 +247,6 @@ def login():
 
         if user and bcrypt.check_password_hash(user.password, form.password.data):
             login_user(user) # TODO: Implement remember me.
-            logging.debug(f"Current User: {current_user.is_authenticated}")
             next_page = request.args.get('next')
             flash("Sign In successfully!")
             return redirect(next_page) if next_page else redirect(url_for('home'))

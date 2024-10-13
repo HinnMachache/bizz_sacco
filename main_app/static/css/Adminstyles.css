@@ -315,3 +315,31 @@ canvas {
         flex: 1 1 calc(33.33% - 1rem); /* Responsive card sizing */
     }
 }
+
+.button-link {
+    text-decoration: none; /* Removes the underline */
+    color: white; /* Keeps the color, you can customize it */
+    background-color: #007bff; /* Button background color */
+    padding: 10px 20px; /* Adjust padding to make it look like a button */
+    border-radius: 5px; /* Rounded corners */
+    display: inline-block; /* Makes it behave like a button */
+    font-size: 16px; /* Text size */
+}
+
+.button-link:hover {
+    color: white; /* Prevents color change on hover */
+    background-color: #0056b3; /* Changes background on hover */
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert-info {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+}

@@ -6,45 +6,70 @@
 
 {% block main_cont %}
 <h2 class="greeting">Welcome Back, {{ current_user.username }}</h2>
-            <section class="dashboard-snapshot">
-                <div class="snapshot-card">Total Members: <span id="totalMembers">{{ member_count }}</span></div>
-                <div class="snapshot-card">Total Staff: <span id="totalStaff">{{ staff_count }}</span></div>
-                <div class="snapshot-card">Loans Approved: <span id="loansApproved">25</span></div>
-                <div class="snapshot-card">Pending Loans: <span id="pendingLoans">5</span></div>
-                <div class="snapshot-card">System Status: <span id="systemStatus">Online</span></div>
-                <div class="snapshot-card">Active Users Today: <span id="activeUsers">75</span></div>
-            </section>
-            <section class="dashboard-charts">
-                <div class="chart-container">
-                    <canvas id="loanApprovalChart"></canvas>
-                </div>
-                <div class="chart-container">
-                    <canvas id="memberGrowthChart"></canvas>
-                </div>
-                <div class="chart-container">
-                    <canvas id="pendingVsApprovedChart"></canvas>
-                </div>
-                <div class="chart-container">
-                    <canvas id="userEngagementChart"></canvas>
-                </div>
-            </section>
-            <section class="quick-actions">
-                <h3>Quick Actions</h3>
-                <div class="action-buttons">
-                    <button class="action-button"><i class="fas fa-user-plus"></i> Add Member</button>
-                    <button class="action-button"><i class="fas fa-check-circle"></i> Approve Loans</button>
-                    <button class="action-button"><i class="fas fa-file-alt"></i> Generate Report</button>
-                </div>
-            </section>
-            <section class="recent-activity">
-                <h3>Recent Activity</h3>
-                <ul id="activityLog">
-                    <li><i class="fas fa-user-plus"></i> New member registered: John Doe</li>
-                    <li><i class="fas fa-check-circle"></i> Loan approved for: Jane Smith</li>
-                    <li><i class="fas fa-user-tie"></i> New staff added: Alex Johnson</li>
-                    <li><i class="fas fa-file-invoice-dollar"></i> Loan request received: Mike Brown</li>
-                </ul>
-            </section>
+<section class="dashboard-snapshot">
+    <div class="snapshot-card">Total Members: <span id="totalMembers">{{ member_count }}</span></div>
+    <div class="snapshot-card">Total Staff: <span id="totalStaff">{{ staff_count }}</span></div>
+    <div class="snapshot-card">Loans Approved: <span id="loansApproved">25</span></div>
+    <div class="snapshot-card">Pending Loans: <span id="pendingLoans">5</span></div>
+    <div class="snapshot-card">System Status: <span id="systemStatus">Online</span></div>
+    <div class="snapshot-card">Active Users Today: <span id="activeUsers">75</span></div>
+</section>
+<section class="dashboard-charts">
+    <div class="chart-container">
+        <canvas id="loanApprovalChart"></canvas>
+    </div>
+    <div class="chart-container">
+        <canvas id="memberGrowthChart"></canvas>
+    </div>
+    <div class="chart-container">
+        <canvas id="pendingVsApprovedChart"></canvas>
+    </div>
+    <div class="chart-container">
+        <canvas id="userEngagementChart"></canvas>
+    </div>
+</section>
+<section class="quick-actions">
+    <h3>Quick Actions</h3>
+    <div class="action-buttons">
+        <button class="action-button"><i class="fas fa-user-plus"></i> Add Member</button>
+        <button class="action-button"><i class="fas fa-check-circle"></i> Approve Loans</button>
+        <button class="action-button"><i class="fas fa-file-alt"></i> Generate Report</button>
+    </div>
+</section>
+<!-- Indicates state of revision-->
+<section class="recent-activity">
+    <h3>Registration</h3>
+    {% if notifications %}
+    <div class="alert alert-info" role="alert">
+        New Registrations:
+    </div>
+    <ul>
+        {% for notification in notifications %}
+        <li>
+            New user registered: {{ notification.user_email }}
+            <a href="{{ url_for('view_user_data', email=notification.user_email) }}" class="btn btn-primary">View</a>
+            <form action="{{ url_for('mark_notification_read', notification_id=notification.id) }}" method="POST"
+                style="display:inline;">
+                <button type="submit" class="btn btn-secondary">Mark as Read</button>
+            </form>
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <div class="alert alert-success" role="alert">
+        No new registrations.
+    </div>
+    {% endif %}
+</section>
+<section class="recent-activity">
+    <h3>Recent Activity</h3>
+    <ul id="activityLog">
+        <li><i class="fas fa-user-plus"></i> New member registered: John Doe</li>
+        <li><i class="fas fa-check-circle"></i> Loan approved for: Jane Smith</li>
+        <li><i class="fas fa-user-tie"></i> New staff added: Alex Johnson</li>
+        <li><i class="fas fa-file-invoice-dollar"></i> Loan request received: Mike Brown</li>
+    </ul>
+</section>
 {% endblock %}
 {% block script %}
 <script src="{{ url_for('static', filename='/js/script.js') }}"></script>

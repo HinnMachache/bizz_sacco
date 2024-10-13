@@ -1,1270 +1,396 @@
-2024-10-12 19:20:14,721 - WARNING -  * Debugger is active!
-2024-10-12 19:20:14,721 - INFO -  * Debugger PIN: 718-713-251
-2024-10-12 19:20:36,090 - DEBUG - Current User: False
-2024-10-12 19:20:36,511 - INFO - 127.0.0.1 - - [12/Oct/2024 19:20:36] "POST /login?next=/overview HTTP/1.1" 200 -
-2024-10-12 19:20:36,547 - INFO - 127.0.0.1 - - [12/Oct/2024 19:20:36] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 19:20:36,548 - INFO - 127.0.0.1 - - [12/Oct/2024 19:20:36] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 19:21:00,586 - DEBUG - Current User: False
-2024-10-12 19:21:00,966 - INFO - 127.0.0.1 - - [12/Oct/2024 19:21:00] "[32mPOST /login?next=/overview HTTP/1.1[0m" 302 -
-2024-10-12 19:21:00,973 - INFO - 127.0.0.1 - - [12/Oct/2024 19:21:00] "[32mGET /overview HTTP/1.1[0m" 302 -
-2024-10-12 19:21:00,978 - DEBUG - Current User: False
-2024-10-12 19:21:00,980 - INFO - 127.0.0.1 - - [12/Oct/2024 19:21:00] "GET /login?next=/overview HTTP/1.1" 200 -
-2024-10-12 19:21:01,007 - INFO - 127.0.0.1 - - [12/Oct/2024 19:21:01] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 19:21:01,009 - INFO - 127.0.0.1 - - [12/Oct/2024 19:21:01] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 19:23:37,505 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-12 19:23:38,389 - WARNING -  * Debugger is active!
-2024-10-12 19:23:38,390 - INFO -  * Debugger PIN: 718-713-251
-2024-10-12 19:23:44,504 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-12 19:23:45,349 - WARNING -  * Debugger is active!
-2024-10-12 19:23:45,349 - INFO -  * Debugger PIN: 718-713-251
-2024-10-12 19:23:49,474 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-12 19:23:50,208 - WARNING -  * Debugger is active!
-2024-10-12 19:23:50,209 - INFO -  * Debugger PIN: 718-713-251
-2024-10-12 19:24:28,439 - INFO - 127.0.0.1 - - [12/Oct/2024 19:24:28] "POST /login?next=/overview HTTP/1.1" 200 -
-2024-10-12 19:24:28,489 - INFO - 127.0.0.1 - - [12/Oct/2024 19:24:28] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 19:24:28,491 - INFO - 127.0.0.1 - - [12/Oct/2024 19:24:28] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 19:24:50,151 - DEBUG - Current User: True
-2024-10-12 19:24:50,152 - INFO - 127.0.0.1 - - [12/Oct/2024 19:24:50] "[32mPOST /login?next=/overview HTTP/1.1[0m" 302 -
-2024-10-12 19:24:50,156 - INFO - 127.0.0.1 - - [12/Oct/2024 19:24:50] "[32mGET /overview HTTP/1.1[0m" 302 -
-2024-10-12 19:24:50,162 - INFO - 127.0.0.1 - - [12/Oct/2024 19:24:50] "GET /login?next=/overview HTTP/1.1" 200 -
-2024-10-12 19:24:50,189 - INFO - 127.0.0.1 - - [12/Oct/2024 19:24:50] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 19:24:50,192 - INFO - 127.0.0.1 - - [12/Oct/2024 19:24:50] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 19:29:07,045 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-12 19:29:07,947 - WARNING -  * Debugger is active!
-2024-10-12 19:29:07,948 - INFO -  * Debugger PIN: 718-713-251
-2024-10-12 19:32:14,365 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/models.py', reloading
-2024-10-12 19:32:15,264 - WARNING -  * Debugger is active!
-2024-10-12 19:32:15,265 - INFO -  * Debugger PIN: 718-713-251
-2024-10-12 19:32:26,332 - INFO - 127.0.0.1 - - [12/Oct/2024 19:32:26] "[32mGET /login?next=/overview HTTP/1.1[0m" 302 -
-2024-10-12 19:32:26,385 - INFO - 127.0.0.1 - - [12/Oct/2024 19:32:26] "[35m[1mGET /overview HTTP/1.1[0m" 500 -
-2024-10-12 19:32:26,426 - INFO - 127.0.0.1 - - [12/Oct/2024 19:32:26] "GET /overview?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-2024-10-12 19:32:26,427 - INFO - 127.0.0.1 - - [12/Oct/2024 19:32:26] "GET /overview?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-2024-10-12 19:32:26,452 - INFO - 127.0.0.1 - - [12/Oct/2024 19:32:26] "GET /overview?__debugger__=yes&cmd=resource&f=console.png&s=Wlury6KrbEi8l6VctTjy HTTP/1.1" 200 -
-2024-10-12 19:32:26,472 - INFO - 127.0.0.1 - - [12/Oct/2024 19:32:26] "[36mGET /overview?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
-2024-10-12 19:33:44,608 - INFO - 127.0.0.1 - - [12/Oct/2024 19:33:44] "[35m[1mGET /overview HTTP/1.1[0m" 500 -
-2024-10-12 19:33:44,638 - INFO - 127.0.0.1 - - [12/Oct/2024 19:33:44] "[36mGET /overview?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-2024-10-12 19:33:44,639 - INFO - 127.0.0.1 - - [12/Oct/2024 19:33:44] "[36mGET /overview?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-2024-10-12 19:33:44,652 - INFO - 127.0.0.1 - - [12/Oct/2024 19:33:44] "[36mGET /overview?__debugger__=yes&cmd=resource&f=console.png&s=Wlury6KrbEi8l6VctTjy HTTP/1.1[0m" 304 -
-2024-10-12 19:33:44,671 - INFO - 127.0.0.1 - - [12/Oct/2024 19:33:44] "[36mGET /overview?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
-2024-10-12 19:33:48,417 - INFO - 127.0.0.1 - - [12/Oct/2024 19:33:48] "[35m[1mGET /overview HTTP/1.1[0m" 500 -
-2024-10-12 19:33:48,439 - INFO - 127.0.0.1 - - [12/Oct/2024 19:33:48] "[36mGET /overview?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-2024-10-12 19:33:48,443 - INFO - 127.0.0.1 - - [12/Oct/2024 19:33:48] "[36mGET /overview?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-2024-10-12 19:33:48,454 - INFO - 127.0.0.1 - - [12/Oct/2024 19:33:48] "[36mGET /overview?__debugger__=yes&cmd=resource&f=console.png&s=Wlury6KrbEi8l6VctTjy HTTP/1.1[0m" 304 -
-2024-10-12 19:33:48,473 - INFO - 127.0.0.1 - - [12/Oct/2024 19:33:48] "[36mGET /overview?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
-2024-10-12 19:33:50,930 - INFO - 127.0.0.1 - - [12/Oct/2024 19:33:50] "[35m[1mGET /overview HTTP/1.1[0m" 500 -
-2024-10-12 19:33:50,952 - INFO - 127.0.0.1 - - [12/Oct/2024 19:33:50] "[36mGET /overview?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-2024-10-12 19:33:50,958 - INFO - 127.0.0.1 - - [12/Oct/2024 19:33:50] "[36mGET /overview?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-2024-10-12 19:33:50,968 - INFO - 127.0.0.1 - - [12/Oct/2024 19:33:50] "[36mGET /overview?__debugger__=yes&cmd=resource&f=console.png&s=Wlury6KrbEi8l6VctTjy HTTP/1.1[0m" 304 -
-2024-10-12 19:33:50,989 - INFO - 127.0.0.1 - - [12/Oct/2024 19:33:50] "[36mGET /overview?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
-2024-10-12 19:35:12,292 - INFO - 127.0.0.1 - - [12/Oct/2024 19:35:12] "GET /overview HTTP/1.1" 200 -
-2024-10-12 19:35:12,319 - INFO - 127.0.0.1 - - [12/Oct/2024 19:35:12] "GET /static/assets/user.jpeg HTTP/1.1" 200 -
-2024-10-12 19:35:12,330 - INFO - 127.0.0.1 - - [12/Oct/2024 19:35:12] "GET /static/css/styles.css HTTP/1.1" 200 -
-2024-10-12 19:35:12,338 - INFO - 127.0.0.1 - - [12/Oct/2024 19:35:12] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 19:35:25,036 - INFO - 127.0.0.1 - - [12/Oct/2024 19:35:25] "[35m[1mGET /deposit HTTP/1.1[0m" 500 -
-2024-10-12 19:35:25,080 - INFO - 127.0.0.1 - - [12/Oct/2024 19:35:25] "GET /deposit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-2024-10-12 19:35:25,087 - INFO - 127.0.0.1 - - [12/Oct/2024 19:35:25] "GET /deposit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-2024-10-12 19:35:25,121 - INFO - 127.0.0.1 - - [12/Oct/2024 19:35:25] "GET /deposit?__debugger__=yes&cmd=resource&f=console.png&s=Wlury6KrbEi8l6VctTjy HTTP/1.1" 200 -
-2024-10-12 19:35:25,150 - INFO - 127.0.0.1 - - [12/Oct/2024 19:35:25] "GET /deposit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-2024-10-12 19:35:33,307 - INFO - 127.0.0.1 - - [12/Oct/2024 19:35:33] "GET /overview HTTP/1.1" 200 -
-2024-10-12 19:35:33,334 - INFO - 127.0.0.1 - - [12/Oct/2024 19:35:33] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
-2024-10-12 19:35:33,337 - INFO - 127.0.0.1 - - [12/Oct/2024 19:35:33] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 19:35:33,345 - INFO - 127.0.0.1 - - [12/Oct/2024 19:35:33] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 19:35:34,503 - INFO - 127.0.0.1 - - [12/Oct/2024 19:35:34] "GET /overview HTTP/1.1" 200 -
-2024-10-12 19:35:34,575 - INFO - 127.0.0.1 - - [12/Oct/2024 19:35:34] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
-2024-10-12 19:35:34,597 - INFO - 127.0.0.1 - - [12/Oct/2024 19:35:34] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 19:35:34,603 - INFO - 127.0.0.1 - - [12/Oct/2024 19:35:34] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 19:35:36,986 - INFO - 127.0.0.1 - - [12/Oct/2024 19:35:36] "[35m[1mGET /profile HTTP/1.1[0m" 500 -
-2024-10-12 19:35:37,036 - INFO - 127.0.0.1 - - [12/Oct/2024 19:35:37] "GET /profile?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-2024-10-12 19:35:37,039 - INFO - 127.0.0.1 - - [12/Oct/2024 19:35:37] "GET /profile?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-2024-10-12 19:35:37,060 - INFO - 127.0.0.1 - - [12/Oct/2024 19:35:37] "GET /profile?__debugger__=yes&cmd=resource&f=console.png&s=Wlury6KrbEi8l6VctTjy HTTP/1.1" 200 -
-2024-10-12 19:35:37,084 - INFO - 127.0.0.1 - - [12/Oct/2024 19:35:37] "[36mGET /profile?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
-2024-10-12 19:35:44,000 - INFO - 127.0.0.1 - - [12/Oct/2024 19:35:44] "GET /overview HTTP/1.1" 200 -
-2024-10-12 19:35:44,062 - INFO - 127.0.0.1 - - [12/Oct/2024 19:35:44] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
-2024-10-12 19:35:44,071 - INFO - 127.0.0.1 - - [12/Oct/2024 19:35:44] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 19:35:44,077 - INFO - 127.0.0.1 - - [12/Oct/2024 19:35:44] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 19:36:39,094 - INFO - 127.0.0.1 - - [12/Oct/2024 19:36:39] "[35m[1mGET /deposit HTTP/1.1[0m" 500 -
-2024-10-12 19:36:39,119 - INFO - 127.0.0.1 - - [12/Oct/2024 19:36:39] "[36mGET /deposit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-2024-10-12 19:36:39,124 - INFO - 127.0.0.1 - - [12/Oct/2024 19:36:39] "[36mGET /deposit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-2024-10-12 19:36:39,148 - INFO - 127.0.0.1 - - [12/Oct/2024 19:36:39] "[36mGET /deposit?__debugger__=yes&cmd=resource&f=console.png&s=Wlury6KrbEi8l6VctTjy HTTP/1.1[0m" 304 -
-2024-10-12 19:37:47,498 - INFO - 127.0.0.1 - - [12/Oct/2024 19:37:47] "GET /overview HTTP/1.1" 200 -
-2024-10-12 19:37:47,528 - INFO - 127.0.0.1 - - [12/Oct/2024 19:37:47] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
-2024-10-12 19:37:47,533 - INFO - 127.0.0.1 - - [12/Oct/2024 19:37:47] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 19:37:47,541 - INFO - 127.0.0.1 - - [12/Oct/2024 19:37:47] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 19:37:54,482 - INFO - 127.0.0.1 - - [12/Oct/2024 19:37:54] "[35m[1mGET /admin/staff HTTP/1.1[0m" 500 -
-2024-10-12 19:37:54,502 - INFO - 127.0.0.1 - - [12/Oct/2024 19:37:54] "GET /admin/staff?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-2024-10-12 19:37:54,506 - INFO - 127.0.0.1 - - [12/Oct/2024 19:37:54] "GET /admin/staff?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-2024-10-12 19:37:54,528 - INFO - 127.0.0.1 - - [12/Oct/2024 19:37:54] "GET /admin/staff?__debugger__=yes&cmd=resource&f=console.png&s=Wlury6KrbEi8l6VctTjy HTTP/1.1" 200 -
-2024-10-12 19:37:54,545 - INFO - 127.0.0.1 - - [12/Oct/2024 19:37:54] "GET /admin/staff?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-2024-10-12 19:38:16,112 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-12 19:38:17,022 - WARNING -  * Debugger is active!
-2024-10-12 19:38:17,023 - INFO -  * Debugger PIN: 718-713-251
-2024-10-12 19:38:24,200 - INFO - 127.0.0.1 - - [12/Oct/2024 19:38:24] "[35m[1mGET /admin/loans HTTP/1.1[0m" 500 -
-2024-10-12 19:38:24,239 - INFO - 127.0.0.1 - - [12/Oct/2024 19:38:24] "GET /admin/loans?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-2024-10-12 19:38:24,240 - INFO - 127.0.0.1 - - [12/Oct/2024 19:38:24] "GET /admin/loans?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-2024-10-12 19:38:24,267 - INFO - 127.0.0.1 - - [12/Oct/2024 19:38:24] "GET /admin/loans?__debugger__=yes&cmd=resource&f=console.png&s=XOQiS25PTTjhvjCtschT HTTP/1.1" 200 -
-2024-10-12 19:38:24,284 - INFO - 127.0.0.1 - - [12/Oct/2024 19:38:24] "GET /admin/loans?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-2024-10-12 19:39:41,594 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-12 19:39:42,601 - WARNING -  * Debugger is active!
-2024-10-12 19:39:42,601 - INFO -  * Debugger PIN: 718-713-251
-2024-10-12 19:40:45,035 - INFO - 127.0.0.1 - - [12/Oct/2024 19:40:45] "GET /overview HTTP/1.1" 200 -
-2024-10-12 19:40:45,066 - INFO - 127.0.0.1 - - [12/Oct/2024 19:40:45] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
-2024-10-12 19:40:45,067 - INFO - 127.0.0.1 - - [12/Oct/2024 19:40:45] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 19:40:45,068 - INFO - 127.0.0.1 - - [12/Oct/2024 19:40:45] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 19:40:46,244 - INFO - 127.0.0.1 - - [12/Oct/2024 19:40:46] "GET /overview HTTP/1.1" 200 -
-2024-10-12 19:40:46,332 - INFO - 127.0.0.1 - - [12/Oct/2024 19:40:46] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
-2024-10-12 19:40:46,346 - INFO - 127.0.0.1 - - [12/Oct/2024 19:40:46] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 19:40:46,347 - INFO - 127.0.0.1 - - [12/Oct/2024 19:40:46] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 19:41:07,749 - INFO - 127.0.0.1 - - [12/Oct/2024 19:41:07] "GET /overview HTTP/1.1" 200 -
-2024-10-12 19:41:07,770 - INFO - 127.0.0.1 - - [12/Oct/2024 19:41:07] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
-2024-10-12 19:41:07,778 - INFO - 127.0.0.1 - - [12/Oct/2024 19:41:07] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 19:41:07,779 - INFO - 127.0.0.1 - - [12/Oct/2024 19:41:07] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 19:41:30,999 - INFO - 127.0.0.1 - - [12/Oct/2024 19:41:30] "GET /overview HTTP/1.1" 200 -
-2024-10-12 19:41:31,097 - INFO - 127.0.0.1 - - [12/Oct/2024 19:41:31] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
-2024-10-12 19:41:31,106 - INFO - 127.0.0.1 - - [12/Oct/2024 19:41:31] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 19:41:31,108 - INFO - 127.0.0.1 - - [12/Oct/2024 19:41:31] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 19:41:31,954 - INFO - 127.0.0.1 - - [12/Oct/2024 19:41:31] "GET /transaction HTTP/1.1" 200 -
-2024-10-12 19:41:31,978 - INFO - 127.0.0.1 - - [12/Oct/2024 19:41:31] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
-2024-10-12 19:41:31,986 - INFO - 127.0.0.1 - - [12/Oct/2024 19:41:31] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 19:41:31,990 - INFO - 127.0.0.1 - - [12/Oct/2024 19:41:31] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 19:41:33,261 - INFO - 127.0.0.1 - - [12/Oct/2024 19:41:33] "GET /application HTTP/1.1" 200 -
-2024-10-12 19:41:33,346 - INFO - 127.0.0.1 - - [12/Oct/2024 19:41:33] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
-2024-10-12 19:41:33,359 - INFO - 127.0.0.1 - - [12/Oct/2024 19:41:33] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 19:41:33,361 - INFO - 127.0.0.1 - - [12/Oct/2024 19:41:33] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 19:41:35,069 - INFO - 127.0.0.1 - - [12/Oct/2024 19:41:35] "GET /withdrawals HTTP/1.1" 200 -
-2024-10-12 19:41:35,145 - INFO - 127.0.0.1 - - [12/Oct/2024 19:41:35] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
-2024-10-12 19:41:35,153 - INFO - 127.0.0.1 - - [12/Oct/2024 19:41:35] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 19:41:35,153 - INFO - 127.0.0.1 - - [12/Oct/2024 19:41:35] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 19:41:37,156 - INFO - 127.0.0.1 - - [12/Oct/2024 19:41:37] "GET /profile HTTP/1.1" 200 -
-2024-10-12 19:41:37,230 - INFO - 127.0.0.1 - - [12/Oct/2024 19:41:37] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
-2024-10-12 19:41:37,242 - INFO - 127.0.0.1 - - [12/Oct/2024 19:41:37] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 19:41:37,245 - INFO - 127.0.0.1 - - [12/Oct/2024 19:41:37] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 19:41:38,790 - INFO - 127.0.0.1 - - [12/Oct/2024 19:41:38] "GET /profile HTTP/1.1" 200 -
-2024-10-12 19:41:38,813 - INFO - 127.0.0.1 - - [12/Oct/2024 19:41:38] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
-2024-10-12 19:41:38,818 - INFO - 127.0.0.1 - - [12/Oct/2024 19:41:38] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 19:41:38,825 - INFO - 127.0.0.1 - - [12/Oct/2024 19:41:38] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 19:42:32,716 - INFO - 127.0.0.1 - - [12/Oct/2024 19:42:32] "GET /update_password HTTP/1.1" 200 -
-2024-10-12 19:42:32,737 - INFO - 127.0.0.1 - - [12/Oct/2024 19:42:32] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
-2024-10-12 19:42:32,745 - INFO - 127.0.0.1 - - [12/Oct/2024 19:42:32] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 19:42:32,747 - INFO - 127.0.0.1 - - [12/Oct/2024 19:42:32] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 19:42:46,789 - INFO - 127.0.0.1 - - [12/Oct/2024 19:42:46] "[32mPOST /update_password HTTP/1.1[0m" 302 -
-2024-10-12 19:42:46,794 - INFO - 127.0.0.1 - - [12/Oct/2024 19:42:46] "GET /profile HTTP/1.1" 200 -
-2024-10-12 19:42:46,828 - INFO - 127.0.0.1 - - [12/Oct/2024 19:42:46] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
-2024-10-12 19:42:46,837 - INFO - 127.0.0.1 - - [12/Oct/2024 19:42:46] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 19:42:46,839 - INFO - 127.0.0.1 - - [12/Oct/2024 19:42:46] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 19:42:51,277 - INFO - 127.0.0.1 - - [12/Oct/2024 19:42:51] "GET /overview HTTP/1.1" 200 -
-2024-10-12 19:42:51,353 - INFO - 127.0.0.1 - - [12/Oct/2024 19:42:51] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
-2024-10-12 19:42:51,372 - INFO - 127.0.0.1 - - [12/Oct/2024 19:42:51] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 19:42:51,374 - INFO - 127.0.0.1 - - [12/Oct/2024 19:42:51] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 19:43:51,090 - INFO - 127.0.0.1 - - [12/Oct/2024 19:43:51] "GET /profile HTTP/1.1" 200 -
-2024-10-12 19:43:51,173 - INFO - 127.0.0.1 - - [12/Oct/2024 19:43:51] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
-2024-10-12 19:43:51,194 - INFO - 127.0.0.1 - - [12/Oct/2024 19:43:51] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 19:43:51,200 - INFO - 127.0.0.1 - - [12/Oct/2024 19:43:51] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 19:43:52,742 - INFO - 127.0.0.1 - - [12/Oct/2024 19:43:52] "[35m[1mGET /update_acount HTTP/1.1[0m" 500 -
-2024-10-12 19:43:52,800 - INFO - 127.0.0.1 - - [12/Oct/2024 19:43:52] "GET /update_acount?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-2024-10-12 19:43:52,806 - INFO - 127.0.0.1 - - [12/Oct/2024 19:43:52] "GET /update_acount?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-2024-10-12 19:43:52,829 - INFO - 127.0.0.1 - - [12/Oct/2024 19:43:52] "GET /update_acount?__debugger__=yes&cmd=resource&f=console.png&s=qeuaoq2v8ppcOgnLLrek HTTP/1.1" 200 -
-2024-10-12 19:43:52,845 - INFO - 127.0.0.1 - - [12/Oct/2024 19:43:52] "GET /update_acount?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-2024-10-12 21:27:01,750 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2024-10-13 12:50:56,069 - INFO - 192.168.100.41 - - [13/Oct/2024 12:50:56] "POST /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 12:50:56,110 - INFO - 192.168.100.41 - - [13/Oct/2024 12:50:56] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 12:51:30,159 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 12:51:30,320 - INFO -  * Restarting with stat
+2024-10-13 12:51:30,966 - WARNING -  * Debugger is active!
+2024-10-13 12:51:30,966 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 12:51:42,251 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 12:51:42,467 - INFO -  * Restarting with stat
+2024-10-13 12:51:43,112 - WARNING -  * Debugger is active!
+2024-10-13 12:51:43,113 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 12:51:49,867 - INFO - 192.168.100.41 - - [13/Oct/2024 12:51:49] "POST /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 12:51:49,903 - INFO - 192.168.100.41 - - [13/Oct/2024 12:51:49] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 12:52:04,886 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
  * Running on http://192.168.100.41:5000
-2024-10-12 21:27:01,750 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-12 21:27:01,751 - INFO -  * Restarting with stat
-2024-10-12 21:27:02,282 - WARNING -  * Debugger is active!
-2024-10-12 21:27:02,282 - INFO -  * Debugger PIN: 718-713-251
-2024-10-12 21:27:25,978 - INFO - 127.0.0.1 - - [12/Oct/2024 21:27:25] "[35m[1mGET /update_acount HTTP/1.1[0m" 500 -
-2024-10-12 21:27:26,022 - INFO - 127.0.0.1 - - [12/Oct/2024 21:27:26] "[36mGET /update_acount?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-2024-10-12 21:27:26,030 - INFO - 127.0.0.1 - - [12/Oct/2024 21:27:26] "[36mGET /update_acount?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-2024-10-12 21:27:26,047 - INFO - 127.0.0.1 - - [12/Oct/2024 21:27:26] "GET /update_acount?__debugger__=yes&cmd=resource&f=console.png&s=ucLGkTdSd4bYb8LyaGNT HTTP/1.1" 200 -
-2024-10-12 21:27:26,065 - INFO - 127.0.0.1 - - [12/Oct/2024 21:27:26] "[36mGET /update_acount?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
-2024-10-12 21:27:31,032 - INFO - 127.0.0.1 - - [12/Oct/2024 21:27:31] "GET /overview HTTP/1.1" 200 -
-2024-10-12 21:27:31,054 - INFO - 127.0.0.1 - - [12/Oct/2024 21:27:31] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
-2024-10-12 21:27:31,059 - INFO - 127.0.0.1 - - [12/Oct/2024 21:27:31] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 21:27:31,102 - INFO - 127.0.0.1 - - [12/Oct/2024 21:27:31] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 21:27:35,109 - INFO - 127.0.0.1 - - [12/Oct/2024 21:27:35] "[32mGET /login HTTP/1.1[0m" 302 -
-2024-10-12 21:27:35,118 - INFO - 127.0.0.1 - - [12/Oct/2024 21:27:35] "GET /overview HTTP/1.1" 200 -
-2024-10-12 21:27:35,142 - INFO - 127.0.0.1 - - [12/Oct/2024 21:27:35] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
-2024-10-12 21:27:35,148 - INFO - 127.0.0.1 - - [12/Oct/2024 21:27:35] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 21:27:35,189 - INFO - 127.0.0.1 - - [12/Oct/2024 21:27:35] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 21:27:36,830 - INFO - 127.0.0.1 - - [12/Oct/2024 21:27:36] "[32mGET /logout HTTP/1.1[0m" 302 -
-2024-10-12 21:27:36,854 - INFO - 127.0.0.1 - - [12/Oct/2024 21:27:36] "GET /login HTTP/1.1" 200 -
-2024-10-12 21:27:36,876 - INFO - 127.0.0.1 - - [12/Oct/2024 21:27:36] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 21:27:36,877 - INFO - 127.0.0.1 - - [12/Oct/2024 21:27:36] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 21:27:40,496 - INFO - 127.0.0.1 - - [12/Oct/2024 21:27:40] "GET /register HTTP/1.1" 200 -
-2024-10-12 21:27:40,526 - INFO - 127.0.0.1 - - [12/Oct/2024 21:27:40] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 21:27:40,529 - INFO - 127.0.0.1 - - [12/Oct/2024 21:27:40] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 21:28:08,102 - INFO - 127.0.0.1 - - [12/Oct/2024 21:28:08] "POST /register HTTP/1.1" 200 -
-2024-10-12 21:28:08,134 - INFO - 127.0.0.1 - - [12/Oct/2024 21:28:08] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 21:28:08,135 - INFO - 127.0.0.1 - - [12/Oct/2024 21:28:08] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 21:28:27,540 - INFO - 127.0.0.1 - - [12/Oct/2024 21:28:27] "[32mPOST /register HTTP/1.1[0m" 302 -
-2024-10-12 21:28:27,545 - INFO - 127.0.0.1 - - [12/Oct/2024 21:28:27] "GET /login HTTP/1.1" 200 -
-2024-10-12 21:28:27,574 - INFO - 127.0.0.1 - - [12/Oct/2024 21:28:27] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 21:28:27,576 - INFO - 127.0.0.1 - - [12/Oct/2024 21:28:27] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 21:28:36,103 - DEBUG - Current User: True
-2024-10-12 21:28:36,108 - INFO - 127.0.0.1 - - [12/Oct/2024 21:28:36] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
-2024-10-12 21:28:36,127 - INFO - 127.0.0.1 - - [12/Oct/2024 21:28:36] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-2024-10-12 21:28:36,129 - INFO - 127.0.0.1 - - [12/Oct/2024 21:28:36] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-2024-10-12 21:28:36,154 - INFO - 127.0.0.1 - - [12/Oct/2024 21:28:36] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=ucLGkTdSd4bYb8LyaGNT HTTP/1.1" 200 -
-2024-10-12 21:28:36,176 - INFO - 127.0.0.1 - - [12/Oct/2024 21:28:36] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
-2024-10-12 21:29:03,785 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-12 21:29:03,985 - INFO -  * Restarting with stat
-2024-10-12 21:29:04,597 - WARNING -  * Debugger is active!
-2024-10-12 21:29:04,598 - INFO -  * Debugger PIN: 718-713-251
-2024-10-12 21:29:09,218 - DEBUG - Current User: True
-2024-10-12 21:29:09,219 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:09] "[32mPOST /login HTTP/1.1[0m" 302 -
-2024-10-12 21:29:09,236 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:09] "GET /overview HTTP/1.1" 200 -
-2024-10-12 21:29:09,273 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:09] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
-2024-10-12 21:29:09,276 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:09] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 21:29:09,277 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:09] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 21:29:13,071 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:13] "GET /transaction HTTP/1.1" 200 -
-2024-10-12 21:29:13,101 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:13] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
-2024-10-12 21:29:13,115 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:13] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 21:29:13,116 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:13] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 21:29:14,669 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:14] "GET /overview HTTP/1.1" 200 -
-2024-10-12 21:29:14,758 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:14] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
-2024-10-12 21:29:14,769 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 21:29:14,772 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:14] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 21:29:16,348 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:16] "GET /deposit HTTP/1.1" 200 -
-2024-10-12 21:29:16,418 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:16] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
-2024-10-12 21:29:16,432 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:16] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 21:29:16,433 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:16] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 21:29:18,674 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:18] "GET /statements HTTP/1.1" 200 -
-2024-10-12 21:29:18,770 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:18] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
-2024-10-12 21:29:18,786 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 21:29:18,787 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:18] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 21:29:20,648 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:20] "GET /news HTTP/1.1" 200 -
-2024-10-12 21:29:20,728 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:20] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
-2024-10-12 21:29:20,748 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:20] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 21:29:20,751 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:20] "GET /static/assets/maintain.jpeg HTTP/1.1" 200 -
-2024-10-12 21:29:20,757 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:20] "GET /static/assets/feature.jpeg HTTP/1.1" 200 -
-2024-10-12 21:29:20,757 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:20] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 21:29:23,379 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:23] "GET /deposit HTTP/1.1" 200 -
-2024-10-12 21:29:23,479 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:23] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
-2024-10-12 21:29:23,497 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:23] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 21:29:23,504 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:23] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 21:29:28,999 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:28] "GET /profile HTTP/1.1" 200 -
-2024-10-12 21:29:29,094 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:29] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
-2024-10-12 21:29:29,117 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:29] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 21:29:29,120 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:29] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 21:29:30,457 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:30] "[35m[1mGET /update_acount HTTP/1.1[0m" 500 -
-2024-10-12 21:29:30,516 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:30] "[36mGET /update_acount?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-2024-10-12 21:29:30,524 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:30] "[36mGET /update_acount?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-2024-10-12 21:29:30,552 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:30] "GET /update_acount?__debugger__=yes&cmd=resource&f=console.png&s=el4QPHBOY7vYBAaKb0Mr HTTP/1.1" 200 -
-2024-10-12 21:29:42,969 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:42] "GET /update_password HTTP/1.1" 200 -
-2024-10-12 21:29:42,998 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:42] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
-2024-10-12 21:29:43,005 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:43] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 21:29:43,008 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:43] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 21:29:47,763 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:47] "GET /personal_data HTTP/1.1" 200 -
-2024-10-12 21:29:47,824 - INFO - 127.0.0.1 - - [12/Oct/2024 21:29:47] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 21:30:37,792 - INFO - 127.0.0.1 - - [12/Oct/2024 21:30:37] "POST /personal_data HTTP/1.1" 200 -
-2024-10-12 21:30:37,885 - INFO - 127.0.0.1 - - [12/Oct/2024 21:30:37] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 21:30:44,219 - INFO - 127.0.0.1 - - [12/Oct/2024 21:30:44] "GET /overview HTTP/1.1" 200 -
-2024-10-12 21:30:44,248 - INFO - 127.0.0.1 - - [12/Oct/2024 21:30:44] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
-2024-10-12 21:30:44,256 - INFO - 127.0.0.1 - - [12/Oct/2024 21:30:44] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 21:30:44,304 - INFO - 127.0.0.1 - - [12/Oct/2024 21:30:44] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 21:45:16,098 - INFO - 127.0.0.1 - - [12/Oct/2024 21:45:16] "[32mGET /logout HTTP/1.1[0m" 302 -
-2024-10-12 21:45:16,163 - INFO - 127.0.0.1 - - [12/Oct/2024 21:45:16] "GET /login HTTP/1.1" 200 -
-2024-10-12 21:45:16,224 - INFO - 127.0.0.1 - - [12/Oct/2024 21:45:16] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 21:45:16,224 - INFO - 127.0.0.1 - - [12/Oct/2024 21:45:16] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 21:45:23,775 - DEBUG - Current User: True
-2024-10-12 21:45:23,776 - INFO - 127.0.0.1 - - [12/Oct/2024 21:45:23] "[32mPOST /login HTTP/1.1[0m" 302 -
-2024-10-12 21:45:23,781 - INFO - 127.0.0.1 - - [12/Oct/2024 21:45:23] "GET /overview HTTP/1.1" 200 -
-2024-10-12 21:45:23,811 - INFO - 127.0.0.1 - - [12/Oct/2024 21:45:23] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
-2024-10-12 21:45:23,817 - INFO - 127.0.0.1 - - [12/Oct/2024 21:45:23] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 21:45:23,825 - INFO - 127.0.0.1 - - [12/Oct/2024 21:45:23] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 21:45:26,003 - INFO - 127.0.0.1 - - [12/Oct/2024 21:45:26] "GET /profile HTTP/1.1" 200 -
-2024-10-12 21:45:26,097 - INFO - 127.0.0.1 - - [12/Oct/2024 21:45:26] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
-2024-10-12 21:45:26,111 - INFO - 127.0.0.1 - - [12/Oct/2024 21:45:26] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 21:45:26,112 - INFO - 127.0.0.1 - - [12/Oct/2024 21:45:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 21:45:27,582 - INFO - 127.0.0.1 - - [12/Oct/2024 21:45:27] "GET /update_acount HTTP/1.1" 200 -
-2024-10-12 21:45:27,665 - INFO - 127.0.0.1 - - [12/Oct/2024 21:45:27] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
-2024-10-12 21:45:27,668 - INFO - 127.0.0.1 - - [12/Oct/2024 21:45:27] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 21:45:27,672 - INFO - 127.0.0.1 - - [12/Oct/2024 21:45:27] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 21:45:33,943 - DEBUG - tag: ImageWidth (256) - type: long (4) - value: b'\x00\x00\x05\xa0'
-2024-10-12 21:45:33,943 - DEBUG - tag: ImageLength (257) - type: long (4) - value: b'\x00\x00\x0c\x80'
-2024-10-12 21:45:33,943 - DEBUG - tag: Copyright (33432) - type: string (2) - value: b'\x00'
-2024-10-12 21:45:33,943 - DEBUG - tag: ResolutionUnit (296) - type: short (3) - value: b'\x00\x02'
-2024-10-12 21:45:33,943 - DEBUG - tag: ImageDescription (270) - type: string (2) - value: b'\x00'
-2024-10-12 21:45:33,944 - DEBUG - tag: Make (271) - type: string (2) Tag Location: 82 - Data Location: 206 - value: b'TECNO\x00'
-2024-10-12 21:45:33,944 - DEBUG - tag: Model (272) - type: string (2) Tag Location: 94 - Data Location: 212 - value: b'TECNO BF6\x00'
-2024-10-12 21:45:33,944 - DEBUG - tag: Software (305) - type: string (2) - value: b'\x00'
-2024-10-12 21:45:33,944 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 118 - Data Location: 222 - value: b'2024:10:12 08:43:03\x00'
-2024-10-12 21:45:33,944 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
-2024-10-12 21:45:33,944 - DEBUG - tag: YCbCrPositioning (531) - type: short (3) - value: b'\x00\x01'
-2024-10-12 21:45:33,944 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x01\x02'
-2024-10-12 21:45:33,944 - DEBUG - tag: GPSInfoIFD (34853) - type: long (4) - value: b'\x00\x00\x02\xcc'
-2024-10-12 21:45:33,945 - DEBUG - tag: XResolution (282) - type: rational (5) Tag Location: 178 - Data Location: 242 - value: b'\x00\x00\x00H\x00\x00\x00\x01'
-2024-10-12 21:45:33,945 - DEBUG - tag: Artist (315) - type: string (2) - value: b'\x00'
-2024-10-12 21:45:33,945 - DEBUG - tag: YResolution (283) - type: rational (5) Tag Location: 202 - Data Location: 250 - value: b'\x00\x00\x00H\x00\x00\x00\x01'
-2024-10-12 21:45:33,962 - INFO - 127.0.0.1 - - [12/Oct/2024 21:45:33] "[32mPOST /update_acount HTTP/1.1[0m" 302 -
-2024-10-12 21:45:33,967 - INFO - 127.0.0.1 - - [12/Oct/2024 21:45:33] "GET /profile HTTP/1.1" 200 -
-2024-10-12 21:45:33,986 - INFO - 127.0.0.1 - - [12/Oct/2024 21:45:33] "GET /static/assets/63bee75ee48d0b24photo-2.jpg HTTP/1.1" 200 -
-2024-10-12 21:45:33,994 - INFO - 127.0.0.1 - - [12/Oct/2024 21:45:33] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 21:45:33,996 - INFO - 127.0.0.1 - - [12/Oct/2024 21:45:33] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 21:46:43,552 - INFO - 127.0.0.1 - - [12/Oct/2024 21:46:43] "[35m[1mGET /admin/settings HTTP/1.1[0m" 500 -
-2024-10-12 21:46:43,597 - INFO - 127.0.0.1 - - [12/Oct/2024 21:46:43] "GET /admin/settings?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-2024-10-12 21:46:43,599 - INFO - 127.0.0.1 - - [12/Oct/2024 21:46:43] "GET /admin/settings?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-2024-10-12 21:46:43,636 - INFO - 127.0.0.1 - - [12/Oct/2024 21:46:43] "GET /admin/settings?__debugger__=yes&cmd=resource&f=console.png&s=el4QPHBOY7vYBAaKb0Mr HTTP/1.1" 200 -
-2024-10-12 21:46:43,752 - INFO - 127.0.0.1 - - [12/Oct/2024 21:46:43] "[36mGET /admin/settings?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
-2024-10-12 21:51:07,405 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-12 21:51:07,608 - INFO -  * Restarting with stat
-2024-10-12 21:53:04,410 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2024-10-13 12:52:04,886 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-13 12:52:04,887 - INFO -  * Restarting with stat
+2024-10-13 12:52:05,487 - WARNING -  * Debugger is active!
+2024-10-13 12:52:05,488 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 12:52:10,768 - INFO - 192.168.100.41 - - [13/Oct/2024 12:52:10] "POST /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 12:52:10,799 - INFO - 192.168.100.41 - - [13/Oct/2024 12:52:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 12:52:12,755 - INFO - 192.168.100.41 - - [13/Oct/2024 12:52:12] "POST /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 12:52:12,865 - INFO - 192.168.100.41 - - [13/Oct/2024 12:52:12] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 12:54:09,842 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 12:54:10,026 - INFO -  * Restarting with stat
+2024-10-13 12:54:10,586 - WARNING -  * Debugger is active!
+2024-10-13 12:54:10,586 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 12:54:18,739 - INFO - 192.168.100.41 - - [13/Oct/2024 12:54:18] "POST /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 12:54:18,782 - INFO - 192.168.100.41 - - [13/Oct/2024 12:54:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 12:54:20,742 - INFO - 192.168.100.41 - - [13/Oct/2024 12:54:20] "POST /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 12:54:20,870 - INFO - 192.168.100.41 - - [13/Oct/2024 12:54:20] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 12:56:04,982 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 12:56:05,205 - INFO -  * Restarting with stat
+2024-10-13 12:57:13,190 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
  * Running on http://192.168.100.41:5000
-2024-10-12 21:53:04,411 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-12 21:53:04,412 - INFO -  * Restarting with stat
-2024-10-12 21:53:05,082 - WARNING -  * Debugger is active!
-2024-10-12 21:53:05,082 - INFO -  * Debugger PIN: 718-713-251
-2024-10-12 21:53:11,673 - INFO - 127.0.0.1 - - [12/Oct/2024 21:53:11] "[33mGET /admin/settings HTTP/1.1[0m" 404 -
-2024-10-12 21:53:16,176 - INFO - 127.0.0.1 - - [12/Oct/2024 21:53:16] "[33mGET /admin/settings HTTP/1.1[0m" 404 -
-2024-10-12 21:53:20,949 - INFO - 127.0.0.1 - - [12/Oct/2024 21:53:20] "[33mGET /admin/settings HTTP/1.1[0m" 404 -
-2024-10-12 21:54:30,754 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-12 21:54:30,964 - INFO -  * Restarting with stat
-2024-10-12 21:54:31,633 - WARNING -  * Debugger is active!
-2024-10-12 21:54:31,634 - INFO -  * Debugger PIN: 718-713-251
-2024-10-12 21:54:43,894 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-12 21:54:44,060 - INFO -  * Restarting with stat
-2024-10-12 21:54:44,782 - WARNING -  * Debugger is active!
-2024-10-12 21:54:44,783 - INFO -  * Debugger PIN: 718-713-251
-2024-10-12 21:54:48,482 - INFO - 127.0.0.1 - - [12/Oct/2024 21:54:48] "[33mGET /admin/settings HTTP/1.1[0m" 404 -
-2024-10-12 21:54:50,978 - INFO - 127.0.0.1 - - [12/Oct/2024 21:54:50] "[33mGET /admin/settings HTTP/1.1[0m" 404 -
-2024-10-12 21:55:05,180 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-12 21:55:05,366 - INFO -  * Restarting with stat
-2024-10-12 21:55:06,239 - WARNING -  * Debugger is active!
-2024-10-12 21:55:06,239 - INFO -  * Debugger PIN: 718-713-251
-2024-10-12 21:55:10,331 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-12 21:55:10,488 - INFO -  * Restarting with stat
-2024-10-12 21:55:11,198 - WARNING -  * Debugger is active!
-2024-10-12 21:55:11,199 - INFO -  * Debugger PIN: 718-713-251
-2024-10-12 21:59:47,593 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-12 21:59:47,744 - INFO -  * Restarting with stat
-2024-10-12 21:59:48,273 - WARNING -  * Debugger is active!
-2024-10-12 21:59:48,273 - INFO -  * Debugger PIN: 718-713-251
-2024-10-12 21:59:50,320 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-12 21:59:50,517 - INFO -  * Restarting with stat
-2024-10-12 21:59:51,230 - WARNING -  * Debugger is active!
-2024-10-12 21:59:51,230 - INFO -  * Debugger PIN: 718-713-251
-2024-10-12 21:59:56,331 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-12 21:59:56,492 - INFO -  * Restarting with stat
-2024-10-12 21:59:57,044 - WARNING -  * Debugger is active!
-2024-10-12 21:59:57,045 - INFO -  * Debugger PIN: 718-713-251
-2024-10-12 22:00:07,249 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-12 22:00:07,405 - INFO -  * Restarting with stat
-2024-10-12 22:00:07,929 - WARNING -  * Debugger is active!
-2024-10-12 22:00:07,930 - INFO -  * Debugger PIN: 718-713-251
-2024-10-12 22:00:26,233 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-12 22:00:26,404 - INFO -  * Restarting with stat
-2024-10-12 22:00:27,139 - WARNING -  * Debugger is active!
-2024-10-12 22:00:27,140 - INFO -  * Debugger PIN: 718-713-251
-2024-10-12 22:00:32,249 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-12 22:00:32,413 - INFO -  * Restarting with stat
-2024-10-12 22:00:32,983 - WARNING -  * Debugger is active!
-2024-10-12 22:00:32,983 - INFO -  * Debugger PIN: 718-713-251
-2024-10-12 22:00:46,258 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-12 22:00:46,401 - INFO -  * Restarting with stat
-2024-10-12 23:26:52,011 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2024-10-13 12:57:13,190 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-13 12:57:13,191 - INFO -  * Restarting with stat
+2024-10-13 12:57:13,834 - WARNING -  * Debugger is active!
+2024-10-13 12:57:13,834 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 12:57:17,221 - INFO - 192.168.100.41 - - [13/Oct/2024 12:57:17] "POST /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 12:57:17,275 - INFO - 192.168.100.41 - - [13/Oct/2024 12:57:17] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 12:57:20,951 - INFO - 192.168.100.41 - - [13/Oct/2024 12:57:20] "POST /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 12:57:20,993 - INFO - 192.168.100.41 - - [13/Oct/2024 12:57:20] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 12:59:05,495 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
  * Running on http://192.168.100.41:5000
-2024-10-12 23:26:52,012 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-12 23:26:52,012 - INFO -  * Restarting with stat
-2024-10-12 23:26:52,527 - WARNING -  * Debugger is active!
-2024-10-12 23:26:52,528 - INFO -  * Debugger PIN: 718-713-251
-2024-10-12 23:27:05,470 - INFO - 127.0.0.1 - - [12/Oct/2024 23:27:05] "[33mGET /admin/settings HTTP/1.1[0m" 404 -
-2024-10-12 23:27:08,506 - INFO - 127.0.0.1 - - [12/Oct/2024 23:27:08] "[33mGET /admin HTTP/1.1[0m" 404 -
-2024-10-12 23:27:10,184 - INFO - 127.0.0.1 - - [12/Oct/2024 23:27:10] "[32mGET /login HTTP/1.1[0m" 302 -
-2024-10-12 23:27:10,211 - INFO - 127.0.0.1 - - [12/Oct/2024 23:27:10] "GET /overview HTTP/1.1" 200 -
-2024-10-12 23:27:10,233 - INFO - 127.0.0.1 - - [12/Oct/2024 23:27:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 23:27:10,234 - INFO - 127.0.0.1 - - [12/Oct/2024 23:27:10] "[36mGET /static/assets/63bee75ee48d0b24photo-2.jpg HTTP/1.1[0m" 304 -
-2024-10-12 23:27:10,257 - INFO - 127.0.0.1 - - [12/Oct/2024 23:27:10] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 23:27:11,595 - INFO - 127.0.0.1 - - [12/Oct/2024 23:27:11] "[32mGET /logout HTTP/1.1[0m" 302 -
-2024-10-12 23:27:11,625 - INFO - 127.0.0.1 - - [12/Oct/2024 23:27:11] "GET /login HTTP/1.1" 200 -
-2024-10-12 23:27:11,644 - INFO - 127.0.0.1 - - [12/Oct/2024 23:27:11] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:27:11,645 - INFO - 127.0.0.1 - - [12/Oct/2024 23:27:11] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:27:19,308 - DEBUG - Current User: True
-2024-10-12 23:27:19,309 - INFO - 127.0.0.1 - - [12/Oct/2024 23:27:19] "[32mPOST /login HTTP/1.1[0m" 302 -
-2024-10-12 23:27:19,314 - INFO - 127.0.0.1 - - [12/Oct/2024 23:27:19] "GET /overview HTTP/1.1" 200 -
-2024-10-12 23:27:19,340 - INFO - 127.0.0.1 - - [12/Oct/2024 23:27:19] "[36mGET /static/assets/63bee75ee48d0b24photo-2.jpg HTTP/1.1[0m" 304 -
-2024-10-12 23:27:19,348 - INFO - 127.0.0.1 - - [12/Oct/2024 23:27:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 23:27:19,356 - INFO - 127.0.0.1 - - [12/Oct/2024 23:27:19] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 23:29:23,895 - INFO - 127.0.0.1 - - [12/Oct/2024 23:29:23] "[32mGET /logout HTTP/1.1[0m" 302 -
-2024-10-12 23:29:23,900 - INFO - 127.0.0.1 - - [12/Oct/2024 23:29:23] "GET /login HTTP/1.1" 200 -
-2024-10-12 23:29:23,931 - INFO - 127.0.0.1 - - [12/Oct/2024 23:29:23] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:29:23,933 - INFO - 127.0.0.1 - - [12/Oct/2024 23:29:23] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:29:31,026 - INFO - 127.0.0.1 - - [12/Oct/2024 23:29:31] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
-2024-10-12 23:29:31,048 - INFO - 127.0.0.1 - - [12/Oct/2024 23:29:31] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-2024-10-12 23:29:31,053 - INFO - 127.0.0.1 - - [12/Oct/2024 23:29:31] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-2024-10-12 23:29:31,073 - INFO - 127.0.0.1 - - [12/Oct/2024 23:29:31] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=VOB7m8KPuvwQoMK3fCTh HTTP/1.1" 200 -
-2024-10-12 23:29:31,086 - INFO - 127.0.0.1 - - [12/Oct/2024 23:29:31] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
-2024-10-12 23:29:39,190 - INFO - 127.0.0.1 - - [12/Oct/2024 23:29:39] "GET /login HTTP/1.1" 200 -
-2024-10-12 23:29:41,591 - INFO - 127.0.0.1 - - [12/Oct/2024 23:29:41] "GET /reset_password HTTP/1.1" 200 -
-2024-10-12 23:29:41,629 - INFO - 127.0.0.1 - - [12/Oct/2024 23:29:41] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:29:41,630 - INFO - 127.0.0.1 - - [12/Oct/2024 23:29:41] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:29:45,538 - INFO - 127.0.0.1 - - [12/Oct/2024 23:29:45] "POST /reset_password HTTP/1.1" 200 -
-2024-10-12 23:29:45,653 - INFO - 127.0.0.1 - - [12/Oct/2024 23:29:45] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:29:45,654 - INFO - 127.0.0.1 - - [12/Oct/2024 23:29:45] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:29:56,732 - INFO - 127.0.0.1 - - [12/Oct/2024 23:29:56] "POST /reset_password HTTP/1.1" 200 -
-2024-10-12 23:29:56,808 - INFO - 127.0.0.1 - - [12/Oct/2024 23:29:56] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:29:56,810 - INFO - 127.0.0.1 - - [12/Oct/2024 23:29:56] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:33:00,500 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-12 23:33:00,650 - INFO -  * Restarting with stat
-2024-10-12 23:33:01,197 - WARNING -  * Debugger is active!
-2024-10-12 23:33:01,197 - INFO -  * Debugger PIN: 718-713-251
-2024-10-12 23:33:03,241 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-12 23:33:03,403 - INFO -  * Restarting with stat
-2024-10-12 23:33:04,020 - WARNING -  * Debugger is active!
-2024-10-12 23:33:04,020 - INFO -  * Debugger PIN: 718-713-251
-2024-10-12 23:33:07,055 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-12 23:33:07,204 - INFO -  * Restarting with stat
-2024-10-12 23:33:07,818 - WARNING -  * Debugger is active!
-2024-10-12 23:33:07,819 - INFO -  * Debugger PIN: 718-713-251
-2024-10-12 23:33:16,983 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-12 23:33:17,178 - INFO -  * Restarting with stat
-2024-10-12 23:36:54,431 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2024-10-13 12:59:05,495 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-13 12:59:05,496 - INFO -  * Restarting with stat
+2024-10-13 12:59:06,101 - WARNING -  * Debugger is active!
+2024-10-13 12:59:06,101 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 12:59:10,754 - INFO - 192.168.100.41 - - [13/Oct/2024 12:59:10] "POST /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 12:59:10,853 - INFO - 192.168.100.41 - - [13/Oct/2024 12:59:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 12:59:21,651 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
  * Running on http://192.168.100.41:5000
-2024-10-12 23:36:54,431 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-12 23:36:54,432 - INFO -  * Restarting with stat
-2024-10-12 23:36:54,955 - WARNING -  * Debugger is active!
-2024-10-12 23:36:54,955 - INFO -  * Debugger PIN: 718-713-251
-2024-10-12 23:37:04,351 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:04] "POST /reset_password HTTP/1.1" 200 -
-2024-10-12 23:37:04,399 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:04] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:37:04,405 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:04] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:37:07,217 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:07] "POST /reset_password HTTP/1.1" 200 -
-2024-10-12 23:37:07,244 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:07] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:37:07,257 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:07] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:37:08,674 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:08] "POST /reset_password HTTP/1.1" 200 -
-2024-10-12 23:37:08,704 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:08] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:37:08,704 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:08] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:37:10,211 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:10] "POST /reset_password HTTP/1.1" 200 -
-2024-10-12 23:37:10,238 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:10] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:37:10,247 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:10] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:37:11,596 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:11] "POST /reset_password HTTP/1.1" 200 -
-2024-10-12 23:37:11,628 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:11] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:37:11,629 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:11] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:37:27,137 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:27] "[32mPOST /reset_password HTTP/1.1[0m" 302 -
-2024-10-12 23:37:27,183 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:27] "GET /login HTTP/1.1" 200 -
-2024-10-12 23:37:27,208 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:27] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:37:27,213 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:27] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:37:30,890 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:30] "GET /reset_password HTTP/1.1" 200 -
-2024-10-12 23:37:30,921 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:30] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:37:30,923 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:30] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:37:38,448 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:38] "[32mPOST /reset_password HTTP/1.1[0m" 302 -
-2024-10-12 23:37:38,471 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:38] "GET /login HTTP/1.1" 200 -
-2024-10-12 23:37:38,556 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:38] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:37:38,559 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:38] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:37:40,856 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:40] "GET /reset_password HTTP/1.1" 200 -
-2024-10-12 23:37:40,919 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:40] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:37:40,920 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:40] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:37:46,708 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:46] "POST /reset_password HTTP/1.1" 200 -
-2024-10-12 23:37:46,779 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:46] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:37:46,780 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:46] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:37:54,610 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:54] "POST /reset_password HTTP/1.1" 200 -
-2024-10-12 23:37:54,650 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:54] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:37:54,651 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:54] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:37:56,736 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:56] "POST /reset_password HTTP/1.1" 200 -
-2024-10-12 23:37:56,759 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:56] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:37:56,768 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:56] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:37:59,651 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:59] "POST /reset_password HTTP/1.1" 200 -
-2024-10-12 23:37:59,677 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:59] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:37:59,678 - INFO - 127.0.0.1 - - [12/Oct/2024 23:37:59] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:38:06,848 - INFO - 127.0.0.1 - - [12/Oct/2024 23:38:06] "POST /reset_password HTTP/1.1" 200 -
-2024-10-12 23:38:06,881 - INFO - 127.0.0.1 - - [12/Oct/2024 23:38:06] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:38:06,884 - INFO - 127.0.0.1 - - [12/Oct/2024 23:38:06] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:38:08,086 - INFO - 127.0.0.1 - - [12/Oct/2024 23:38:08] "POST /reset_password HTTP/1.1" 200 -
-2024-10-12 23:38:08,122 - INFO - 127.0.0.1 - - [12/Oct/2024 23:38:08] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:38:08,123 - INFO - 127.0.0.1 - - [12/Oct/2024 23:38:08] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:38:08,680 - INFO - 127.0.0.1 - - [12/Oct/2024 23:38:08] "POST /reset_password HTTP/1.1" 200 -
-2024-10-12 23:38:08,706 - INFO - 127.0.0.1 - - [12/Oct/2024 23:38:08] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:38:08,710 - INFO - 127.0.0.1 - - [12/Oct/2024 23:38:08] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:38:09,493 - INFO - 127.0.0.1 - - [12/Oct/2024 23:38:09] "POST /reset_password HTTP/1.1" 200 -
-2024-10-12 23:38:09,524 - INFO - 127.0.0.1 - - [12/Oct/2024 23:38:09] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:38:09,526 - INFO - 127.0.0.1 - - [12/Oct/2024 23:38:09] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:38:21,918 - INFO - 127.0.0.1 - - [12/Oct/2024 23:38:21] "[32mPOST /reset_password HTTP/1.1[0m" 302 -
-2024-10-12 23:38:21,938 - INFO - 127.0.0.1 - - [12/Oct/2024 23:38:21] "GET /login HTTP/1.1" 200 -
-2024-10-12 23:38:21,991 - INFO - 127.0.0.1 - - [12/Oct/2024 23:38:21] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:38:21,991 - INFO - 127.0.0.1 - - [12/Oct/2024 23:38:21] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:38:23,988 - INFO - 127.0.0.1 - - [12/Oct/2024 23:38:23] "GET /reset_password HTTP/1.1" 200 -
-2024-10-12 23:38:24,104 - INFO - 127.0.0.1 - - [12/Oct/2024 23:38:24] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:38:24,105 - INFO - 127.0.0.1 - - [12/Oct/2024 23:38:24] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:38:28,661 - INFO - 127.0.0.1 - - [12/Oct/2024 23:38:28] "POST /reset_password HTTP/1.1" 200 -
-2024-10-12 23:38:28,697 - INFO - 127.0.0.1 - - [12/Oct/2024 23:38:28] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:38:28,698 - INFO - 127.0.0.1 - - [12/Oct/2024 23:38:28] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:38:35,985 - INFO - 127.0.0.1 - - [12/Oct/2024 23:38:35] "POST /reset_password HTTP/1.1" 200 -
-2024-10-12 23:38:36,060 - INFO - 127.0.0.1 - - [12/Oct/2024 23:38:36] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:38:36,061 - INFO - 127.0.0.1 - - [12/Oct/2024 23:38:36] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:38:41,493 - INFO - 127.0.0.1 - - [12/Oct/2024 23:38:41] "GET /reset_password HTTP/1.1" 200 -
-2024-10-12 23:38:50,238 - INFO - 127.0.0.1 - - [12/Oct/2024 23:38:50] "[32mPOST /reset_password HTTP/1.1[0m" 302 -
-2024-10-12 23:38:50,257 - INFO - 127.0.0.1 - - [12/Oct/2024 23:38:50] "GET /login HTTP/1.1" 200 -
-2024-10-12 23:38:50,330 - INFO - 127.0.0.1 - - [12/Oct/2024 23:38:50] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:38:50,331 - INFO - 127.0.0.1 - - [12/Oct/2024 23:38:50] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:38:52,603 - INFO - 127.0.0.1 - - [12/Oct/2024 23:38:52] "GET /reset_password HTTP/1.1" 200 -
-2024-10-12 23:38:52,689 - INFO - 127.0.0.1 - - [12/Oct/2024 23:38:52] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:38:52,692 - INFO - 127.0.0.1 - - [12/Oct/2024 23:38:52] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:38:57,108 - INFO - 127.0.0.1 - - [12/Oct/2024 23:38:57] "POST /reset_password HTTP/1.1" 200 -
-2024-10-12 23:38:57,145 - INFO - 127.0.0.1 - - [12/Oct/2024 23:38:57] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:38:57,146 - INFO - 127.0.0.1 - - [12/Oct/2024 23:38:57] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:39:10,928 - INFO - 127.0.0.1 - - [12/Oct/2024 23:39:10] "POST /reset_password HTTP/1.1" 200 -
-2024-10-12 23:39:10,962 - INFO - 127.0.0.1 - - [12/Oct/2024 23:39:10] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:39:10,966 - INFO - 127.0.0.1 - - [12/Oct/2024 23:39:10] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:42:36,541 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/forms.py', reloading
-2024-10-12 23:42:36,713 - INFO -  * Restarting with stat
-2024-10-12 23:42:37,367 - WARNING -  * Debugger is active!
-2024-10-12 23:42:37,367 - INFO -  * Debugger PIN: 718-713-251
-2024-10-12 23:44:36,449 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/forms.py', reloading
-2024-10-12 23:44:36,606 - INFO -  * Restarting with stat
-2024-10-12 23:44:37,168 - WARNING -  * Debugger is active!
-2024-10-12 23:44:37,168 - INFO -  * Debugger PIN: 718-713-251
-2024-10-12 23:44:39,244 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/forms.py', reloading
-2024-10-12 23:44:39,431 - INFO -  * Restarting with stat
-2024-10-12 23:44:39,964 - WARNING -  * Debugger is active!
-2024-10-12 23:44:39,964 - INFO -  * Debugger PIN: 718-713-251
-2024-10-12 23:44:43,036 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/forms.py', reloading
-2024-10-12 23:44:43,195 - INFO -  * Restarting with stat
-2024-10-12 23:44:43,798 - WARNING -  * Debugger is active!
-2024-10-12 23:44:43,798 - INFO -  * Debugger PIN: 718-713-251
-2024-10-12 23:44:46,868 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/forms.py', reloading
-2024-10-12 23:44:47,029 - INFO -  * Restarting with stat
-2024-10-12 23:45:01,835 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2024-10-13 12:59:21,651 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-13 12:59:21,652 - INFO -  * Restarting with stat
+2024-10-13 12:59:22,903 - WARNING -  * Debugger is active!
+2024-10-13 12:59:22,907 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 12:59:26,460 - INFO - 192.168.100.41 - - [13/Oct/2024 12:59:26] "POST /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 12:59:26,884 - INFO - 192.168.100.41 - - [13/Oct/2024 12:59:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:01:47,922 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:01:48,071 - INFO -  * Restarting with stat
+2024-10-13 13:01:48,614 - WARNING -  * Debugger is active!
+2024-10-13 13:01:48,614 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:01:52,706 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:01:52,863 - INFO -  * Restarting with stat
+2024-10-13 13:01:53,416 - WARNING -  * Debugger is active!
+2024-10-13 13:01:53,416 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:02:29,143 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:02:29,368 - INFO -  * Restarting with stat
+2024-10-13 13:03:34,007 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
  * Running on http://192.168.100.41:5000
-2024-10-12 23:45:01,835 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-12 23:45:01,836 - INFO -  * Restarting with stat
-2024-10-12 23:45:02,421 - WARNING -  * Debugger is active!
-2024-10-12 23:45:02,421 - INFO -  * Debugger PIN: 718-713-251
-2024-10-12 23:45:11,777 - INFO - 127.0.0.1 - - [12/Oct/2024 23:45:11] "[32mPOST /reset_password HTTP/1.1[0m" 302 -
-2024-10-12 23:45:14,272 - INFO - 127.0.0.1 - - [12/Oct/2024 23:45:14] "[32mPOST /reset_password HTTP/1.1[0m" 302 -
-2024-10-12 23:45:14,313 - INFO - 127.0.0.1 - - [12/Oct/2024 23:45:14] "GET /login HTTP/1.1" 200 -
-2024-10-12 23:45:14,354 - INFO - 127.0.0.1 - - [12/Oct/2024 23:45:14] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:45:14,355 - INFO - 127.0.0.1 - - [12/Oct/2024 23:45:14] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:46:10,488 - INFO - 127.0.0.1 - - [12/Oct/2024 23:46:10] "GET /reset_password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNldF9wYXNzd29yZCI6MSwiZXhwIjoxNzI4NzY3NzExLjI1NDcyMDR9.oM5ZFuYd7kz2KBjTZbNmNoHjPwfgYV_RG0lRMUSxcqw HTTP/1.1" 200 -
-2024-10-12 23:46:10,543 - INFO - 127.0.0.1 - - [12/Oct/2024 23:46:10] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:46:10,544 - INFO - 127.0.0.1 - - [12/Oct/2024 23:46:10] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:46:19,919 - INFO - 127.0.0.1 - - [12/Oct/2024 23:46:19] "[32mPOST /reset_password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNldF9wYXNzd29yZCI6MSwiZXhwIjoxNzI4NzY3NzExLjI1NDcyMDR9.oM5ZFuYd7kz2KBjTZbNmNoHjPwfgYV_RG0lRMUSxcqw HTTP/1.1[0m" 302 -
-2024-10-12 23:46:19,923 - INFO - 127.0.0.1 - - [12/Oct/2024 23:46:19] "GET /login HTTP/1.1" 200 -
-2024-10-12 23:46:19,956 - INFO - 127.0.0.1 - - [12/Oct/2024 23:46:19] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:46:19,957 - INFO - 127.0.0.1 - - [12/Oct/2024 23:46:19] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:46:27,440 - INFO - 127.0.0.1 - - [12/Oct/2024 23:46:27] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
-2024-10-12 23:46:27,471 - INFO - 127.0.0.1 - - [12/Oct/2024 23:46:27] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-2024-10-12 23:46:27,472 - INFO - 127.0.0.1 - - [12/Oct/2024 23:46:27] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-2024-10-12 23:46:27,496 - INFO - 127.0.0.1 - - [12/Oct/2024 23:46:27] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=zx4AuxJ4REJQTutdBlX1 HTTP/1.1" 200 -
-2024-10-12 23:46:27,512 - INFO - 127.0.0.1 - - [12/Oct/2024 23:46:27] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
-2024-10-12 23:47:52,969 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-12 23:47:53,140 - INFO -  * Restarting with stat
-2024-10-12 23:47:53,872 - WARNING -  * Debugger is active!
-2024-10-12 23:47:53,872 - INFO -  * Debugger PIN: 718-713-251
-2024-10-12 23:47:54,913 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-12 23:47:55,058 - INFO -  * Restarting with stat
-2024-10-12 23:47:55,577 - WARNING -  * Debugger is active!
-2024-10-12 23:47:55,577 - INFO -  * Debugger PIN: 718-713-251
-2024-10-12 23:48:02,704 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-12 23:48:02,847 - INFO -  * Restarting with stat
-2024-10-12 23:48:03,412 - WARNING -  * Debugger is active!
-2024-10-12 23:48:03,412 - INFO -  * Debugger PIN: 718-713-251
-2024-10-12 23:48:18,365 - INFO - 127.0.0.1 - - [12/Oct/2024 23:48:18] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
-2024-10-12 23:48:18,387 - INFO - 127.0.0.1 - - [12/Oct/2024 23:48:18] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-2024-10-12 23:48:18,389 - INFO - 127.0.0.1 - - [12/Oct/2024 23:48:18] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-2024-10-12 23:48:18,411 - INFO - 127.0.0.1 - - [12/Oct/2024 23:48:18] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=vI37zvLWQ8DsL0EMB2CL HTTP/1.1" 200 -
-2024-10-12 23:48:18,425 - INFO - 127.0.0.1 - - [12/Oct/2024 23:48:18] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
-2024-10-12 23:48:26,922 - INFO - 127.0.0.1 - - [12/Oct/2024 23:48:26] "[32mGET /logout HTTP/1.1[0m" 302 -
-2024-10-12 23:48:26,945 - INFO - 127.0.0.1 - - [12/Oct/2024 23:48:26] "GET /login HTTP/1.1" 200 -
-2024-10-12 23:48:26,964 - INFO - 127.0.0.1 - - [12/Oct/2024 23:48:26] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:48:26,967 - INFO - 127.0.0.1 - - [12/Oct/2024 23:48:26] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:48:29,715 - INFO - 127.0.0.1 - - [12/Oct/2024 23:48:29] "GET /reset_password HTTP/1.1" 200 -
-2024-10-12 23:48:29,745 - INFO - 127.0.0.1 - - [12/Oct/2024 23:48:29] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:48:29,746 - INFO - 127.0.0.1 - - [12/Oct/2024 23:48:29] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:48:35,955 - INFO - 127.0.0.1 - - [12/Oct/2024 23:48:35] "[32mPOST /reset_password HTTP/1.1[0m" 302 -
-2024-10-12 23:48:35,979 - INFO - 127.0.0.1 - - [12/Oct/2024 23:48:35] "GET /login HTTP/1.1" 200 -
-2024-10-12 23:48:36,054 - INFO - 127.0.0.1 - - [12/Oct/2024 23:48:36] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:48:36,057 - INFO - 127.0.0.1 - - [12/Oct/2024 23:48:36] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:48:44,314 - INFO - 127.0.0.1 - - [12/Oct/2024 23:48:44] "GET /reset_password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNldF9wYXNzd29yZCI6MSwiZXhwIjoxNzI4NzY3OTEzLjYxMTAyOX0.X-rrDIQhbnaEKEDOMxhdfIzu5cD95hXLa_Q5J83o9oQ HTTP/1.1" 200 -
-2024-10-12 23:48:44,363 - INFO - 127.0.0.1 - - [12/Oct/2024 23:48:44] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:48:44,365 - INFO - 127.0.0.1 - - [12/Oct/2024 23:48:44] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:48:55,417 - INFO - 127.0.0.1 - - [12/Oct/2024 23:48:55] "[32mPOST /reset_password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXNldF9wYXNzd29yZCI6MSwiZXhwIjoxNzI4NzY3OTEzLjYxMTAyOX0.X-rrDIQhbnaEKEDOMxhdfIzu5cD95hXLa_Q5J83o9oQ HTTP/1.1[0m" 302 -
-2024-10-12 23:48:55,421 - INFO - 127.0.0.1 - - [12/Oct/2024 23:48:55] "GET /login HTTP/1.1" 200 -
-2024-10-12 23:48:55,447 - INFO - 127.0.0.1 - - [12/Oct/2024 23:48:55] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-12 23:48:55,449 - INFO - 127.0.0.1 - - [12/Oct/2024 23:48:55] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-12 23:49:13,661 - INFO - 127.0.0.1 - - [12/Oct/2024 23:49:13] "[32mPOST /login HTTP/1.1[0m" 302 -
-2024-10-12 23:49:13,666 - INFO - 127.0.0.1 - - [12/Oct/2024 23:49:13] "[33mGET /admin HTTP/1.1[0m" 404 -
-2024-10-12 23:49:55,709 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-12 23:49:55,923 - INFO -  * Restarting with stat
-2024-10-12 23:49:56,546 - WARNING -  * Debugger is active!
-2024-10-12 23:49:56,547 - INFO -  * Debugger PIN: 718-713-251
-2024-10-12 23:49:59,813 - INFO - 127.0.0.1 - - [12/Oct/2024 23:49:59] "GET /admin HTTP/1.1" 200 -
-2024-10-12 23:49:59,846 - INFO - 127.0.0.1 - - [12/Oct/2024 23:49:59] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-12 23:49:59,847 - INFO - 127.0.0.1 - - [12/Oct/2024 23:49:59] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-12 23:51:42,470 - INFO - 127.0.0.1 - - [12/Oct/2024 23:51:42] "GET /admin HTTP/1.1" 200 -
-2024-10-12 23:51:42,506 - INFO - 127.0.0.1 - - [12/Oct/2024 23:51:42] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-12 23:51:42,512 - INFO - 127.0.0.1 - - [12/Oct/2024 23:51:42] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-12 23:52:22,047 - INFO - 127.0.0.1 - - [12/Oct/2024 23:52:22] "[32mPOST /login HTTP/1.1[0m" 302 -
-2024-10-12 23:52:22,071 - INFO - 127.0.0.1 - - [12/Oct/2024 23:52:22] "GET /overview HTTP/1.1" 200 -
-2024-10-12 23:52:22,097 - INFO - 127.0.0.1 - - [12/Oct/2024 23:52:22] "[36mGET /static/assets/63bee75ee48d0b24photo-2.jpg HTTP/1.1[0m" 304 -
-2024-10-12 23:52:22,106 - INFO - 127.0.0.1 - - [12/Oct/2024 23:52:22] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 23:52:22,112 - INFO - 127.0.0.1 - - [12/Oct/2024 23:52:22] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 23:52:24,519 - INFO - 127.0.0.1 - - [12/Oct/2024 23:52:24] "GET /overview HTTP/1.1" 200 -
-2024-10-12 23:52:24,554 - INFO - 127.0.0.1 - - [12/Oct/2024 23:52:24] "[36mGET /static/assets/63bee75ee48d0b24photo-2.jpg HTTP/1.1[0m" 304 -
-2024-10-12 23:52:24,561 - INFO - 127.0.0.1 - - [12/Oct/2024 23:52:24] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-12 23:52:24,561 - INFO - 127.0.0.1 - - [12/Oct/2024 23:52:24] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-12 23:52:28,390 - INFO - 127.0.0.1 - - [12/Oct/2024 23:52:28] "[33mGET /admin/loans HTTP/1.1[0m" 404 -
-2024-10-12 23:52:31,270 - INFO - 127.0.0.1 - - [12/Oct/2024 23:52:31] "GET /admin HTTP/1.1" 200 -
-2024-10-12 23:52:31,326 - INFO - 127.0.0.1 - - [12/Oct/2024 23:52:31] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-12 23:52:31,327 - INFO - 127.0.0.1 - - [12/Oct/2024 23:52:31] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 00:06:44,601 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-13 00:06:44,823 - INFO -  * Restarting with stat
-2024-10-13 00:06:45,406 - WARNING -  * Debugger is active!
-2024-10-13 00:06:45,406 - INFO -  * Debugger PIN: 718-713-251
-2024-10-13 00:06:50,517 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-13 00:06:50,673 - INFO -  * Restarting with stat
-2024-10-13 00:06:51,236 - WARNING -  * Debugger is active!
-2024-10-13 00:06:51,237 - INFO -  * Debugger PIN: 718-713-251
-2024-10-13 00:06:54,294 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-13 00:06:54,515 - INFO -  * Restarting with stat
-2024-10-13 00:06:55,088 - WARNING -  * Debugger is active!
-2024-10-13 00:06:55,088 - INFO -  * Debugger PIN: 718-713-251
-2024-10-13 00:06:58,122 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-13 00:06:58,281 - INFO -  * Restarting with stat
-2024-10-13 00:06:58,856 - WARNING -  * Debugger is active!
-2024-10-13 00:06:58,856 - INFO -  * Debugger PIN: 718-713-251
-2024-10-13 00:07:03,010 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-13 00:07:03,205 - INFO -  * Restarting with stat
-2024-10-13 00:07:03,841 - WARNING -  * Debugger is active!
-2024-10-13 00:07:03,841 - INFO -  * Debugger PIN: 718-713-251
-2024-10-13 00:07:11,910 - INFO - 127.0.0.1 - - [13/Oct/2024 00:07:11] "GET /admin HTTP/1.1" 200 -
-2024-10-13 00:07:11,949 - INFO - 127.0.0.1 - - [13/Oct/2024 00:07:11] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 00:07:11,949 - INFO - 127.0.0.1 - - [13/Oct/2024 00:07:11] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:07:28,881 - INFO - 127.0.0.1 - - [13/Oct/2024 00:07:28] "GET /admin/members HTTP/1.1" 200 -
-2024-10-13 00:07:28,912 - INFO - 127.0.0.1 - - [13/Oct/2024 00:07:28] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
-2024-10-13 00:07:28,915 - INFO - 127.0.0.1 - - [13/Oct/2024 00:07:28] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:07:28,917 - INFO - 127.0.0.1 - - [13/Oct/2024 00:07:28] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
-2024-10-13 00:07:28,920 - INFO - 127.0.0.1 - - [13/Oct/2024 00:07:28] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 00:07:42,796 - INFO - 127.0.0.1 - - [13/Oct/2024 00:07:42] "GET /admin/staff HTTP/1.1" 200 -
-2024-10-13 00:07:42,844 - INFO - 127.0.0.1 - - [13/Oct/2024 00:07:42] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:07:42,848 - INFO - 127.0.0.1 - - [13/Oct/2024 00:07:42] "[36mGET /static/css/staff.css HTTP/1.1[0m" 304 -
-2024-10-13 00:07:42,850 - INFO - 127.0.0.1 - - [13/Oct/2024 00:07:42] "[36mGET /static/js/staff.js HTTP/1.1[0m" 304 -
-2024-10-13 00:07:47,328 - INFO - 127.0.0.1 - - [13/Oct/2024 00:07:47] "GET /admin/loans HTTP/1.1" 200 -
-2024-10-13 00:07:47,359 - INFO - 127.0.0.1 - - [13/Oct/2024 00:07:47] "[36mGET /static/css/loans.css HTTP/1.1[0m" 304 -
-2024-10-13 00:07:47,363 - INFO - 127.0.0.1 - - [13/Oct/2024 00:07:47] "[36mGET /static/js/loans.js HTTP/1.1[0m" 304 -
-2024-10-13 00:07:51,282 - INFO - 127.0.0.1 - - [13/Oct/2024 00:07:51] "GET /admin/reports HTTP/1.1" 200 -
-2024-10-13 00:07:51,358 - INFO - 127.0.0.1 - - [13/Oct/2024 00:07:51] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:07:51,364 - INFO - 127.0.0.1 - - [13/Oct/2024 00:07:51] "[36mGET /static/js/reports.js HTTP/1.1[0m" 304 -
-2024-10-13 00:07:51,364 - INFO - 127.0.0.1 - - [13/Oct/2024 00:07:51] "[36mGET /static/css/reports.css HTTP/1.1[0m" 304 -
-2024-10-13 00:07:57,386 - INFO - 127.0.0.1 - - [13/Oct/2024 00:07:57] "GET /admin/settings HTTP/1.1" 200 -
-2024-10-13 00:07:57,431 - INFO - 127.0.0.1 - - [13/Oct/2024 00:07:57] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:07:57,432 - INFO - 127.0.0.1 - - [13/Oct/2024 00:07:57] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
-2024-10-13 00:07:57,437 - INFO - 127.0.0.1 - - [13/Oct/2024 00:07:57] "[36mGET /static/js/settings.js HTTP/1.1[0m" 304 -
-2024-10-13 00:07:57,439 - INFO - 127.0.0.1 - - [13/Oct/2024 00:07:57] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 00:11:18,405 - INFO - 127.0.0.1 - - [13/Oct/2024 00:11:18] "GET /admin/settings HTTP/1.1" 200 -
-2024-10-13 00:11:18,430 - INFO - 127.0.0.1 - - [13/Oct/2024 00:11:18] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
-2024-10-13 00:11:18,433 - INFO - 127.0.0.1 - - [13/Oct/2024 00:11:18] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:11:18,436 - INFO - 127.0.0.1 - - [13/Oct/2024 00:11:18] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 00:11:18,445 - INFO - 127.0.0.1 - - [13/Oct/2024 00:11:18] "[36mGET /static/js/settings.js HTTP/1.1[0m" 304 -
-2024-10-13 00:12:31,223 - INFO - 127.0.0.1 - - [13/Oct/2024 00:12:31] "GET /admin/settings HTTP/1.1" 200 -
-2024-10-13 00:12:31,253 - INFO - 127.0.0.1 - - [13/Oct/2024 00:12:31] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
-2024-10-13 00:12:31,258 - INFO - 127.0.0.1 - - [13/Oct/2024 00:12:31] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:12:31,262 - INFO - 127.0.0.1 - - [13/Oct/2024 00:12:31] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 00:12:31,263 - INFO - 127.0.0.1 - - [13/Oct/2024 00:12:31] "[36mGET /static/js/settings.js HTTP/1.1[0m" 304 -
-2024-10-13 00:12:37,285 - INFO - 127.0.0.1 - - [13/Oct/2024 00:12:37] "GET /admin/settings HTTP/1.1" 200 -
-2024-10-13 00:12:37,312 - INFO - 127.0.0.1 - - [13/Oct/2024 00:12:37] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
-2024-10-13 00:12:37,313 - INFO - 127.0.0.1 - - [13/Oct/2024 00:12:37] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:12:37,317 - INFO - 127.0.0.1 - - [13/Oct/2024 00:12:37] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 00:12:37,318 - INFO - 127.0.0.1 - - [13/Oct/2024 00:12:37] "[36mGET /static/js/settings.js HTTP/1.1[0m" 304 -
-2024-10-13 00:12:38,151 - INFO - 127.0.0.1 - - [13/Oct/2024 00:12:38] "GET /admin/settings HTTP/1.1" 200 -
-2024-10-13 00:12:38,184 - INFO - 127.0.0.1 - - [13/Oct/2024 00:12:38] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
-2024-10-13 00:12:38,186 - INFO - 127.0.0.1 - - [13/Oct/2024 00:12:38] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:12:38,190 - INFO - 127.0.0.1 - - [13/Oct/2024 00:12:38] "[36mGET /static/js/settings.js HTTP/1.1[0m" 304 -
-2024-10-13 00:12:38,191 - INFO - 127.0.0.1 - - [13/Oct/2024 00:12:38] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 00:12:38,876 - INFO - 127.0.0.1 - - [13/Oct/2024 00:12:38] "GET /admin/settings HTTP/1.1" 200 -
-2024-10-13 00:12:38,936 - INFO - 127.0.0.1 - - [13/Oct/2024 00:12:38] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:12:38,938 - INFO - 127.0.0.1 - - [13/Oct/2024 00:12:38] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 00:12:38,939 - INFO - 127.0.0.1 - - [13/Oct/2024 00:12:38] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
-2024-10-13 00:12:38,941 - INFO - 127.0.0.1 - - [13/Oct/2024 00:12:38] "[36mGET /static/js/settings.js HTTP/1.1[0m" 304 -
-2024-10-13 00:13:07,571 - INFO - 127.0.0.1 - - [13/Oct/2024 00:13:07] "GET /admin/settings HTTP/1.1" 200 -
-2024-10-13 00:13:07,601 - INFO - 127.0.0.1 - - [13/Oct/2024 00:13:07] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
-2024-10-13 00:13:07,603 - INFO - 127.0.0.1 - - [13/Oct/2024 00:13:07] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 00:13:07,606 - INFO - 127.0.0.1 - - [13/Oct/2024 00:13:07] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:13:07,607 - INFO - 127.0.0.1 - - [13/Oct/2024 00:13:07] "[36mGET /static/js/settings.js HTTP/1.1[0m" 304 -
-2024-10-13 00:14:42,517 - INFO - 127.0.0.1 - - [13/Oct/2024 00:14:42] "GET /admin/settings HTTP/1.1" 200 -
-2024-10-13 00:14:42,549 - INFO - 127.0.0.1 - - [13/Oct/2024 00:14:42] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
-2024-10-13 00:14:42,550 - INFO - 127.0.0.1 - - [13/Oct/2024 00:14:42] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:14:42,551 - INFO - 127.0.0.1 - - [13/Oct/2024 00:14:42] "[36mGET /static/js/settings.js HTTP/1.1[0m" 304 -
-2024-10-13 00:14:42,552 - INFO - 127.0.0.1 - - [13/Oct/2024 00:14:42] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 00:15:45,732 - INFO - 127.0.0.1 - - [13/Oct/2024 00:15:45] "GET /admin/settings HTTP/1.1" 200 -
-2024-10-13 00:15:45,783 - INFO - 127.0.0.1 - - [13/Oct/2024 00:15:45] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
-2024-10-13 00:15:45,784 - INFO - 127.0.0.1 - - [13/Oct/2024 00:15:45] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:15:45,790 - INFO - 127.0.0.1 - - [13/Oct/2024 00:15:45] "[36mGET /static/js/settings.js HTTP/1.1[0m" 304 -
-2024-10-13 00:15:45,790 - INFO - 127.0.0.1 - - [13/Oct/2024 00:15:45] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 00:18:32,289 - INFO - 127.0.0.1 - - [13/Oct/2024 00:18:32] "GET /admin/settings HTTP/1.1" 200 -
-2024-10-13 00:18:32,320 - INFO - 127.0.0.1 - - [13/Oct/2024 00:18:32] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
-2024-10-13 00:18:32,323 - INFO - 127.0.0.1 - - [13/Oct/2024 00:18:32] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:18:32,325 - INFO - 127.0.0.1 - - [13/Oct/2024 00:18:32] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 00:18:32,327 - INFO - 127.0.0.1 - - [13/Oct/2024 00:18:32] "[36mGET /static/js/settings.js HTTP/1.1[0m" 304 -
-2024-10-13 00:18:34,326 - INFO - 127.0.0.1 - - [13/Oct/2024 00:18:34] "GET /update_password HTTP/1.1" 200 -
-2024-10-13 00:18:34,353 - INFO - 127.0.0.1 - - [13/Oct/2024 00:18:34] "[36mGET /static/assets/63bee75ee48d0b24photo-2.jpg HTTP/1.1[0m" 304 -
-2024-10-13 00:18:34,356 - INFO - 127.0.0.1 - - [13/Oct/2024 00:18:34] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:18:34,363 - INFO - 127.0.0.1 - - [13/Oct/2024 00:18:34] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-13 00:19:16,937 - INFO - 127.0.0.1 - - [13/Oct/2024 00:19:16] "GET /admin/settings HTTP/1.1" 200 -
-2024-10-13 00:19:16,973 - INFO - 127.0.0.1 - - [13/Oct/2024 00:19:16] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:19:16,973 - INFO - 127.0.0.1 - - [13/Oct/2024 00:19:16] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
-2024-10-13 00:19:16,974 - INFO - 127.0.0.1 - - [13/Oct/2024 00:19:16] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 00:19:16,976 - INFO - 127.0.0.1 - - [13/Oct/2024 00:19:16] "[36mGET /static/js/settings.js HTTP/1.1[0m" 304 -
-2024-10-13 00:19:46,927 - INFO - 127.0.0.1 - - [13/Oct/2024 00:19:46] "GET /admin/settings HTTP/1.1" 200 -
-2024-10-13 00:19:46,955 - INFO - 127.0.0.1 - - [13/Oct/2024 00:19:46] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
-2024-10-13 00:19:46,960 - INFO - 127.0.0.1 - - [13/Oct/2024 00:19:46] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 00:19:46,961 - INFO - 127.0.0.1 - - [13/Oct/2024 00:19:46] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:19:46,962 - INFO - 127.0.0.1 - - [13/Oct/2024 00:19:46] "[36mGET /static/js/settings.js HTTP/1.1[0m" 304 -
-2024-10-13 00:20:06,563 - INFO - 127.0.0.1 - - [13/Oct/2024 00:20:06] "GET /admin/settings HTTP/1.1" 200 -
-2024-10-13 00:20:06,595 - INFO - 127.0.0.1 - - [13/Oct/2024 00:20:06] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 00:20:06,597 - INFO - 127.0.0.1 - - [13/Oct/2024 00:20:06] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:20:06,598 - INFO - 127.0.0.1 - - [13/Oct/2024 00:20:06] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
-2024-10-13 00:20:06,599 - INFO - 127.0.0.1 - - [13/Oct/2024 00:20:06] "[36mGET /static/js/settings.js HTTP/1.1[0m" 304 -
-2024-10-13 00:20:40,696 - INFO - 127.0.0.1 - - [13/Oct/2024 00:20:40] "GET /admin HTTP/1.1" 200 -
-2024-10-13 00:20:40,733 - INFO - 127.0.0.1 - - [13/Oct/2024 00:20:40] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:20:40,733 - INFO - 127.0.0.1 - - [13/Oct/2024 00:20:40] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 00:21:43,023 - INFO - 127.0.0.1 - - [13/Oct/2024 00:21:43] "GET /admin HTTP/1.1" 200 -
-2024-10-13 00:21:43,106 - INFO - 127.0.0.1 - - [13/Oct/2024 00:21:43] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:21:43,115 - INFO - 127.0.0.1 - - [13/Oct/2024 00:21:43] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 00:22:24,430 - INFO - 127.0.0.1 - - [13/Oct/2024 00:22:24] "GET /admin HTTP/1.1" 200 -
-2024-10-13 00:22:24,463 - INFO - 127.0.0.1 - - [13/Oct/2024 00:22:24] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:22:24,467 - INFO - 127.0.0.1 - - [13/Oct/2024 00:22:24] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 00:22:25,601 - INFO - 127.0.0.1 - - [13/Oct/2024 00:22:25] "GET /admin/members HTTP/1.1" 200 -
-2024-10-13 00:22:25,676 - INFO - 127.0.0.1 - - [13/Oct/2024 00:22:25] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
-2024-10-13 00:22:25,678 - INFO - 127.0.0.1 - - [13/Oct/2024 00:22:25] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
-2024-10-13 00:22:25,680 - INFO - 127.0.0.1 - - [13/Oct/2024 00:22:25] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:22:25,683 - INFO - 127.0.0.1 - - [13/Oct/2024 00:22:25] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 00:22:31,645 - INFO - 127.0.0.1 - - [13/Oct/2024 00:22:31] "GET /admin/members HTTP/1.1" 200 -
-2024-10-13 00:22:31,674 - INFO - 127.0.0.1 - - [13/Oct/2024 00:22:31] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:22:31,674 - INFO - 127.0.0.1 - - [13/Oct/2024 00:22:31] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
-2024-10-13 00:22:31,684 - INFO - 127.0.0.1 - - [13/Oct/2024 00:22:31] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
-2024-10-13 00:22:31,684 - INFO - 127.0.0.1 - - [13/Oct/2024 00:22:31] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 00:22:34,467 - INFO - 127.0.0.1 - - [13/Oct/2024 00:22:34] "GET /admin/staff HTTP/1.1" 200 -
-2024-10-13 00:22:34,497 - INFO - 127.0.0.1 - - [13/Oct/2024 00:22:34] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:22:34,502 - INFO - 127.0.0.1 - - [13/Oct/2024 00:22:34] "[36mGET /static/js/staff.js HTTP/1.1[0m" 304 -
-2024-10-13 00:22:34,502 - INFO - 127.0.0.1 - - [13/Oct/2024 00:22:34] "[36mGET /static/css/staff.css HTTP/1.1[0m" 304 -
-2024-10-13 00:22:57,662 - INFO - 127.0.0.1 - - [13/Oct/2024 00:22:57] "GET /admin/loans HTTP/1.1" 200 -
-2024-10-13 00:22:57,700 - INFO - 127.0.0.1 - - [13/Oct/2024 00:22:57] "[36mGET /static/css/loans.css HTTP/1.1[0m" 304 -
-2024-10-13 00:22:57,708 - INFO - 127.0.0.1 - - [13/Oct/2024 00:22:57] "[36mGET /static/js/loans.js HTTP/1.1[0m" 304 -
-2024-10-13 00:23:04,061 - INFO - 127.0.0.1 - - [13/Oct/2024 00:23:04] "GET /admin/reports HTTP/1.1" 200 -
-2024-10-13 00:23:04,095 - INFO - 127.0.0.1 - - [13/Oct/2024 00:23:04] "[36mGET /static/css/reports.css HTTP/1.1[0m" 304 -
-2024-10-13 00:23:04,100 - INFO - 127.0.0.1 - - [13/Oct/2024 00:23:04] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:23:04,103 - INFO - 127.0.0.1 - - [13/Oct/2024 00:23:04] "[36mGET /static/js/reports.js HTTP/1.1[0m" 304 -
-2024-10-13 00:23:16,965 - INFO - 127.0.0.1 - - [13/Oct/2024 00:23:16] "GET /admin/settings HTTP/1.1" 200 -
-2024-10-13 00:23:17,062 - INFO - 127.0.0.1 - - [13/Oct/2024 00:23:17] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
-2024-10-13 00:23:17,069 - INFO - 127.0.0.1 - - [13/Oct/2024 00:23:17] "[36mGET /static/js/settings.js HTTP/1.1[0m" 304 -
-2024-10-13 00:23:17,071 - INFO - 127.0.0.1 - - [13/Oct/2024 00:23:17] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:23:17,072 - INFO - 127.0.0.1 - - [13/Oct/2024 00:23:17] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 00:26:13,700 - INFO - 127.0.0.1 - - [13/Oct/2024 00:26:13] "GET /admin/settings HTTP/1.1" 200 -
-2024-10-13 00:26:13,794 - INFO - 127.0.0.1 - - [13/Oct/2024 00:26:13] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
-2024-10-13 00:26:13,803 - INFO - 127.0.0.1 - - [13/Oct/2024 00:26:13] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 00:26:13,804 - INFO - 127.0.0.1 - - [13/Oct/2024 00:26:13] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:26:13,805 - INFO - 127.0.0.1 - - [13/Oct/2024 00:26:13] "[36mGET /static/js/settings.js HTTP/1.1[0m" 304 -
-2024-10-13 00:31:41,473 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/forms.py', reloading
-2024-10-13 00:31:41,643 - INFO -  * Restarting with stat
-2024-10-13 00:35:01,799 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2024-10-13 13:03:34,007 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-13 13:03:34,008 - INFO -  * Restarting with stat
+2024-10-13 13:03:34,707 - WARNING -  * Debugger is active!
+2024-10-13 13:03:34,707 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:03:41,205 - INFO - 192.168.100.41 - - [13/Oct/2024 13:03:41] "POST /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 13:03:41,257 - INFO - 192.168.100.41 - - [13/Oct/2024 13:03:41] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:03:46,353 - INFO - 192.168.100.41 - - [13/Oct/2024 13:03:46] "POST /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 13:03:46,407 - INFO - 192.168.100.41 - - [13/Oct/2024 13:03:46] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:04:10,132 - INFO - 192.168.100.41 - - [13/Oct/2024 13:04:10] "POST /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 13:04:10,232 - INFO - 192.168.100.41 - - [13/Oct/2024 13:04:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:04:12,234 - INFO - 192.168.100.41 - - [13/Oct/2024 13:04:12] "POST /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 13:04:12,288 - INFO - 192.168.100.41 - - [13/Oct/2024 13:04:12] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:10:00,863 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:10:01,022 - INFO -  * Restarting with stat
+2024-10-13 13:11:39,196 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
  * Running on http://192.168.100.41:5000
-2024-10-13 00:35:01,799 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-13 00:35:01,800 - INFO -  * Restarting with stat
-2024-10-13 00:35:02,315 - WARNING -  * Debugger is active!
-2024-10-13 00:35:02,316 - INFO -  * Debugger PIN: 718-713-251
-2024-10-13 00:35:05,993 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:05] "GET /login HTTP/1.1" 200 -
-2024-10-13 00:35:06,083 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:06] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-13 00:35:06,085 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:06] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-13 00:35:14,202 - DEBUG - Current User: True
-2024-10-13 00:35:14,203 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:14] "[32mPOST /login HTTP/1.1[0m" 302 -
-2024-10-13 00:35:14,238 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:14] "GET /overview HTTP/1.1" 200 -
-2024-10-13 00:35:14,284 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:14] "GET /static/assets/63bee75ee48d0b24photo-2.jpg HTTP/1.1" 200 -
-2024-10-13 00:35:14,288 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:14] "[32mGET /static//js/main.js HTTP/1.1[0m" 308 -
-2024-10-13 00:35:14,301 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:14] "GET /static/css/styles.css HTTP/1.1" 200 -
-2024-10-13 00:35:14,305 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:14] "GET /static/js/main.js HTTP/1.1" 200 -
-2024-10-13 00:35:23,598 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:23] "GET /admin HTTP/1.1" 200 -
-2024-10-13 00:35:23,641 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:23] "[32mGET /static//css/Adminstyles.css HTTP/1.1[0m" 308 -
-2024-10-13 00:35:23,645 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:23] "[32mGET /static//js/script.js HTTP/1.1[0m" 308 -
-2024-10-13 00:35:23,650 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:23] "GET /static/css/Adminstyles.css HTTP/1.1" 200 -
-2024-10-13 00:35:23,652 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:23] "GET /static/js/script.js HTTP/1.1" 200 -
-2024-10-13 00:35:26,629 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:26] "GET /admin HTTP/1.1" 200 -
-2024-10-13 00:35:26,660 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:26] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:35:26,662 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:26] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 00:35:28,587 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:28] "GET /admin HTTP/1.1" 200 -
-2024-10-13 00:35:28,657 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:28] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:35:28,659 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:28] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 00:35:30,640 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:30] "GET /admin HTTP/1.1" 200 -
-2024-10-13 00:35:30,729 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:30] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:35:30,734 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:30] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 00:35:39,026 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:39] "GET /profile HTTP/1.1" 200 -
-2024-10-13 00:35:39,107 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:39] "[36mGET /static/assets/63bee75ee48d0b24photo-2.jpg HTTP/1.1[0m" 304 -
-2024-10-13 00:35:39,113 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:39] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:35:39,117 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:39] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-13 00:35:40,551 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:40] "GET /update_acount HTTP/1.1" 200 -
-2024-10-13 00:35:40,601 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:40] "[36mGET /static/assets/63bee75ee48d0b24photo-2.jpg HTTP/1.1[0m" 304 -
-2024-10-13 00:35:40,606 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:40] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:35:40,609 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:40] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-13 00:35:48,105 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:48] "POST /update_acount HTTP/1.1" 200 -
-2024-10-13 00:35:48,147 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:48] "[36mGET /static/assets/63bee75ee48d0b24photo-2.jpg HTTP/1.1[0m" 304 -
-2024-10-13 00:35:48,157 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:48] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:35:48,158 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:48] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-13 00:35:50,297 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:50] "POST /update_acount HTTP/1.1" 200 -
-2024-10-13 00:35:50,333 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:50] "[36mGET /static/assets/63bee75ee48d0b24photo-2.jpg HTTP/1.1[0m" 304 -
-2024-10-13 00:35:50,342 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:50] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-13 00:35:50,342 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:50] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:35:53,903 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:53] "POST /update_acount HTTP/1.1" 200 -
-2024-10-13 00:35:53,941 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:53] "[36mGET /static/assets/63bee75ee48d0b24photo-2.jpg HTTP/1.1[0m" 304 -
-2024-10-13 00:35:53,950 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:53] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:35:53,952 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:53] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-13 00:35:55,463 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:55] "POST /update_acount HTTP/1.1" 200 -
-2024-10-13 00:35:55,517 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:55] "[36mGET /static/assets/63bee75ee48d0b24photo-2.jpg HTTP/1.1[0m" 304 -
-2024-10-13 00:35:55,524 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:55] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:35:55,527 - INFO - 192.168.100.41 - - [13/Oct/2024 00:35:55] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-13 00:36:00,700 - INFO - 192.168.100.41 - - [13/Oct/2024 00:36:00] "GET /overview HTTP/1.1" 200 -
-2024-10-13 00:36:00,822 - INFO - 192.168.100.41 - - [13/Oct/2024 00:36:00] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:36:00,824 - INFO - 192.168.100.41 - - [13/Oct/2024 00:36:00] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-13 00:36:00,862 - INFO - 192.168.100.41 - - [13/Oct/2024 00:36:00] "[36mGET /static/assets/63bee75ee48d0b24photo-2.jpg HTTP/1.1[0m" 304 -
-2024-10-13 00:36:49,134 - INFO - 127.0.0.1 - - [13/Oct/2024 00:36:49] "[32mGET /login HTTP/1.1[0m" 302 -
-2024-10-13 00:36:49,150 - INFO - 127.0.0.1 - - [13/Oct/2024 00:36:49] "GET /overview HTTP/1.1" 200 -
-2024-10-13 00:36:49,200 - INFO - 127.0.0.1 - - [13/Oct/2024 00:36:49] "[36mGET /static/assets/63bee75ee48d0b24photo-2.jpg HTTP/1.1[0m" 304 -
-2024-10-13 00:36:49,229 - INFO - 127.0.0.1 - - [13/Oct/2024 00:36:49] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:36:49,237 - INFO - 127.0.0.1 - - [13/Oct/2024 00:36:49] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-13 00:36:51,480 - INFO - 127.0.0.1 - - [13/Oct/2024 00:36:51] "[32mGET /logout HTTP/1.1[0m" 302 -
-2024-10-13 00:36:51,492 - INFO - 127.0.0.1 - - [13/Oct/2024 00:36:51] "GET /login HTTP/1.1" 200 -
-2024-10-13 00:36:51,544 - INFO - 127.0.0.1 - - [13/Oct/2024 00:36:51] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-13 00:36:51,546 - INFO - 127.0.0.1 - - [13/Oct/2024 00:36:51] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-13 00:36:56,888 - INFO - 192.168.100.41 - - [13/Oct/2024 00:36:56] "GET /overview HTTP/1.1" 200 -
-2024-10-13 00:36:56,920 - INFO - 192.168.100.41 - - [13/Oct/2024 00:36:56] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:36:56,922 - INFO - 192.168.100.41 - - [13/Oct/2024 00:36:56] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-13 00:36:56,965 - INFO - 192.168.100.41 - - [13/Oct/2024 00:36:56] "[36mGET /static/assets/63bee75ee48d0b24photo-2.jpg HTTP/1.1[0m" 304 -
-2024-10-13 00:36:59,046 - INFO - 192.168.100.41 - - [13/Oct/2024 00:36:59] "GET /profile HTTP/1.1" 200 -
-2024-10-13 00:36:59,160 - INFO - 192.168.100.41 - - [13/Oct/2024 00:36:59] "[36mGET /static/assets/63bee75ee48d0b24photo-2.jpg HTTP/1.1[0m" 304 -
-2024-10-13 00:36:59,170 - INFO - 192.168.100.41 - - [13/Oct/2024 00:36:59] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:36:59,171 - INFO - 192.168.100.41 - - [13/Oct/2024 00:36:59] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-13 00:37:00,549 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:00] "GET /update_acount HTTP/1.1" 200 -
-2024-10-13 00:37:00,650 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:00] "[36mGET /static/assets/63bee75ee48d0b24photo-2.jpg HTTP/1.1[0m" 304 -
-2024-10-13 00:37:00,655 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:00] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:37:00,659 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:00] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-13 00:37:09,905 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:09] "POST /update_acount HTTP/1.1" 200 -
-2024-10-13 00:37:09,955 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:09] "[36mGET /static/assets/63bee75ee48d0b24photo-2.jpg HTTP/1.1[0m" 304 -
-2024-10-13 00:37:09,963 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:09] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:37:09,966 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:09] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-13 00:37:17,575 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:17] "POST /update_acount HTTP/1.1" 200 -
-2024-10-13 00:37:17,608 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:17] "[36mGET /static/assets/63bee75ee48d0b24photo-2.jpg HTTP/1.1[0m" 304 -
-2024-10-13 00:37:17,614 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:17] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:37:17,618 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:17] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-13 00:37:24,300 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:24] "[32mGET /logout HTTP/1.1[0m" 302 -
-2024-10-13 00:37:24,315 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:24] "GET /login HTTP/1.1" 200 -
-2024-10-13 00:37:24,385 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:24] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-13 00:37:24,388 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:24] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-13 00:37:26,282 - DEBUG - Current User: True
-2024-10-13 00:37:26,283 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:26] "[32mPOST /login HTTP/1.1[0m" 302 -
-2024-10-13 00:37:26,289 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:26] "GET /overview HTTP/1.1" 200 -
-2024-10-13 00:37:26,346 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:37:26,348 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:26] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-13 00:37:26,390 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:26] "[36mGET /static/assets/63bee75ee48d0b24photo-2.jpg HTTP/1.1[0m" 304 -
-2024-10-13 00:37:28,570 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:28] "GET /profile HTTP/1.1" 200 -
-2024-10-13 00:37:28,702 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:28] "[36mGET /static/assets/63bee75ee48d0b24photo-2.jpg HTTP/1.1[0m" 304 -
-2024-10-13 00:37:28,708 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:28] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:37:28,710 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:28] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-13 00:37:30,197 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:30] "GET /update_acount HTTP/1.1" 200 -
-2024-10-13 00:37:30,349 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:30] "[36mGET /static/assets/63bee75ee48d0b24photo-2.jpg HTTP/1.1[0m" 304 -
-2024-10-13 00:37:30,357 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:30] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:37:30,358 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:30] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-13 00:37:42,426 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:42] "[32mPOST /update_acount HTTP/1.1[0m" 302 -
-2024-10-13 00:37:42,442 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:42] "GET /profile HTTP/1.1" 200 -
-2024-10-13 00:37:42,518 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:42] "[36mGET /static/assets/63bee75ee48d0b24photo-2.jpg HTTP/1.1[0m" 304 -
-2024-10-13 00:37:42,524 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:42] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:37:42,526 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:42] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-13 00:37:58,578 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:58] "GET /profile HTTP/1.1" 200 -
-2024-10-13 00:37:58,699 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:58] "[36mGET /static/assets/63bee75ee48d0b24photo-2.jpg HTTP/1.1[0m" 304 -
-2024-10-13 00:37:58,710 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:58] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-13 00:37:58,711 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:58] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:37:59,845 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:59] "GET /update_acount HTTP/1.1" 200 -
-2024-10-13 00:37:59,894 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:59] "[36mGET /static/assets/63bee75ee48d0b24photo-2.jpg HTTP/1.1[0m" 304 -
-2024-10-13 00:37:59,900 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:59] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:37:59,904 - INFO - 192.168.100.41 - - [13/Oct/2024 00:37:59] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-13 00:38:08,581 - INFO - 192.168.100.41 - - [13/Oct/2024 00:38:08] "POST /update_acount HTTP/1.1" 200 -
-2024-10-13 00:38:08,668 - INFO - 192.168.100.41 - - [13/Oct/2024 00:38:08] "[36mGET /static/assets/63bee75ee48d0b24photo-2.jpg HTTP/1.1[0m" 304 -
-2024-10-13 00:38:08,678 - INFO - 192.168.100.41 - - [13/Oct/2024 00:38:08] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:38:08,680 - INFO - 192.168.100.41 - - [13/Oct/2024 00:38:08] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-13 00:38:17,370 - INFO - 192.168.100.41 - - [13/Oct/2024 00:38:17] "[32mPOST /update_acount HTTP/1.1[0m" 302 -
-2024-10-13 00:38:17,377 - INFO - 192.168.100.41 - - [13/Oct/2024 00:38:17] "GET /profile HTTP/1.1" 200 -
-2024-10-13 00:38:17,420 - INFO - 192.168.100.41 - - [13/Oct/2024 00:38:17] "[36mGET /static/assets/63bee75ee48d0b24photo-2.jpg HTTP/1.1[0m" 304 -
-2024-10-13 00:38:17,430 - INFO - 192.168.100.41 - - [13/Oct/2024 00:38:17] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:38:17,432 - INFO - 192.168.100.41 - - [13/Oct/2024 00:38:17] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-13 00:38:28,435 - INFO - 192.168.100.41 - - [13/Oct/2024 00:38:28] "GET /admin HTTP/1.1" 200 -
-2024-10-13 00:38:28,512 - INFO - 192.168.100.41 - - [13/Oct/2024 00:38:28] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:38:28,513 - INFO - 192.168.100.41 - - [13/Oct/2024 00:38:28] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 00:39:01,614 - INFO - 127.0.0.1 - - [13/Oct/2024 00:39:01] "[32mPOST /login HTTP/1.1[0m" 302 -
-2024-10-13 00:39:01,618 - INFO - 127.0.0.1 - - [13/Oct/2024 00:39:01] "GET /admin HTTP/1.1" 200 -
-2024-10-13 00:39:01,650 - INFO - 127.0.0.1 - - [13/Oct/2024 00:39:01] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 00:39:01,651 - INFO - 127.0.0.1 - - [13/Oct/2024 00:39:01] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:39:04,483 - INFO - 127.0.0.1 - - [13/Oct/2024 00:39:04] "GET /admin HTTP/1.1" 200 -
-2024-10-13 00:39:04,562 - INFO - 127.0.0.1 - - [13/Oct/2024 00:39:04] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:39:04,576 - INFO - 127.0.0.1 - - [13/Oct/2024 00:39:04] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 00:39:05,546 - INFO - 127.0.0.1 - - [13/Oct/2024 00:39:05] "GET /admin HTTP/1.1" 200 -
-2024-10-13 00:39:05,611 - INFO - 127.0.0.1 - - [13/Oct/2024 00:39:05] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 00:39:05,615 - INFO - 127.0.0.1 - - [13/Oct/2024 00:39:05] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 00:39:44,802 - INFO - 192.168.100.41 - - [13/Oct/2024 00:39:44] "[32mGET /admin HTTP/1.1[0m" 302 -
-2024-10-13 00:39:44,808 - INFO - 192.168.100.41 - - [13/Oct/2024 00:39:44] "GET /login?next=/admin HTTP/1.1" 200 -
-2024-10-13 00:39:44,824 - INFO - 192.168.100.41 - - [13/Oct/2024 00:39:44] "[32mGET /static//js/registration.js HTTP/1.1[0m" 308 -
-2024-10-13 00:39:44,826 - INFO - 192.168.100.41 - - [13/Oct/2024 00:39:44] "[32mGET /static//css/registration.css HTTP/1.1[0m" 308 -
-2024-10-13 00:39:44,832 - INFO - 192.168.100.41 - - [13/Oct/2024 00:39:44] "GET /static/js/registration.js HTTP/1.1" 200 -
-2024-10-13 00:39:44,834 - INFO - 192.168.100.41 - - [13/Oct/2024 00:39:44] "GET /static/css/registration.css HTTP/1.1" 200 -
-2024-10-13 06:30:08,980 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2024-10-13 13:11:39,196 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-13 13:11:39,197 - INFO -  * Restarting with stat
+2024-10-13 13:11:39,726 - WARNING -  * Debugger is active!
+2024-10-13 13:11:39,726 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:11:45,880 - INFO - 192.168.100.41 - - [13/Oct/2024 13:11:45] "POST /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 13:11:45,937 - INFO - 192.168.100.41 - - [13/Oct/2024 13:11:45] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:12:02,645 - INFO - 192.168.100.41 - - [13/Oct/2024 13:12:02] "POST /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 13:12:02,695 - INFO - 192.168.100.41 - - [13/Oct/2024 13:12:02] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:12:17,580 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:12:17,735 - INFO -  * Restarting with stat
+2024-10-13 13:12:18,615 - WARNING -  * Debugger is active!
+2024-10-13 13:12:18,616 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:12:23,677 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:12:23,837 - INFO -  * Restarting with stat
+2024-10-13 13:12:24,730 - WARNING -  * Debugger is active!
+2024-10-13 13:12:24,730 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:12:25,752 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:12:25,891 - INFO -  * Restarting with stat
+2024-10-13 13:12:26,423 - WARNING -  * Debugger is active!
+2024-10-13 13:12:26,423 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:12:30,484 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:12:30,634 - INFO -  * Restarting with stat
+2024-10-13 13:12:31,187 - WARNING -  * Debugger is active!
+2024-10-13 13:12:31,187 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:12:37,999 - INFO - 192.168.100.41 - - [13/Oct/2024 13:12:37] "POST /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 13:12:38,042 - INFO - 192.168.100.41 - - [13/Oct/2024 13:12:38] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:12:51,705 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:12:51,868 - INFO -  * Restarting with stat
+2024-10-13 13:12:52,422 - WARNING -  * Debugger is active!
+2024-10-13 13:12:52,423 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:13:03,607 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:13:03,826 - INFO -  * Restarting with stat
+2024-10-13 13:13:04,447 - WARNING -  * Debugger is active!
+2024-10-13 13:13:04,448 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:13:07,137 - INFO - 192.168.100.41 - - [13/Oct/2024 13:13:07] "POST /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 13:13:07,191 - INFO - 192.168.100.41 - - [13/Oct/2024 13:13:07] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:13:22,806 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:13:22,989 - INFO -  * Restarting with stat
+2024-10-13 13:13:23,677 - WARNING -  * Debugger is active!
+2024-10-13 13:13:23,677 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:13:29,872 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:13:30,072 - INFO -  * Restarting with stat
+2024-10-13 13:13:30,615 - WARNING -  * Debugger is active!
+2024-10-13 13:13:30,616 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:13:35,035 - INFO - 192.168.100.41 - - [13/Oct/2024 13:13:35] "POST /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 13:13:35,079 - INFO - 192.168.100.41 - - [13/Oct/2024 13:13:35] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:13:44,902 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:13:45,057 - INFO -  * Restarting with stat
+2024-10-13 13:13:45,803 - WARNING -  * Debugger is active!
+2024-10-13 13:13:45,804 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:13:46,839 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:13:47,020 - INFO -  * Restarting with stat
+2024-10-13 13:13:47,570 - WARNING -  * Debugger is active!
+2024-10-13 13:13:47,571 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:13:54,695 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:13:54,859 - INFO -  * Restarting with stat
+2024-10-13 13:13:55,419 - WARNING -  * Debugger is active!
+2024-10-13 13:13:55,419 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:14:04,310 - INFO - 192.168.100.41 - - [13/Oct/2024 13:14:04] "POST /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 13:14:04,363 - INFO - 192.168.100.41 - - [13/Oct/2024 13:14:04] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:14:13,840 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:14:14,045 - INFO -  * Restarting with stat
+2024-10-13 13:14:14,989 - WARNING -  * Debugger is active!
+2024-10-13 13:14:14,990 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:14:18,078 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:14:18,252 - INFO -  * Restarting with stat
+2024-10-13 13:14:18,963 - WARNING -  * Debugger is active!
+2024-10-13 13:14:18,963 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:14:19,995 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:14:20,157 - INFO -  * Restarting with stat
+2024-10-13 13:14:20,717 - WARNING -  * Debugger is active!
+2024-10-13 13:14:20,718 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:14:24,777 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:14:24,942 - INFO -  * Restarting with stat
+2024-10-13 13:14:25,651 - WARNING -  * Debugger is active!
+2024-10-13 13:14:25,652 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:14:30,915 - INFO - 192.168.100.41 - - [13/Oct/2024 13:14:30] "POST /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 13:14:30,972 - INFO - 192.168.100.41 - - [13/Oct/2024 13:14:30] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:14:59,606 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
  * Running on http://192.168.100.41:5000
-2024-10-13 06:30:08,980 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-13 06:30:08,982 - INFO -  * Restarting with stat
-2024-10-13 06:30:09,517 - WARNING -  * Debugger is active!
-2024-10-13 06:30:09,517 - INFO -  * Debugger PIN: 113-571-699
-2024-10-13 06:31:29,098 - INFO - 192.168.100.41 - - [13/Oct/2024 06:31:29] "[32mGET /admin HTTP/1.1[0m" 302 -
-2024-10-13 06:31:29,131 - INFO - 192.168.100.41 - - [13/Oct/2024 06:31:29] "GET /login?next=/admin HTTP/1.1" 200 -
-2024-10-13 06:31:29,243 - INFO - 192.168.100.41 - - [13/Oct/2024 06:31:29] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-13 06:31:29,244 - INFO - 192.168.100.41 - - [13/Oct/2024 06:31:29] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-13 06:31:51,454 - INFO - 192.168.100.41 - - [13/Oct/2024 06:31:51] "[32mPOST /login?next=/admin HTTP/1.1[0m" 302 -
-2024-10-13 06:31:51,467 - INFO - 192.168.100.41 - - [13/Oct/2024 06:31:51] "GET /admin HTTP/1.1" 200 -
-2024-10-13 06:31:51,543 - INFO - 192.168.100.41 - - [13/Oct/2024 06:31:51] "GET /static/css/Adminstyles.css HTTP/1.1" 200 -
-2024-10-13 06:31:51,547 - INFO - 192.168.100.41 - - [13/Oct/2024 06:31:51] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 06:31:54,283 - INFO - 192.168.100.41 - - [13/Oct/2024 06:31:54] "GET /admin/members HTTP/1.1" 200 -
-2024-10-13 06:31:54,328 - INFO - 192.168.100.41 - - [13/Oct/2024 06:31:54] "[32mGET /static//css/members.css HTTP/1.1[0m" 308 -
-2024-10-13 06:31:54,334 - INFO - 192.168.100.41 - - [13/Oct/2024 06:31:54] "[32mGET /static//js/members.js HTTP/1.1[0m" 308 -
-2024-10-13 06:31:54,341 - INFO - 192.168.100.41 - - [13/Oct/2024 06:31:54] "GET /static/css/members.css HTTP/1.1" 200 -
-2024-10-13 06:31:54,345 - INFO - 192.168.100.41 - - [13/Oct/2024 06:31:54] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 06:31:54,348 - INFO - 192.168.100.41 - - [13/Oct/2024 06:31:54] "GET /static/js/members.js HTTP/1.1" 200 -
-2024-10-13 06:31:54,349 - INFO - 192.168.100.41 - - [13/Oct/2024 06:31:54] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 06:31:56,478 - INFO - 192.168.100.41 - - [13/Oct/2024 06:31:56] "GET /admin/members HTTP/1.1" 200 -
-2024-10-13 06:31:56,573 - INFO - 192.168.100.41 - - [13/Oct/2024 06:31:56] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
-2024-10-13 06:31:56,577 - INFO - 192.168.100.41 - - [13/Oct/2024 06:31:56] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 06:31:56,580 - INFO - 192.168.100.41 - - [13/Oct/2024 06:31:56] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
-2024-10-13 06:31:56,582 - INFO - 192.168.100.41 - - [13/Oct/2024 06:31:56] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 06:31:58,170 - INFO - 192.168.100.41 - - [13/Oct/2024 06:31:58] "GET /admin HTTP/1.1" 200 -
-2024-10-13 06:31:58,275 - INFO - 192.168.100.41 - - [13/Oct/2024 06:31:58] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 06:31:58,276 - INFO - 192.168.100.41 - - [13/Oct/2024 06:31:58] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 06:32:00,725 - INFO - 192.168.100.41 - - [13/Oct/2024 06:32:00] "GET /admin HTTP/1.1" 200 -
-2024-10-13 06:32:00,773 - INFO - 192.168.100.41 - - [13/Oct/2024 06:32:00] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 06:32:00,774 - INFO - 192.168.100.41 - - [13/Oct/2024 06:32:00] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 06:32:02,079 - INFO - 192.168.100.41 - - [13/Oct/2024 06:32:02] "GET /admin HTTP/1.1" 200 -
-2024-10-13 06:32:02,130 - INFO - 192.168.100.41 - - [13/Oct/2024 06:32:02] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 06:32:02,134 - INFO - 192.168.100.41 - - [13/Oct/2024 06:32:02] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 06:32:42,118 - INFO - 127.0.0.1 - - [13/Oct/2024 06:32:42] "GET /login HTTP/1.1" 200 -
-2024-10-13 06:32:42,191 - INFO - 127.0.0.1 - - [13/Oct/2024 06:32:42] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-13 06:32:42,192 - INFO - 127.0.0.1 - - [13/Oct/2024 06:32:42] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-13 06:32:48,124 - INFO - 127.0.0.1 - - [13/Oct/2024 06:32:48] "[32mGET /admin/loans HTTP/1.1[0m" 302 -
-2024-10-13 06:32:48,134 - INFO - 127.0.0.1 - - [13/Oct/2024 06:32:48] "GET /login?next=/admin/loans HTTP/1.1" 200 -
-2024-10-13 06:32:48,186 - INFO - 127.0.0.1 - - [13/Oct/2024 06:32:48] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-13 06:32:48,220 - INFO - 127.0.0.1 - - [13/Oct/2024 06:32:48] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-13 06:32:48,277 - INFO - 127.0.0.1 - - [13/Oct/2024 06:32:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-2024-10-13 06:32:57,076 - DEBUG - Current User: True
-2024-10-13 06:32:57,077 - INFO - 127.0.0.1 - - [13/Oct/2024 06:32:57] "[32mPOST /login?next=/admin/loans HTTP/1.1[0m" 302 -
-2024-10-13 06:32:57,087 - INFO - 127.0.0.1 - - [13/Oct/2024 06:32:57] "GET /admin/loans HTTP/1.1" 200 -
-2024-10-13 06:32:57,116 - INFO - 127.0.0.1 - - [13/Oct/2024 06:32:57] "[36mGET /static/css/loans.css HTTP/1.1[0m" 304 -
-2024-10-13 06:32:57,122 - INFO - 127.0.0.1 - - [13/Oct/2024 06:32:57] "[36mGET /static/js/loans.js HTTP/1.1[0m" 304 -
-2024-10-13 06:33:02,109 - INFO - 127.0.0.1 - - [13/Oct/2024 06:33:02] "GET /admin/members HTTP/1.1" 200 -
-2024-10-13 06:33:02,145 - INFO - 127.0.0.1 - - [13/Oct/2024 06:33:02] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 06:33:02,146 - INFO - 127.0.0.1 - - [13/Oct/2024 06:33:02] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 06:33:02,149 - INFO - 127.0.0.1 - - [13/Oct/2024 06:33:02] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
-2024-10-13 06:33:02,150 - INFO - 127.0.0.1 - - [13/Oct/2024 06:33:02] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
-2024-10-13 06:33:03,854 - INFO - 127.0.0.1 - - [13/Oct/2024 06:33:03] "GET /admin HTTP/1.1" 200 -
-2024-10-13 06:33:03,938 - INFO - 127.0.0.1 - - [13/Oct/2024 06:33:03] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 06:33:03,941 - INFO - 127.0.0.1 - - [13/Oct/2024 06:33:03] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 06:33:07,797 - INFO - 127.0.0.1 - - [13/Oct/2024 06:33:07] "[32mGET /login HTTP/1.1[0m" 302 -
-2024-10-13 06:33:07,824 - INFO - 127.0.0.1 - - [13/Oct/2024 06:33:07] "GET /overview HTTP/1.1" 200 -
-2024-10-13 06:33:07,840 - INFO - 127.0.0.1 - - [13/Oct/2024 06:33:07] "[36mGET /static/assets/63bee75ee48d0b24photo-2.jpg HTTP/1.1[0m" 304 -
-2024-10-13 06:33:07,846 - INFO - 127.0.0.1 - - [13/Oct/2024 06:33:07] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
-2024-10-13 06:33:07,885 - INFO - 127.0.0.1 - - [13/Oct/2024 06:33:07] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
-2024-10-13 06:33:08,691 - INFO - 127.0.0.1 - - [13/Oct/2024 06:33:08] "[32mGET /logout HTTP/1.1[0m" 302 -
-2024-10-13 06:33:08,703 - INFO - 127.0.0.1 - - [13/Oct/2024 06:33:08] "GET /login HTTP/1.1" 200 -
-2024-10-13 06:33:08,732 - INFO - 127.0.0.1 - - [13/Oct/2024 06:33:08] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-13 06:33:08,734 - INFO - 127.0.0.1 - - [13/Oct/2024 06:33:08] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-13 06:33:23,543 - INFO - 192.168.100.41 - - [13/Oct/2024 06:33:23] "GET /admin HTTP/1.1" 200 -
-2024-10-13 06:33:23,590 - INFO - 192.168.100.41 - - [13/Oct/2024 06:33:23] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 06:33:23,593 - INFO - 192.168.100.41 - - [13/Oct/2024 06:33:23] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 06:33:24,705 - INFO - 192.168.100.41 - - [13/Oct/2024 06:33:24] "GET /admin HTTP/1.1" 200 -
-2024-10-13 06:33:24,771 - INFO - 192.168.100.41 - - [13/Oct/2024 06:33:24] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 06:33:24,774 - INFO - 192.168.100.41 - - [13/Oct/2024 06:33:24] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 06:33:29,348 - INFO - 192.168.100.41 - - [13/Oct/2024 06:33:29] "[32mGET /logout HTTP/1.1[0m" 302 -
-2024-10-13 06:33:29,358 - INFO - 192.168.100.41 - - [13/Oct/2024 06:33:29] "GET /login HTTP/1.1" 200 -
-2024-10-13 06:33:29,416 - INFO - 192.168.100.41 - - [13/Oct/2024 06:33:29] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
-2024-10-13 06:33:29,418 - INFO - 192.168.100.41 - - [13/Oct/2024 06:33:29] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
-2024-10-13 06:33:45,932 - INFO - 192.168.100.41 - - [13/Oct/2024 06:33:45] "[32mPOST /login HTTP/1.1[0m" 302 -
-2024-10-13 06:33:45,937 - INFO - 192.168.100.41 - - [13/Oct/2024 06:33:45] "GET /admin HTTP/1.1" 200 -
-2024-10-13 06:33:46,024 - INFO - 192.168.100.41 - - [13/Oct/2024 06:33:46] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 06:33:46,025 - INFO - 192.168.100.41 - - [13/Oct/2024 06:33:46] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 06:33:51,745 - INFO - 192.168.100.41 - - [13/Oct/2024 06:33:51] "GET /admin HTTP/1.1" 200 -
-2024-10-13 06:33:51,791 - INFO - 192.168.100.41 - - [13/Oct/2024 06:33:51] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 06:33:51,793 - INFO - 192.168.100.41 - - [13/Oct/2024 06:33:51] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 06:33:53,337 - INFO - 192.168.100.41 - - [13/Oct/2024 06:33:53] "GET /admin HTTP/1.1" 200 -
-2024-10-13 06:33:53,393 - INFO - 192.168.100.41 - - [13/Oct/2024 06:33:53] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 06:33:53,394 - INFO - 192.168.100.41 - - [13/Oct/2024 06:33:53] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 06:33:55,008 - INFO - 192.168.100.41 - - [13/Oct/2024 06:33:55] "GET /admin HTTP/1.1" 200 -
-2024-10-13 06:33:55,120 - INFO - 192.168.100.41 - - [13/Oct/2024 06:33:55] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 06:33:55,121 - INFO - 192.168.100.41 - - [13/Oct/2024 06:33:55] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 06:33:56,529 - INFO - 192.168.100.41 - - [13/Oct/2024 06:33:56] "GET /admin HTTP/1.1" 200 -
-2024-10-13 06:33:56,565 - INFO - 192.168.100.41 - - [13/Oct/2024 06:33:56] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 06:33:56,565 - INFO - 192.168.100.41 - - [13/Oct/2024 06:33:56] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 06:33:57,886 - INFO - 192.168.100.41 - - [13/Oct/2024 06:33:57] "GET /admin HTTP/1.1" 200 -
-2024-10-13 06:33:57,953 - INFO - 192.168.100.41 - - [13/Oct/2024 06:33:57] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 06:33:57,956 - INFO - 192.168.100.41 - - [13/Oct/2024 06:33:57] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 06:34:32,190 - INFO - 192.168.100.41 - - [13/Oct/2024 06:34:32] "GET /admin/members HTTP/1.1" 200 -
-2024-10-13 06:34:32,234 - INFO - 192.168.100.41 - - [13/Oct/2024 06:34:32] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
-2024-10-13 06:34:32,238 - INFO - 192.168.100.41 - - [13/Oct/2024 06:34:32] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 06:34:32,241 - INFO - 192.168.100.41 - - [13/Oct/2024 06:34:32] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
-2024-10-13 06:34:32,244 - INFO - 192.168.100.41 - - [13/Oct/2024 06:34:32] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 06:34:37,753 - INFO - 192.168.100.41 - - [13/Oct/2024 06:34:37] "GET /admin HTTP/1.1" 200 -
-2024-10-13 06:34:37,909 - INFO - 192.168.100.41 - - [13/Oct/2024 06:34:37] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 06:34:37,914 - INFO - 192.168.100.41 - - [13/Oct/2024 06:34:37] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 06:36:12,395 - INFO - 192.168.100.41 - - [13/Oct/2024 06:36:12] "GET /admin HTTP/1.1" 200 -
-2024-10-13 06:36:12,445 - INFO - 192.168.100.41 - - [13/Oct/2024 06:36:12] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 06:36:12,446 - INFO - 192.168.100.41 - - [13/Oct/2024 06:36:12] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 06:37:19,934 - INFO - 192.168.100.41 - - [13/Oct/2024 06:37:19] "GET /admin HTTP/1.1" 200 -
-2024-10-13 06:37:19,970 - INFO - 192.168.100.41 - - [13/Oct/2024 06:37:19] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 06:37:19,972 - INFO - 192.168.100.41 - - [13/Oct/2024 06:37:19] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 06:37:27,361 - INFO - 192.168.100.41 - - [13/Oct/2024 06:37:27] "GET /admin HTTP/1.1" 200 -
-2024-10-13 06:37:27,398 - INFO - 192.168.100.41 - - [13/Oct/2024 06:37:27] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 06:37:27,400 - INFO - 192.168.100.41 - - [13/Oct/2024 06:37:27] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 06:37:28,699 - INFO - 192.168.100.41 - - [13/Oct/2024 06:37:28] "GET /admin HTTP/1.1" 200 -
-2024-10-13 06:37:28,745 - INFO - 192.168.100.41 - - [13/Oct/2024 06:37:28] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 06:37:28,745 - INFO - 192.168.100.41 - - [13/Oct/2024 06:37:28] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 06:37:30,318 - INFO - 192.168.100.41 - - [13/Oct/2024 06:37:30] "GET /admin HTTP/1.1" 200 -
-2024-10-13 06:37:30,397 - INFO - 192.168.100.41 - - [13/Oct/2024 06:37:30] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 06:37:30,402 - INFO - 192.168.100.41 - - [13/Oct/2024 06:37:30] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 06:38:45,070 - INFO - 192.168.100.41 - - [13/Oct/2024 06:38:45] "GET /admin HTTP/1.1" 200 -
-2024-10-13 06:38:45,107 - INFO - 192.168.100.41 - - [13/Oct/2024 06:38:45] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 06:38:45,108 - INFO - 192.168.100.41 - - [13/Oct/2024 06:38:45] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 06:38:46,871 - INFO - 192.168.100.41 - - [13/Oct/2024 06:38:46] "GET /admin/members HTTP/1.1" 200 -
-2024-10-13 06:38:46,993 - INFO - 192.168.100.41 - - [13/Oct/2024 06:38:46] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
-2024-10-13 06:38:46,994 - INFO - 192.168.100.41 - - [13/Oct/2024 06:38:46] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 06:38:47,000 - INFO - 192.168.100.41 - - [13/Oct/2024 06:38:47] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 06:38:47,001 - INFO - 192.168.100.41 - - [13/Oct/2024 06:38:47] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
-2024-10-13 06:39:30,849 - INFO - 192.168.100.41 - - [13/Oct/2024 06:39:30] "GET /admin HTTP/1.1" 200 -
-2024-10-13 06:39:30,884 - INFO - 192.168.100.41 - - [13/Oct/2024 06:39:30] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 06:39:30,885 - INFO - 192.168.100.41 - - [13/Oct/2024 06:39:30] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 06:42:13,166 - INFO - 192.168.100.41 - - [13/Oct/2024 06:42:13] "GET /admin/members HTTP/1.1" 200 -
-2024-10-13 06:42:13,277 - INFO - 192.168.100.41 - - [13/Oct/2024 06:42:13] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
-2024-10-13 06:42:13,282 - INFO - 192.168.100.41 - - [13/Oct/2024 06:42:13] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
-2024-10-13 06:42:13,282 - INFO - 192.168.100.41 - - [13/Oct/2024 06:42:13] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 06:42:13,285 - INFO - 192.168.100.41 - - [13/Oct/2024 06:42:13] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 06:42:16,053 - INFO - 192.168.100.41 - - [13/Oct/2024 06:42:16] "GET /admin/members HTTP/1.1" 200 -
-2024-10-13 06:42:16,089 - INFO - 192.168.100.41 - - [13/Oct/2024 06:42:16] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
-2024-10-13 06:42:16,092 - INFO - 192.168.100.41 - - [13/Oct/2024 06:42:16] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 06:42:16,097 - INFO - 192.168.100.41 - - [13/Oct/2024 06:42:16] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
-2024-10-13 06:42:16,097 - INFO - 192.168.100.41 - - [13/Oct/2024 06:42:16] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 06:42:19,040 - INFO - 192.168.100.41 - - [13/Oct/2024 06:42:19] "GET /admin HTTP/1.1" 200 -
-2024-10-13 06:42:19,080 - INFO - 192.168.100.41 - - [13/Oct/2024 06:42:19] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 06:42:19,080 - INFO - 192.168.100.41 - - [13/Oct/2024 06:42:19] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 06:44:45,745 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-13 06:44:45,962 - INFO -  * Restarting with stat
-2024-10-13 06:44:46,550 - WARNING -  * Debugger is active!
-2024-10-13 06:44:46,550 - INFO -  * Debugger PIN: 113-571-699
-2024-10-13 06:44:55,699 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-13 06:44:55,853 - INFO -  * Restarting with stat
-2024-10-13 06:44:56,667 - WARNING -  * Debugger is active!
-2024-10-13 06:44:56,668 - INFO -  * Debugger PIN: 113-571-699
-2024-10-13 06:44:59,711 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-13 06:44:59,883 - INFO -  * Restarting with stat
-2024-10-13 06:47:08,500 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2024-10-13 13:14:59,606 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-13 13:14:59,607 - INFO -  * Restarting with stat
+2024-10-13 13:15:00,212 - WARNING -  * Debugger is active!
+2024-10-13 13:15:00,213 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:15:04,230 - INFO - 192.168.100.41 - - [13/Oct/2024 13:15:04] "POST /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 13:15:04,283 - INFO - 192.168.100.41 - - [13/Oct/2024 13:15:04] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:15:27,677 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:15:27,942 - INFO -  * Restarting with stat
+2024-10-13 13:15:28,478 - WARNING -  * Debugger is active!
+2024-10-13 13:15:28,478 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:15:36,761 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:15:36,922 - INFO -  * Restarting with stat
+2024-10-13 13:15:37,448 - WARNING -  * Debugger is active!
+2024-10-13 13:15:37,448 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:15:38,713 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
  * Running on http://192.168.100.41:5000
-2024-10-13 06:47:08,500 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-13 06:47:08,501 - INFO -  * Restarting with stat
-2024-10-13 06:47:09,018 - WARNING -  * Debugger is active!
-2024-10-13 06:47:09,018 - INFO -  * Debugger PIN: 113-571-699
-2024-10-13 06:47:21,467 - INFO - 192.168.100.41 - - [13/Oct/2024 06:47:21] "GET /admin HTTP/1.1" 200 -
-2024-10-13 06:47:21,510 - INFO - 192.168.100.41 - - [13/Oct/2024 06:47:21] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 06:47:21,510 - INFO - 192.168.100.41 - - [13/Oct/2024 06:47:21] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 06:48:07,104 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-13 06:48:07,275 - INFO -  * Restarting with stat
-2024-10-13 06:48:07,924 - WARNING -  * Debugger is active!
-2024-10-13 06:48:07,924 - INFO -  * Debugger PIN: 113-571-699
-2024-10-13 06:48:11,004 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-13 06:48:11,163 - INFO -  * Restarting with stat
-2024-10-13 06:48:50,228 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2024-10-13 13:15:38,713 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-13 13:15:38,714 - INFO -  * Restarting with stat
+2024-10-13 13:15:39,363 - WARNING -  * Debugger is active!
+2024-10-13 13:15:39,363 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:15:45,850 - INFO - 192.168.100.41 - - [13/Oct/2024 13:15:45] "POST /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 13:15:45,898 - INFO - 192.168.100.41 - - [13/Oct/2024 13:15:45] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:18:42,924 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:18:43,125 - INFO -  * Restarting with stat
+2024-10-13 13:18:43,864 - WARNING -  * Debugger is active!
+2024-10-13 13:18:43,864 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:18:45,903 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:18:46,089 - INFO -  * Restarting with stat
+2024-10-13 13:18:46,945 - WARNING -  * Debugger is active!
+2024-10-13 13:18:46,945 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:18:50,019 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:18:50,178 - INFO -  * Restarting with stat
+2024-10-13 13:18:50,981 - WARNING -  * Debugger is active!
+2024-10-13 13:18:50,982 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:18:53,032 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:18:53,182 - INFO -  * Restarting with stat
+2024-10-13 13:18:53,753 - WARNING -  * Debugger is active!
+2024-10-13 13:18:53,753 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:18:57,831 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:18:58,027 - INFO -  * Restarting with stat
+2024-10-13 13:18:58,567 - WARNING -  * Debugger is active!
+2024-10-13 13:18:58,568 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:19:00,618 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:19:00,786 - INFO -  * Restarting with stat
+2024-10-13 13:19:54,111 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
  * Running on http://192.168.100.41:5000
-2024-10-13 06:48:50,229 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-13 06:48:50,229 - INFO -  * Restarting with stat
-2024-10-13 06:48:50,887 - WARNING -  * Debugger is active!
-2024-10-13 06:48:50,887 - INFO -  * Debugger PIN: 113-571-699
-2024-10-13 06:48:54,026 - INFO - 192.168.100.41 - - [13/Oct/2024 06:48:54] "GET /admin HTTP/1.1" 200 -
-2024-10-13 06:48:54,063 - INFO - 192.168.100.41 - - [13/Oct/2024 06:48:54] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 06:48:54,069 - INFO - 192.168.100.41 - - [13/Oct/2024 06:48:54] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 06:49:53,246 - INFO - 192.168.100.41 - - [13/Oct/2024 06:49:53] "GET /admin/members HTTP/1.1" 200 -
-2024-10-13 06:49:53,346 - INFO - 192.168.100.41 - - [13/Oct/2024 06:49:53] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
-2024-10-13 06:49:53,351 - INFO - 192.168.100.41 - - [13/Oct/2024 06:49:53] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
-2024-10-13 06:49:53,353 - INFO - 192.168.100.41 - - [13/Oct/2024 06:49:53] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 06:49:53,355 - INFO - 192.168.100.41 - - [13/Oct/2024 06:49:53] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 06:52:47,264 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-13 06:52:47,474 - INFO -  * Restarting with stat
-2024-10-13 06:52:48,057 - WARNING -  * Debugger is active!
-2024-10-13 06:52:48,058 - INFO -  * Debugger PIN: 113-571-699
-2024-10-13 06:52:50,092 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
-2024-10-13 06:52:50,258 - INFO -  * Restarting with stat
-2024-10-13 06:59:52,375 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2024-10-13 13:19:54,112 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-13 13:19:54,113 - INFO -  * Restarting with stat
+2024-10-13 13:19:54,640 - WARNING -  * Debugger is active!
+2024-10-13 13:19:54,640 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:20:07,524 - INFO - 192.168.100.41 - - [13/Oct/2024 13:20:07] "POST /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 13:20:07,581 - INFO - 192.168.100.41 - - [13/Oct/2024 13:20:07] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:20:32,286 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:20:32,482 - INFO -  * Restarting with stat
+2024-10-13 13:20:33,049 - WARNING -  * Debugger is active!
+2024-10-13 13:20:33,050 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:20:38,547 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
  * Running on http://192.168.100.41:5000
-2024-10-13 06:59:52,375 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-13 06:59:52,376 - INFO -  * Restarting with stat
-2024-10-13 06:59:52,885 - WARNING -  * Debugger is active!
-2024-10-13 06:59:52,885 - INFO -  * Debugger PIN: 113-571-699
-2024-10-13 06:59:59,915 - INFO - 192.168.100.41 - - [13/Oct/2024 06:59:59] "GET /admin/members HTTP/1.1" 200 -
-2024-10-13 06:59:59,964 - INFO - 192.168.100.41 - - [13/Oct/2024 06:59:59] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
-2024-10-13 06:59:59,970 - INFO - 192.168.100.41 - - [13/Oct/2024 06:59:59] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 06:59:59,971 - INFO - 192.168.100.41 - - [13/Oct/2024 06:59:59] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 06:59:59,972 - INFO - 192.168.100.41 - - [13/Oct/2024 06:59:59] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
-2024-10-13 07:00:01,895 - INFO - 192.168.100.41 - - [13/Oct/2024 07:00:01] "GET /admin/members HTTP/1.1" 200 -
-2024-10-13 07:00:01,972 - INFO - 192.168.100.41 - - [13/Oct/2024 07:00:01] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 07:00:01,976 - INFO - 192.168.100.41 - - [13/Oct/2024 07:00:01] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
-2024-10-13 07:00:01,978 - INFO - 192.168.100.41 - - [13/Oct/2024 07:00:01] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
-2024-10-13 07:00:01,981 - INFO - 192.168.100.41 - - [13/Oct/2024 07:00:01] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 07:00:03,147 - INFO - 192.168.100.41 - - [13/Oct/2024 07:00:03] "GET /admin/members HTTP/1.1" 200 -
-2024-10-13 07:00:03,179 - INFO - 192.168.100.41 - - [13/Oct/2024 07:00:03] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
-2024-10-13 07:00:03,181 - INFO - 192.168.100.41 - - [13/Oct/2024 07:00:03] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 07:00:03,184 - INFO - 192.168.100.41 - - [13/Oct/2024 07:00:03] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
-2024-10-13 07:00:03,186 - INFO - 192.168.100.41 - - [13/Oct/2024 07:00:03] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 07:00:21,940 - INFO - 192.168.100.41 - - [13/Oct/2024 07:00:21] "GET /admin/members HTTP/1.1" 200 -
-2024-10-13 07:00:21,972 - INFO - 192.168.100.41 - - [13/Oct/2024 07:00:21] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
-2024-10-13 07:00:21,976 - INFO - 192.168.100.41 - - [13/Oct/2024 07:00:21] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 07:00:21,977 - INFO - 192.168.100.41 - - [13/Oct/2024 07:00:21] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
-2024-10-13 07:00:21,980 - INFO - 192.168.100.41 - - [13/Oct/2024 07:00:21] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 07:01:20,283 - INFO - 192.168.100.41 - - [13/Oct/2024 07:01:20] "GET /admin/members HTTP/1.1" 200 -
-2024-10-13 07:01:20,320 - INFO - 192.168.100.41 - - [13/Oct/2024 07:01:20] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
-2024-10-13 07:01:20,321 - INFO - 192.168.100.41 - - [13/Oct/2024 07:01:20] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 07:01:20,326 - INFO - 192.168.100.41 - - [13/Oct/2024 07:01:20] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
-2024-10-13 07:01:20,329 - INFO - 192.168.100.41 - - [13/Oct/2024 07:01:20] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 07:03:21,330 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:21] "GET /admin/members HTTP/1.1" 200 -
-2024-10-13 07:03:21,366 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:21] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 07:03:21,367 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:21] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 07:03:21,368 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:21] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
-2024-10-13 07:03:25,814 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:25] "GET /admin/members HTTP/1.1" 200 -
-2024-10-13 07:03:25,841 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:25] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
-2024-10-13 07:03:25,841 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:25] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 07:03:25,846 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:25] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 07:03:27,686 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:27] "GET /admin/members HTTP/1.1" 200 -
-2024-10-13 07:03:27,715 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:27] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
-2024-10-13 07:03:27,719 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:27] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 07:03:27,720 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:27] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 07:03:29,626 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:29] "GET /admin/members HTTP/1.1" 200 -
-2024-10-13 07:03:29,651 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:29] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
-2024-10-13 07:03:29,656 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:29] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 07:03:29,658 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:29] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 07:03:34,226 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:34] "GET /admin/members HTTP/1.1" 200 -
-2024-10-13 07:03:34,258 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:34] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
-2024-10-13 07:03:34,259 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:34] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 07:03:34,260 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:34] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 07:03:44,390 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:44] "GET /admin/members HTTP/1.1" 200 -
-2024-10-13 07:03:44,415 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:44] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
-2024-10-13 07:03:44,421 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:44] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 07:03:44,422 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:44] "GET /static/js/members.js HTTP/1.1" 200 -
-2024-10-13 07:03:44,423 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:44] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 07:03:46,202 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:46] "GET /admin/members HTTP/1.1" 200 -
-2024-10-13 07:03:46,305 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:46] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
-2024-10-13 07:03:46,310 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:46] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 07:03:46,313 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:46] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
-2024-10-13 07:03:46,313 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:46] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 07:03:50,262 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:50] "GET /admin/members HTTP/1.1" 200 -
-2024-10-13 07:03:50,290 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:50] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
-2024-10-13 07:03:50,296 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:50] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
-2024-10-13 07:03:50,298 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:50] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 07:03:50,299 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:50] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 07:03:51,850 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:51] "GET /admin/members HTTP/1.1" 200 -
-2024-10-13 07:03:51,961 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:51] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
-2024-10-13 07:03:51,967 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:51] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 07:03:51,967 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:51] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
-2024-10-13 07:03:51,969 - INFO - 192.168.100.41 - - [13/Oct/2024 07:03:51] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 07:30:43,283 - INFO - 192.168.100.41 - - [13/Oct/2024 07:30:43] "[35m[1mGET /admin/members HTTP/1.1[0m" 500 -
-2024-10-13 07:30:43,324 - INFO - 192.168.100.41 - - [13/Oct/2024 07:30:43] "GET /admin/members?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-2024-10-13 07:30:43,325 - INFO - 192.168.100.41 - - [13/Oct/2024 07:30:43] "GET /admin/members?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-2024-10-13 07:30:43,343 - INFO - 192.168.100.41 - - [13/Oct/2024 07:30:43] "GET /admin/members?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-2024-10-13 07:32:43,005 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/models.py', reloading
-2024-10-13 07:32:43,188 - INFO -  * Restarting with stat
-2024-10-13 07:35:19,792 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2024-10-13 13:20:38,547 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-13 13:20:38,549 - INFO -  * Restarting with stat
+2024-10-13 13:20:39,309 - WARNING -  * Debugger is active!
+2024-10-13 13:20:39,310 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:20:42,986 - INFO - 192.168.100.41 - - [13/Oct/2024 13:20:42] "POST /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 13:20:43,041 - INFO - 192.168.100.41 - - [13/Oct/2024 13:20:43] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:20:58,689 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:20:58,856 - INFO -  * Restarting with stat
+2024-10-13 13:21:03,247 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
  * Running on http://192.168.100.41:5000
-2024-10-13 07:35:19,793 - INFO - [33mPress CTRL+C to quit[0m
-2024-10-13 07:35:19,793 - INFO -  * Restarting with stat
-2024-10-13 07:35:20,319 - WARNING -  * Debugger is active!
-2024-10-13 07:35:20,319 - INFO -  * Debugger PIN: 113-571-699
-2024-10-13 07:35:25,025 - INFO - 192.168.100.41 - - [13/Oct/2024 07:35:25] "GET /admin/members HTTP/1.1" 200 -
-2024-10-13 07:35:25,073 - INFO - 192.168.100.41 - - [13/Oct/2024 07:35:25] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 07:35:25,077 - INFO - 192.168.100.41 - - [13/Oct/2024 07:35:25] "GET /static/js/members.js HTTP/1.1" 200 -
-2024-10-13 07:35:25,077 - INFO - 192.168.100.41 - - [13/Oct/2024 07:35:25] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
-2024-10-13 07:35:25,078 - INFO - 192.168.100.41 - - [13/Oct/2024 07:35:25] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 07:35:26,522 - INFO - 192.168.100.41 - - [13/Oct/2024 07:35:26] "GET /admin/members HTTP/1.1" 200 -
-2024-10-13 07:35:26,556 - INFO - 192.168.100.41 - - [13/Oct/2024 07:35:26] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 07:35:26,557 - INFO - 192.168.100.41 - - [13/Oct/2024 07:35:26] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
-2024-10-13 07:35:26,559 - INFO - 192.168.100.41 - - [13/Oct/2024 07:35:26] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
-2024-10-13 07:35:26,564 - INFO - 192.168.100.41 - - [13/Oct/2024 07:35:26] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 07:35:27,990 - INFO - 192.168.100.41 - - [13/Oct/2024 07:35:27] "GET /admin/members HTTP/1.1" 200 -
-2024-10-13 07:35:28,033 - INFO - 192.168.100.41 - - [13/Oct/2024 07:35:28] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 07:35:28,036 - INFO - 192.168.100.41 - - [13/Oct/2024 07:35:28] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
-2024-10-13 07:35:28,037 - INFO - 192.168.100.41 - - [13/Oct/2024 07:35:28] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
-2024-10-13 07:35:28,038 - INFO - 192.168.100.41 - - [13/Oct/2024 07:35:28] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 07:36:26,285 - INFO - 192.168.100.41 - - [13/Oct/2024 07:36:26] "GET /admin/members HTTP/1.1" 200 -
-2024-10-13 07:36:26,320 - INFO - 192.168.100.41 - - [13/Oct/2024 07:36:26] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
-2024-10-13 07:36:26,325 - INFO - 192.168.100.41 - - [13/Oct/2024 07:36:26] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 07:36:26,328 - INFO - 192.168.100.41 - - [13/Oct/2024 07:36:26] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 07:36:26,329 - INFO - 192.168.100.41 - - [13/Oct/2024 07:36:26] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
-2024-10-13 07:36:27,195 - INFO - 192.168.100.41 - - [13/Oct/2024 07:36:27] "GET /admin/members HTTP/1.1" 200 -
-2024-10-13 07:36:27,232 - INFO - 192.168.100.41 - - [13/Oct/2024 07:36:27] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
-2024-10-13 07:36:27,233 - INFO - 192.168.100.41 - - [13/Oct/2024 07:36:27] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
-2024-10-13 07:36:27,233 - INFO - 192.168.100.41 - - [13/Oct/2024 07:36:27] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 07:36:27,234 - INFO - 192.168.100.41 - - [13/Oct/2024 07:36:27] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 07:38:01,295 - INFO - 192.168.100.41 - - [13/Oct/2024 07:38:01] "GET /admin/members HTTP/1.1" 200 -
-2024-10-13 07:38:01,337 - INFO - 192.168.100.41 - - [13/Oct/2024 07:38:01] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
-2024-10-13 07:38:01,342 - INFO - 192.168.100.41 - - [13/Oct/2024 07:38:01] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 07:38:01,344 - INFO - 192.168.100.41 - - [13/Oct/2024 07:38:01] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 07:38:01,344 - INFO - 192.168.100.41 - - [13/Oct/2024 07:38:01] "GET /static/js/members.js HTTP/1.1" 200 -
-2024-10-13 07:38:32,706 - INFO - 192.168.100.41 - - [13/Oct/2024 07:38:32] "GET /admin/members HTTP/1.1" 200 -
-2024-10-13 07:38:32,750 - INFO - 192.168.100.41 - - [13/Oct/2024 07:38:32] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
-2024-10-13 07:38:32,752 - INFO - 192.168.100.41 - - [13/Oct/2024 07:38:32] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 07:38:32,755 - INFO - 192.168.100.41 - - [13/Oct/2024 07:38:32] "GET /static/js/members.js HTTP/1.1" 200 -
-2024-10-13 07:38:32,755 - INFO - 192.168.100.41 - - [13/Oct/2024 07:38:32] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 07:39:38,151 - INFO - 192.168.100.41 - - [13/Oct/2024 07:39:38] "GET /admin/members HTTP/1.1" 200 -
-2024-10-13 07:39:38,238 - INFO - 192.168.100.41 - - [13/Oct/2024 07:39:38] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 07:39:38,239 - INFO - 192.168.100.41 - - [13/Oct/2024 07:39:38] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
-2024-10-13 07:39:38,242 - INFO - 192.168.100.41 - - [13/Oct/2024 07:39:38] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 07:39:38,243 - INFO - 192.168.100.41 - - [13/Oct/2024 07:39:38] "GET /static/js/members.js HTTP/1.1" 200 -
-2024-10-13 07:40:56,649 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/models.py', reloading
-2024-10-13 07:40:56,809 - INFO -  * Restarting with stat
-2024-10-13 07:40:57,346 - WARNING -  * Debugger is active!
-2024-10-13 07:40:57,346 - INFO -  * Debugger PIN: 113-571-699
-2024-10-13 07:40:58,367 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/models.py', reloading
-2024-10-13 07:40:58,527 - INFO -  * Restarting with stat
-2024-10-13 07:40:59,222 - WARNING -  * Debugger is active!
-2024-10-13 07:40:59,223 - INFO -  * Debugger PIN: 113-571-699
-2024-10-13 07:41:33,764 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/models.py', reloading
-2024-10-13 07:41:33,909 - INFO -  * Restarting with stat
-2024-10-13 07:41:34,423 - WARNING -  * Debugger is active!
-2024-10-13 07:41:34,423 - INFO -  * Debugger PIN: 113-571-699
-2024-10-13 07:41:49,803 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/models.py', reloading
-2024-10-13 07:41:49,956 - INFO -  * Restarting with stat
-2024-10-13 07:41:50,492 - WARNING -  * Debugger is active!
-2024-10-13 07:41:50,493 - INFO -  * Debugger PIN: 113-571-699
-2024-10-13 07:41:59,487 - INFO - 192.168.100.41 - - [13/Oct/2024 07:41:59] "GET /admin/members HTTP/1.1" 200 -
-2024-10-13 07:41:59,537 - INFO - 192.168.100.41 - - [13/Oct/2024 07:41:59] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 07:41:59,538 - INFO - 192.168.100.41 - - [13/Oct/2024 07:41:59] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 07:41:59,539 - INFO - 192.168.100.41 - - [13/Oct/2024 07:41:59] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
-2024-10-13 07:41:59,539 - INFO - 192.168.100.41 - - [13/Oct/2024 07:41:59] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
-2024-10-13 07:42:17,008 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/models.py', reloading
-2024-10-13 07:42:17,167 - INFO -  * Restarting with stat
-2024-10-13 07:42:18,108 - WARNING -  * Debugger is active!
-2024-10-13 07:42:18,109 - INFO -  * Debugger PIN: 113-571-699
-2024-10-13 07:42:19,154 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/models.py', reloading
-2024-10-13 07:42:19,366 - INFO -  * Restarting with stat
-2024-10-13 07:42:19,995 - WARNING -  * Debugger is active!
-2024-10-13 07:42:19,996 - INFO -  * Debugger PIN: 113-571-699
-2024-10-13 07:42:22,147 - INFO - 192.168.100.41 - - [13/Oct/2024 07:42:22] "GET /admin/members HTTP/1.1" 200 -
-2024-10-13 07:42:22,201 - INFO - 192.168.100.41 - - [13/Oct/2024 07:42:22] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 07:42:22,201 - INFO - 192.168.100.41 - - [13/Oct/2024 07:42:22] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
-2024-10-13 07:42:22,202 - INFO - 192.168.100.41 - - [13/Oct/2024 07:42:22] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 07:42:22,203 - INFO - 192.168.100.41 - - [13/Oct/2024 07:42:22] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
-2024-10-13 07:42:23,061 - INFO - 192.168.100.41 - - [13/Oct/2024 07:42:23] "GET /admin/members HTTP/1.1" 200 -
-2024-10-13 07:42:23,097 - INFO - 192.168.100.41 - - [13/Oct/2024 07:42:23] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
-2024-10-13 07:42:23,098 - INFO - 192.168.100.41 - - [13/Oct/2024 07:42:23] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
-2024-10-13 07:42:23,102 - INFO - 192.168.100.41 - - [13/Oct/2024 07:42:23] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
-2024-10-13 07:42:23,103 - INFO - 192.168.100.41 - - [13/Oct/2024 07:42:23] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
+2024-10-13 13:21:03,247 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-13 13:21:03,248 - INFO -  * Restarting with stat
+2024-10-13 13:21:03,802 - WARNING -  * Debugger is active!
+2024-10-13 13:21:03,803 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:21:14,876 - INFO - 192.168.100.41 - - [13/Oct/2024 13:21:14] "POST /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 13:21:14,929 - INFO - 192.168.100.41 - - [13/Oct/2024 13:21:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:27:33,079 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/forms.py', reloading
+2024-10-13 13:27:33,320 - INFO -  * Restarting with stat
+2024-10-13 13:27:34,166 - WARNING -  * Debugger is active!
+2024-10-13 13:27:34,167 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:27:36,210 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/forms.py', reloading
+2024-10-13 13:27:36,396 - INFO -  * Restarting with stat
+2024-10-13 13:32:13,893 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.41:5000
+2024-10-13 13:32:13,894 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-13 13:32:13,895 - INFO -  * Restarting with stat
+2024-10-13 13:32:14,427 - WARNING -  * Debugger is active!
+2024-10-13 13:32:14,428 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:32:21,841 - DEBUG - Current User: True
+2024-10-13 13:32:21,855 - INFO - 192.168.100.41 - - [13/Oct/2024 13:32:21] "POST /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 13:32:21,896 - INFO - 192.168.100.41 - - [13/Oct/2024 13:32:21] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:32:55,784 - DEBUG - Current User: True
+2024-10-13 13:32:55,798 - INFO - 192.168.100.41 - - [13/Oct/2024 13:32:55] "POST /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 13:32:55,843 - INFO - 192.168.100.41 - - [13/Oct/2024 13:32:55] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:33:07,506 - DEBUG - Current User: True
+2024-10-13 13:33:07,508 - INFO - 192.168.100.41 - - [13/Oct/2024 13:33:07] "POST /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 13:33:07,579 - INFO - 192.168.100.41 - - [13/Oct/2024 13:33:07] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:33:20,910 - INFO - 192.168.100.41 - - [13/Oct/2024 13:33:20] "[32mPOST /admin/personal_data HTTP/1.1[0m" 302 -
+2024-10-13 13:33:20,945 - INFO - 192.168.100.41 - - [13/Oct/2024 13:33:20] "GET /admin HTTP/1.1" 200 -
+2024-10-13 13:33:21,088 - INFO - 192.168.100.41 - - [13/Oct/2024 13:33:21] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:33:21,095 - INFO - 192.168.100.41 - - [13/Oct/2024 13:33:21] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-13 13:33:29,258 - INFO - 127.0.0.1 - - [13/Oct/2024 13:33:29] "GET /profile HTTP/1.1" 200 -
+2024-10-13 13:33:29,282 - INFO - 127.0.0.1 - - [13/Oct/2024 13:33:29] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
+2024-10-13 13:33:29,289 - INFO - 127.0.0.1 - - [13/Oct/2024 13:33:29] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:33:29,304 - INFO - 127.0.0.1 - - [13/Oct/2024 13:33:29] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-13 13:33:45,691 - INFO - 127.0.0.1 - - [13/Oct/2024 13:33:45] "GET /profile HTTP/1.1" 200 -
+2024-10-13 13:33:45,791 - INFO - 127.0.0.1 - - [13/Oct/2024 13:33:45] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
+2024-10-13 13:33:45,812 - INFO - 127.0.0.1 - - [13/Oct/2024 13:33:45] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:33:45,814 - INFO - 127.0.0.1 - - [13/Oct/2024 13:33:45] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-13 13:33:47,022 - INFO - 127.0.0.1 - - [13/Oct/2024 13:33:47] "GET /update_acount HTTP/1.1" 200 -
+2024-10-13 13:33:47,081 - INFO - 127.0.0.1 - - [13/Oct/2024 13:33:47] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
+2024-10-13 13:33:47,092 - INFO - 127.0.0.1 - - [13/Oct/2024 13:33:47] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:33:47,097 - INFO - 127.0.0.1 - - [13/Oct/2024 13:33:47] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-13 13:34:09,003 - DEBUG - STREAM b'IHDR' 16 13
+2024-10-13 13:34:09,003 - DEBUG - STREAM b'sBIT' 41 3
+2024-10-13 13:34:09,003 - DEBUG - b'sBIT' 41 3 (unknown)
+2024-10-13 13:34:09,004 - DEBUG - STREAM b'IDAT' 56 8192
+2024-10-13 13:34:09,059 - INFO - 127.0.0.1 - - [13/Oct/2024 13:34:09] "[32mPOST /update_acount HTTP/1.1[0m" 302 -
+2024-10-13 13:34:09,064 - INFO - 127.0.0.1 - - [13/Oct/2024 13:34:09] "GET /profile HTTP/1.1" 200 -
+2024-10-13 13:34:09,088 - INFO - 127.0.0.1 - - [13/Oct/2024 13:34:09] "GET /static/assets/0c6193bc35e0e4ddScreenshot_2024-08-26_23_51_59.png HTTP/1.1" 200 -
+2024-10-13 13:34:09,097 - INFO - 127.0.0.1 - - [13/Oct/2024 13:34:09] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:34:09,099 - INFO - 127.0.0.1 - - [13/Oct/2024 13:34:09] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-13 13:34:16,247 - INFO - 127.0.0.1 - - [13/Oct/2024 13:34:16] "GET /overview HTTP/1.1" 200 -
+2024-10-13 13:34:16,288 - INFO - 127.0.0.1 - - [13/Oct/2024 13:34:16] "[36mGET /static/assets/0c6193bc35e0e4ddScreenshot_2024-08-26_23_51_59.png HTTP/1.1[0m" 304 -
+2024-10-13 13:34:16,297 - INFO - 127.0.0.1 - - [13/Oct/2024 13:34:16] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:34:16,311 - INFO - 127.0.0.1 - - [13/Oct/2024 13:34:16] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-13 13:35:04,949 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:35:05,142 - INFO -  * Restarting with stat
+2024-10-13 13:35:05,889 - WARNING -  * Debugger is active!
+2024-10-13 13:35:05,889 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:35:08,918 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:35:09,054 - INFO -  * Restarting with stat
+2024-10-13 13:35:09,645 - WARNING -  * Debugger is active!
+2024-10-13 13:35:09,645 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:35:12,724 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:35:12,910 - INFO -  * Restarting with stat
+2024-10-13 13:35:13,603 - WARNING -  * Debugger is active!
+2024-10-13 13:35:13,603 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:35:17,702 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:35:17,929 - INFO -  * Restarting with stat
+2024-10-13 13:35:18,497 - WARNING -  * Debugger is active!
+2024-10-13 13:35:18,497 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:35:22,573 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:35:22,763 - INFO -  * Restarting with stat
+2024-10-13 13:35:23,472 - WARNING -  * Debugger is active!
+2024-10-13 13:35:23,473 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:35:31,623 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:35:31,812 - INFO -  * Restarting with stat
+2024-10-13 13:35:32,388 - WARNING -  * Debugger is active!
+2024-10-13 13:35:32,388 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:35:36,479 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:35:36,645 - INFO -  * Restarting with stat
+2024-10-13 13:35:37,383 - WARNING -  * Debugger is active!
+2024-10-13 13:35:37,384 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:35:43,497 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:35:43,697 - INFO -  * Restarting with stat
+2024-10-13 13:35:44,274 - WARNING -  * Debugger is active!
+2024-10-13 13:35:44,275 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:35:48,391 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:35:48,556 - INFO -  * Restarting with stat
+2024-10-13 13:35:49,310 - WARNING -  * Debugger is active!
+2024-10-13 13:35:49,311 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:36:14,078 - INFO - 192.168.100.41 - - [13/Oct/2024 13:36:14] "GET /admin/view_user/nelson@email.com HTTP/1.1" 200 -
+2024-10-13 13:36:14,149 - INFO - 192.168.100.41 - - [13/Oct/2024 13:36:14] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:36:15,769 - DEBUG - Current User: True
+2024-10-13 13:36:15,859 - INFO - 192.168.100.41 - - [13/Oct/2024 13:36:15] "GET /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 13:36:15,945 - INFO - 192.168.100.41 - - [13/Oct/2024 13:36:15] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:36:25,276 - DEBUG - Current User: True
+2024-10-13 13:36:25,280 - INFO - 192.168.100.41 - - [13/Oct/2024 13:36:25] "GET /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 13:36:25,400 - INFO - 192.168.100.41 - - [13/Oct/2024 13:36:25] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:37:13,087 - INFO - 192.168.100.41 - - [13/Oct/2024 13:37:13] "POST /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 13:37:13,152 - INFO - 192.168.100.41 - - [13/Oct/2024 13:37:13] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:38:09,091 - INFO - 192.168.100.41 - - [13/Oct/2024 13:38:09] "POST /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 13:38:09,149 - INFO - 192.168.100.41 - - [13/Oct/2024 13:38:09] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:42:45,425 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/models.py', reloading
+2024-10-13 13:42:45,605 - INFO -  * Restarting with stat
+2024-10-13 13:42:46,197 - WARNING -  * Debugger is active!
+2024-10-13 13:42:46,198 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:42:58,459 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/models.py', reloading
+2024-10-13 13:42:58,608 - INFO -  * Restarting with stat
+2024-10-13 13:42:59,156 - WARNING -  * Debugger is active!
+2024-10-13 13:42:59,156 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:43:01,179 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/models.py', reloading
+2024-10-13 13:43:01,321 - INFO -  * Restarting with stat
+2024-10-13 13:43:01,861 - WARNING -  * Debugger is active!
+2024-10-13 13:43:01,861 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:43:45,586 - INFO - 192.168.100.41 - - [13/Oct/2024 13:43:45] "POST /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 13:43:45,630 - INFO - 192.168.100.41 - - [13/Oct/2024 13:43:45] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:48:33,726 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-13 13:48:33,937 - INFO -  * Restarting with stat
+2024-10-13 13:54:11,584 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.41:5000
+2024-10-13 13:54:11,584 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-13 13:54:11,586 - INFO -  * Restarting with stat
+2024-10-13 13:54:12,137 - WARNING -  * Debugger is active!
+2024-10-13 13:54:12,138 - INFO -  * Debugger PIN: 113-571-699
+2024-10-13 13:54:24,539 - INFO - 192.168.100.41 - - [13/Oct/2024 13:54:24] "POST /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 13:54:24,591 - INFO - 192.168.100.41 - - [13/Oct/2024 13:54:24] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:54:27,557 - INFO - 192.168.100.41 - - [13/Oct/2024 13:54:27] "POST /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 13:54:27,618 - INFO - 192.168.100.41 - - [13/Oct/2024 13:54:27] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:54:51,420 - INFO - 192.168.100.41 - - [13/Oct/2024 13:54:51] "POST /admin/personal_data HTTP/1.1" 200 -
+2024-10-13 13:54:51,480 - INFO - 192.168.100.41 - - [13/Oct/2024 13:54:51] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-13 13:54:56,200 - INFO - 192.168.100.41 - - [13/Oct/2024 13:54:56] "[33mGET /admin/ HTTP/1.1[0m" 404 -
+2024-10-13 13:54:59,463 - INFO - 192.168.100.41 - - [13/Oct/2024 13:54:59] "GET /admin HTTP/1.1" 200 -
+2024-10-13 13:54:59,559 - INFO - 192.168.100.41 - - [13/Oct/2024 13:54:59] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-13 13:54:59,560 - INFO - 192.168.100.41 - - [13/Oct/2024 13:54:59] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
