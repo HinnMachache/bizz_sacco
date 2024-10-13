@@ -49,9 +49,14 @@
                     {% else %}
                     <img src="{{ url_for('static', filename='assets/user.jpeg') }}" alt="User" class="user-icon">
                      <!-- Placeholder image -->
-                    {% endif %}    
+                    {% endif %}
+                    {% if current_user.personal_data %}    
+                    <span class="user-name">{{ current_user.personal_data.other_names ~ ' ' ~ current_user.personal_data.surname }}</span>
+                    {% else %}
                     <span class="user-name">{{ current_user.username }}</span>
+                    {% endif %}
                 </div>
+                <div class="user-email">{{ current_user.email }}</div>
                 <div class="header-icons">
                     <i class="notification-icon fas fa-bell" onclick="showNotificationPopup()"></i>
                     <i class="settings-icon fas fa-cog"></i>

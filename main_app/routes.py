@@ -9,7 +9,7 @@ from flask import render_template, flash, request, url_for, redirect, current_ap
 from main_app.models import User, User_personalData, Admin, Admin_personalData, Notification
 from main_app.forms import (RegistrationForm, LoginForm, ApplicationForm,
                             ResetPasswordRequestForm, ResetPasswordForm,
-                            ChangePasswordForm, UpdateAccountForm)
+                            ChangePasswordForm, UpdateAccountForm, AdminRegistrationForm)
 from flask_login import login_user, logout_user, current_user, login_required
 from flask_mail import Message
 from main_app import db
@@ -70,11 +70,13 @@ def add_personal_data():
     form=ApplicationForm()
 
     users = User.query.all()  # Fetch all users
-    form.email.choices = [(user.email, user.email) for user in users]
+    admins = Admin.query.all() # Fetch all admins
+    form.email.choices = [(user.email, user.email) for user in users + [(admin.email, admin.email) for admin in admins]] 
 
     if form.validate_on_submit():
         user_email = form.email.data
         user = User.query.filter_by(email=user_email).first()
+        admin = Admin.query.filter_by(email=user_email).first()
 
         if user:
             p_data = User_personalData(user_id=user.user_id, surname=form.surname.data, other_names=form.other_names.data, dob=form.dob.data,
@@ -93,6 +95,40 @@ def add_personal_data():
 
             try:
                 db.session.add(p_data)
+                db.session.commit()
+                flash("Personal data added successfully!", 'success')
+
+                return redirect(url_for('admin_index'))
+            except Exception as e:
+                print("Error occured durin commit")
+                db.session.rollback()  # Rollback in case of error
+                print(f"Error committing data: {e}")
+                flash("An error occurred while saving personal data.", 'error')
+            except IntegrityError as e:
+                flash("IntegrityError occurred during commit")
+
+                db.session.rollback()  # Rollback in case of error
+                flash("An error occurred: Duplicate surname or telephone number entry. Please check these fields.", 'error')
+                # Check for which field caused the integrity error
+               
+                flash("An error occurred while saving personal data.", 'error')
+        elif admin:
+            admin_data = Admin_personalData(user_id=user.user_id, surname=form.surname.data, other_names=form.other_names.data, dob=form.dob.data,
+                                   id_number=form.id_number.data, telephone_no=form.phone_number.data, address=form.address.data,
+                                   postal_code=form.postal_code.data, gender=form.gender.data)
+
+            # Save passport photo
+            if form.passport_photo.data:
+                passport_photo_file = save_picture(form.passport_photo.data)
+                admin_data.user_profile = passport_photo_file
+            
+            # Save copy of ID card/passport
+            if form.copy_photo.data:
+                copy_photo_file = save_identification(form.copy_photo.data)
+                admin_data.id_profile = copy_photo_file
+
+            try:
+                db.session.add(admin_data)
                 db.session.commit()
                 flash("Personal data added successfully!", 'success')
 
@@ -207,6 +243,25 @@ def notification():
 def profile():
     return render_template("user/profile.html")
 
+@app.route("/admin/register", methods=['POST', 'GET'])
+def admin_register():
+    if current_user.is_authenticated:
+        return redirect(url_for('admin_index'))
+    form = AdminRegistrationForm()
+    if form.validate_on_submit():
+        email=request.form.get('email')
+        hash_pw = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
+        admin = Admin(username=form.username.data, email=form.email.data, password=hash_pw)
+        db.session.add(admin)
+        db.session.commit()
+
+        notification = Notification(user_email=email)
+        db.session.add(notification)
+        db.session.commit()
+        flash("Your Account Has been created succesfully!")
+        return redirect(url_for('login'))
+    return render_template("user/registration.html", form=form)
+
 
 @app.route("/register", methods=['POST', 'GET'])
 def register():
@@ -216,15 +271,8 @@ def register():
     if form.validate_on_submit():
         email=request.form.get('email')
         hash_pw = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
-        role = form.role.data
-
-        if role == 'user':
-            user = User(username=form.username.data, email=form.email.data, password=hash_pw)
-            db.session.add(user)
-        elif role == 'admin':
-            admin = Admin(username=form.username.data, email=form.email.data, password=hash_pw)
-            db.session.add(admin)
-
+        user = User(username=form.username.data, email=form.email.data, password=hash_pw)
+        db.session.add(user)
         db.session.commit()
 
         notification = Notification(user_email=email)
@@ -409,7 +457,13 @@ def update_account():
         return redirect(url_for('profile'))
     elif request.method == 'GET':
         form.username.data = current_user.username
-    image_file = url_for('static', filename='assets/' + current_user.personal_data.user_profile)
+    try:
+        # Attempt to retrieve the user's profile image
+        image_file = url_for('static', filename='assets/' + current_user.personal_data.user_profile)
+    except AttributeError:
+        # Handle the case where the user has no personal data
+        flash("You do not have personal data. Please contact the admin.", 'warning')
+        image_file = url_for('static', filename='assets/user.jpeg')  # Use a default image
     return render_template("user/updateUser.html", form=form, image_file=image_file)
 
 
@@ -419,7 +473,7 @@ def update_account():
 def personal_data():
     form = ApplicationForm()
     if form.validate_on_submit():
-        p_data = User_personalData(user_id=current_user.user_id, surname=form.surname.data, other_names=form.other_names.data, dob=form.dob.data,
+        p_data = Admin_personalData(user_id=current_user.user_id, surname=form.surname.data, other_names=form.other_names.data, dob=form.dob.data,
                                    id_number=form.id_number.data, telephone_no=form.phone_number.data, address=form.address.data,
                                    postal_code=form.postal_code.data, gender=form.gender.data)
         

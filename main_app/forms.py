@@ -43,7 +43,26 @@ class RegistrationForm(FlaskForm):
     def validate_email(self, email):
         user = User.query.filter_by(email=email.data).first()
         if user:
-            raise ValidationError("Email already taken. Please choose a different one.")    
+            raise ValidationError("Email already taken. Please choose a different one.")
+
+class AdminRegistrationForm(FlaskForm):
+    username = StringField('Username', validators=[DataRequired(), Length(min=2, max=30)])
+    email = EmailField('Email', validators=[DataRequired(), Email()])
+    password = PasswordField('Password', validators=[DataRequired()])
+    confirm_password = PasswordField('Confirm Password', validators=[DataRequired(), EqualTo('password')])
+    role = HiddenField('Role', default='admin')  # To determine Privileges
+    submit = SubmitField('Sign Up')
+
+    def validate_username(self, username):
+        user = User.query.filter_by(username=username.data).first()
+        if user:
+            raise ValidationError("Username already taken. Please choose a different one.")
+        
+    def validate_email(self, email):
+        user = User.query.filter_by(email=email.data).first()
+        if user:
+            raise ValidationError("Email already taken. Please choose a different one.")
+
 
 class LoginForm(FlaskForm):
     email = EmailField('Email', validators=[DataRequired(), Email()])
