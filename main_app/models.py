@@ -19,6 +19,14 @@ class User(db.Model, UserMixin):
     password = db.Column(db.String, nullable=False)
     # personal_data_submitted = db.Column(db.Boolean, default=False)
 
+    def to_dict(self):
+            return {
+                'user_id': self.user_id,
+                'username': self.username,
+                'email': self.email,
+
+            }
+
     def get_id(self):
         return self.user_id
     
@@ -68,6 +76,14 @@ class Admin(db.Model, UserMixin):
     email = db.Column(db.String(120), unique=True, nullable=False)
     password = db.Column(db.String, nullable=False)
     # personal_data_submitted = db.Column(db.Boolean, default=False)
+
+    def to_dict(self):
+            return {
+                'admin_id': self.admin_id,
+                'username': self.username,
+                'email': self.email,
+                # add any other fields you need
+            }
 
     def get_id(self):
         return self.admin_id

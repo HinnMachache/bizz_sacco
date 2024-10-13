@@ -16,32 +16,27 @@
     <thead>
         <tr>
             <th>Name</th>
+            <th>ID</th>
             <th>Email</th>
-            <th>Account Status</th>
+            <!-- <th>Account Status</th> -->
             <th>Actions</th>
         </tr>
     </thead>
     <tbody id="membersBody">
-        <!-- Member rows will be dynamically populated here -->
+
     </tbody>
 </table>
 {% endblock %}
 
 
 {% block script %}
-<div id="addMemberModal" class="modal"></div>
-<div class="modal-content">
-    <span class="close" onclick="closeAddMemberModal()">&times;</span>
-    <h2>Add New Member</h2>
-    <form id="addMemberForm" onsubmit="addMember(event)">
-        <input type="text" id="memberName" placeholder="Full Name" required>
-        <input type="email" id="memberEmail" placeholder="Email" required>
-        <input type="file" id="memberPhoto" accept="image/*">
-        <button type="submit">Add Member</button>
-    </form>
-</div>
-</div>
 
+<script type="text/javascript">
+    const memberData = {{ members | tojson }};
+    
+    // Populate the table with real member data
+    updateMembersTable(memberData);
+</script>
 <script src="{{ url_for('static', filename='/js/members.js') }}"></script>
 <script src="{{ url_for('static', filename='/js/script.js') }}"></script>
 {% endblock %}

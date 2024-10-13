@@ -74,35 +74,43 @@ def promote_user_to_admin(user_id):
 @login_required
 # @role_required('admin')
 def admin_index():
-    return render_template("admin/index.html", title="Admin Dashboard", logo_name="Admin Panel")
+    member_count = User.query.count()
+    staff_count = Admin.query.count()
+    return render_template("admin/index.html", staff_count=staff_count, member_count=member_count,
+                           title="Admin Dashboard", logo_name="Admin Panel")
 
 @app.route("/admin/loans")
 @login_required
-@role_required('admin')
+# @role_required('admin')
 def admin_loans():
     return render_template("admin/loans.html")
 
 @app.route("/admin/members")
 @login_required
-@role_required('admin')
+# @role_required('admin')
 def admin_members():
-    return render_template("admin/members.html", title="Members Management", logo_name="Members Management")
+    member_count = User.query.count()
+    members = User.query.all()
+
+    members_dict = [member.to_dict() for member in members]
+    return render_template("admin/members.html", members=members_dict, member_count=member_count,
+                           title="Members Management", logo_name="Members Management")
 
 @app.route("/admin/settings")
 @login_required
-@role_required('admin')
+# @role_required('admin')
 def admin_settings():
     return render_template("admin/settings.html", title="Settings - Admin Dashboard", logo_name="Admin Panel")
 
 @app.route("/admin/staff")
 @login_required
-@role_required('admin')
+# @role_required('admin')
 def admin_staff():
     return render_template("admin/staff.html", title="Staff Management", logo_name="Staff Management")
 
 @app.route("/admin/reports")
 @login_required
-@role_required('admin')
+# @role_required('admin')
 def admin_reports():
     return render_template("admin/reports.html", title="Reports - Admin Dashboard", logo_name="Admin Panel")
 

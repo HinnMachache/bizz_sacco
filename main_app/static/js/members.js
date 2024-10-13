@@ -1,18 +1,18 @@
 // members.js
 
 // Sample data with 10 members
-let members = [
-    { name: 'John Doe', email: 'john@example.com', status: 'Active' },
-    { name: 'Jane Smith', email: 'jane@example.com', status: 'Inactive' },
-    { name: 'Alice Johnson', email: 'alice@example.com', status: 'Active' },
-    { name: 'Bob Brown', email: 'bob@example.com', status: 'Active' },
-    { name: 'Charlie Davis', email: 'charlie@example.com', status: 'Inactive' },
-    { name: 'Diana Evans', email: 'diana@example.com', status: 'Active' },
-    { name: 'Ethan Foster', email: 'ethan@example.com', status: 'Active' },
-    { name: 'Fiona Green', email: 'fiona@example.com', status: 'Inactive' },
-    { name: 'George Harris', email: 'george@example.com', status: 'Active' },
-    { name: 'Hannah Ivers', email: 'hannah@example.com', status: 'Inactive' },
-];
+// let members = [
+//     { name: 'John Doe', email: 'john@example.com', status: 'Active' },
+//     { name: 'Jane Smith', email: 'jane@example.com', status: 'Inactive' },
+//     { name: 'Alice Johnson', email: 'alice@example.com', status: 'Active' },
+//     { name: 'Bob Brown', email: 'bob@example.com', status: 'Active' },
+//     { name: 'Charlie Davis', email: 'charlie@example.com', status: 'Inactive' },
+//     { name: 'Diana Evans', email: 'diana@example.com', status: 'Active' },
+//     { name: 'Ethan Foster', email: 'ethan@example.com', status: 'Active' },
+//     { name: 'Fiona Green', email: 'fiona@example.com', status: 'Inactive' },
+//     { name: 'George Harris', email: 'george@example.com', status: 'Active' },
+//     { name: 'Hannah Ivers', email: 'hannah@example.com', status: 'Inactive' },
+// ];
 
 // Function to open the modal for adding a new member
 function openAddMemberModal() {
@@ -33,7 +33,7 @@ function addMember(event) {
 
     // You can handle the image upload here
 
-    members.push({ name, email, status: 'Active' }); // Default status
+    // members.push({ name, email, status: 'Active' }); // Default status
     document.getElementById('addMemberForm').reset();
     closeAddMemberModal();
     updateMembersTable();
@@ -42,23 +42,23 @@ function addMember(event) {
 // Function to filter members based on search input
 function filterMembers() {
     const query = document.getElementById('search').value.toLowerCase();
-    const filteredMembers = members.filter(member => member.name.toLowerCase().includes(query));
+    const filteredMembers = memberData.filter(member => member.username.toLowerCase().includes(query));
     updateMembersTable(filteredMembers);
 }
 
-// Function to update the members table
-function updateMembersTable(filteredMembers = members) {
+// Function to update the memberData table
+function updateMembersTable(filteredMembers = memberData) {
     const membersBody = document.getElementById('membersBody');
     membersBody.innerHTML = ''; // Clear the current rows
     filteredMembers.forEach(member => {
         const row = document.createElement('tr');
         row.innerHTML = `
-            <td>${member.name}</td>
+            <td>${member.username}</td>
+            <td>${member.user_id}</td>
             <td>${member.email}</td>
-            <td>${member.status}</td>
             <td>
-                <button onclick="editMember('${member.name}')"><i class="fas fa-edit"></i> Edit</button>
-                <button onclick="deleteMember('${member.name}')"><i class="fas fa-trash-alt"></i> Delete</button>
+                <button onclick="editMember('${member.username}')"><i class="fas fa-edit"></i> Edit</button>
+                <button onclick="deleteMember('${member.username}')"><i class="fas fa-trash-alt"></i> Delete</button>
             </td>
         `;
         membersBody.appendChild(row);
@@ -72,8 +72,9 @@ function editMember(name) {
 
 // Function to delete a member
 function deleteMember(name) {
-    members = members.filter(member => member.name !== name);
-    updateMembersTable();
+    // members = memberData.filter(member => member.name !== name);
+    // updateMembersTable();
+    alert(`Archive member: ${name}`)
 }
 
 // Close the modal if the user clicks outside of it
