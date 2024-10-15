@@ -9,11 +9,11 @@ from flask import render_template, flash, request, url_for, redirect, current_ap
 from main_app.models import User, User_personalData, Admin, Admin_personalData, Notification
 from main_app.forms import (RegistrationForm, LoginForm, ApplicationForm,
                             ResetPasswordRequestForm, ResetPasswordForm,
-                            ChangePasswordForm, UpdateAccountForm, AdminRegistrationForm)
+                            ChangePasswordForm, UpdateAccountForm, AdminRegistrationForm, LoanForm)
 from flask_login import login_user, logout_user, current_user, login_required
 from flask_mail import Message
 from main_app import db
-from main_app.models import User, Admin
+from main_app.models import User, Admin, Loan
 
 
 
@@ -71,83 +71,132 @@ def add_personal_data():
 
     users = User.query.all()  # Fetch all users
     admins = Admin.query.all() # Fetch all admins
-    form.email.choices = [(user.email, user.email) for user in users + [(admin.email, admin.email) for admin in admins]] 
+    form.email.choices = [(user.email, user.email) for user in users ] + [(admin.email, admin.email) for admin in admins] 
 
-    if form.validate_on_submit():
-        user_email = form.email.data
-        user = User.query.filter_by(email=user_email).first()
-        admin = Admin.query.filter_by(email=user_email).first()
+    if request.method == 'GET':
+        if form.validate_on_submit():
+            user_email = form.email.data
+            user = User.query.filter_by(email=user_email).first()
+            admin = Admin.query.filter_by(email=user_email).first()
 
-        if user:
-            p_data = User_personalData(user_id=user.user_id, surname=form.surname.data, other_names=form.other_names.data, dob=form.dob.data,
-                                   id_number=form.id_number.data, telephone_no=form.phone_number.data, address=form.address.data,
-                                   postal_code=form.postal_code.data, gender=form.gender.data)
+            if user:
+                p_data = User_personalData(user_id=user.user_id, surname=form.surname.data, other_names=form.other_names.data, dob=form.dob.data,
+                                    id_number=form.id_number.data, telephone_no=form.phone_number.data, address=form.address.data,
+                                    postal_code=form.postal_code.data, gender=form.gender.data)
 
-            # Save passport photo
-            if form.passport_photo.data:
-                passport_photo_file = save_picture(form.passport_photo.data)
-                p_data.user_profile = passport_photo_file
-            
-            # Save copy of ID card/passport
-            if form.copy_photo.data:
-                copy_photo_file = save_identification(form.copy_photo.data)
-                p_data.id_profile = copy_photo_file
+                # Save passport photo
+                if form.passport_photo.data:
+                    passport_photo_file = save_picture(form.passport_photo.data)
+                    p_data.user_profile = passport_photo_file
+                
+                # Save copy of ID card/passport
+                if form.copy_photo.data:
+                    copy_photo_file = save_identification(form.copy_photo.data)
+                    p_data.id_profile = copy_photo_file
 
-            try:
-                db.session.add(p_data)
-                db.session.commit()
-                flash("Personal data added successfully!", 'success')
+                try:
+                    db.session.add(p_data)
+                    db.session.commit()
+                    flash("Personal data added successfully!", 'success')
 
-                return redirect(url_for('admin_index'))
-            except Exception as e:
-                print("Error occured durin commit")
-                db.session.rollback()  # Rollback in case of error
-                print(f"Error committing data: {e}")
-                flash("An error occurred while saving personal data.", 'error')
-            except IntegrityError as e:
-                flash("IntegrityError occurred during commit")
+                    return redirect(url_for('admin_index'))
+                except Exception as e:
+                    print("Error occured durin commit")
+                    db.session.rollback()  # Rollback in case of error
+                    print(f"Error committing data: {e}")
+                    flash("An error occurred while saving personal data.", 'error')
+                except IntegrityError as e:
+                    flash("IntegrityError occurred during commit")
 
-                db.session.rollback()  # Rollback in case of error
-                flash("An error occurred: Duplicate surname or telephone number entry. Please check these fields.", 'error')
-                # Check for which field caused the integrity error
-               
-                flash("An error occurred while saving personal data.", 'error')
-        elif admin:
-            admin_data = Admin_personalData(user_id=user.user_id, surname=form.surname.data, other_names=form.other_names.data, dob=form.dob.data,
-                                   id_number=form.id_number.data, telephone_no=form.phone_number.data, address=form.address.data,
-                                   postal_code=form.postal_code.data, gender=form.gender.data)
+                    db.session.rollback()  # Rollback in case of error
+                    flash("An error occurred: Duplicate surname or telephone number entry. Please check these fields.", 'error')
+                    # Check for which field caused the integrity error
+                
+                    flash("An error occurred while saving personal data.", 'error')
+            elif admin:
+                admin_data = Admin_personalData(admin_id=admin.admin_id, surname=form.surname.data, other_names=form.other_names.data, dob=form.dob.data,
+                                    id_number=form.id_number.data, telephone_no=form.phone_number.data, address=form.address.data,
+                                    postal_code=form.postal_code.data, gender=form.gender.data)
 
-            # Save passport photo
-            if form.passport_photo.data:
-                passport_photo_file = save_picture(form.passport_photo.data)
-                admin_data.user_profile = passport_photo_file
-            
-            # Save copy of ID card/passport
-            if form.copy_photo.data:
-                copy_photo_file = save_identification(form.copy_photo.data)
-                admin_data.id_profile = copy_photo_file
+                # Save passport photo
+                if form.passport_photo.data:
+                    passport_photo_file = save_picture(form.passport_photo.data)
+                    admin_data.user_profile = passport_photo_file
+                
+                # Save copy of ID card/passport
+                if form.copy_photo.data:
+                    copy_photo_file = save_identification(form.copy_photo.data)
+                    admin_data.id_profile = copy_photo_file
 
-            try:
-                db.session.add(admin_data)
-                db.session.commit()
-                flash("Personal data added successfully!", 'success')
+                try:
+                    db.session.add(admin_data)
+                    db.session.commit()
+                    flash("Personal data added successfully!", 'success')
 
-                return redirect(url_for('admin_index'))
-            except Exception as e:
-                print("Error occured durin commit")
-                db.session.rollback()  # Rollback in case of error
-                print(f"Error committing data: {e}")
-                flash("An error occurred while saving personal data.", 'error')
-            except IntegrityError as e:
-                flash("IntegrityError occurred during commit")
+                    return redirect(url_for('admin_index'))
+                except Exception as e:
+                    print("Error occured durin commit")
+                    db.session.rollback()  # Rollback in case of error
+                    print(f"Error committing data: {e}")
+                    flash("An error occurred while saving personal data.", 'error')
+                except IntegrityError as e:
+                    flash("IntegrityError occurred during commit")
 
-                db.session.rollback()  # Rollback in case of error
-                flash("An error occurred: Duplicate surname or telephone number entry. Please check these fields.", 'error')
-                # Check for which field caused the integrity error
-               
-                flash("An error occurred while saving personal data.", 'error')
+                    db.session.rollback()  # Rollback in case of error
+                    flash("An error occurred: Duplicate surname or telephone number entry. Please check these fields.", 'error')
+                    # Check for which field caused the integrity error
+                
+                    flash("An error occurred while saving personal data.", 'error')
+            else:
+                flash("User not found."), 404
+
+    if request.method == 'GET':
+        if form.email.data:  # Check if there is a selected email
+            main_mail = form.email.data  # Get the selected email
+            print(f"Selected email: {main_mail}")  # Debug log
+
+            user = User.query.filter_by(email=main_mail).first()
+            admin = Admin.query.filter_by(email=main_mail).first()
         else:
-            flash("User not found."), 404
+            print("No email selected")
+        
+        # Debug and Fix editting User.
+        # try:
+        #     if main_mail:
+        #         user = User.query.filter_by(email=main_mail).first()
+        #         admin = Admin.query.filter_by(email=main_mail).first()
+        #         print(main_mail)
+        #         if user:
+        #             print(user)
+        #             print(user.personal_data)
+        #             print(user.email)
+        #             form.email.data = user.email
+        #             form.surname.data = user.personal_data.surname
+        #             form.other_names.data = user.personal_data.other_names
+        #             # form.dob.data = user.personal_data.dob
+        #             form.id_number.data = user.personal_data.id_number
+        #             form.phone_number.data = user.personal_data.telephone_no
+        #             form.address.data = user.personal_data.address
+        #             form.postal_code.data = user.personal_data.postal_code
+        #             form.gender.data = user.personal_data.gender
+        #         elif admin:
+        #             print(admin)
+        #             print(admin.personal_data)
+        #             print(user.email)
+        #             form.email.data = admin.email
+        #             form.surname.data = admin.personal_data.surname
+        #             form.other_names.data = admin.personal_data.other_names
+        #             # form.dob.data = admin.personal_data.dob
+        #             form.id_number.data = admin.personal_data.id_number
+        #             form.phone_number.data = admin.personal_data.telephone_no
+        #             form.address.data = admin.personal_data.address
+        #             form.postal_code.data = admin.personal_data.postal_code
+        #             form.gender.data = admin.personal_data.gender
+        #     else:
+        #         print("No user found!")
+        # except AttributeError:
+        #     abort(404, description="Please comlete your registration. Contact the Amin team")
+    
     else:
         print("Form Failed")
         logging.debug(f"Current User: {current_user.is_authenticated}")        
@@ -170,7 +219,9 @@ def admin_index():
 @login_required
 def view_user_data(email):
     user = User.query.filter_by(email=email).first()
-    return render_template("admin/view_user.html", user=user)
+    admin = Admin.query.filter_by(email=email).first()
+    return render_template("admin/view_user.html", user=user, admin=admin)
+
 
 # mark Notifications
 @app.route("/admin/mark_notification_read/<int:notification_id>", methods=["POST"])
@@ -189,6 +240,7 @@ def mark_notification_read(notification_id):
 def admin_loans():
     return render_template("admin/loans.html")
 
+
 @app.route("/admin/members")
 @login_required
 # @role_required('admin')
@@ -200,17 +252,24 @@ def admin_members():
     return render_template("admin/members.html", members=members_dict, member_count=member_count,
                            title="Members Management", logo_name="Members Management")
 
+
+@app.route("/admin/staff")
+@login_required
+# @role_required('admin')
+def admin_staff():
+    members = Admin.query.all()
+
+    members_dict = [member.to_dict() for member in members]
+    return render_template("admin/staff.html", members=members_dict,
+                           title="Staff Management", logo_name="Staff Management")
+
+
 @app.route("/admin/settings")
 @login_required
 # @role_required('admin')
 def admin_settings():
     return render_template("admin/settings.html", title="Settings - Admin Dashboard", logo_name="Admin Panel")
 
-@app.route("/admin/staff")
-@login_required
-# @role_required('admin')
-def admin_staff():
-    return render_template("admin/staff.html", title="Staff Management", logo_name="Staff Management")
 
 @app.route("/admin/reports")
 @login_required
@@ -226,10 +285,44 @@ def home():
     return render_template("user/overview.html", title="Overview | SACCO Dashboard")
 
 
+@app.route('/apply_for_loan', methods=['POST'])
+@login_required
+def apply_for_loan():
+    # Get form data
+    loan_amount = float(request.form['loanAmount'])
+    loan_purpose = request.form['loanPurpose']
+    monthly_debt = float(request.form['monthly_debt'])
+
+
+    # Check loan eligibility
+    is_eligible, reason = check_loan_eligibility(current_user, loan_amount, monthly_debt)
+
+    if not is_eligible:
+        flash(f'Loan application denied: {reason}')
+        return redirect(url_for('application'))
+
+    # If eligible, save the loan request
+    new_loan = Loan(user_id=current_user.id, loan_amount=loan_amount, purpose=loan_purpose)
+    db.session.add(new_loan)
+    db.session.commit()
+
+    flash('Loan application submitted successfully!')
+    return redirect(url_for('loan_application_status'))
+
+
+@app.route('/loan_application_status')
+@login_required
+def loan_application_status():
+    # Example: get the current user's loans
+    loans = Loan.query.filter_by(user_id=current_user.user_id).all()
+    return render_template('loan_status.html', loans=loans)
+
+
 @app.route("/application", methods=['POST', 'GET'])
 @login_required
 def application():
-    return render_template("user/notifications.html", title="Notifications | SACCO Dashboard")
+    return render_template("user/loan_application.html", title="Notifications | SACCO Dashboard")
+
 
 
 @app.route("/notification")
@@ -238,10 +331,12 @@ def notification():
     return render_template("user/notifications.html", title="Notifications | SACCO Dashboard")
 
 
+
 @app.route("/profile")
 @login_required
 def profile():
     return render_template("user/profile.html")
+
 
 @app.route("/admin/register", methods=['POST', 'GET'])
 def admin_register():
@@ -315,30 +410,34 @@ def logout():
     logout_user()
     return redirect('login')
 
+
 @app.route("/deposit", methods=['POST', 'GET'])
 @login_required
 def deposit():
     return render_template("user/deposits.html", title="Deposits | SACCO Dashboard")
 
-@app.route("/transaction", methods=['POST', 'GET'])
-@login_required
-def transaction():
-    return render_template("user/transactions.html", title="Transactions | SACCO Dashboard")
+# @app.route("/transaction", methods=['POST', 'GET'])
+# @login_required
+# def transaction():
+#     return render_template("user/transactions.html", title="Transactions | SACCO Dashboard")
 
 @app.route("/withdrawals", methods=['POST', 'GET'])
 @login_required
 def withdrawals():
     return render_template("user/withdrawals.html", title="Withdrawals | SACCO Dashboard")
 
+
 @app.route("/statements", methods=['POST', 'GET'])
 @login_required
 def statements():
     return render_template("user/statements.html", title="Statements | SACCO Dashboard")
 
+
 @app.route("/news", methods=['POST', 'GET'])
 @login_required
 def news():
     return render_template("user/news.html", title="News/Announcements | SACCO Dashboard")
+
 
 @app.route("/support", methods=['POST', 'GET'])
 @login_required
@@ -475,7 +574,7 @@ def personal_data():
     if form.validate_on_submit():
         p_data = Admin_personalData(user_id=current_user.user_id, surname=form.surname.data, other_names=form.other_names.data, dob=form.dob.data,
                                    id_number=form.id_number.data, telephone_no=form.phone_number.data, address=form.address.data,
-                                   postal_code=form.postal_code.data, gender=form.gender.data)
+                                   postal_code=form.postal_code.data, gender=form.gender.data, income=form.income.data)
         
         # Save passport photo
         if form.passport_photo.data:
@@ -496,3 +595,28 @@ def personal_data():
             db.session.rollback()
             print("Error saving personal data: " + str(e), "danger")
     return render_template("user/applicationform.html", form=form, title="Application Form")
+
+
+# Function to calculate DTI ratio
+def calculate_dti(monthly_debt, monthly_income):
+    return monthly_debt / monthly_income
+
+
+MAX_DTI = 0.4  # 40% Debt-to-Income Ratio
+MIN_INCOME = 25000  # Minimum annual income for loan
+
+# Function to check eligibility
+def check_loan_eligibility(user, loan_amount, monthly_debt):
+    monthly_income = user.personal_data.income / 12  # Convert annual income to monthly
+    dti = calculate_dti(monthly_debt, monthly_income)
+
+    if dti > MAX_DTI:
+        return False, 'Debt-to-Income ratio too high'
+    if user.income < MIN_INCOME:
+        return False, 'Income too low'
+    if loan_amount > (user.income * 0.5):  # Loan should not exceed 50% of annual income
+        return False, 'Loan amount too high compared to income'
+
+    return True, 'Eligible'
+
+

@@ -331,6 +331,10 @@ canvas {
     background-color: #0056b3; /* Changes background on hover */
 }
 
+.no-underline {
+    text-decoration: none;
+}
+
 .alert {
     padding: 15px;
     margin-bottom: 20px;

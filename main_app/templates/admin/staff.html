@@ -8,7 +8,7 @@
 <h2 class="greeting">Manage Staff</h2>
 
 <div class="action-buttons">
-    <button class="action-button" onclick="openAddStaffModal()"><i class="fas fa-user-plus"></i> Add Staff</button>
+    <a href="{{ url_for('add_personal_data')}}" class="no-underline"><button class="action-button"><i class="fas fa-user-plus"></i> Add Staff</button></a>
     <input type="text" id="search" placeholder="Search Staff..." oninput="filterStaff()">
 </div>
 
@@ -17,10 +17,11 @@
     <thead>
         <tr>
             <th>Name</th>
+            <th>ID</th>
             <th>Email</th>
-            <th>Position</th>
-            <th>Status</th>
-            <th>Actions</th>
+            <!-- <th>Position</th>
+            <th>Status</th> -->
+            <!-- <th>Actions</th> -->
         </tr>
     </thead>
     <tbody id="staffBody">
@@ -31,18 +32,9 @@
 {% endblock %}
 
 {% block script %}
-<div id="addStaffModal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeAddStaffModal()">&times;</span>
-        <h2>Add New Staff</h2>
-        <form id="addStaffForm" onsubmit="addStaff(event)">
-            <input type="text" id="staffName" placeholder="Full Name" required>
-            <input type="email" id="staffEmail" placeholder="Email" required>
-            <input type="text" id="staffPosition" placeholder="Position" required>
-            <button type="submit">Add Staff</button>
-        </form>
-    </div>
-</div>
+<script>
+    const staffMembers = {{ members | tojson | safe }};
+</script>
 
 <script src="{{ url_for('static', filename='/js/staff.js') }}"></script>
 {% endblock %}

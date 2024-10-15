@@ -7,13 +7,20 @@
 <h2>User Data</h2>
 
 {% if user %}
-    <p>Email: {{ user.email }}</p>
-    <div class="action-buttons"></div>
-        <a href="{{ url_for('add_personal_data') }}" class="button-link"><button class="action-button"><i class="fas fa-user-plus"></i> Add Member</button></a>
-    </div>
-    <!-- Display other user information as needed -->
+<p>Email: {{ user.email }}</p>
+<div class="action-buttons"></div>
+<a href="{{ url_for('add_personal_data') }}" class="button-link"><button class="action-button"><i
+            class="fas fa-user-plus"></i> Add Member</button></a>
+</div>
+<!-- Display other user information as needed -->
+{% elif admin%}
+<p>Email: {{ admin.email }}</p>
+<div class="action-buttons"></div>
+<a href="{{ url_for('add_personal_data') }}" class="button-link"><button class="action-button"><i
+            class="fas fa-user-plus"></i> Add Member</button></a>
+</div>
 {% else %}
-    <p>User not found.</p>
+<p>User not found.</p>
 {% endif %}
 
 {% endblock %}

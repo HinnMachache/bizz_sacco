@@ -3,7 +3,7 @@
 from flask_wtf import FlaskForm
 from wtforms import (StringField, EmailField, PasswordField, IntegerField,
                      TelField, DateField, SubmitField, RadioField, HiddenField,
-                     SelectField)
+                     SelectField, FloatField)
 from flask_wtf.file import FileField, FileAllowed
 from flask_login import current_user
 from wtforms.validators import DataRequired, Email, EqualTo, Length, ValidationError
@@ -18,6 +18,7 @@ class ApplicationForm(FlaskForm):
     other_names = StringField('First Name', validators=[DataRequired(), Length(min=2, max=50)])
     dob = DateField('Date of Birth', validators=[DataRequired()])
     id_number = IntegerField('ID Number', validators=[DataRequired()])
+    income = IntegerField('Annual Income', validators=[DataRequired()])
     phone_number = TelField('Phone Number', validators=[DataRequired(), Length(min=10)])
     address = StringField('Address', validators=[DataRequired(), Length(min=2, max=30)])
     postal_code = IntegerField('Postal Code', validators=[DataRequired()])
@@ -120,3 +121,11 @@ class ChangePasswordForm(FlaskForm):
     password = PasswordField('New Password', validators=[DataRequired()])
     confirm_password = PasswordField('Confirm Password', validators=[DataRequired(), EqualTo('password')])
     submit = SubmitField('Confirm')
+
+
+class LoanForm(FlaskForm):
+    loan_amount = FloatField("Loan Amount:", validators=[DataRequired()], render_kw={"placeholder": "Enter Loan Amount"})
+    loan_purpose = StringField("Purpose of Loan:", validators=[DataRequired()], render_kw={"placeholder": "Enter Loan Purpose. . ."})
+    loan_terms = IntegerField("Loan Term(in months)", validators=[DataRequired()], render_kw={"placeholder": "12 Months"})
+    monthly_debts = FloatField("Monthly Debt Payments", validators=[DataRequired()], render_kw={"placeholder": "Enter Monthly Debt Payments/Deductions"})
+    submit = SubmitField('Submit Application')

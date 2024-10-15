@@ -8,7 +8,7 @@
 <h2 class="greeting">Manage Members</h2>
 
 <div class="action-buttons">
-    <button class="action-button" onclick="openAddMemberModal()"><i class="fas fa-user-plus"></i> Add Member</button>
+    <a href="{{ url_for('add_personal_data')}}" class="no-underline"><button class="action-button"></i> Add Member</button></a>
     <input type="text" id="search" placeholder="Search Members..." oninput="filterMembers()">
 </div>
 
@@ -33,6 +33,7 @@
 
 <script type="text/javascript">
     const memberData = {{ members | tojson }};
+    const editUrl = "{{ url_for('add_personal_data') }}";
     
     // Populate the table with real member data
     updateMembersTable(memberData);

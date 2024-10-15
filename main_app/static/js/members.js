@@ -57,8 +57,10 @@ function updateMembersTable(filteredMembers = memberData) {
             <td>${member.user_id}</td>
             <td>${member.email}</td>
             <td>
-                <button onclick="editMember('${member.username}')"><i class="fas fa-edit"></i> Edit</button>
-                <button onclick="deleteMember('${member.username}')"><i class="fas fa-trash-alt"></i> Delete</button>
+                <a href="${editUrl}?email=${encodeURIComponent(member.email)}">
+                    <button><i class="fas fa-edit"></i> Edit</button>
+                </a>
+                <button onclick="deleteMember('${member.username}')"><i class="fas fa-trash-alt"></i> Archive</button>
             </td>
         `;
         membersBody.appendChild(row);

@@ -56,6 +56,7 @@ class User_personalData(db.Model):
     user = db.relationship('User', back_populates='personal_data', lazy=True)
     surname = db.Column(db.String(30), nullable=False)
     other_names = db.Column(db.String(120), nullable=False)
+    income = db.Column(db.Float, nullable=False)
     dob = db.Column(db.String(20), nullable=False)
     id_number = db.Column(db.Integer, unique=True, nullable=False)
     telephone_no = db.Column(db.String(20), unique=True, nullable=False)
@@ -133,3 +134,12 @@ class Notification(db.Model):
     user_email = db.Column(db.String(120), nullable=False)
     created_at = db.Column(db.DateTime, default=datetime.now())
     is_read = db.Column(db.Boolean, default=False)
+
+
+class Loan(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('user.user_id'), nullable=False)
+    loan_amount = db.Column(db.Float, nullable=False)
+    status = db.Column(db.String(20), nullable=False, default='Pending')
+    loan_term = db.Column(db.Integer, nullable=False)
+    purpose = db.Column(db.String(120), nullable=False)
