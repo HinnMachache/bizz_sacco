@@ -290,12 +290,12 @@ def approve_loan(loan_id):
     eligibility_errors = []
     
     # Check user's account balance
-    user_account = Account.query.filter_by(user_id=user.id).first()
+    user_account = Account.query.filter_by(user_id=user.user_id).first()
     if user_account.balance < 1000:  
         eligibility_errors.append('User does not have enough balance to be eligible.')
 
     # Check if the user has any unpaid loans
-    existing_loans = Loan.query.filter_by(user_id=user.id, loan_status='Disbursed').all()
+    existing_loans = Loan.query.filter_by(user_id=user.user_id, status='Disbursed').all()
     if existing_loans:
         eligibility_errors.append('User has unpaid loans.')
 
@@ -408,7 +408,12 @@ def admin_settings():
 @login_required
 @role_required('admin')
 def admin_reports():
-    return render_template("admin/reports.html", title="Reports - Admin Dashboard", logo_name="Admin Panel")
+    member_count = User.query.count()
+    approved_loan_count = Loan.query.filter_by(status='Approved').count()
+    loans = Loan.query.count()
+
+    return render_template("admin/reports.html", title="Reports - Admin Dashboard", logo_name="Admin Panel",
+                           members=member_count, approved_loan_count=approved_loan_count, loans=loans )
     
 
 # User Section

@@ -12,22 +12,38 @@
 <section class="report-summary">
     <div class="summary-card">
         <h3>Total Loans</h3>
-        <p>150</p>
+        {% if loans %}
+        <p>{{ loans }}</p>
+        {% else %}
+        <p>0</p>
+        {% endif %}
         <i class="fas fa-file-invoice-dollar"></i>
     </div>
     <div class="summary-card">
-        <h3>New Members</h3>
-        <p>50</p>
+        <h3>Total Members</h3>
+        {% if members %}
+        <p>{{ members }}</p>
+        {% else %}
+        <p>0</p>
+        {% endif %}
         <i class="fas fa-users"></i>
     </div>
     <div class="summary-card">
         <h3>Total Revenue</h3>
-        <p>$25,000</p>
+        {% if amount %}
+        <p>Ksh {{ amount }}</p>
+        {% else %}
+        <p>KSH 0</p>
+        {% endif %}
         <i class="fas fa-chart-line"></i>
     </div>
     <div class="summary-card">
         <h3>Approved Loans</h3>
-        <p>120</p>
+        {% if approved_loan_count %}
+        <p>{{ approved_loan_count }}</p>
+        {% else %}
+        <p>0</p>
+        {% endif %}
         <i class="fas fa-thumbs-up"></i>
     </div>
 </section>
