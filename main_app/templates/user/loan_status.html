@@ -1,0 +1,13 @@
+{% extends "user/layout.html" %}
+{% block content %}
+<!-- loan_status.html -->
+<h2>Your Loan Applications</h2>
+<ul>
+    {% for loan in loans %}
+    <li>
+        Loan Amount: KSH. {{ loan.loan_amount }} | Status: {{ loan.status }} | Purpose: {{ loan.purpose }}
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

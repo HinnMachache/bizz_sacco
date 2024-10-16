@@ -61,6 +61,31 @@
     </div>
     {% endif %}
 </section>
+
+<section class="recent-activity">
+    <h3>Loan Requests:</h3>
+    {% if notifications %}
+    <div class="alert alert-info" role="alert">
+        New Loan Request:
+    </div>
+    <ul>
+        {% for notification in LoanNotifications %}
+        <li>
+            New Loan request: {{ notification.user_email }}
+            <a href="{{ url_for('view_user_data', email=notification.user_email) }}" class="btn btn-primary">View</a>
+            <form action="{{ url_for('mark_notification_read', notification_id=notification.id) }}" method="POST"
+                style="display:inline;">
+                <button type="submit" class="btn btn-secondary">Mark as Processed</button>
+            </form>
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <div class="alert alert-success" role="alert">
+        No new Loans.
+    </div>
+    {% endif %}
+</section>
 <section class="recent-activity">
     <h3>Recent Activity</h3>
     <ul id="activityLog">
