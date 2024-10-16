@@ -14,6 +14,27 @@ body {
     overflow-x: hidden;
 }
 
+.no-style-link-link {
+    text-decoration: none;  /* Remove underline */
+    color: inherit;         /* Inherit color from parent */
+    
+  }
+  
+  .no-style-link-link:hover,
+  .no-style-link-link:focus,
+  .no-style-link-link:active {
+    text-decoration: none;  /* Prevent underline on hover or focus */
+    color: inherit;         /* Keep color consistent */
+  }
+  
+  .snapshot-card {
+    display: inline-block;   /* Prevent resizing */
+    padding: 10px;           /* Add padding if necessary */
+    background-color: #f5f5f5;  /* Your preferred background color */
+    border: 1px solid #ccc;     /* Optional border for styling */
+  }
+  
+
 /* Admin Dashboard Layout */
 /* Admin Dashboard Layout */
 .admin-dashboard {

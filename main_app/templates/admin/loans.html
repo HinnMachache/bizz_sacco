@@ -37,10 +37,27 @@
             <h2 class="greeting">Manage Loans</h2>
             
             <section class="dashboard-snapshot">
-                <div class="snapshot-card">Total Loans: <span id="totalLoans">200</span></div>
-                <div class="snapshot-card">Approved Loans: <span id="approvedLoans">150</span></div>
-                <div class="snapshot-card">Pending Loans: <span id="pendingLoans">30</span></div>
-                <div class="snapshot-card">Rejected Loans: <span id="rejectedLoans">20</span></div>
+                {% if loans %}
+                    <div class="snapshot-card">Total Loans: <span id="totalLoans">{{ loans }}</span></div>
+                {% else %}
+                <div class="snapshot-card">Total Loans: <span id="totalLoans">0</span></div>
+                {% endif %}
+                {% if pending_loan_count %}
+                <a href="{{ url_for('view_pending_loans')}}" class="no-style-link-link"><div class="snapshot-card">Pending Loans: <span id="pendingLoans">{{ pending_loan_count }}</span></div></a>
+                {% else %}
+                    <div class="snapshot-card">Pending Loans: <span id="pendingLoans">{{ pending_loan_count }}</span></div>
+                {% endif %}
+                {% if approved_loan_count %}
+                    <div class="snapshot-card">Approved Loans: <span id="approvedLoans">{{ approved_loan_count }}</span></div>
+                {% else %}
+                    <div class="snapshot-card">Approved Loans: <span id="approvedLoans">0</span></div>
+                {% endif %}
+                {% if rejected_loan_count %}
+                <div class="snapshot-card">Rejected Loans: <span id="rejectedLoans">{{ rejected_loan_count }}</span></div>
+                {% else %}
+                <div class="snapshot-card">Rejected Loans: <span id="rejectedLoans">0</span></div>
+                {% endif %}                                  
+                    
             </section>
             <div class="charts-section">
                 <div class="chart-container">
@@ -57,7 +74,7 @@
             <section class="quick-actions">
                 <h3>Quick Actions</h3>
                 <div class="action-buttons">
-                    <button class="action-button" onclick="openAddLoanModal()"><i class="fas fa-plus"></i> Add Loan</button>
+                    <button class="action-button"><i class="fas fa-plus"></i> Add Loan</button>
                     <button class="action-button"><i class="fas fa-file-invoice"></i> Generate Report</button>
                 </div>
             </section>

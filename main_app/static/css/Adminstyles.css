@@ -331,6 +331,20 @@ canvas {
     background-color: #0056b3; /* Changes background on hover */
 }
 
+.no-style-link {
+    text-decoration: none;  /* Remove underline */
+    color: inherit;         /* Inherit color from parent */
+    display: inline-block;  /* Ensure block-level behavior */
+    width: 33%;
+  }
+  
+  .no-style-link:hover,
+  .no-style-link:focus,
+  .no-style-link:active {
+    text-decoration: none;  /* Prevent underline on hover or focus */
+    color: inherit;         /* Keep color consistent */
+  }
+
 .no-underline {
     text-decoration: none;
 }

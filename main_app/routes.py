@@ -1,13 +1,15 @@
 import secrets
 import os
 import logging
+from datetime import datetime
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy import func
 from functools import wraps
 from PIL import Image
 from main_app import app, db, bcrypt, mail
 from flask import render_template, flash, request, url_for, redirect, current_app, abort
-from main_app.models import User, User_personalData, Admin, Admin_personalData, Notification, LoanNotification
+from main_app.models import (User, User_personalData, Admin, Admin_personalData, Notification,
+                             LoanNotification, Loan, Disbursement, Transaction, Repayment, Account)
 from main_app.forms import (RegistrationForm, LoginForm, ApplicationForm,
                             ResetPasswordRequestForm, ResetPasswordForm,
                             ChangePasswordForm, UpdateAccountForm, AdminRegistrationForm, LoanForm)
@@ -204,6 +206,7 @@ def add_personal_data():
         logging.debug(f"Current User: {current_user.is_authenticated}")        
     return render_template("user/applicationform.html", form=form, title="Application Form") 
 
+
 # Admin Section
 @app.route("/admin")
 @login_required
@@ -212,11 +215,15 @@ def admin_index():
     member_count = User.query.count()
     staff_count = Admin.query.count()
     notifications = Notification.query.filter_by(is_read=False).all()
+    pending_loan_count = Loan.query.filter_by(status='Pending').count()
+    approved_loan_count = Loan.query.filter_by(status='Approved').count()
     loan_notifications = LoanNotification.query.filter_by(is_processed=False).all()
 
     return render_template("admin/index.html", staff_count=staff_count, member_count=member_count,
                            notifications=notifications, loan_notifications=loan_notifications,
+                           approved_loan_count=approved_loan_count,pending_loan_count=pending_loan_count,
                            title="Admin Dashboard", logo_name="Admin Panel")
+
 
 # View User registration state
 @app.route("/admin/view_user/<email>")
@@ -245,11 +252,126 @@ def mark_notification_read(notification_id):
     return redirect(url_for("admin_index"))
 
 
+# Loan Section
+
 @app.route("/admin/loans")
 @login_required
 @role_required('admin')
 def admin_loans():
-    return render_template("admin/loans.html")
+    loans = Loan.query.count()
+    pending_loan_count = Loan.query.filter_by(status='Pending').count()
+    approved_loan_count = Loan.query.filter_by(status='Approved').count()
+    rejected_loan_count = Loan.query.filter_by(status='Rejected').count()
+    return render_template("admin/loans.html", loans=loans, pending_loan_count=pending_loan_count,
+                           approved_loan_count=approved_loan_count, rejected_loan_count=rejected_loan_count)
+
+
+@app.route('/admin/pending_loans')
+@role_required('admin')
+@login_required
+def view_pending_loans():   
+    loans = Loan.query.filter_by(status='Pending').all()
+    return render_template('admin/pending_loans.html', loans=loans)
+
+
+@app.route('/admin/approve_loan/<int:loan_id>', methods=['POST'])
+@role_required('admin')
+@login_required
+def approve_loan(loan_id):    
+    loan = Loan.query.get_or_404(loan_id)
+    user = User.query.get(loan.user_id)
+
+    # Check loan status
+    if loan.status != 'Pending':
+        flash('Loan has already been processed.', 'danger')
+        return redirect(url_for('admin_dashboard'))
+
+    # Perform eligibility checks
+    eligibility_errors = []
+    
+    # Check user's account balance
+    user_account = Account.query.filter_by(user_id=user.id).first()
+    if user_account.balance < 1000:  
+        eligibility_errors.append('User does not have enough balance to be eligible.')
+
+    # Check if the user has any unpaid loans
+    existing_loans = Loan.query.filter_by(user_id=user.id, loan_status='Disbursed').all()
+    if existing_loans:
+        eligibility_errors.append('User has unpaid loans.')
+
+    # Handle eligibility issues
+    if eligibility_errors:
+        loan.status = 'Rejected'
+        loan.rejection_reason = ', '.join(eligibility_errors)
+        db.session.commit()
+        
+        flash('Loan rejected: ' + ', '.join(eligibility_errors), 'danger')
+        return redirect(url_for('admin_dashboard'))
+
+    # If all checks pass, approve the loan
+    loan.status = 'Approved'
+    loan.approved_at = datetime.now()
+    db.session.commit()
+
+    flash('Loan approved successfully!', 'success')
+
+    return redirect(url_for('view_pending_loans'))
+    
+
+@app.route('/admin/reject_loan/<int:loan_id>', methods=['POST'])
+@role_required('admin')
+@login_required
+def reject_loan(loan_id):
+    loan = Loan.query.get_or_404(loan_id)
+    loan.status = 'Rejected'
+    db.session.add(loan)
+    db.session.commit()
+    flash('Loan has been rejected.', 'danger')
+
+    return redirect(url_for('view_pending_loans'))
+    
+
+
+# Loan Section
+@app.route('/disburse_loan/<int:loan_id>', methods=['POST'])
+@role_required('admin')
+@login_required
+def disburse_loan(loan_id):    
+    loan = Loan.query.get_or_404(loan_id)
+    
+    # Ensure the loan is approved
+    if loan.status == 'Approved':
+        # Get the user and bank accounts
+        user_account = Account.query.filter_by(user_id=loan.user_id).first()
+        bank_account = Account.query.filter_by(account_type='Bank').first()
+
+        # Check if the bank has enough funds
+        if bank_account.balance >= loan.loan_amount:
+            # Deduct from bank and credit user
+            bank_account.balance -= loan.loan_amount
+            user_account.balance += loan.loan_amount
+
+            # Record the disbursement transaction
+            transaction = Transaction(
+                loan_id=loan.id,
+                transaction_type='Disbursement',
+                amount=loan.loan_amount
+            )
+
+            # Update loan status to disbursed
+            loan.status = 'Disbursed'
+            
+            # Commit the changes
+            db.session.add(transaction)
+            db.session.commit()
+
+            flash('Loan disbursed successfully!', 'success')
+        else:
+            flash('Insufficient funds in the bank account!', 'danger')
+    else:
+        flash('Loan must be approved before disbursement.', 'danger')
+    
+    return redirect(url_for('admin_loans'))
 
 
 @app.route("/admin/members")
@@ -287,7 +409,7 @@ def admin_settings():
 @role_required('admin')
 def admin_reports():
     return render_template("admin/reports.html", title="Reports - Admin Dashboard", logo_name="Admin Panel")
-
+    
 
 # User Section
 @app.route("/overview")

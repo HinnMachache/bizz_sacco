@@ -19,6 +19,7 @@ class User(db.Model, UserMixin):
     user_id = db.Column(db.String(10), primary_key=True)
     personal_data = db.relationship('User_personalData', back_populates='user', uselist=False)
     personal_loan = db.relationship("Loan", back_populates="loan_user", uselist=False)
+    account = db.relationship('Account', back_populates='user')
     username = db.Column(db.String(30), unique=True, nullable=False)
     email = db.Column(db.String(120), unique=True, nullable=False)
     role = db.Column(db.String(6), nullable=False)
@@ -150,15 +151,31 @@ class LoanNotification(db.Model):
     is_processed = db.Column(db.Boolean, default=False)
 
 
+class Account(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=True)  # Nullable for bank account
+    user = db.relationship('User', back_populates='account')
+    account_type = db.Column(db.String(50), default='User')  # Could be 'User' or 'Bank'
+    balance = db.Column(db.Float, default=0.0)  # Holds the account balance
+    user = db.relationship('User', back_populates='account')
+
+    def __repr__(self):
+        return f'<Account {self.id}, Type: {self.account_type}, Balance: {self.balance}>'
+
+
+
+
 class Loan(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.String(10), db.ForeignKey('user.user_id'), nullable=False)
-    loan_user = db.relationship('User', back_populates='personal_loan', lazy=True)
     loan_amount = db.Column(db.Float, nullable=False)
     status = db.Column(db.String(20), nullable=False, default='Pending')
     loan_term = db.Column(db.Integer, nullable=False)
     purpose = db.Column(db.String(120), nullable=False)
-    transactions = db.relationship('Transaction', back_populates='loan')
+    loan_user = db.relationship('User', back_populates='personal_loan', lazy=True)
+    transactions = db.relationship('Transaction', back_populates='loan', lazy=True)
+    disbursement = db.relationship('Disbursement', back_populates='loan', lazy=True)
+    repayment = db.relationship('Repayment', back_populates='loan', lazy=True)
 
 
 class Transaction(db.Model):
@@ -170,9 +187,20 @@ class Transaction(db.Model):
     transaction_date = db.Column(db.DateTime, default=datetime.now())
     status = db.Column(db.String(50))
 
+
 class Disbursement(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     loan_id = db.Column(db.Integer, db.ForeignKey('loan.id'))
+    loan = db.relationship('Loan', back_populates='disbursement')
     source_account = db.Column(db.String(100))  # Source of funds (e.g., bank account)
     disbursed_amount = db.Column(db.Float)
-    disbursement_date = db.Column(db.DateTime, default=datetime.utcnow)
+    disbursement_date = db.Column(db.DateTime, default=datetime.now())
+
+
+class Repayment(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    loan_id = db.Column(db.Integer, db.ForeignKey('loan.id'))
+    loan = db.relationship('Loan', back_populates='repayment')
+    amount_paid = db.Column(db.Float)
+    payment_date = db.Column(db.DateTime, default=datetime.now())
+    destination_account = db.Column(db.String(100))
