@@ -291,6 +291,15 @@ def approve_loan(loan_id):
     
     # Check user's account balance
     user_account = Account.query.filter_by(user_id=user.user_id).first()
+
+    if user_account is None:
+        loan.status = 'Rejected'
+        loan.rejection_reason = "User account not found."
+        flash("User account not found. Please contact support.", 'danger')
+        db.session.commit()       
+        return redirect(url_for('admin_index'))
+
+        
     if user_account.balance < 1000:  
         eligibility_errors.append('User does not have enough balance to be eligible.')
 
@@ -306,7 +315,7 @@ def approve_loan(loan_id):
         db.session.commit()
         
         flash('Loan rejected: ' + ', '.join(eligibility_errors), 'danger')
-        return redirect(url_for('admin_dashboard'))
+        return redirect(url_for('admin_index'))
 
     # If all checks pass, approve the loan
     loan.status = 'Approved'
@@ -456,7 +465,7 @@ def apply_for_loan():
 @app.route('/loan_application_status')
 @login_required
 def loan_application_status():
-    # Example: get the current user's loans
+    # get the current user's loans
     loans = Loan.query.filter_by(user_id=current_user.user_id).all()
     return render_template('user/loan_status.html', loans=loans)
 
@@ -525,6 +534,10 @@ def register():
         db.session.add(user)
         db.session.commit()
 
+        user_account = Account(user_id=user.user_id, balance=500.0, deposit_method="Mobile Money", reference_no="Ref_001", account_type='User')
+        db.session.add(user_account)
+        db.session.commit()
+
         notification = Notification(user_email=email)
         db.session.add(notification)
         db.session.commit()
@@ -565,10 +578,25 @@ def logout():
     logout_user()
     return redirect('login')
 
+def get_next_ref_id():
+    current_max = db.session.query(func.max(Account.reference_no)).scalar()
+    next_id = int(current_max.split('_')[1]) + 1 if current_max else 1
+    return next_id
 
 @app.route("/deposit", methods=['POST', 'GET'])
 @login_required
 def deposit():
+    deposit_amount = float(request.form['amount'])
+    deposit_method = request.form['deposit_method']
+    account_type = float(request.form['account'])
+    reference_no = f'Ref_{get_next_ref_id()}'
+
+    account = Account(user_id=current_user.user_id, balance=deposit_amount,
+                      deposit_method=deposit_method, account_type=account_type,
+                      reference_no=reference_no)
+    
+    db.session.add(account)
+    db.session.commit()
     return render_template("user/deposits.html", title="Deposits | SACCO Dashboard")
 
 # @app.route("/transaction", methods=['POST', 'GET'])

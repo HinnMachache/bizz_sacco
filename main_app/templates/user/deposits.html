@@ -7,12 +7,12 @@
     <!-- Deposit Form -->    <div class="deposit-form">
 
         <h2>Add New Deposit</h2>
-        <form action="submit-deposit.php" method="post">
+        <form action="{{ url_for('deposit') }}" method="post">
             <label for="amount">Deposit Amount:</label>
-            <input type="text" id="amount" name="amount" placeholder="KES 0.00" required>
+            <input type="text" id="amount" name="amount" placeholder="KES 500.00" required>
 
             <label for="deposit-method">Deposit Method:</label>
-            <select id="deposit-method" name="deposit-method" required>
+            <select id="deposit_method" name="deposit_method" required>
                 <option value="">Select Method</option>
                 <option value="bank_transfer">Bank Transfer</option>
                 <option value="mobile_money">Mobile Money</option>
@@ -22,12 +22,8 @@
             <label for="account">Deposit To:</label>
             <select id="account" name="account" required>
                 <option value="">Select Account</option>
-                <option value="savings_account">Savings Account</option>
-                <option value="checking_account">Checking Account</option>
+                <option value="User">User</option>
             </select>
-
-            <label for="reference">Reference (Optional):</label>
-            <input type="text" id="reference" name="reference" placeholder="Reference (if any)">
 
             <button type="submit">Submit Deposit</button>
         </form>

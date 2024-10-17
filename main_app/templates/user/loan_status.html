@@ -4,9 +4,15 @@
 <h2>Your Loan Applications</h2>
 <ul>
     {% for loan in loans %}
-    <li>
-        Loan Amount: KSH. {{ loan.loan_amount }} | Status: {{ loan.status }} | Purpose: {{ loan.purpose }}
-    </li>
+        {% if loan.rejection_reason %}
+        <li>
+            Loan Amount: KSH. {{ loan.loan_amount }} | Status: {{ loan.status }} | Reason: {{ loan.rejection_reason }} |Purpose: {{ loan.purpose }}
+        </li>
+        {% else %}
+        <li>
+            Loan Amount: KSH. {{ loan.loan_amount }} | Status: {{ loan.status }} | Purpose: {{ loan.purpose }}
+        </li>
+        {% endif %}
     {% endfor %}
 </ul>
 

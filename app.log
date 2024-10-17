@@ -3804,3 +3804,219 @@
 2024-10-16 23:23:29,159 - INFO - 192.168.100.41 - - [16/Oct/2024 23:23:29] "[35m[1mPOST /admin/approve_loan/1 HTTP/1.1[0m" 500 -
 2024-10-16 23:23:29,193 - INFO - 192.168.100.41 - - [16/Oct/2024 23:23:29] "[36mGET /admin/approve_loan/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
 2024-10-16 23:23:29,194 - INFO - 192.168.100.41 - - [16/Oct/2024 23:23:29] "[36mGET /admin/approve_loan/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-16 23:31:26,489 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-16 23:31:26,688 - INFO -  * Restarting with stat
+2024-10-16 23:31:27,297 - WARNING -  * Debugger is active!
+2024-10-16 23:31:27,298 - INFO -  * Debugger PIN: 718-713-251
+2024-10-16 23:31:28,322 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-16 23:31:28,486 - INFO -  * Restarting with stat
+2024-10-16 23:31:29,278 - WARNING -  * Debugger is active!
+2024-10-16 23:31:29,279 - INFO -  * Debugger PIN: 718-713-251
+2024-10-16 23:32:32,684 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-16 23:32:32,880 - INFO -  * Restarting with stat
+2024-10-16 23:32:33,486 - WARNING -  * Debugger is active!
+2024-10-16 23:32:33,486 - INFO -  * Debugger PIN: 718-713-251
+2024-10-16 23:32:44,714 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-16 23:32:44,901 - INFO -  * Restarting with stat
+2024-10-16 23:32:45,522 - WARNING -  * Debugger is active!
+2024-10-16 23:32:45,522 - INFO -  * Debugger PIN: 718-713-251
+2024-10-16 23:32:50,639 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-16 23:32:50,787 - INFO -  * Restarting with stat
+2024-10-16 23:32:51,394 - WARNING -  * Debugger is active!
+2024-10-16 23:32:51,394 - INFO -  * Debugger PIN: 718-713-251
+2024-10-16 23:33:14,908 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-16 23:33:15,049 - INFO -  * Restarting with stat
+2024-10-16 23:33:15,612 - WARNING -  * Debugger is active!
+2024-10-16 23:33:15,612 - INFO -  * Debugger PIN: 718-713-251
+2024-10-16 23:33:19,670 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-16 23:33:19,814 - INFO -  * Restarting with stat
+2024-10-16 23:33:20,375 - WARNING -  * Debugger is active!
+2024-10-16 23:33:20,375 - INFO -  * Debugger PIN: 718-713-251
+2024-10-16 23:33:42,801 - INFO - 192.168.100.41 - - [16/Oct/2024 23:33:42] "[35m[1mPOST /admin/approve_loan/1 HTTP/1.1[0m" 500 -
+2024-10-16 23:33:42,841 - INFO - 192.168.100.41 - - [16/Oct/2024 23:33:42] "[36mGET /admin/approve_loan/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-16 23:33:42,841 - INFO - 192.168.100.41 - - [16/Oct/2024 23:33:42] "[36mGET /admin/approve_loan/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-16 23:34:12,559 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-16 23:34:12,732 - INFO -  * Restarting with stat
+2024-10-16 23:34:13,344 - WARNING -  * Debugger is active!
+2024-10-16 23:34:13,344 - INFO -  * Debugger PIN: 718-713-251
+2024-10-16 23:34:32,760 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-16 23:34:32,964 - INFO -  * Restarting with stat
+2024-10-16 23:34:33,623 - WARNING -  * Debugger is active!
+2024-10-16 23:34:33,623 - INFO -  * Debugger PIN: 718-713-251
+2024-10-16 23:34:38,530 - INFO - 192.168.100.41 - - [16/Oct/2024 23:34:38] "[32mPOST /admin/approve_loan/1 HTTP/1.1[0m" 302 -
+2024-10-16 23:34:38,563 - INFO - 192.168.100.41 - - [16/Oct/2024 23:34:38] "GET /admin HTTP/1.1" 200 -
+2024-10-16 23:34:38,622 - INFO - 192.168.100.41 - - [16/Oct/2024 23:34:38] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-16 23:34:38,623 - INFO - 192.168.100.41 - - [16/Oct/2024 23:34:38] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-16 23:36:04,625 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-16 23:36:04,788 - INFO -  * Restarting with stat
+2024-10-16 23:36:05,492 - WARNING -  * Debugger is active!
+2024-10-16 23:36:05,493 - INFO -  * Debugger PIN: 718-713-251
+2024-10-16 23:36:25,930 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-16 23:36:26,119 - INFO -  * Restarting with stat
+2024-10-16 23:37:21,918 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.41:5000
+2024-10-16 23:37:21,918 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-16 23:37:21,919 - INFO -  * Restarting with stat
+2024-10-16 23:37:22,649 - WARNING -  * Debugger is active!
+2024-10-16 23:37:22,650 - INFO -  * Debugger PIN: 718-713-251
+2024-10-16 23:37:26,512 - INFO - 192.168.100.41 - - [16/Oct/2024 23:37:26] "GET /admin/pending_loans HTTP/1.1" 200 -
+2024-10-16 23:37:26,566 - INFO - 192.168.100.41 - - [16/Oct/2024 23:37:26] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-16 23:37:26,567 - INFO - 192.168.100.41 - - [16/Oct/2024 23:37:26] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-16 23:37:26,567 - INFO - 192.168.100.41 - - [16/Oct/2024 23:37:26] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-16 23:37:29,124 - INFO - 192.168.100.41 - - [16/Oct/2024 23:37:29] "[32mPOST /admin/approve_loan/1 HTTP/1.1[0m" 302 -
+2024-10-16 23:37:29,169 - INFO - 192.168.100.41 - - [16/Oct/2024 23:37:29] "GET /admin HTTP/1.1" 200 -
+2024-10-16 23:37:29,235 - INFO - 192.168.100.41 - - [16/Oct/2024 23:37:29] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-16 23:37:29,236 - INFO - 192.168.100.41 - - [16/Oct/2024 23:37:29] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-16 23:37:39,609 - INFO - 192.168.100.41 - - [16/Oct/2024 23:37:39] "GET /admin/loans HTTP/1.1" 200 -
+2024-10-16 23:37:39,681 - INFO - 192.168.100.41 - - [16/Oct/2024 23:37:39] "[36mGET /static/css/loans.css HTTP/1.1[0m" 304 -
+2024-10-16 23:37:39,681 - INFO - 192.168.100.41 - - [16/Oct/2024 23:37:39] "[36mGET /static/js/loans.js HTTP/1.1[0m" 304 -
+2024-10-16 23:38:15,440 - INFO - 127.0.0.1 - - [16/Oct/2024 23:38:15] "GET /loan_application_status HTTP/1.1" 200 -
+2024-10-16 23:38:15,474 - INFO - 127.0.0.1 - - [16/Oct/2024 23:38:15] "[36mGET /static/assets/b43c8b884483d41d458227363_1176625970237162_7784013221116217385_n.jpg HTTP/1.1[0m" 304 -
+2024-10-16 23:38:15,481 - INFO - 127.0.0.1 - - [16/Oct/2024 23:38:15] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-16 23:38:15,505 - INFO - 127.0.0.1 - - [16/Oct/2024 23:38:15] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-16 23:40:06,522 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/models.py', reloading
+2024-10-16 23:40:06,713 - INFO -  * Restarting with stat
+2024-10-16 23:49:17,659 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.41:5000
+2024-10-16 23:49:17,660 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-16 23:49:17,661 - INFO -  * Restarting with stat
+2024-10-16 23:49:18,375 - WARNING -  * Debugger is active!
+2024-10-16 23:49:18,376 - INFO -  * Debugger PIN: 718-713-251
+2024-10-16 23:49:21,291 - INFO - 127.0.0.1 - - [16/Oct/2024 23:49:21] "[35m[1mGET /loan_application_status HTTP/1.1[0m" 500 -
+2024-10-16 23:49:21,324 - INFO - 127.0.0.1 - - [16/Oct/2024 23:49:21] "GET /loan_application_status?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-10-16 23:49:21,329 - INFO - 127.0.0.1 - - [16/Oct/2024 23:49:21] "GET /loan_application_status?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-10-16 23:49:21,390 - INFO - 127.0.0.1 - - [16/Oct/2024 23:49:21] "GET /loan_application_status?__debugger__=yes&cmd=resource&f=console.png&s=yvrUja8wClJPGpejCo0p HTTP/1.1" 200 -
+2024-10-16 23:49:21,411 - INFO - 127.0.0.1 - - [16/Oct/2024 23:49:21] "[36mGET /loan_application_status?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-16 23:50:35,598 - INFO - 127.0.0.1 - - [16/Oct/2024 23:50:35] "[35m[1mGET /loan_application_status HTTP/1.1[0m" 500 -
+2024-10-16 23:50:35,658 - INFO - 127.0.0.1 - - [16/Oct/2024 23:50:35] "[36mGET /loan_application_status?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-16 23:50:35,674 - INFO - 127.0.0.1 - - [16/Oct/2024 23:50:35] "[36mGET /loan_application_status?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-16 23:50:35,695 - INFO - 127.0.0.1 - - [16/Oct/2024 23:50:35] "[36mGET /loan_application_status?__debugger__=yes&cmd=resource&f=console.png&s=yvrUja8wClJPGpejCo0p HTTP/1.1[0m" 304 -
+2024-10-16 23:50:35,718 - INFO - 127.0.0.1 - - [16/Oct/2024 23:50:35] "[36mGET /loan_application_status?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-16 23:50:38,271 - INFO - 127.0.0.1 - - [16/Oct/2024 23:50:38] "[35m[1mGET /loan_application_status HTTP/1.1[0m" 500 -
+2024-10-16 23:50:38,310 - INFO - 127.0.0.1 - - [16/Oct/2024 23:50:38] "[36mGET /loan_application_status?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-16 23:50:38,317 - INFO - 127.0.0.1 - - [16/Oct/2024 23:50:38] "[36mGET /loan_application_status?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-16 23:50:38,326 - INFO - 127.0.0.1 - - [16/Oct/2024 23:50:38] "[36mGET /loan_application_status?__debugger__=yes&cmd=resource&f=console.png&s=yvrUja8wClJPGpejCo0p HTTP/1.1[0m" 304 -
+2024-10-16 23:50:38,349 - INFO - 127.0.0.1 - - [16/Oct/2024 23:50:38] "[36mGET /loan_application_status?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-16 23:50:39,146 - INFO - 127.0.0.1 - - [16/Oct/2024 23:50:39] "[35m[1mGET /loan_application_status HTTP/1.1[0m" 500 -
+2024-10-16 23:50:39,170 - INFO - 127.0.0.1 - - [16/Oct/2024 23:50:39] "[36mGET /loan_application_status?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-16 23:50:39,176 - INFO - 127.0.0.1 - - [16/Oct/2024 23:50:39] "[36mGET /loan_application_status?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-16 23:50:39,191 - INFO - 127.0.0.1 - - [16/Oct/2024 23:50:39] "[36mGET /loan_application_status?__debugger__=yes&cmd=resource&f=console.png&s=yvrUja8wClJPGpejCo0p HTTP/1.1[0m" 304 -
+2024-10-16 23:50:39,211 - INFO - 127.0.0.1 - - [16/Oct/2024 23:50:39] "[36mGET /loan_application_status?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-16 23:51:48,269 - INFO - 127.0.0.1 - - [16/Oct/2024 23:51:48] "GET /loan_application_status HTTP/1.1" 200 -
+2024-10-16 23:51:48,296 - INFO - 127.0.0.1 - - [16/Oct/2024 23:51:48] "[36mGET /static/assets/b43c8b884483d41d458227363_1176625970237162_7784013221116217385_n.jpg HTTP/1.1[0m" 304 -
+2024-10-16 23:51:48,304 - INFO - 127.0.0.1 - - [16/Oct/2024 23:51:48] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-16 23:51:48,310 - INFO - 127.0.0.1 - - [16/Oct/2024 23:51:48] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-16 23:51:57,774 - INFO - 127.0.0.1 - - [16/Oct/2024 23:51:57] "GET /application HTTP/1.1" 200 -
+2024-10-16 23:51:57,834 - INFO - 127.0.0.1 - - [16/Oct/2024 23:51:57] "[36mGET /static/assets/b43c8b884483d41d458227363_1176625970237162_7784013221116217385_n.jpg HTTP/1.1[0m" 304 -
+2024-10-16 23:51:57,852 - INFO - 127.0.0.1 - - [16/Oct/2024 23:51:57] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-16 23:51:57,854 - INFO - 127.0.0.1 - - [16/Oct/2024 23:51:57] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-16 23:52:32,207 - INFO - 127.0.0.1 - - [16/Oct/2024 23:52:32] "[32mPOST /apply_for_loan HTTP/1.1[0m" 302 -
+2024-10-16 23:52:32,246 - INFO - 127.0.0.1 - - [16/Oct/2024 23:52:32] "GET /application HTTP/1.1" 200 -
+2024-10-16 23:52:32,311 - INFO - 127.0.0.1 - - [16/Oct/2024 23:52:32] "[36mGET /static/assets/b43c8b884483d41d458227363_1176625970237162_7784013221116217385_n.jpg HTTP/1.1[0m" 304 -
+2024-10-16 23:52:32,318 - INFO - 127.0.0.1 - - [16/Oct/2024 23:52:32] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-16 23:52:32,319 - INFO - 127.0.0.1 - - [16/Oct/2024 23:52:32] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-16 23:53:08,491 - INFO - 127.0.0.1 - - [16/Oct/2024 23:53:08] "[32mPOST /apply_for_loan HTTP/1.1[0m" 302 -
+2024-10-16 23:53:08,501 - INFO - 127.0.0.1 - - [16/Oct/2024 23:53:08] "GET /loan_application_status HTTP/1.1" 200 -
+2024-10-16 23:53:08,533 - INFO - 127.0.0.1 - - [16/Oct/2024 23:53:08] "[36mGET /static/assets/b43c8b884483d41d458227363_1176625970237162_7784013221116217385_n.jpg HTTP/1.1[0m" 304 -
+2024-10-16 23:53:08,541 - INFO - 127.0.0.1 - - [16/Oct/2024 23:53:08] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-16 23:53:08,543 - INFO - 127.0.0.1 - - [16/Oct/2024 23:53:08] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-16 23:53:14,079 - INFO - 192.168.100.41 - - [16/Oct/2024 23:53:14] "GET /admin/loans HTTP/1.1" 200 -
+2024-10-16 23:53:14,124 - INFO - 192.168.100.41 - - [16/Oct/2024 23:53:14] "[36mGET /static/css/loans.css HTTP/1.1[0m" 304 -
+2024-10-16 23:53:14,127 - INFO - 192.168.100.41 - - [16/Oct/2024 23:53:14] "[36mGET /static/js/loans.js HTTP/1.1[0m" 304 -
+2024-10-16 23:53:16,285 - INFO - 192.168.100.41 - - [16/Oct/2024 23:53:16] "GET /admin/pending_loans HTTP/1.1" 200 -
+2024-10-16 23:53:16,385 - INFO - 192.168.100.41 - - [16/Oct/2024 23:53:16] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-16 23:53:16,388 - INFO - 192.168.100.41 - - [16/Oct/2024 23:53:16] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-16 23:53:16,391 - INFO - 192.168.100.41 - - [16/Oct/2024 23:53:16] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-16 23:53:18,907 - INFO - 192.168.100.41 - - [16/Oct/2024 23:53:18] "[32mPOST /admin/approve_loan/1 HTTP/1.1[0m" 302 -
+2024-10-16 23:53:18,936 - INFO - 192.168.100.41 - - [16/Oct/2024 23:53:18] "GET /admin HTTP/1.1" 200 -
+2024-10-16 23:53:18,993 - INFO - 192.168.100.41 - - [16/Oct/2024 23:53:18] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-16 23:53:18,994 - INFO - 192.168.100.41 - - [16/Oct/2024 23:53:18] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-16 23:53:29,533 - INFO - 192.168.100.41 - - [16/Oct/2024 23:53:29] "GET /admin/pending_loans HTTP/1.1" 200 -
+2024-10-16 23:53:29,588 - INFO - 192.168.100.41 - - [16/Oct/2024 23:53:29] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-16 23:53:29,591 - INFO - 192.168.100.41 - - [16/Oct/2024 23:53:29] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-16 23:53:29,592 - INFO - 192.168.100.41 - - [16/Oct/2024 23:53:29] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-16 23:53:37,844 - INFO - 192.168.100.41 - - [16/Oct/2024 23:53:37] "GET /admin HTTP/1.1" 200 -
+2024-10-16 23:53:37,899 - INFO - 192.168.100.41 - - [16/Oct/2024 23:53:37] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-16 23:53:37,900 - INFO - 192.168.100.41 - - [16/Oct/2024 23:53:37] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-16 23:53:41,535 - INFO - 192.168.100.41 - - [16/Oct/2024 23:53:41] "GET /admin/loans HTTP/1.1" 200 -
+2024-10-16 23:53:41,674 - INFO - 192.168.100.41 - - [16/Oct/2024 23:53:41] "[36mGET /static/js/loans.js HTTP/1.1[0m" 304 -
+2024-10-16 23:53:41,675 - INFO - 192.168.100.41 - - [16/Oct/2024 23:53:41] "[36mGET /static/css/loans.css HTTP/1.1[0m" 304 -
+2024-10-16 23:53:49,824 - INFO - 127.0.0.1 - - [16/Oct/2024 23:53:49] "GET /loan_application_status HTTP/1.1" 200 -
+2024-10-16 23:53:49,884 - INFO - 127.0.0.1 - - [16/Oct/2024 23:53:49] "[36mGET /static/assets/b43c8b884483d41d458227363_1176625970237162_7784013221116217385_n.jpg HTTP/1.1[0m" 304 -
+2024-10-16 23:53:49,894 - INFO - 127.0.0.1 - - [16/Oct/2024 23:53:49] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-16 23:53:49,899 - INFO - 127.0.0.1 - - [16/Oct/2024 23:53:49] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-17 05:40:48,509 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.41:5000
+2024-10-17 05:40:48,510 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-17 05:40:48,512 - INFO -  * Restarting with stat
+2024-10-17 05:40:49,080 - WARNING -  * Debugger is active!
+2024-10-17 05:40:49,081 - INFO -  * Debugger PIN: 718-713-251
+2024-10-17 05:40:55,787 - INFO - 127.0.0.1 - - [17/Oct/2024 05:40:55] "GET /login HTTP/1.1" 200 -
+2024-10-17 05:40:55,834 - INFO - 127.0.0.1 - - [17/Oct/2024 05:40:55] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
+2024-10-17 05:40:55,862 - INFO - 127.0.0.1 - - [17/Oct/2024 05:40:55] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
+2024-10-17 05:40:56,114 - INFO - 127.0.0.1 - - [17/Oct/2024 05:40:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-17 05:41:05,559 - INFO - 127.0.0.1 - - [17/Oct/2024 05:41:05] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-10-17 05:41:05,576 - INFO - 127.0.0.1 - - [17/Oct/2024 05:41:05] "GET /overview HTTP/1.1" 200 -
+2024-10-17 05:41:05,603 - INFO - 127.0.0.1 - - [17/Oct/2024 05:41:05] "[36mGET /static/assets/b43c8b884483d41d458227363_1176625970237162_7784013221116217385_n.jpg HTTP/1.1[0m" 304 -
+2024-10-17 05:41:05,612 - INFO - 127.0.0.1 - - [17/Oct/2024 05:41:05] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-17 05:41:05,620 - INFO - 127.0.0.1 - - [17/Oct/2024 05:41:05] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-17 05:41:09,133 - INFO - 127.0.0.1 - - [17/Oct/2024 05:41:09] "GET /loan_application_status HTTP/1.1" 200 -
+2024-10-17 05:41:09,159 - INFO - 127.0.0.1 - - [17/Oct/2024 05:41:09] "[36mGET /static/assets/b43c8b884483d41d458227363_1176625970237162_7784013221116217385_n.jpg HTTP/1.1[0m" 304 -
+2024-10-17 05:41:09,170 - INFO - 127.0.0.1 - - [17/Oct/2024 05:41:09] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-17 05:41:09,172 - INFO - 127.0.0.1 - - [17/Oct/2024 05:41:09] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-17 05:41:15,677 - INFO - 127.0.0.1 - - [17/Oct/2024 05:41:15] "GET /loan_application_status HTTP/1.1" 200 -
+2024-10-17 05:41:15,705 - INFO - 127.0.0.1 - - [17/Oct/2024 05:41:15] "[36mGET /static/assets/b43c8b884483d41d458227363_1176625970237162_7784013221116217385_n.jpg HTTP/1.1[0m" 304 -
+2024-10-17 05:41:15,711 - INFO - 127.0.0.1 - - [17/Oct/2024 05:41:15] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-17 05:41:15,711 - INFO - 127.0.0.1 - - [17/Oct/2024 05:41:15] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-17 05:41:29,625 - INFO - 127.0.0.1 - - [17/Oct/2024 05:41:29] "GET /application HTTP/1.1" 200 -
+2024-10-17 05:41:29,656 - INFO - 127.0.0.1 - - [17/Oct/2024 05:41:29] "[36mGET /static/assets/b43c8b884483d41d458227363_1176625970237162_7784013221116217385_n.jpg HTTP/1.1[0m" 304 -
+2024-10-17 05:41:29,669 - INFO - 127.0.0.1 - - [17/Oct/2024 05:41:29] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-17 05:41:29,671 - INFO - 127.0.0.1 - - [17/Oct/2024 05:41:29] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-17 05:41:30,857 - INFO - 127.0.0.1 - - [17/Oct/2024 05:41:30] "GET /loan_application_status HTTP/1.1" 200 -
+2024-10-17 05:41:30,959 - INFO - 127.0.0.1 - - [17/Oct/2024 05:41:30] "[36mGET /static/assets/b43c8b884483d41d458227363_1176625970237162_7784013221116217385_n.jpg HTTP/1.1[0m" 304 -
+2024-10-17 05:41:30,965 - INFO - 127.0.0.1 - - [17/Oct/2024 05:41:30] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-17 05:41:30,966 - INFO - 127.0.0.1 - - [17/Oct/2024 05:41:30] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-17 05:41:32,140 - INFO - 127.0.0.1 - - [17/Oct/2024 05:41:32] "GET /deposit HTTP/1.1" 200 -
+2024-10-17 05:41:32,191 - INFO - 127.0.0.1 - - [17/Oct/2024 05:41:32] "[36mGET /static/assets/b43c8b884483d41d458227363_1176625970237162_7784013221116217385_n.jpg HTTP/1.1[0m" 304 -
+2024-10-17 05:41:32,205 - INFO - 127.0.0.1 - - [17/Oct/2024 05:41:32] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-17 05:41:32,206 - INFO - 127.0.0.1 - - [17/Oct/2024 05:41:32] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-17 05:41:33,355 - INFO - 127.0.0.1 - - [17/Oct/2024 05:41:33] "GET /withdrawals HTTP/1.1" 200 -
+2024-10-17 05:41:33,449 - INFO - 127.0.0.1 - - [17/Oct/2024 05:41:33] "[36mGET /static/assets/b43c8b884483d41d458227363_1176625970237162_7784013221116217385_n.jpg HTTP/1.1[0m" 304 -
+2024-10-17 05:41:33,459 - INFO - 127.0.0.1 - - [17/Oct/2024 05:41:33] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-17 05:41:33,460 - INFO - 127.0.0.1 - - [17/Oct/2024 05:41:33] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-17 05:41:46,987 - INFO - 127.0.0.1 - - [17/Oct/2024 05:41:46] "GET /overview HTTP/1.1" 200 -
+2024-10-17 05:41:47,068 - INFO - 127.0.0.1 - - [17/Oct/2024 05:41:47] "[36mGET /static/assets/b43c8b884483d41d458227363_1176625970237162_7784013221116217385_n.jpg HTTP/1.1[0m" 304 -
+2024-10-17 05:41:47,089 - INFO - 127.0.0.1 - - [17/Oct/2024 05:41:47] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-17 05:41:47,090 - INFO - 127.0.0.1 - - [17/Oct/2024 05:41:47] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-17 05:45:57,965 - INFO - 127.0.0.1 - - [17/Oct/2024 05:45:57] "GET /deposit HTTP/1.1" 200 -
+2024-10-17 05:45:58,054 - INFO - 127.0.0.1 - - [17/Oct/2024 05:45:58] "[36mGET /static/assets/b43c8b884483d41d458227363_1176625970237162_7784013221116217385_n.jpg HTTP/1.1[0m" 304 -
+2024-10-17 05:45:58,059 - INFO - 127.0.0.1 - - [17/Oct/2024 05:45:58] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-17 05:45:58,062 - INFO - 127.0.0.1 - - [17/Oct/2024 05:45:58] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-17 05:46:34,488 - INFO - 127.0.0.1 - - [17/Oct/2024 05:46:34] "GET /withdrawals HTTP/1.1" 200 -
+2024-10-17 05:46:34,554 - INFO - 127.0.0.1 - - [17/Oct/2024 05:46:34] "[36mGET /static/assets/b43c8b884483d41d458227363_1176625970237162_7784013221116217385_n.jpg HTTP/1.1[0m" 304 -
+2024-10-17 05:46:34,566 - INFO - 127.0.0.1 - - [17/Oct/2024 05:46:34] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-17 05:46:34,577 - INFO - 127.0.0.1 - - [17/Oct/2024 05:46:34] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-17 05:46:54,517 - INFO - 127.0.0.1 - - [17/Oct/2024 05:46:54] "GET /deposit HTTP/1.1" 200 -
+2024-10-17 05:46:54,604 - INFO - 127.0.0.1 - - [17/Oct/2024 05:46:54] "[36mGET /static/assets/b43c8b884483d41d458227363_1176625970237162_7784013221116217385_n.jpg HTTP/1.1[0m" 304 -
+2024-10-17 05:46:54,620 - INFO - 127.0.0.1 - - [17/Oct/2024 05:46:54] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-17 05:46:54,630 - INFO - 127.0.0.1 - - [17/Oct/2024 05:46:54] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-17 06:04:51,861 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/models.py', reloading
+2024-10-17 06:04:52,024 - INFO -  * Restarting with stat
+2024-10-17 06:04:52,582 - WARNING -  * Debugger is active!
+2024-10-17 06:04:52,583 - INFO -  * Debugger PIN: 718-713-251
+2024-10-17 06:04:57,722 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/models.py', reloading
+2024-10-17 06:04:57,886 - INFO -  * Restarting with stat
+2024-10-17 06:04:58,467 - WARNING -  * Debugger is active!
+2024-10-17 06:04:58,467 - INFO -  * Debugger PIN: 718-713-251
+2024-10-17 06:04:59,490 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/models.py', reloading
+2024-10-17 06:04:59,668 - INFO -  * Restarting with stat
+2024-10-17 06:05:00,372 - WARNING -  * Debugger is active!
+2024-10-17 06:05:00,373 - INFO -  * Debugger PIN: 718-713-251
+2024-10-17 06:05:11,624 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/models.py', reloading
+2024-10-17 06:05:11,781 - INFO -  * Restarting with stat

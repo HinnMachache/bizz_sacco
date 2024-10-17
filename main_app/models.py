@@ -155,8 +155,12 @@ class Account(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.user_id'), nullable=True)  # Nullable for bank account
     user = db.relationship('User', back_populates='account')
-    account_type = db.Column(db.String(50), default='User')  # Could be 'User' or 'Bank'
+    created_at = db.Column(db.DateTime, default=datetime.now())
     balance = db.Column(db.Float, default=0.0)  # Holds the account balance
+    deposit_method = db.Column(db.String(50), nullable=True)
+    reference_no = db.Column(db.String(50), nullable=True, unique=True) # USe case -> User
+    account_type = db.Column(db.String(50), default='User')  # Could be 'User' or 'Bank'
+    
     user = db.relationship('User', back_populates='account')
 
     def __repr__(self):
@@ -168,6 +172,7 @@ class Loan(db.Model):
     user_id = db.Column(db.String(10), db.ForeignKey('user.user_id'), nullable=False)
     loan_amount = db.Column(db.Float, nullable=False)
     status = db.Column(db.String(20), nullable=False, default='Pending')
+    rejection_reason = db.Column(db.String(120), nullable=True)
     loan_term = db.Column(db.Integer, nullable=False)
     purpose = db.Column(db.String(120), nullable=False)
     loan_user = db.relationship('User', back_populates='personal_loan', lazy=True)
