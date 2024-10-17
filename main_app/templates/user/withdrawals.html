@@ -27,9 +27,6 @@
                 <option value="checking_account">Checking Account</option>
             </select>
 
-            <label for="reference">Reference (Optional):</label>
-            <input type="text" id="reference" name="reference" placeholder="Reference (if any)">
-
             <button type="submit">Submit Withdrawal</button>
         </form>
     </div>
@@ -48,22 +45,31 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- Example rows; these should be dynamically populated from your backend -->
+                {% if withdrawals }
+                    {% for withdrawal in withdrawals %}
+                        <tr>
+                            <td>{{ withdrawal.created_at.strftime('%b %d, %Y') }}</td>
+                            <td>KES {{ withdrawal.amount | round(2) }}</td>
+                            <td>
+                                {% if withdrawal.withdrawal_method == 'bank_transfer' %}
+                                    Bank Transfer
+                                {% elif withdrawal.withdrawal_method == 'mobile_money' %}
+                                    Mobile Money
+                                {% elif withdrawal.withdrawal_method == 'cash' %}
+                                    Cash
+                                {% else %}
+                                    Unknown Method
+                                {% endif %}
+                            </td>
+                            <td>{{ withdrawal.account_type }}</td>
+                            <td>{{ withdrawal.reference_no }}</td>
+                        </tr>
+                    {% endfor %}
+                {% else % }
                 <tr>
-                    <td>Aug 25, 2024</td>
-                    <td>KES 10,000.00</td>
-                    <td>Bank Transfer</td>
-                    <td>Savings Account</td>
-                    <td>Ref12345</td>
+                    <td colspan="5">No withdrawals found.</td>
                 </tr>
-                <tr>
-                    <td>Aug 22, 2024</td>
-                    <td>KES 5,000.00</td>
-                    <td>Mobile Money</td>
-                    <td>Checking Account</td>
-                    <td>Ref67890</td>
-                </tr>
-                <!-- Add more rows as needed -->
+                {% endif %}
             </tbody>
         </table>
     </div>

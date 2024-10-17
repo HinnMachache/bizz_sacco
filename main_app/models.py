@@ -16,14 +16,16 @@ def load_user(user_id):
 
 
 class User(db.Model, UserMixin):
-    user_id = db.Column(db.String(10), primary_key=True)
-    personal_data = db.relationship('User_personalData', back_populates='user', uselist=False)
-    personal_loan = db.relationship("Loan", back_populates="loan_user", uselist=False)
-    account = db.relationship('Account', back_populates='user')
+    user_id = db.Column(db.String(10), primary_key=True) 
     username = db.Column(db.String(30), unique=True, nullable=False)
     email = db.Column(db.String(120), unique=True, nullable=False)
     role = db.Column(db.String(6), nullable=False)
     password = db.Column(db.String, nullable=False)
+    personal_data = db.relationship('User_personalData', back_populates='user', uselist=False)
+    personal_loan = db.relationship("Loan", back_populates="loan_user", uselist=False)
+    account = db.relationship('Account', back_populates='user')
+    withdrawals = db.relationship('User', backref='user')
+    deposits = db.relationship('User', back_populates='user')
     # personal_data_submitted = db.Column(db.Boolean, default=False)
 
     def to_dict(self):
@@ -157,14 +159,39 @@ class Account(db.Model):
     user = db.relationship('User', back_populates='account')
     created_at = db.Column(db.DateTime, default=datetime.now())
     balance = db.Column(db.Float, default=0.0)  # Holds the account balance
-    deposit_method = db.Column(db.String(50), nullable=True)
-    reference_no = db.Column(db.String(50), nullable=True, unique=True) # USe case -> User
     account_type = db.Column(db.String(50), default='User')  # Could be 'User' or 'Bank'
     
     user = db.relationship('User', back_populates='account')
 
     def __repr__(self):
         return f'<Account {self.id}, Type: {self.account_type}, Balance: {self.balance}>'
+
+
+class Deposit(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('user.user_id'), nullable=False)
+    user = db.relationship('User', back_populates='deposits')
+    amount = db.Column(db.Float, nullable=False)
+    deposit_method = db.Column(db.String(50), nullable=False)
+    reference_no = db.Column(db.String(50), nullable=False, unique=True)
+    created_at = db.Column(db.DateTime, default=datetime.now())
+    
+
+    def __repr__(self):
+        return f'<Deposit {self.id}, Amount: {self.amount}, Method: {self.deposit_method}>'
+
+
+class Withdrawals(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('user.user_id'), nullable=False)
+    user = db.relationship('User', backref='withdrawals')
+    amount = db.Column(db.Float, nullable=False)
+    withdrawal_method = db.Column(db.String(50), nullable=False)
+    account_type = db.Column(db.String(50), nullable=False)
+    transaction_fee = db.Column(db.Float, nullable=False)
+    total_deducted = db.Column(db.Float, nullable=False)
+    reference_no = db.Column(db.String(100), unique=True, nullable=False)
+    created_at = db.Column(db.DateTime, default=datetime.now())
 
 
 class Loan(db.Model):

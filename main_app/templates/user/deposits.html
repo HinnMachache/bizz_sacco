@@ -44,21 +44,25 @@
             </thead>
             <tbody>
                 <!-- Example rows; these should be dynamically populated from your backend -->
-                <tr>
-                    <td>Aug 25, 2024</td>
-                    <td>KES 10,000.00</td>
-                    <td>Bank Transfer</td>
-                    <td>Savings Account</td>
-                    <td>Ref12345</td>
-                </tr>
-                <tr>
-                    <td>Aug 22, 2024</td>
-                    <td>KES 5,000.00</td>
-                    <td>Mobile Money</td>
-                    <td>Checking Account</td>
-                    <td>Ref67890</td>
-                </tr>
-                <!-- Add more rows as needed -->
+                 {% for deposit in deposits %}
+                    <tr>
+                        <td>{{ deposit.created_at.strftime('%b %d, %Y') }}</td>
+                        <td>KES {{ deposit.balance | round(2) }}</td>
+                        <td>
+                            {% if deposit.deposit_method == 'bank_transfer' %}
+                                Bank Transfer
+                            {% elif deposit.deposit_method == 'mobile_money' %}
+                                Mobile Money
+                            {% elif deposit.deposit_method == 'cash' %}
+                                Cash
+                            {% else %}
+                                Unknown Method
+                            {% endif %}
+                        </td>
+                        <td>{{ deposit.account_type }}</td>
+                        <td>{{ deposit.reference_no }}</td>
+                    </tr>
+                 {% endfor %}
             </tbody>
         </table>
     </div>

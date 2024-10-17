@@ -9,7 +9,8 @@ from PIL import Image
 from main_app import app, db, bcrypt, mail
 from flask import render_template, flash, request, url_for, redirect, current_app, abort
 from main_app.models import (User, User_personalData, Admin, Admin_personalData, Notification,
-                             LoanNotification, Loan, Disbursement, Transaction, Repayment, Account)
+                             LoanNotification, Loan, Disbursement, Transaction, Repayment, Account,
+                             Withdrawals, Deposit)
 from main_app.forms import (RegistrationForm, LoginForm, ApplicationForm,
                             ResetPasswordRequestForm, ResetPasswordForm,
                             ChangePasswordForm, UpdateAccountForm, AdminRegistrationForm, LoanForm)
@@ -586,28 +587,76 @@ def get_next_ref_id():
 @app.route("/deposit", methods=['POST', 'GET'])
 @login_required
 def deposit():
-    deposit_amount = float(request.form['amount'])
-    deposit_method = request.form['deposit_method']
-    account_type = float(request.form['account'])
-    reference_no = f'Ref_{get_next_ref_id()}'
+    if request.method == 'POST':
+        if 'amount' in request.form and 'deposit_method' in request.form and 'account' in request.form:
+            deposit_amount = float(request.form['amount'])
+            deposit_method = request.form['deposit_method']
+            account_type = request.form['account']
+            reference_no = f'Ref_{get_next_ref_id()}'
 
-    account = Account(user_id=current_user.user_id, balance=deposit_amount,
-                      deposit_method=deposit_method, account_type=account_type,
-                      reference_no=reference_no)
-    
-    db.session.add(account)
-    db.session.commit()
-    return render_template("user/deposits.html", title="Deposits | SACCO Dashboard")
+            user_account = Account.query.filter_by(user_id=current_user.user_id).first()
+            user_account.balance += deposit_amount
+                
+            # Record the deposit transaction
+                
+            deposit = Deposit(user_id=current_user.user_id, amount=deposit_amount,
+                            deposit_method=deposit_method, account_type=account_type,
+                            reference_no=reference_no)
+            
+            db.session.add(deposit)
+            db.session.commit()
+    elif request.method == 'GET':
+        user_deposits = Deposit.query.filter_by(user_id=current_user.user_id).all()
+
+    return render_template("user/deposits.html", title="Deposits | SACCO Dashboard",
+                           deposits=user_deposits)
+
 
 # @app.route("/transaction", methods=['POST', 'GET'])
 # @login_required
 # def transaction():
 #     return render_template("user/transactions.html", title="Transactions | SACCO Dashboard")
 
-@app.route("/withdrawals", methods=['POST', 'GET'])
+@app.route("/withdraw", methods=['POST'])
 @login_required
-def withdrawals():
-    return render_template("user/withdrawals.html", title="Withdrawals | SACCO Dashboard")
+def withdraw():
+    if request.method == 'POST':
+        if 'amount' in request.form and 'withdrawal_method' in request.form and 'account' in request.form:
+            withdrawal_amount = float(request.form['amount'])
+            withdrawal_method = request.form['withdrawal_method']
+            account_type = request.form['account']
+            reference_no = f'Ref_{get_next_ref_id()}'
+            
+            # transaction fee
+            transaction_fee = 0.02 * withdrawal_amount
+            total_deducted = withdrawal_amount + transaction_fee
+            
+            # Check if the user has sufficient funds
+            user_account = Account.query.filter_by(user_id=current_user.user_id).first()
+            if user_account.balance >= total_deducted:
+                # Deduct total amount (withdrawal + fee) from user's account
+                user_account.balance -= total_deducted
+                
+                # Record the withdrawal transaction
+                withdrawal = Withdrawals(user_id=current_user.user_id,
+                                        amount=withdrawal_amount,
+                                        withdrawal_method=withdrawal_method,
+                                        account_type=account_type,
+                                        transaction_fee=transaction_fee,
+                                        total_deducted=total_deducted,
+                                        reference_no=reference_no)
+                
+                db.session.add(withdrawal)
+                db.session.commit()
+
+                return redirect(url_for('show_withdrawals'))
+            else:
+                flash("Insufficient funds.", "error")
+                return redirect(url_for('show_withdrawals'))
+    elif request.method == 'GET':
+        withdrawals = Withdrawals.query.filter_by(user_id=current_user.user_id).all()
+    return render_template("user/withdraws.html", title="Withdraw | SACCO Dashboard",
+                           withdrawals=withdrawals)
 
 
 @app.route("/statements", methods=['POST', 'GET'])
