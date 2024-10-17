@@ -24,8 +24,8 @@ class User(db.Model, UserMixin):
     personal_data = db.relationship('User_personalData', back_populates='user', uselist=False)
     personal_loan = db.relationship("Loan", back_populates="loan_user", uselist=False)
     account = db.relationship('Account', back_populates='user')
-    withdrawals = db.relationship('User', backref='user')
-    deposits = db.relationship('User', back_populates='user')
+    withdrawals = db.relationship('Withdrawals', back_populates='user')
+    deposits = db.relationship('Deposit', back_populates='user')
     # personal_data_submitted = db.Column(db.Boolean, default=False)
 
     def to_dict(self):
@@ -174,6 +174,7 @@ class Deposit(db.Model):
     amount = db.Column(db.Float, nullable=False)
     deposit_method = db.Column(db.String(50), nullable=False)
     reference_no = db.Column(db.String(50), nullable=False, unique=True)
+    account_type = db.Column(db.String(50), nullable=False)
     created_at = db.Column(db.DateTime, default=datetime.now())
     
 
@@ -184,7 +185,7 @@ class Deposit(db.Model):
 class Withdrawals(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.user_id'), nullable=False)
-    user = db.relationship('User', backref='withdrawals')
+    user = db.relationship('User', back_populates='withdrawals')
     amount = db.Column(db.Float, nullable=False)
     withdrawal_method = db.Column(db.String(50), nullable=False)
     account_type = db.Column(db.String(50), nullable=False)

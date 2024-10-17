@@ -430,7 +430,9 @@ def admin_reports():
 @app.route("/overview")
 @login_required
 def home():
-    return render_template("user/overview.html", title="Overview | SACCO Dashboard")
+    user_balance = Account.query.filter_by(user_id=current_user.user_id).first()
+    return render_template("user/overview.html", title="Overview | SACCO Dashboard",
+                           user_balance=user_balance)
 
 
 @app.route('/apply_for_loan', methods=['POST'])
@@ -477,12 +479,10 @@ def application():
     return render_template("user/loan_application.html", title="Notifications | SACCO Dashboard")
 
 
-
 @app.route("/notification")
 @login_required
 def notification():
     return render_template("user/notifications.html", title="Notifications | SACCO Dashboard")
-
 
 
 @app.route("/profile")
@@ -535,7 +535,7 @@ def register():
         db.session.add(user)
         db.session.commit()
 
-        user_account = Account(user_id=user.user_id, balance=500.0, deposit_method="Mobile Money", reference_no="Ref_001", account_type='User')
+        user_account = Account(user_id=user.user_id, balance=500.0, account_type='User')
         db.session.add(user_account)
         db.session.commit()
 
@@ -545,7 +545,6 @@ def register():
         flash("Your Account Has been created succesfully!")
         return redirect(url_for('login'))
     return render_template("user/registration.html", form=form)
-
 
 
 @app.route("/login", methods=['POST', 'GET'])
@@ -579,14 +578,17 @@ def logout():
     logout_user()
     return redirect('login')
 
+
 def get_next_ref_id():
-    current_max = db.session.query(func.max(Account.reference_no)).scalar()
+    current_max = db.session.query(func.max(Deposit.reference_no)).scalar()
     next_id = int(current_max.split('_')[1]) + 1 if current_max else 1
     return next_id
+
 
 @app.route("/deposit", methods=['POST', 'GET'])
 @login_required
 def deposit():
+    user_deposits = []
     if request.method == 'POST':
         if 'amount' in request.form and 'deposit_method' in request.form and 'account' in request.form:
             deposit_amount = float(request.form['amount'])
@@ -606,6 +608,7 @@ def deposit():
             db.session.add(deposit)
             db.session.commit()
     elif request.method == 'GET':
+        user_deposits = []
         user_deposits = Deposit.query.filter_by(user_id=current_user.user_id).all()
 
     return render_template("user/deposits.html", title="Deposits | SACCO Dashboard",
@@ -617,46 +620,74 @@ def deposit():
 # def transaction():
 #     return render_template("user/transactions.html", title="Transactions | SACCO Dashboard")
 
-@app.route("/withdraw", methods=['POST'])
+def get_next_with_ref_id():
+    current_max = db.session.query(func.max(Withdrawals.reference_no)).scalar()
+    next_id = int(current_max.split('_')[1]) + 1 if current_max else 1
+    return next_id
+
+
+@app.route("/withdrawals", methods=['POST', 'GET'])
 @login_required
-def withdraw():
+def withdrawals():
+    withdrawals_list = []  # Initialize an empty list for displaying withdrawals
     if request.method == 'POST':
         if 'amount' in request.form and 'withdrawal_method' in request.form and 'account' in request.form:
-            withdrawal_amount = float(request.form['amount'])
-            withdrawal_method = request.form['withdrawal_method']
-            account_type = request.form['account']
-            reference_no = f'Ref_{get_next_ref_id()}'
-            
-            # transaction fee
-            transaction_fee = 0.02 * withdrawal_amount
-            total_deducted = withdrawal_amount + transaction_fee
-            
-            # Check if the user has sufficient funds
-            user_account = Account.query.filter_by(user_id=current_user.user_id).first()
-            if user_account.balance >= total_deducted:
-                # Deduct total amount (withdrawal + fee) from user's account
-                user_account.balance -= total_deducted
+            try:
+                withdrawal_amount = float(request.form['amount'])
+                withdrawal_method = request.form['withdrawal_method']
+                account_type = request.form['account']
+                reference_no = f'Ref_{get_next_with_ref_id()}'
                 
-                # Record the withdrawal transaction
-                withdrawal = Withdrawals(user_id=current_user.user_id,
-                                        amount=withdrawal_amount,
-                                        withdrawal_method=withdrawal_method,
-                                        account_type=account_type,
-                                        transaction_fee=transaction_fee,
-                                        total_deducted=total_deducted,
-                                        reference_no=reference_no)
+                # Calculate transaction fee
+                transaction_fee = 0.02 * withdrawal_amount
+                total_deducted = withdrawal_amount + transaction_fee
                 
-                db.session.add(withdrawal)
-                db.session.commit()
+                # Check if the user has sufficient funds
+                user_account = Account.query.filter_by(user_id=current_user.user_id).first()
+                
+                if user_account is None:
+                    flash("Account not found.", "error")
+                    return redirect(url_for('withdrawals'))
 
-                return redirect(url_for('show_withdrawals'))
-            else:
-                flash("Insufficient funds.", "error")
-                return redirect(url_for('show_withdrawals'))
+                if user_account.balance >= total_deducted:
+                    # Deduct total amount (withdrawal + fee) from user's account
+                    user_account.balance -= total_deducted
+                    
+                    # Record the withdrawal transaction
+                    withdrawal = Withdrawals(
+                        user_id=current_user.user_id,
+                        amount=withdrawal_amount,
+                        withdrawal_method=withdrawal_method,
+                        account_type=account_type,
+                        transaction_fee=transaction_fee,
+                        total_deducted=total_deducted,
+                        reference_no=reference_no
+                    )
+                    
+                    db.session.add(withdrawal)
+                    db.session.commit()
+                    flash("Withdrawal processed successfully!", "success")
+                else:
+                    flash("Insufficient funds for this withdrawal.", "error")
+            except Exception as e:
+                db.session.rollback()  # Roll back if there's an error
+                flash(f"An error occurred during the withdrawal: {str(e)}", "danger")
     elif request.method == 'GET':
-        withdrawals = Withdrawals.query.filter_by(user_id=current_user.user_id).all()
-    return render_template("user/withdraws.html", title="Withdraw | SACCO Dashboard",
-                           withdrawals=withdrawals)
+        withdrawals = []
+        try:
+            withdrawals = Withdrawals.query.filter_by(user_id=current_user.user_id).all()
+
+            if not withdrawals:
+                flash('No Withdrawal have been processed yet.', 'info')
+                
+        except Exception as e:
+            flash(f'An error occurred while fetching withdrawals: {str(e)}', 'danger')
+
+        
+        print(f"withdrawals={withdrawals}")
+    # Fetch all withdrawals for the user to display
+    withdrawals_list = Withdrawals.query.filter_by(user_id=current_user.user_id).all()
+    return render_template("user/withdrawals.html", title="Withdraw | SACCO Dashboard", withdrawals=withdrawals_list)
 
 
 @app.route("/statements", methods=['POST', 'GET'])
@@ -690,7 +721,6 @@ def send_password_reset_email(user):
 If you did not make this request then simply ignore this email and no changes will be made.
 '''
     mail.send(msg)
-
 
 
 @app.route("/reset_password", methods=['POST', 'GET'])
@@ -801,7 +831,6 @@ def update_account():
         flash("You do not have personal data. Please contact the admin.", 'warning')
         image_file = url_for('static', filename='assets/user.jpeg')  # Use a default image
     return render_template("user/updateUser.html", form=form, image_file=image_file)
-
 
 
 @app.route("/personal_data", methods=['POST', 'GET'])

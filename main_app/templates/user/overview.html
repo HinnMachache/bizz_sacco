@@ -124,7 +124,11 @@
             <div class="card-container">
                 <div class="card">
                     <h3>Account Balance</h3>
-                    <p class="balance acc-balance">KES 45,000.00</p>
+                    {% if user_balance %}                   
+                        <p class="balance acc-balance">KES {{ user_balance.balance }}</p>
+                    {% else %}
+                        <p class="balance acc-balance">KES 0</p>
+                    {% endif %}
                 </div>
                 <div class="card">
                     <h3>Loan Balance</h3>

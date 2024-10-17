@@ -8,12 +8,12 @@
     <!-- Withdrawal Form -->
     <div class="withdrawal-form">
         <h2>Request New Withdrawal</h2>
-        <form action="submit-withdrawal.php" method="post">
+        <form action="{{ url_for('withdrawals') }}" method="post">
             <label for="amount">Withdrawal Amount:</label>
             <input type="text" id="amount" name="amount" placeholder="KES 0.00" required>
 
             <label for="withdrawal-method">Withdrawal Method:</label>
-            <select id="withdrawal-method" name="withdrawal-method" required>
+            <select id="withdrawal_method" name="withdrawal_method" required>
                 <option value="">Select Method</option>
                 <option value="bank_transfer">Bank Transfer</option>
                 <option value="mobile_money">Mobile Money</option>
@@ -23,8 +23,7 @@
             <label for="account">Withdraw From:</label>
             <select id="account" name="account" required>
                 <option value="">Select Account</option>
-                <option value="savings_account">Savings Account</option>
-                <option value="checking_account">Checking Account</option>
+                <option value="User">User</option>
             </select>
 
             <button type="submit">Submit Withdrawal</button>
@@ -45,11 +44,11 @@
                 </tr>
             </thead>
             <tbody>
-                {% if withdrawals }
+                {% if withdrawals %}
                     {% for withdrawal in withdrawals %}
                         <tr>
                             <td>{{ withdrawal.created_at.strftime('%b %d, %Y') }}</td>
-                            <td>KES {{ withdrawal.amount | round(2) }}</td>
+                            <td>KES {{ withdrawal.amount }}</td>
                             <td>
                                 {% if withdrawal.withdrawal_method == 'bank_transfer' %}
                                     Bank Transfer
@@ -65,7 +64,7 @@
                             <td>{{ withdrawal.reference_no }}</td>
                         </tr>
                     {% endfor %}
-                {% else % }
+                {% else %}
                 <tr>
                     <td colspan="5">No withdrawals found.</td>
                 </tr>

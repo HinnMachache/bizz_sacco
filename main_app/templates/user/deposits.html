@@ -47,7 +47,7 @@
                  {% for deposit in deposits %}
                     <tr>
                         <td>{{ deposit.created_at.strftime('%b %d, %Y') }}</td>
-                        <td>KES {{ deposit.balance | round(2) }}</td>
+                        <td>KES {{ deposit.amount }}</td>
                         <td>
                             {% if deposit.deposit_method == 'bank_transfer' %}
                                 Bank Transfer
