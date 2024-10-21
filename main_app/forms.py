@@ -46,6 +46,7 @@ class RegistrationForm(FlaskForm):
         if user:
             raise ValidationError("Email already taken. Please choose a different one.")
 
+
 class AdminRegistrationForm(FlaskForm):
     username = StringField('Username', validators=[DataRequired(), Length(min=2, max=30)])
     email = EmailField('Email', validators=[DataRequired(), Email()])
@@ -70,6 +71,7 @@ class LoginForm(FlaskForm):
     password = PasswordField('Password', validators=[DataRequired()])
     submit = SubmitField('Login')
 
+
 class ResetPasswordRequestForm(FlaskForm):
     email = EmailField('Email', validators=[DataRequired(), Email()])
     submit = SubmitField('Reset Password')
@@ -81,11 +83,13 @@ class ResetPasswordRequestForm(FlaskForm):
         if user is None and admin is None:
             raise ValidationError("There is no account with that email. You must register first.")  
 
+
 class ChangePasswordForm(FlaskForm):
     current_password = PasswordField('Current Password', validators=[DataRequired()])
     password = PasswordField('New Password', validators=[DataRequired()])
     confirm_password = PasswordField('Confirm Password', validators=[DataRequired(), EqualTo('password')])
     submit = SubmitField('Confirm')
+
 
 class ResetPasswordForm(FlaskForm):
     password = PasswordField('Password', validators=[DataRequired()])

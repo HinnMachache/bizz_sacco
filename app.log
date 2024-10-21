@@ -5837,3 +5837,1045 @@
 2024-10-17 13:55:13,232 - INFO - 192.168.100.41 - - [17/Oct/2024 13:55:13] "GET /admin HTTP/1.1" 200 -
 2024-10-17 13:55:13,270 - INFO - 192.168.100.41 - - [17/Oct/2024 13:55:13] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
 2024-10-17 13:55:13,270 - INFO - 192.168.100.41 - - [17/Oct/2024 13:55:13] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-17 17:18:20,286 - INFO - 127.0.0.1 - - [17/Oct/2024 17:18:20] "GET /overview HTTP/1.1" 200 -
+2024-10-17 17:18:20,373 - INFO - 127.0.0.1 - - [17/Oct/2024 17:18:20] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-17 17:18:20,387 - INFO - 127.0.0.1 - - [17/Oct/2024 17:18:20] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-17 17:18:20,388 - INFO - 127.0.0.1 - - [17/Oct/2024 17:18:20] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-17 17:34:22,301 - INFO - 192.168.100.41 - - [17/Oct/2024 17:34:22] "GET /admin/reports HTTP/1.1" 200 -
+2024-10-17 17:34:22,421 - INFO - 192.168.100.41 - - [17/Oct/2024 17:34:22] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-17 17:34:22,422 - INFO - 192.168.100.41 - - [17/Oct/2024 17:34:22] "[36mGET /static/css/reports.css HTTP/1.1[0m" 304 -
+2024-10-17 17:34:22,427 - INFO - 192.168.100.41 - - [17/Oct/2024 17:34:22] "[36mGET /static/js/reports.js HTTP/1.1[0m" 304 -
+2024-10-17 17:34:32,862 - INFO - 192.168.100.41 - - [17/Oct/2024 17:34:32] "GET /admin HTTP/1.1" 200 -
+2024-10-17 17:34:32,997 - INFO - 192.168.100.41 - - [17/Oct/2024 17:34:32] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-17 17:34:33,000 - INFO - 192.168.100.41 - - [17/Oct/2024 17:34:33] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-17 17:34:42,124 - INFO - 192.168.100.41 - - [17/Oct/2024 17:34:42] "GET /admin/personal_data HTTP/1.1" 200 -
+2024-10-17 17:34:42,192 - INFO - 192.168.100.41 - - [17/Oct/2024 17:34:42] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-17 17:34:49,015 - INFO - 192.168.100.41 - - [17/Oct/2024 17:34:49] "GET /admin/members HTTP/1.1" 200 -
+2024-10-17 17:34:49,078 - INFO - 192.168.100.41 - - [17/Oct/2024 17:34:49] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-17 17:34:49,081 - INFO - 192.168.100.41 - - [17/Oct/2024 17:34:49] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-17 17:34:49,086 - INFO - 192.168.100.41 - - [17/Oct/2024 17:34:49] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
+2024-10-17 17:34:49,089 - INFO - 192.168.100.41 - - [17/Oct/2024 17:34:49] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-17 17:34:53,266 - INFO - 192.168.100.41 - - [17/Oct/2024 17:34:53] "GET /admin/staff HTTP/1.1" 200 -
+2024-10-17 17:34:53,335 - INFO - 192.168.100.41 - - [17/Oct/2024 17:34:53] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-17 17:34:53,339 - INFO - 192.168.100.41 - - [17/Oct/2024 17:34:53] "[36mGET /static/js/staff.js HTTP/1.1[0m" 304 -
+2024-10-17 17:34:53,340 - INFO - 192.168.100.41 - - [17/Oct/2024 17:34:53] "[36mGET /static/css/staff.css HTTP/1.1[0m" 304 -
+2024-10-17 17:34:55,615 - INFO - 192.168.100.41 - - [17/Oct/2024 17:34:55] "GET /admin/reports HTTP/1.1" 200 -
+2024-10-17 17:34:55,785 - INFO - 192.168.100.41 - - [17/Oct/2024 17:34:55] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-17 17:34:55,786 - INFO - 192.168.100.41 - - [17/Oct/2024 17:34:55] "[36mGET /static/css/reports.css HTTP/1.1[0m" 304 -
+2024-10-17 17:34:55,787 - INFO - 192.168.100.41 - - [17/Oct/2024 17:34:55] "[36mGET /static/js/reports.js HTTP/1.1[0m" 304 -
+2024-10-17 17:46:28,578 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-17 17:46:28,809 - INFO -  * Restarting with stat
+2024-10-17 18:06:10,636 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.41:5000
+2024-10-17 18:06:10,636 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-17 18:06:10,637 - INFO -  * Restarting with stat
+2024-10-17 18:06:11,308 - WARNING -  * Debugger is active!
+2024-10-17 18:06:11,309 - INFO -  * Debugger PIN: 718-713-251
+2024-10-17 18:06:15,025 - INFO - 192.168.100.41 - - [17/Oct/2024 18:06:15] "[35m[1mGET /admin/deposit_form HTTP/1.1[0m" 500 -
+2024-10-17 18:06:15,101 - INFO - 192.168.100.41 - - [17/Oct/2024 18:06:15] "GET /admin/deposit_form?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-10-17 18:06:15,113 - INFO - 192.168.100.41 - - [17/Oct/2024 18:06:15] "GET /admin/deposit_form?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-10-17 18:06:15,153 - INFO - 192.168.100.41 - - [17/Oct/2024 18:06:15] "GET /admin/deposit_form?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-10-17 18:06:49,499 - INFO - 192.168.100.41 - - [17/Oct/2024 18:06:49] "GET /admin/deposit_form HTTP/1.1" 200 -
+2024-10-17 18:06:49,538 - INFO - 192.168.100.41 - - [17/Oct/2024 18:06:49] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-17 18:07:02,719 - INFO - 192.168.100.41 - - [17/Oct/2024 18:07:02] "[35m[1mPOST /admin/deposit HTTP/1.1[0m" 500 -
+2024-10-17 18:07:05,618 - INFO - 192.168.100.41 - - [17/Oct/2024 18:07:05] "[35m[1mPOST /admin/deposit HTTP/1.1[0m" 500 -
+2024-10-17 18:07:56,983 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.41:5000
+2024-10-17 18:07:56,983 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-17 18:07:56,984 - INFO -  * Restarting with stat
+2024-10-17 18:07:57,856 - WARNING -  * Debugger is active!
+2024-10-17 18:07:57,856 - INFO -  * Debugger PIN: 718-713-251
+2024-10-17 18:08:01,550 - INFO - 192.168.100.41 - - [17/Oct/2024 18:08:01] "[35m[1mPOST /admin/deposit HTTP/1.1[0m" 500 -
+2024-10-17 18:08:09,683 - INFO - 192.168.100.41 - - [17/Oct/2024 18:08:09] "[35m[1mPOST /admin/deposit HTTP/1.1[0m" 500 -
+2024-10-17 18:08:14,564 - INFO - 192.168.100.41 - - [17/Oct/2024 18:08:14] "[33mPOST /admin/deposit HTTP/1.1[0m" 404 -
+2024-10-17 18:08:17,700 - INFO - 192.168.100.41 - - [17/Oct/2024 18:08:17] "[33mPOST /admin/deposit HTTP/1.1[0m" 404 -
+2024-10-17 18:08:22,222 - INFO - 192.168.100.41 - - [17/Oct/2024 18:08:22] "[33mPOST /admin/deposit HTTP/1.1[0m" 404 -
+2024-10-21 13:00:01,184 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.41:5000
+2024-10-21 13:00:01,184 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-21 13:00:01,186 - INFO -  * Restarting with stat
+2024-10-21 13:00:01,827 - WARNING -  * Debugger is active!
+2024-10-21 13:00:01,828 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 13:09:15,413 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 13:09:15,596 - INFO -  * Restarting with stat
+2024-10-21 13:09:16,438 - WARNING -  * Debugger is active!
+2024-10-21 13:09:16,439 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 13:09:23,529 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 13:09:23,667 - INFO -  * Restarting with stat
+2024-10-21 13:09:24,334 - WARNING -  * Debugger is active!
+2024-10-21 13:09:24,335 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 13:12:53,146 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 13:12:53,344 - INFO -  * Restarting with stat
+2024-10-21 13:21:20,450 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.41:5000
+2024-10-21 13:21:20,450 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-21 13:21:20,452 - INFO -  * Restarting with stat
+2024-10-21 13:21:21,133 - WARNING -  * Debugger is active!
+2024-10-21 13:21:21,133 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 13:21:26,083 - INFO - 192.168.100.41 - - [21/Oct/2024 13:21:26] "GET /admin/deposit_form HTTP/1.1" 200 -
+2024-10-21 13:21:29,495 - INFO - 192.168.100.41 - - [21/Oct/2024 13:21:29] "GET /admin/deposit_form HTTP/1.1" 200 -
+2024-10-21 13:21:29,551 - INFO - 192.168.100.41 - - [21/Oct/2024 13:21:29] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 13:21:30,702 - INFO - 192.168.100.41 - - [21/Oct/2024 13:21:30] "GET /admin/deposit_form HTTP/1.1" 200 -
+2024-10-21 13:21:30,733 - INFO - 192.168.100.41 - - [21/Oct/2024 13:21:30] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 13:21:32,059 - INFO - 192.168.100.41 - - [21/Oct/2024 13:21:32] "GET /admin/deposit_form HTTP/1.1" 200 -
+2024-10-21 13:21:32,090 - INFO - 192.168.100.41 - - [21/Oct/2024 13:21:32] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 13:21:33,021 - INFO - 192.168.100.41 - - [21/Oct/2024 13:21:33] "GET /admin/deposit_form HTTP/1.1" 200 -
+2024-10-21 13:21:33,053 - INFO - 192.168.100.41 - - [21/Oct/2024 13:21:33] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 13:21:33,943 - INFO - 192.168.100.41 - - [21/Oct/2024 13:21:33] "GET /admin/deposit_form HTTP/1.1" 200 -
+2024-10-21 13:21:33,980 - INFO - 192.168.100.41 - - [21/Oct/2024 13:21:33] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 13:21:34,797 - INFO - 192.168.100.41 - - [21/Oct/2024 13:21:34] "GET /admin/deposit_form HTTP/1.1" 200 -
+2024-10-21 13:21:34,842 - INFO - 192.168.100.41 - - [21/Oct/2024 13:21:34] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 13:21:35,562 - INFO - 192.168.100.41 - - [21/Oct/2024 13:21:35] "GET /admin/deposit_form HTTP/1.1" 200 -
+2024-10-21 13:21:35,628 - INFO - 192.168.100.41 - - [21/Oct/2024 13:21:35] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 13:21:36,364 - INFO - 192.168.100.41 - - [21/Oct/2024 13:21:36] "GET /admin/deposit_form HTTP/1.1" 200 -
+2024-10-21 13:21:36,440 - INFO - 192.168.100.41 - - [21/Oct/2024 13:21:36] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 13:21:37,137 - INFO - 192.168.100.41 - - [21/Oct/2024 13:21:37] "GET /admin/deposit_form HTTP/1.1" 200 -
+2024-10-21 13:21:37,169 - INFO - 192.168.100.41 - - [21/Oct/2024 13:21:37] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 13:21:37,849 - INFO - 192.168.100.41 - - [21/Oct/2024 13:21:37] "GET /admin/deposit_form HTTP/1.1" 200 -
+2024-10-21 13:21:37,908 - INFO - 192.168.100.41 - - [21/Oct/2024 13:21:37] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 13:21:57,502 - INFO - 192.168.100.41 - - [21/Oct/2024 13:21:57] "POST /deposit HTTP/1.1" 200 -
+2024-10-21 13:21:57,541 - INFO - 192.168.100.41 - - [21/Oct/2024 13:21:57] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
+2024-10-21 13:21:57,554 - INFO - 192.168.100.41 - - [21/Oct/2024 13:21:57] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-21 13:21:57,557 - INFO - 192.168.100.41 - - [21/Oct/2024 13:21:57] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-21 13:26:14,533 - INFO - 127.0.0.1 - - [21/Oct/2024 13:26:14] "GET /login HTTP/1.1" 200 -
+2024-10-21 13:26:14,553 - INFO - 127.0.0.1 - - [21/Oct/2024 13:26:14] "[32mGET /static//css/registration.css HTTP/1.1[0m" 308 -
+2024-10-21 13:26:14,555 - INFO - 127.0.0.1 - - [21/Oct/2024 13:26:14] "[32mGET /static//js/registration.js HTTP/1.1[0m" 308 -
+2024-10-21 13:26:14,587 - INFO - 127.0.0.1 - - [21/Oct/2024 13:26:14] "GET /static/css/registration.css HTTP/1.1" 200 -
+2024-10-21 13:26:14,588 - INFO - 127.0.0.1 - - [21/Oct/2024 13:26:14] "GET /static/js/registration.js HTTP/1.1" 200 -
+2024-10-21 13:26:15,873 - INFO - 127.0.0.1 - - [21/Oct/2024 13:26:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-10-21 13:26:39,215 - INFO - 192.168.100.41 - - [21/Oct/2024 13:26:39] "[35m[1mGET /overview HTTP/1.1[0m" 500 -
+2024-10-21 13:26:39,339 - INFO - 192.168.100.41 - - [21/Oct/2024 13:26:39] "GET /overview?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-10-21 13:26:39,340 - INFO - 192.168.100.41 - - [21/Oct/2024 13:26:39] "GET /overview?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-10-21 13:26:39,359 - INFO - 192.168.100.41 - - [21/Oct/2024 13:26:39] "GET /overview?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-10-21 13:27:31,748 - INFO - 192.168.100.41 - - [21/Oct/2024 13:27:31] "GET /application HTTP/1.1" 200 -
+2024-10-21 13:27:31,844 - INFO - 192.168.100.41 - - [21/Oct/2024 13:27:31] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
+2024-10-21 13:27:31,855 - INFO - 192.168.100.41 - - [21/Oct/2024 13:27:31] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-21 13:27:31,858 - INFO - 192.168.100.41 - - [21/Oct/2024 13:27:31] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-21 13:27:35,170 - INFO - 192.168.100.41 - - [21/Oct/2024 13:27:35] "GET /application HTTP/1.1" 200 -
+2024-10-21 13:27:35,215 - INFO - 192.168.100.41 - - [21/Oct/2024 13:27:35] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
+2024-10-21 13:27:35,221 - INFO - 192.168.100.41 - - [21/Oct/2024 13:27:35] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-21 13:27:35,224 - INFO - 192.168.100.41 - - [21/Oct/2024 13:27:35] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-21 13:27:37,479 - INFO - 192.168.100.41 - - [21/Oct/2024 13:27:37] "[35m[1mGET /loan_application_status HTTP/1.1[0m" 500 -
+2024-10-21 13:27:37,601 - INFO - 192.168.100.41 - - [21/Oct/2024 13:27:37] "GET /loan_application_status?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-10-21 13:27:37,604 - INFO - 192.168.100.41 - - [21/Oct/2024 13:27:37] "GET /loan_application_status?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-10-21 13:27:37,621 - INFO - 192.168.100.41 - - [21/Oct/2024 13:27:37] "GET /loan_application_status?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-10-21 13:27:57,909 - INFO - 127.0.0.1 - - [21/Oct/2024 13:27:57] "GET /login?next=/admin HTTP/1.1" 200 -
+2024-10-21 13:27:58,050 - INFO - 127.0.0.1 - - [21/Oct/2024 13:27:58] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
+2024-10-21 13:27:58,053 - INFO - 127.0.0.1 - - [21/Oct/2024 13:27:58] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
+2024-10-21 13:28:09,582 - INFO - 127.0.0.1 - - [21/Oct/2024 13:28:09] "[32mGET /admin/members HTTP/1.1[0m" 302 -
+2024-10-21 13:28:09,590 - INFO - 127.0.0.1 - - [21/Oct/2024 13:28:09] "GET /login?next=/admin/members HTTP/1.1" 200 -
+2024-10-21 13:28:09,670 - INFO - 127.0.0.1 - - [21/Oct/2024 13:28:09] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
+2024-10-21 13:28:09,672 - INFO - 127.0.0.1 - - [21/Oct/2024 13:28:09] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
+2024-10-21 13:28:38,504 - INFO - 127.0.0.1 - - [21/Oct/2024 13:28:38] "POST /login?next=/admin/members HTTP/1.1" 200 -
+2024-10-21 13:28:38,571 - INFO - 127.0.0.1 - - [21/Oct/2024 13:28:38] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
+2024-10-21 13:28:38,574 - INFO - 127.0.0.1 - - [21/Oct/2024 13:28:38] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
+2024-10-21 13:28:47,726 - INFO - 127.0.0.1 - - [21/Oct/2024 13:28:47] "[32mPOST /login?next=/admin/members HTTP/1.1[0m" 302 -
+2024-10-21 13:28:47,740 - INFO - 127.0.0.1 - - [21/Oct/2024 13:28:47] "GET /admin/members HTTP/1.1" 200 -
+2024-10-21 13:28:47,822 - INFO - 127.0.0.1 - - [21/Oct/2024 13:28:47] "GET /static/css/Adminstyles.css HTTP/1.1" 200 -
+2024-10-21 13:28:47,823 - INFO - 127.0.0.1 - - [21/Oct/2024 13:28:47] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 13:28:47,824 - INFO - 127.0.0.1 - - [21/Oct/2024 13:28:47] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
+2024-10-21 13:28:47,828 - INFO - 127.0.0.1 - - [21/Oct/2024 13:28:47] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 13:28:53,525 - INFO - 127.0.0.1 - - [21/Oct/2024 13:28:53] "GET /admin HTTP/1.1" 200 -
+2024-10-21 13:28:53,585 - INFO - 127.0.0.1 - - [21/Oct/2024 13:28:53] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 13:28:53,588 - INFO - 127.0.0.1 - - [21/Oct/2024 13:28:53] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 13:32:17,364 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 13:32:17,617 - INFO -  * Restarting with stat
+2024-10-21 13:32:18,561 - WARNING -  * Debugger is active!
+2024-10-21 13:32:18,561 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 13:32:19,588 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 13:32:19,760 - INFO -  * Restarting with stat
+2024-10-21 13:32:20,512 - WARNING -  * Debugger is active!
+2024-10-21 13:32:20,512 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 13:32:41,896 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 13:32:42,053 - INFO -  * Restarting with stat
+2024-10-21 13:37:01,647 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.41:5000
+2024-10-21 13:37:01,647 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-21 13:37:01,648 - INFO -  * Restarting with stat
+2024-10-21 13:37:02,289 - WARNING -  * Debugger is active!
+2024-10-21 13:37:02,289 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 13:37:17,078 - INFO - 127.0.0.1 - - [21/Oct/2024 13:37:17] "[31m[1mGET /admin/deposit HTTP/1.1[0m" 405 -
+2024-10-21 13:37:32,836 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 13:37:33,031 - INFO -  * Restarting with stat
+2024-10-21 13:37:45,904 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.41:5000
+2024-10-21 13:37:45,904 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-21 13:37:45,905 - INFO -  * Restarting with stat
+2024-10-21 13:37:46,683 - WARNING -  * Debugger is active!
+2024-10-21 13:37:46,684 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 13:37:50,062 - INFO - 127.0.0.1 - - [21/Oct/2024 13:37:50] "[35m[1mGET /admin/deposit HTTP/1.1[0m" 500 -
+2024-10-21 13:37:50,114 - INFO - 127.0.0.1 - - [21/Oct/2024 13:37:50] "GET /admin/deposit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-10-21 13:37:50,115 - INFO - 127.0.0.1 - - [21/Oct/2024 13:37:50] "GET /admin/deposit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-10-21 13:37:50,129 - INFO - 127.0.0.1 - - [21/Oct/2024 13:37:50] "GET /admin/deposit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-10-21 13:37:50,132 - INFO - 127.0.0.1 - - [21/Oct/2024 13:37:50] "GET /admin/deposit?__debugger__=yes&cmd=resource&f=console.png&s=qIvEjF0A4WYYyzkmVSjh HTTP/1.1" 200 -
+2024-10-21 13:38:14,258 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 13:38:14,457 - INFO -  * Restarting with stat
+2024-10-21 13:38:15,104 - WARNING -  * Debugger is active!
+2024-10-21 13:38:15,105 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 13:38:17,898 - INFO - 127.0.0.1 - - [21/Oct/2024 13:38:17] "[35m[1mGET /admin/deposit HTTP/1.1[0m" 500 -
+2024-10-21 13:38:17,950 - INFO - 127.0.0.1 - - [21/Oct/2024 13:38:17] "[36mGET /admin/deposit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-21 13:38:17,951 - INFO - 127.0.0.1 - - [21/Oct/2024 13:38:17] "[36mGET /admin/deposit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-21 13:38:17,982 - INFO - 127.0.0.1 - - [21/Oct/2024 13:38:17] "GET /admin/deposit?__debugger__=yes&cmd=resource&f=console.png&s=c5DtDExPnCdaAt00RHLU HTTP/1.1" 200 -
+2024-10-21 13:38:41,541 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 13:38:41,718 - INFO -  * Restarting with stat
+2024-10-21 13:38:42,455 - WARNING -  * Debugger is active!
+2024-10-21 13:38:42,455 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 13:38:44,984 - INFO - 127.0.0.1 - - [21/Oct/2024 13:38:44] "GET /admin/deposit HTTP/1.1" 200 -
+2024-10-21 13:38:59,679 - INFO - 127.0.0.1 - - [21/Oct/2024 13:38:59] "POST /deposit HTTP/1.1" 200 -
+2024-10-21 13:38:59,725 - INFO - 127.0.0.1 - - [21/Oct/2024 13:38:59] "[32mGET /static//js/main.js HTTP/1.1[0m" 308 -
+2024-10-21 13:38:59,736 - INFO - 127.0.0.1 - - [21/Oct/2024 13:38:59] "GET /static/assets/user.jpeg HTTP/1.1" 200 -
+2024-10-21 13:38:59,739 - INFO - 127.0.0.1 - - [21/Oct/2024 13:38:59] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-21 13:38:59,748 - INFO - 127.0.0.1 - - [21/Oct/2024 13:38:59] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-10-21 13:40:12,413 - INFO - 127.0.0.1 - - [21/Oct/2024 13:40:12] "GET /admin/deposit HTTP/1.1" 200 -
+2024-10-21 13:40:23,450 - INFO - 127.0.0.1 - - [21/Oct/2024 13:40:23] "POST /admin/deposit HTTP/1.1" 200 -
+2024-10-21 13:45:17,091 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 13:45:17,271 - INFO -  * Restarting with stat
+2024-10-21 13:53:21,606 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.41:5000
+2024-10-21 13:53:21,606 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-21 13:53:21,607 - INFO -  * Restarting with stat
+2024-10-21 13:53:22,265 - WARNING -  * Debugger is active!
+2024-10-21 13:53:22,266 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 13:53:35,508 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 13:53:35,696 - INFO -  * Restarting with stat
+2024-10-21 13:53:36,346 - WARNING -  * Debugger is active!
+2024-10-21 13:53:36,346 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 13:53:47,555 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 13:53:47,736 - INFO -  * Restarting with stat
+2024-10-21 13:53:48,392 - WARNING -  * Debugger is active!
+2024-10-21 13:53:48,392 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 13:54:06,622 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 13:54:06,833 - INFO -  * Restarting with stat
+2024-10-21 13:54:07,480 - WARNING -  * Debugger is active!
+2024-10-21 13:54:07,480 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 13:54:31,426 - INFO - 127.0.0.1 - - [21/Oct/2024 13:54:31] "GET /admin/initial_deposit HTTP/1.1" 200 -
+2024-10-21 13:54:41,392 - INFO - 127.0.0.1 - - [21/Oct/2024 13:54:41] "GET /admin HTTP/1.1" 200 -
+2024-10-21 13:54:41,455 - INFO - 127.0.0.1 - - [21/Oct/2024 13:54:41] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 13:54:41,460 - INFO - 127.0.0.1 - - [21/Oct/2024 13:54:41] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 13:55:09,991 - INFO - 127.0.0.1 - - [21/Oct/2024 13:55:09] "GET /admin/deposit HTTP/1.1" 200 -
+2024-10-21 13:55:20,946 - INFO - 127.0.0.1 - - [21/Oct/2024 13:55:20] "[35m[1mPOST /admin/deposit HTTP/1.1[0m" 500 -
+2024-10-21 13:55:20,988 - INFO - 127.0.0.1 - - [21/Oct/2024 13:55:20] "[36mGET /admin/deposit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-21 13:55:20,989 - INFO - 127.0.0.1 - - [21/Oct/2024 13:55:20] "[36mGET /admin/deposit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-21 13:55:21,022 - INFO - 127.0.0.1 - - [21/Oct/2024 13:55:21] "GET /admin/deposit?__debugger__=yes&cmd=resource&f=console.png&s=COtHzHexvSoOruoyX9L1 HTTP/1.1" 200 -
+2024-10-21 13:57:03,804 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 13:57:04,060 - INFO -  * Restarting with stat
+2024-10-21 13:57:05,167 - WARNING -  * Debugger is active!
+2024-10-21 13:57:05,168 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 13:57:14,305 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 13:57:14,483 - INFO -  * Restarting with stat
+2024-10-21 13:57:15,221 - WARNING -  * Debugger is active!
+2024-10-21 13:57:15,222 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 13:57:27,452 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 13:57:27,620 - INFO -  * Restarting with stat
+2024-10-21 13:57:28,512 - WARNING -  * Debugger is active!
+2024-10-21 13:57:28,513 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 13:57:37,683 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 13:57:37,855 - INFO -  * Restarting with stat
+2024-10-21 13:57:38,498 - WARNING -  * Debugger is active!
+2024-10-21 13:57:38,499 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 13:57:40,557 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 13:57:40,796 - INFO -  * Restarting with stat
+2024-10-21 13:57:41,495 - WARNING -  * Debugger is active!
+2024-10-21 13:57:41,496 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 13:57:44,546 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 13:57:44,702 - INFO -  * Restarting with stat
+2024-10-21 13:57:45,553 - WARNING -  * Debugger is active!
+2024-10-21 13:57:45,554 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 13:57:46,580 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 13:57:46,725 - INFO -  * Restarting with stat
+2024-10-21 13:57:47,403 - WARNING -  * Debugger is active!
+2024-10-21 13:57:47,403 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 13:57:49,440 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 13:57:49,599 - INFO -  * Restarting with stat
+2024-10-21 13:57:50,691 - WARNING -  * Debugger is active!
+2024-10-21 13:57:50,691 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 13:57:51,733 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 13:57:51,889 - INFO -  * Restarting with stat
+2024-10-21 13:57:52,637 - WARNING -  * Debugger is active!
+2024-10-21 13:57:52,637 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 13:57:56,696 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 13:57:56,843 - INFO -  * Restarting with stat
+2024-10-21 13:57:57,542 - WARNING -  * Debugger is active!
+2024-10-21 13:57:57,542 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 13:57:58,581 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 13:57:58,791 - INFO -  * Restarting with stat
+2024-10-21 13:57:59,605 - WARNING -  * Debugger is active!
+2024-10-21 13:57:59,606 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 13:58:06,754 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 13:58:06,894 - INFO -  * Restarting with stat
+2024-10-21 13:58:07,541 - WARNING -  * Debugger is active!
+2024-10-21 13:58:07,541 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 13:58:33,488 - INFO - 127.0.0.1 - - [21/Oct/2024 13:58:33] "[35m[1mPOST /admin/deposit HTTP/1.1[0m" 500 -
+2024-10-21 13:58:33,542 - INFO - 127.0.0.1 - - [21/Oct/2024 13:58:33] "[36mGET /admin/deposit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-21 13:58:33,549 - INFO - 127.0.0.1 - - [21/Oct/2024 13:58:33] "[36mGET /admin/deposit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-21 13:58:33,567 - INFO - 127.0.0.1 - - [21/Oct/2024 13:58:33] "GET /admin/deposit?__debugger__=yes&cmd=resource&f=console.png&s=d6ZlSnAAqIo1cICPLnEE HTTP/1.1" 200 -
+2024-10-21 13:58:37,276 - INFO - 127.0.0.1 - - [21/Oct/2024 13:58:37] "GET /admin HTTP/1.1" 200 -
+2024-10-21 13:58:37,334 - INFO - 127.0.0.1 - - [21/Oct/2024 13:58:37] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 13:58:37,336 - INFO - 127.0.0.1 - - [21/Oct/2024 13:58:37] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 13:58:42,649 - INFO - 127.0.0.1 - - [21/Oct/2024 13:58:42] "GET /admin/deposit HTTP/1.1" 200 -
+2024-10-21 13:58:51,065 - INFO - 127.0.0.1 - - [21/Oct/2024 13:58:51] "[35m[1mPOST /admin/deposit HTTP/1.1[0m" 500 -
+2024-10-21 13:58:51,112 - INFO - 127.0.0.1 - - [21/Oct/2024 13:58:51] "[36mGET /admin/deposit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-21 13:58:51,114 - INFO - 127.0.0.1 - - [21/Oct/2024 13:58:51] "[36mGET /admin/deposit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-21 13:58:51,149 - INFO - 127.0.0.1 - - [21/Oct/2024 13:58:51] "[36mGET /admin/deposit?__debugger__=yes&cmd=resource&f=console.png&s=d6ZlSnAAqIo1cICPLnEE HTTP/1.1[0m" 304 -
+2024-10-21 15:00:32,310 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.41:5000
+2024-10-21 15:00:32,311 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-21 15:00:32,312 - INFO -  * Restarting with stat
+2024-10-21 15:00:33,415 - WARNING -  * Debugger is active!
+2024-10-21 15:00:33,416 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 15:00:40,591 - INFO - 127.0.0.1 - - [21/Oct/2024 15:00:40] "[35m[1mPOST /admin/deposit HTTP/1.1[0m" 500 -
+2024-10-21 15:00:40,668 - INFO - 127.0.0.1 - - [21/Oct/2024 15:00:40] "[36mGET /admin/deposit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-21 15:00:40,669 - INFO - 127.0.0.1 - - [21/Oct/2024 15:00:40] "[36mGET /admin/deposit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-21 15:00:40,714 - INFO - 127.0.0.1 - - [21/Oct/2024 15:00:40] "GET /admin/deposit?__debugger__=yes&cmd=resource&f=console.png&s=9uaelE3ov4d0nEZtyimK HTTP/1.1" 200 -
+2024-10-21 15:00:43,984 - INFO - 127.0.0.1 - - [21/Oct/2024 15:00:43] "[33mGET /admin/ HTTP/1.1[0m" 404 -
+2024-10-21 15:00:47,937 - INFO - 127.0.0.1 - - [21/Oct/2024 15:00:47] "[33mGET /admin/ HTTP/1.1[0m" 404 -
+2024-10-21 15:00:57,889 - INFO - 127.0.0.1 - - [21/Oct/2024 15:00:57] "GET /admin/members HTTP/1.1" 200 -
+2024-10-21 15:00:57,975 - INFO - 127.0.0.1 - - [21/Oct/2024 15:00:57] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:00:57,980 - INFO - 127.0.0.1 - - [21/Oct/2024 15:00:57] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:00:57,985 - INFO - 127.0.0.1 - - [21/Oct/2024 15:00:57] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:00:57,986 - INFO - 127.0.0.1 - - [21/Oct/2024 15:00:57] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
+2024-10-21 15:01:01,082 - INFO - 127.0.0.1 - - [21/Oct/2024 15:01:01] "GET /admin HTTP/1.1" 200 -
+2024-10-21 15:01:01,147 - INFO - 127.0.0.1 - - [21/Oct/2024 15:01:01] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:01:01,153 - INFO - 127.0.0.1 - - [21/Oct/2024 15:01:01] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:01:02,962 - INFO - 127.0.0.1 - - [21/Oct/2024 15:01:02] "GET /admin HTTP/1.1" 200 -
+2024-10-21 15:01:03,025 - INFO - 127.0.0.1 - - [21/Oct/2024 15:01:03] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:01:03,028 - INFO - 127.0.0.1 - - [21/Oct/2024 15:01:03] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:01:09,298 - INFO - 127.0.0.1 - - [21/Oct/2024 15:01:09] "GET /admin/deposit HTTP/1.1" 200 -
+2024-10-21 15:01:19,353 - INFO - 127.0.0.1 - - [21/Oct/2024 15:01:19] "[35m[1mPOST /admin/deposit HTTP/1.1[0m" 500 -
+2024-10-21 15:01:19,401 - INFO - 127.0.0.1 - - [21/Oct/2024 15:01:19] "[36mGET /admin/deposit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-21 15:01:19,404 - INFO - 127.0.0.1 - - [21/Oct/2024 15:01:19] "[36mGET /admin/deposit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-21 15:01:19,445 - INFO - 127.0.0.1 - - [21/Oct/2024 15:01:19] "[36mGET /admin/deposit?__debugger__=yes&cmd=resource&f=console.png&s=9uaelE3ov4d0nEZtyimK HTTP/1.1[0m" 304 -
+2024-10-21 15:04:44,158 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 15:04:44,344 - INFO -  * Restarting with stat
+2024-10-21 15:04:45,015 - WARNING -  * Debugger is active!
+2024-10-21 15:04:45,016 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 15:04:49,088 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 15:04:49,284 - INFO -  * Restarting with stat
+2024-10-21 15:04:50,028 - WARNING -  * Debugger is active!
+2024-10-21 15:04:50,028 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 15:04:59,217 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 15:04:59,383 - INFO -  * Restarting with stat
+2024-10-21 15:05:00,052 - WARNING -  * Debugger is active!
+2024-10-21 15:05:00,052 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 15:05:05,129 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 15:05:05,293 - INFO -  * Restarting with stat
+2024-10-21 15:05:05,952 - WARNING -  * Debugger is active!
+2024-10-21 15:05:05,953 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 15:05:30,948 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.41:5000
+2024-10-21 15:05:30,948 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-21 15:05:30,949 - INFO -  * Restarting with stat
+2024-10-21 15:05:31,658 - WARNING -  * Debugger is active!
+2024-10-21 15:05:31,659 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 15:05:38,709 - INFO - 127.0.0.1 - - [21/Oct/2024 15:05:38] "[32mGET /admin/deposit HTTP/1.1[0m" 302 -
+2024-10-21 15:05:38,737 - INFO - 127.0.0.1 - - [21/Oct/2024 15:05:38] "GET /login?next=/admin/deposit HTTP/1.1" 200 -
+2024-10-21 15:05:38,759 - INFO - 127.0.0.1 - - [21/Oct/2024 15:05:38] "[32mGET /static//css/registration.css HTTP/1.1[0m" 308 -
+2024-10-21 15:05:38,760 - INFO - 127.0.0.1 - - [21/Oct/2024 15:05:38] "[32mGET /static//js/registration.js HTTP/1.1[0m" 308 -
+2024-10-21 15:05:38,774 - INFO - 127.0.0.1 - - [21/Oct/2024 15:05:38] "GET /static/css/registration.css HTTP/1.1" 200 -
+2024-10-21 15:05:38,775 - INFO - 127.0.0.1 - - [21/Oct/2024 15:05:38] "GET /static/js/registration.js HTTP/1.1" 200 -
+2024-10-21 15:05:47,134 - INFO - 127.0.0.1 - - [21/Oct/2024 15:05:47] "POST /admin/deposit HTTP/1.1" 200 -
+2024-10-21 15:05:57,531 - INFO - 127.0.0.1 - - [21/Oct/2024 15:05:57] "POST /admin/deposit HTTP/1.1" 200 -
+2024-10-21 15:06:40,089 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 15:06:40,280 - INFO -  * Restarting with stat
+2024-10-21 15:06:41,037 - WARNING -  * Debugger is active!
+2024-10-21 15:06:41,037 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 15:06:49,216 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.41:5000
+2024-10-21 15:06:49,216 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-21 15:06:49,217 - INFO -  * Restarting with stat
+2024-10-21 15:06:49,970 - WARNING -  * Debugger is active!
+2024-10-21 15:06:49,971 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 15:07:11,308 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 15:07:11,507 - INFO -  * Restarting with stat
+2024-10-21 15:07:12,264 - WARNING -  * Debugger is active!
+2024-10-21 15:07:12,264 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 15:07:14,294 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 15:07:14,462 - INFO -  * Restarting with stat
+2024-10-21 15:07:15,387 - WARNING -  * Debugger is active!
+2024-10-21 15:07:15,388 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 15:07:18,438 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 15:07:18,623 - INFO -  * Restarting with stat
+2024-10-21 15:07:19,660 - WARNING -  * Debugger is active!
+2024-10-21 15:07:19,660 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 15:07:20,695 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 15:07:20,872 - INFO -  * Restarting with stat
+2024-10-21 15:07:21,589 - WARNING -  * Debugger is active!
+2024-10-21 15:07:21,589 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 15:07:46,995 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 15:07:47,166 - INFO -  * Restarting with stat
+2024-10-21 15:07:47,823 - WARNING -  * Debugger is active!
+2024-10-21 15:07:47,823 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 15:08:13,009 - INFO - 127.0.0.1 - - [21/Oct/2024 15:08:13] "[32mPOST /admin/deposit HTTP/1.1[0m" 302 -
+2024-10-21 15:08:13,052 - INFO - 127.0.0.1 - - [21/Oct/2024 15:08:13] "GET /admin HTTP/1.1" 200 -
+2024-10-21 15:08:13,131 - INFO - 127.0.0.1 - - [21/Oct/2024 15:08:13] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:08:13,131 - INFO - 127.0.0.1 - - [21/Oct/2024 15:08:13] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:08:42,796 - INFO - 127.0.0.1 - - [21/Oct/2024 15:08:42] "GET /admin/deposit HTTP/1.1" 200 -
+2024-10-21 15:09:21,447 - INFO - 127.0.0.1 - - [21/Oct/2024 15:09:21] "GET /admin/deposit HTTP/1.1" 200 -
+2024-10-21 15:09:21,480 - INFO - 127.0.0.1 - - [21/Oct/2024 15:09:21] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:09:54,723 - INFO - 127.0.0.1 - - [21/Oct/2024 15:09:54] "GET /admin/deposit HTTP/1.1" 200 -
+2024-10-21 15:09:54,755 - INFO - 127.0.0.1 - - [21/Oct/2024 15:09:54] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:10:52,366 - INFO - 127.0.0.1 - - [21/Oct/2024 15:10:52] "GET /admin/deposit HTTP/1.1" 200 -
+2024-10-21 15:10:52,392 - INFO - 127.0.0.1 - - [21/Oct/2024 15:10:52] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:13:35,829 - INFO - 127.0.0.1 - - [21/Oct/2024 15:13:35] "GET /admin/deposit HTTP/1.1" 200 -
+2024-10-21 15:13:35,860 - INFO - 127.0.0.1 - - [21/Oct/2024 15:13:35] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:13:35,862 - INFO - 127.0.0.1 - - [21/Oct/2024 15:13:35] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-21 15:13:36,418 - INFO - 127.0.0.1 - - [21/Oct/2024 15:13:36] "GET /admin/deposit HTTP/1.1" 200 -
+2024-10-21 15:13:36,460 - INFO - 127.0.0.1 - - [21/Oct/2024 15:13:36] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:13:36,462 - INFO - 127.0.0.1 - - [21/Oct/2024 15:13:36] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-21 15:13:37,070 - INFO - 127.0.0.1 - - [21/Oct/2024 15:13:37] "GET /admin/deposit HTTP/1.1" 200 -
+2024-10-21 15:13:37,107 - INFO - 127.0.0.1 - - [21/Oct/2024 15:13:37] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:13:37,108 - INFO - 127.0.0.1 - - [21/Oct/2024 15:13:37] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-21 15:13:37,772 - INFO - 127.0.0.1 - - [21/Oct/2024 15:13:37] "GET /admin/deposit HTTP/1.1" 200 -
+2024-10-21 15:13:37,808 - INFO - 127.0.0.1 - - [21/Oct/2024 15:13:37] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:13:37,810 - INFO - 127.0.0.1 - - [21/Oct/2024 15:13:37] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-21 15:13:38,352 - INFO - 127.0.0.1 - - [21/Oct/2024 15:13:38] "GET /admin/deposit HTTP/1.1" 200 -
+2024-10-21 15:13:38,427 - INFO - 127.0.0.1 - - [21/Oct/2024 15:13:38] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:13:38,429 - INFO - 127.0.0.1 - - [21/Oct/2024 15:13:38] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-21 15:14:46,657 - INFO - 127.0.0.1 - - [21/Oct/2024 15:14:46] "[35m[1mGET /admin/deposit HTTP/1.1[0m" 500 -
+2024-10-21 15:14:46,684 - INFO - 127.0.0.1 - - [21/Oct/2024 15:14:46] "[36mGET /admin/deposit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-21 15:14:46,693 - INFO - 127.0.0.1 - - [21/Oct/2024 15:14:46] "[36mGET /admin/deposit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-21 15:14:46,727 - INFO - 127.0.0.1 - - [21/Oct/2024 15:14:46] "GET /admin/deposit?__debugger__=yes&cmd=resource&f=console.png&s=sSFBgFIXRvzP2fooAJak HTTP/1.1" 200 -
+2024-10-21 15:15:02,902 - INFO - 127.0.0.1 - - [21/Oct/2024 15:15:02] "GET /admin/deposit HTTP/1.1" 200 -
+2024-10-21 15:15:02,934 - INFO - 127.0.0.1 - - [21/Oct/2024 15:15:02] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-21 15:15:02,935 - INFO - 127.0.0.1 - - [21/Oct/2024 15:15:02] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:16:01,621 - INFO - 127.0.0.1 - - [21/Oct/2024 15:16:01] "GET /admin/deposit HTTP/1.1" 200 -
+2024-10-21 15:16:01,650 - INFO - 127.0.0.1 - - [21/Oct/2024 15:16:01] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:16:01,653 - INFO - 127.0.0.1 - - [21/Oct/2024 15:16:01] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-21 15:19:12,080 - INFO - 127.0.0.1 - - [21/Oct/2024 15:19:12] "GET /admin/deposit HTTP/1.1" 200 -
+2024-10-21 15:19:12,127 - INFO - 127.0.0.1 - - [21/Oct/2024 15:19:12] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-21 15:19:12,128 - INFO - 127.0.0.1 - - [21/Oct/2024 15:19:12] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:19:15,060 - INFO - 127.0.0.1 - - [21/Oct/2024 15:19:15] "GET /admin HTTP/1.1" 200 -
+2024-10-21 15:19:15,171 - INFO - 127.0.0.1 - - [21/Oct/2024 15:19:15] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:19:15,175 - INFO - 127.0.0.1 - - [21/Oct/2024 15:19:15] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:19:16,777 - INFO - 127.0.0.1 - - [21/Oct/2024 15:19:16] "GET /admin/deposit HTTP/1.1" 200 -
+2024-10-21 15:19:16,914 - INFO - 127.0.0.1 - - [21/Oct/2024 15:19:16] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:19:16,915 - INFO - 127.0.0.1 - - [21/Oct/2024 15:19:16] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-21 15:19:32,841 - INFO - 127.0.0.1 - - [21/Oct/2024 15:19:32] "GET /admin/pending_loans HTTP/1.1" 200 -
+2024-10-21 15:19:32,903 - INFO - 127.0.0.1 - - [21/Oct/2024 15:19:32] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:19:32,907 - INFO - 127.0.0.1 - - [21/Oct/2024 15:19:32] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:19:32,908 - INFO - 127.0.0.1 - - [21/Oct/2024 15:19:32] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:19:58,837 - INFO - 127.0.0.1 - - [21/Oct/2024 15:19:58] "GET /admin/reports HTTP/1.1" 200 -
+2024-10-21 15:19:58,906 - INFO - 127.0.0.1 - - [21/Oct/2024 15:19:58] "[32mGET /static//css/reports.css HTTP/1.1[0m" 308 -
+2024-10-21 15:19:58,908 - INFO - 127.0.0.1 - - [21/Oct/2024 15:19:58] "[32mGET /static//js/reports.js HTTP/1.1[0m" 308 -
+2024-10-21 15:19:58,928 - INFO - 127.0.0.1 - - [21/Oct/2024 15:19:58] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:19:58,928 - INFO - 127.0.0.1 - - [21/Oct/2024 15:19:58] "GET /static/css/reports.css HTTP/1.1" 200 -
+2024-10-21 15:19:58,929 - INFO - 127.0.0.1 - - [21/Oct/2024 15:19:58] "GET /static/js/reports.js HTTP/1.1" 200 -
+2024-10-21 15:20:18,782 - INFO - 127.0.0.1 - - [21/Oct/2024 15:20:18] "GET /admin/deposit HTTP/1.1" 200 -
+2024-10-21 15:20:18,910 - INFO - 127.0.0.1 - - [21/Oct/2024 15:20:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:20:18,913 - INFO - 127.0.0.1 - - [21/Oct/2024 15:20:18] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-21 15:20:24,904 - INFO - 127.0.0.1 - - [21/Oct/2024 15:20:24] "GET /admin/loans HTTP/1.1" 200 -
+2024-10-21 15:20:24,945 - INFO - 127.0.0.1 - - [21/Oct/2024 15:20:24] "[32mGET /static//css/loans.css HTTP/1.1[0m" 308 -
+2024-10-21 15:20:24,948 - INFO - 127.0.0.1 - - [21/Oct/2024 15:20:24] "[32mGET /static//js/loans.js HTTP/1.1[0m" 308 -
+2024-10-21 15:20:24,962 - INFO - 127.0.0.1 - - [21/Oct/2024 15:20:24] "GET /static/css/loans.css HTTP/1.1" 200 -
+2024-10-21 15:20:24,963 - INFO - 127.0.0.1 - - [21/Oct/2024 15:20:24] "GET /static/js/loans.js HTTP/1.1" 200 -
+2024-10-21 15:20:29,674 - INFO - 127.0.0.1 - - [21/Oct/2024 15:20:29] "GET /admin/staff HTTP/1.1" 200 -
+2024-10-21 15:20:29,753 - INFO - 127.0.0.1 - - [21/Oct/2024 15:20:29] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:20:29,757 - INFO - 127.0.0.1 - - [21/Oct/2024 15:20:29] "[36mGET /static/css/staff.css HTTP/1.1[0m" 304 -
+2024-10-21 15:20:29,758 - INFO - 127.0.0.1 - - [21/Oct/2024 15:20:29] "[36mGET /static/js/staff.js HTTP/1.1[0m" 304 -
+2024-10-21 15:20:31,030 - INFO - 127.0.0.1 - - [21/Oct/2024 15:20:31] "GET /admin/staff HTTP/1.1" 200 -
+2024-10-21 15:20:31,104 - INFO - 127.0.0.1 - - [21/Oct/2024 15:20:31] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:20:31,109 - INFO - 127.0.0.1 - - [21/Oct/2024 15:20:31] "[36mGET /static/css/staff.css HTTP/1.1[0m" 304 -
+2024-10-21 15:20:31,110 - INFO - 127.0.0.1 - - [21/Oct/2024 15:20:31] "[36mGET /static/js/staff.js HTTP/1.1[0m" 304 -
+2024-10-21 15:20:32,292 - INFO - 127.0.0.1 - - [21/Oct/2024 15:20:32] "GET /admin/loans HTTP/1.1" 200 -
+2024-10-21 15:20:32,359 - INFO - 127.0.0.1 - - [21/Oct/2024 15:20:32] "[36mGET /static/css/loans.css HTTP/1.1[0m" 304 -
+2024-10-21 15:20:32,362 - INFO - 127.0.0.1 - - [21/Oct/2024 15:20:32] "[36mGET /static/js/loans.js HTTP/1.1[0m" 304 -
+2024-10-21 15:20:33,855 - INFO - 127.0.0.1 - - [21/Oct/2024 15:20:33] "GET /admin/members HTTP/1.1" 200 -
+2024-10-21 15:20:33,907 - INFO - 127.0.0.1 - - [21/Oct/2024 15:20:33] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:20:33,909 - INFO - 127.0.0.1 - - [21/Oct/2024 15:20:33] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:20:33,914 - INFO - 127.0.0.1 - - [21/Oct/2024 15:20:33] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
+2024-10-21 15:20:33,919 - INFO - 127.0.0.1 - - [21/Oct/2024 15:20:33] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:20:35,618 - INFO - 127.0.0.1 - - [21/Oct/2024 15:20:35] "GET /admin HTTP/1.1" 200 -
+2024-10-21 15:20:35,724 - INFO - 127.0.0.1 - - [21/Oct/2024 15:20:35] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:20:35,726 - INFO - 127.0.0.1 - - [21/Oct/2024 15:20:35] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:20:37,305 - INFO - 127.0.0.1 - - [21/Oct/2024 15:20:37] "GET /admin/pending_loans HTTP/1.1" 200 -
+2024-10-21 15:20:37,350 - INFO - 127.0.0.1 - - [21/Oct/2024 15:20:37] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:20:37,352 - INFO - 127.0.0.1 - - [21/Oct/2024 15:20:37] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:20:37,354 - INFO - 127.0.0.1 - - [21/Oct/2024 15:20:37] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:23:58,283 - INFO - 127.0.0.1 - - [21/Oct/2024 15:23:58] "[35m[1mGET /admin HTTP/1.1[0m" 500 -
+2024-10-21 15:23:58,308 - INFO - 127.0.0.1 - - [21/Oct/2024 15:23:58] "GET /admin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-10-21 15:23:58,311 - INFO - 127.0.0.1 - - [21/Oct/2024 15:23:58] "GET /admin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-10-21 15:23:58,356 - INFO - 127.0.0.1 - - [21/Oct/2024 15:23:58] "GET /admin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-10-21 15:23:58,363 - INFO - 127.0.0.1 - - [21/Oct/2024 15:23:58] "GET /admin?__debugger__=yes&cmd=resource&f=console.png&s=sSFBgFIXRvzP2fooAJak HTTP/1.1" 200 -
+2024-10-21 15:24:39,295 - INFO - 127.0.0.1 - - [21/Oct/2024 15:24:39] "GET /admin HTTP/1.1" 200 -
+2024-10-21 15:24:39,334 - INFO - 127.0.0.1 - - [21/Oct/2024 15:24:39] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:24:39,337 - INFO - 127.0.0.1 - - [21/Oct/2024 15:24:39] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:24:40,876 - INFO - 127.0.0.1 - - [21/Oct/2024 15:24:40] "GET /admin/staff HTTP/1.1" 200 -
+2024-10-21 15:24:40,933 - INFO - 127.0.0.1 - - [21/Oct/2024 15:24:40] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:24:40,933 - INFO - 127.0.0.1 - - [21/Oct/2024 15:24:40] "[36mGET /static/css/staff.css HTTP/1.1[0m" 304 -
+2024-10-21 15:24:40,934 - INFO - 127.0.0.1 - - [21/Oct/2024 15:24:40] "[36mGET /static/js/staff.js HTTP/1.1[0m" 304 -
+2024-10-21 15:27:28,057 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 15:27:28,235 - INFO -  * Restarting with stat
+2024-10-21 15:27:28,953 - WARNING -  * Debugger is active!
+2024-10-21 15:27:28,953 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 15:27:35,081 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 15:27:35,237 - INFO -  * Restarting with stat
+2024-10-21 15:27:35,940 - WARNING -  * Debugger is active!
+2024-10-21 15:27:35,941 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 15:27:36,973 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 15:27:37,167 - INFO -  * Restarting with stat
+2024-10-21 15:28:32,908 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.41:5000
+2024-10-21 15:28:32,908 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-21 15:28:32,909 - INFO -  * Restarting with stat
+2024-10-21 15:28:33,637 - WARNING -  * Debugger is active!
+2024-10-21 15:28:33,638 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 15:28:37,213 - INFO - 127.0.0.1 - - [21/Oct/2024 15:28:37] "GET /admin/staff HTTP/1.1" 200 -
+2024-10-21 15:28:37,259 - INFO - 127.0.0.1 - - [21/Oct/2024 15:28:37] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:28:37,260 - INFO - 127.0.0.1 - - [21/Oct/2024 15:28:37] "[36mGET /static/css/staff.css HTTP/1.1[0m" 304 -
+2024-10-21 15:28:37,260 - INFO - 127.0.0.1 - - [21/Oct/2024 15:28:37] "[36mGET /static/js/staff.js HTTP/1.1[0m" 304 -
+2024-10-21 15:28:40,389 - INFO - 127.0.0.1 - - [21/Oct/2024 15:28:40] "GET /admin HTTP/1.1" 200 -
+2024-10-21 15:28:40,444 - INFO - 127.0.0.1 - - [21/Oct/2024 15:28:40] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:28:40,447 - INFO - 127.0.0.1 - - [21/Oct/2024 15:28:40] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:28:42,019 - INFO - 127.0.0.1 - - [21/Oct/2024 15:28:42] "GET /admin/pending_loans HTTP/1.1" 200 -
+2024-10-21 15:28:42,131 - INFO - 127.0.0.1 - - [21/Oct/2024 15:28:42] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:28:42,132 - INFO - 127.0.0.1 - - [21/Oct/2024 15:28:42] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:28:42,135 - INFO - 127.0.0.1 - - [21/Oct/2024 15:28:42] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:28:51,258 - INFO - 127.0.0.1 - - [21/Oct/2024 15:28:51] "GET /admin/pending_loans HTTP/1.1" 200 -
+2024-10-21 15:28:51,304 - INFO - 127.0.0.1 - - [21/Oct/2024 15:28:51] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:28:51,307 - INFO - 127.0.0.1 - - [21/Oct/2024 15:28:51] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:28:51,308 - INFO - 127.0.0.1 - - [21/Oct/2024 15:28:51] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:28:54,100 - INFO - 127.0.0.1 - - [21/Oct/2024 15:28:54] "GET /admin/pending_loans HTTP/1.1" 200 -
+2024-10-21 15:28:54,166 - INFO - 127.0.0.1 - - [21/Oct/2024 15:28:54] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:28:54,170 - INFO - 127.0.0.1 - - [21/Oct/2024 15:28:54] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:28:54,172 - INFO - 127.0.0.1 - - [21/Oct/2024 15:28:54] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:28:57,009 - INFO - 127.0.0.1 - - [21/Oct/2024 15:28:57] "GET /admin/pending_loans HTTP/1.1" 200 -
+2024-10-21 15:28:57,117 - INFO - 127.0.0.1 - - [21/Oct/2024 15:28:57] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:28:57,118 - INFO - 127.0.0.1 - - [21/Oct/2024 15:28:57] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:28:57,119 - INFO - 127.0.0.1 - - [21/Oct/2024 15:28:57] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:30:44,540 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 15:30:44,707 - INFO -  * Restarting with stat
+2024-10-21 15:30:45,360 - WARNING -  * Debugger is active!
+2024-10-21 15:30:45,360 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 15:30:50,347 - INFO - 127.0.0.1 - - [21/Oct/2024 15:30:50] "GET /admin/pending_loans HTTP/1.1" 200 -
+2024-10-21 15:30:50,390 - INFO - 127.0.0.1 - - [21/Oct/2024 15:30:50] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:30:50,392 - INFO - 127.0.0.1 - - [21/Oct/2024 15:30:50] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:30:50,400 - INFO - 127.0.0.1 - - [21/Oct/2024 15:30:50] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:30:53,937 - INFO - 127.0.0.1 - - [21/Oct/2024 15:30:53] "GET /admin/pending_loans HTTP/1.1" 200 -
+2024-10-21 15:30:54,067 - INFO - 127.0.0.1 - - [21/Oct/2024 15:30:54] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:30:54,070 - INFO - 127.0.0.1 - - [21/Oct/2024 15:30:54] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:30:54,071 - INFO - 127.0.0.1 - - [21/Oct/2024 15:30:54] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:31:11,662 - INFO - 127.0.0.1 - - [21/Oct/2024 15:31:11] "GET /admin/approved_loans HTTP/1.1" 200 -
+2024-10-21 15:31:11,720 - INFO - 127.0.0.1 - - [21/Oct/2024 15:31:11] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:31:11,724 - INFO - 127.0.0.1 - - [21/Oct/2024 15:31:11] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:31:11,725 - INFO - 127.0.0.1 - - [21/Oct/2024 15:31:11] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:33:31,866 - INFO - 127.0.0.1 - - [21/Oct/2024 15:33:31] "GET /admin/approved_loans HTTP/1.1" 200 -
+2024-10-21 15:33:31,906 - INFO - 127.0.0.1 - - [21/Oct/2024 15:33:31] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:33:31,908 - INFO - 127.0.0.1 - - [21/Oct/2024 15:33:31] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:33:31,910 - INFO - 127.0.0.1 - - [21/Oct/2024 15:33:31] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:33:33,380 - INFO - 127.0.0.1 - - [21/Oct/2024 15:33:33] "GET /admin HTTP/1.1" 200 -
+2024-10-21 15:33:33,432 - INFO - 127.0.0.1 - - [21/Oct/2024 15:33:33] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:33:33,434 - INFO - 127.0.0.1 - - [21/Oct/2024 15:33:33] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:33:35,258 - INFO - 127.0.0.1 - - [21/Oct/2024 15:33:35] "GET /admin/approved_loans HTTP/1.1" 200 -
+2024-10-21 15:33:35,398 - INFO - 127.0.0.1 - - [21/Oct/2024 15:33:35] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:33:35,400 - INFO - 127.0.0.1 - - [21/Oct/2024 15:33:35] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:33:35,403 - INFO - 127.0.0.1 - - [21/Oct/2024 15:33:35] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:33:40,400 - INFO - 127.0.0.1 - - [21/Oct/2024 15:33:40] "GET /admin/approved_loans HTTP/1.1" 200 -
+2024-10-21 15:33:40,456 - INFO - 127.0.0.1 - - [21/Oct/2024 15:33:40] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:33:40,462 - INFO - 127.0.0.1 - - [21/Oct/2024 15:33:40] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:33:40,463 - INFO - 127.0.0.1 - - [21/Oct/2024 15:33:40] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:35:22,829 - INFO - 127.0.0.1 - - [21/Oct/2024 15:35:22] "GET /admin HTTP/1.1" 200 -
+2024-10-21 15:35:22,867 - INFO - 127.0.0.1 - - [21/Oct/2024 15:35:22] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:35:22,868 - INFO - 127.0.0.1 - - [21/Oct/2024 15:35:22] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:35:27,322 - INFO - 127.0.0.1 - - [21/Oct/2024 15:35:27] "GET /admin/reports HTTP/1.1" 200 -
+2024-10-21 15:35:27,375 - INFO - 127.0.0.1 - - [21/Oct/2024 15:35:27] "[36mGET /static/css/reports.css HTTP/1.1[0m" 304 -
+2024-10-21 15:35:27,377 - INFO - 127.0.0.1 - - [21/Oct/2024 15:35:27] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:35:27,381 - INFO - 127.0.0.1 - - [21/Oct/2024 15:35:27] "[36mGET /static/js/reports.js HTTP/1.1[0m" 304 -
+2024-10-21 15:35:34,485 - INFO - 127.0.0.1 - - [21/Oct/2024 15:35:34] "GET /admin/deposit HTTP/1.1" 200 -
+2024-10-21 15:35:34,559 - INFO - 127.0.0.1 - - [21/Oct/2024 15:35:34] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-21 15:35:34,560 - INFO - 127.0.0.1 - - [21/Oct/2024 15:35:34] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:35:37,539 - INFO - 127.0.0.1 - - [21/Oct/2024 15:35:37] "GET /admin HTTP/1.1" 200 -
+2024-10-21 15:35:37,672 - INFO - 127.0.0.1 - - [21/Oct/2024 15:35:37] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:35:37,673 - INFO - 127.0.0.1 - - [21/Oct/2024 15:35:37] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:35:51,832 - INFO - 127.0.0.1 - - [21/Oct/2024 15:35:51] "GET /admin/approved_loans HTTP/1.1" 200 -
+2024-10-21 15:35:51,903 - INFO - 127.0.0.1 - - [21/Oct/2024 15:35:51] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:35:51,903 - INFO - 127.0.0.1 - - [21/Oct/2024 15:35:51] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:35:51,909 - INFO - 127.0.0.1 - - [21/Oct/2024 15:35:51] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:35:53,559 - INFO - 127.0.0.1 - - [21/Oct/2024 15:35:53] "[32mPOST /disburse_loan/2 HTTP/1.1[0m" 302 -
+2024-10-21 15:35:53,576 - INFO - 127.0.0.1 - - [21/Oct/2024 15:35:53] "GET /admin/loans HTTP/1.1" 200 -
+2024-10-21 15:35:53,633 - INFO - 127.0.0.1 - - [21/Oct/2024 15:35:53] "[36mGET /static/css/loans.css HTTP/1.1[0m" 304 -
+2024-10-21 15:35:53,636 - INFO - 127.0.0.1 - - [21/Oct/2024 15:35:53] "[36mGET /static/js/loans.js HTTP/1.1[0m" 304 -
+2024-10-21 15:36:01,129 - INFO - 127.0.0.1 - - [21/Oct/2024 15:36:01] "GET /admin/approved_loans HTTP/1.1" 200 -
+2024-10-21 15:36:01,193 - INFO - 127.0.0.1 - - [21/Oct/2024 15:36:01] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:36:01,193 - INFO - 127.0.0.1 - - [21/Oct/2024 15:36:01] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:36:01,194 - INFO - 127.0.0.1 - - [21/Oct/2024 15:36:01] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:36:04,844 - INFO - 127.0.0.1 - - [21/Oct/2024 15:36:04] "GET /admin HTTP/1.1" 200 -
+2024-10-21 15:36:04,900 - INFO - 127.0.0.1 - - [21/Oct/2024 15:36:04] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:36:04,901 - INFO - 127.0.0.1 - - [21/Oct/2024 15:36:04] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:36:14,721 - INFO - 127.0.0.1 - - [21/Oct/2024 15:36:14] "GET /admin/approved_loans HTTP/1.1" 200 -
+2024-10-21 15:36:14,768 - INFO - 127.0.0.1 - - [21/Oct/2024 15:36:14] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:36:14,768 - INFO - 127.0.0.1 - - [21/Oct/2024 15:36:14] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:36:14,773 - INFO - 127.0.0.1 - - [21/Oct/2024 15:36:14] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:37:40,292 - INFO - The CSRF token has expired.
+2024-10-21 15:37:40,304 - INFO - 127.0.0.1 - - [21/Oct/2024 15:37:40] "POST /login HTTP/1.1" 200 -
+2024-10-21 15:37:40,352 - INFO - 127.0.0.1 - - [21/Oct/2024 15:37:40] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
+2024-10-21 15:37:40,355 - INFO - 127.0.0.1 - - [21/Oct/2024 15:37:40] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
+2024-10-21 15:37:44,365 - INFO - 127.0.0.1 - - [21/Oct/2024 15:37:44] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-10-21 15:37:44,385 - INFO - 127.0.0.1 - - [21/Oct/2024 15:37:44] "GET /overview HTTP/1.1" 200 -
+2024-10-21 15:37:44,406 - INFO - 127.0.0.1 - - [21/Oct/2024 15:37:44] "[32mGET /static//css/styles.css HTTP/1.1[0m" 308 -
+2024-10-21 15:37:44,411 - INFO - 127.0.0.1 - - [21/Oct/2024 15:37:44] "GET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1" 200 -
+2024-10-21 15:37:44,413 - INFO - 127.0.0.1 - - [21/Oct/2024 15:37:44] "[32mGET /static//js/main.js HTTP/1.1[0m" 308 -
+2024-10-21 15:37:44,417 - INFO - 127.0.0.1 - - [21/Oct/2024 15:37:44] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-10-21 15:37:44,419 - INFO - 127.0.0.1 - - [21/Oct/2024 15:37:44] "GET /static/js/main.js HTTP/1.1" 200 -
+2024-10-21 15:37:47,966 - INFO - 127.0.0.1 - - [21/Oct/2024 15:37:47] "GET /loan_application_status HTTP/1.1" 200 -
+2024-10-21 15:37:47,991 - INFO - 127.0.0.1 - - [21/Oct/2024 15:37:47] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-21 15:37:48,002 - INFO - 127.0.0.1 - - [21/Oct/2024 15:37:48] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:37:48,006 - INFO - 127.0.0.1 - - [21/Oct/2024 15:37:48] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-21 15:37:57,620 - INFO - 127.0.0.1 - - [21/Oct/2024 15:37:57] "GET /loan_application_status HTTP/1.1" 200 -
+2024-10-21 15:37:57,647 - INFO - 127.0.0.1 - - [21/Oct/2024 15:37:57] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-21 15:37:57,653 - INFO - 127.0.0.1 - - [21/Oct/2024 15:37:57] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:37:57,655 - INFO - 127.0.0.1 - - [21/Oct/2024 15:37:57] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-21 15:38:00,689 - INFO - 127.0.0.1 - - [21/Oct/2024 15:38:00] "GET /overview HTTP/1.1" 200 -
+2024-10-21 15:38:00,726 - INFO - 127.0.0.1 - - [21/Oct/2024 15:38:00] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-21 15:38:00,736 - INFO - 127.0.0.1 - - [21/Oct/2024 15:38:00] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:38:00,736 - INFO - 127.0.0.1 - - [21/Oct/2024 15:38:00] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-21 15:42:09,771 - INFO - 127.0.0.1 - - [21/Oct/2024 15:42:09] "GET /application HTTP/1.1" 200 -
+2024-10-21 15:42:09,847 - INFO - 127.0.0.1 - - [21/Oct/2024 15:42:09] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-21 15:42:09,859 - INFO - 127.0.0.1 - - [21/Oct/2024 15:42:09] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:42:09,865 - INFO - 127.0.0.1 - - [21/Oct/2024 15:42:09] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-21 15:42:25,533 - INFO - 127.0.0.1 - - [21/Oct/2024 15:42:25] "[32mPOST /apply_for_loan HTTP/1.1[0m" 302 -
+2024-10-21 15:42:25,545 - INFO - 127.0.0.1 - - [21/Oct/2024 15:42:25] "GET /loan_application_status HTTP/1.1" 200 -
+2024-10-21 15:42:25,574 - INFO - 127.0.0.1 - - [21/Oct/2024 15:42:25] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-21 15:42:25,579 - INFO - 127.0.0.1 - - [21/Oct/2024 15:42:25] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:42:25,588 - INFO - 127.0.0.1 - - [21/Oct/2024 15:42:25] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-21 15:42:28,786 - INFO - 127.0.0.1 - - [21/Oct/2024 15:42:28] "GET /loan_application_status HTTP/1.1" 200 -
+2024-10-21 15:42:28,812 - INFO - 127.0.0.1 - - [21/Oct/2024 15:42:28] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-21 15:42:28,819 - INFO - 127.0.0.1 - - [21/Oct/2024 15:42:28] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:42:28,826 - INFO - 127.0.0.1 - - [21/Oct/2024 15:42:28] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-21 15:42:29,644 - INFO - 127.0.0.1 - - [21/Oct/2024 15:42:29] "GET /loan_application_status HTTP/1.1" 200 -
+2024-10-21 15:42:29,707 - INFO - 127.0.0.1 - - [21/Oct/2024 15:42:29] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-21 15:42:29,716 - INFO - 127.0.0.1 - - [21/Oct/2024 15:42:29] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:42:29,719 - INFO - 127.0.0.1 - - [21/Oct/2024 15:42:29] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-21 15:42:32,822 - INFO - 127.0.0.1 - - [21/Oct/2024 15:42:32] "GET /admin HTTP/1.1" 200 -
+2024-10-21 15:42:32,879 - INFO - 127.0.0.1 - - [21/Oct/2024 15:42:32] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:42:32,880 - INFO - 127.0.0.1 - - [21/Oct/2024 15:42:32] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:42:45,737 - INFO - 127.0.0.1 - - [21/Oct/2024 15:42:45] "GET /admin/pending_loans HTTP/1.1" 200 -
+2024-10-21 15:42:45,842 - INFO - 127.0.0.1 - - [21/Oct/2024 15:42:45] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:42:45,846 - INFO - 127.0.0.1 - - [21/Oct/2024 15:42:45] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:42:45,848 - INFO - 127.0.0.1 - - [21/Oct/2024 15:42:45] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:42:50,163 - INFO - 127.0.0.1 - - [21/Oct/2024 15:42:50] "GET /admin/personal_data HTTP/1.1" 200 -
+2024-10-21 15:42:50,222 - INFO - 127.0.0.1 - - [21/Oct/2024 15:42:50] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:43:05,532 - INFO - 127.0.0.1 - - [21/Oct/2024 15:43:05] "GET /admin/pending_loans HTTP/1.1" 200 -
+2024-10-21 15:43:05,583 - INFO - 127.0.0.1 - - [21/Oct/2024 15:43:05] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:43:05,587 - INFO - 127.0.0.1 - - [21/Oct/2024 15:43:05] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:43:05,588 - INFO - 127.0.0.1 - - [21/Oct/2024 15:43:05] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:43:53,363 - INFO - 127.0.0.1 - - [21/Oct/2024 15:43:53] "GET /admin HTTP/1.1" 200 -
+2024-10-21 15:43:53,416 - INFO - 127.0.0.1 - - [21/Oct/2024 15:43:53] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:43:53,419 - INFO - 127.0.0.1 - - [21/Oct/2024 15:43:53] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:43:59,362 - INFO - 127.0.0.1 - - [21/Oct/2024 15:43:59] "GET /admin/pending_loans HTTP/1.1" 200 -
+2024-10-21 15:43:59,449 - INFO - 127.0.0.1 - - [21/Oct/2024 15:43:59] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:43:59,452 - INFO - 127.0.0.1 - - [21/Oct/2024 15:43:59] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:43:59,455 - INFO - 127.0.0.1 - - [21/Oct/2024 15:43:59] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:44:28,309 - INFO - 127.0.0.1 - - [21/Oct/2024 15:44:28] "GET /admin HTTP/1.1" 200 -
+2024-10-21 15:44:28,351 - INFO - 127.0.0.1 - - [21/Oct/2024 15:44:28] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:44:28,352 - INFO - 127.0.0.1 - - [21/Oct/2024 15:44:28] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:44:55,329 - INFO - 127.0.0.1 - - [21/Oct/2024 15:44:55] "GET /admin HTTP/1.1" 200 -
+2024-10-21 15:44:55,364 - INFO - 127.0.0.1 - - [21/Oct/2024 15:44:55] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:44:55,367 - INFO - 127.0.0.1 - - [21/Oct/2024 15:44:55] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:44:56,784 - INFO - 127.0.0.1 - - [21/Oct/2024 15:44:56] "GET /admin/pending_loans HTTP/1.1" 200 -
+2024-10-21 15:44:56,862 - INFO - 127.0.0.1 - - [21/Oct/2024 15:44:56] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:44:56,864 - INFO - 127.0.0.1 - - [21/Oct/2024 15:44:56] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:44:56,866 - INFO - 127.0.0.1 - - [21/Oct/2024 15:44:56] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:45:08,091 - INFO - 127.0.0.1 - - [21/Oct/2024 15:45:08] "GET /admin/reports HTTP/1.1" 200 -
+2024-10-21 15:45:08,190 - INFO - 127.0.0.1 - - [21/Oct/2024 15:45:08] "[36mGET /static/css/reports.css HTTP/1.1[0m" 304 -
+2024-10-21 15:45:08,193 - INFO - 127.0.0.1 - - [21/Oct/2024 15:45:08] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:45:08,194 - INFO - 127.0.0.1 - - [21/Oct/2024 15:45:08] "[36mGET /static/js/reports.js HTTP/1.1[0m" 304 -
+2024-10-21 15:45:15,376 - INFO - 127.0.0.1 - - [21/Oct/2024 15:45:15] "GET /admin/pending_loans HTTP/1.1" 200 -
+2024-10-21 15:45:15,479 - INFO - 127.0.0.1 - - [21/Oct/2024 15:45:15] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:45:15,482 - INFO - 127.0.0.1 - - [21/Oct/2024 15:45:15] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:45:15,485 - INFO - 127.0.0.1 - - [21/Oct/2024 15:45:15] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:45:20,410 - INFO - 127.0.0.1 - - [21/Oct/2024 15:45:20] "GET /admin/pending_loans HTTP/1.1" 200 -
+2024-10-21 15:45:20,463 - INFO - 127.0.0.1 - - [21/Oct/2024 15:45:20] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:45:20,467 - INFO - 127.0.0.1 - - [21/Oct/2024 15:45:20] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:45:20,468 - INFO - 127.0.0.1 - - [21/Oct/2024 15:45:20] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:45:22,703 - INFO - 127.0.0.1 - - [21/Oct/2024 15:45:22] "[32mPOST /admin/approve_loan/3 HTTP/1.1[0m" 302 -
+2024-10-21 15:45:22,718 - INFO - 127.0.0.1 - - [21/Oct/2024 15:45:22] "GET /admin HTTP/1.1" 200 -
+2024-10-21 15:45:22,773 - INFO - 127.0.0.1 - - [21/Oct/2024 15:45:22] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:45:22,775 - INFO - 127.0.0.1 - - [21/Oct/2024 15:45:22] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:45:32,266 - INFO - 127.0.0.1 - - [21/Oct/2024 15:45:32] "GET /admin/approved_loans HTTP/1.1" 200 -
+2024-10-21 15:45:32,350 - INFO - 127.0.0.1 - - [21/Oct/2024 15:45:32] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:45:32,357 - INFO - 127.0.0.1 - - [21/Oct/2024 15:45:32] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:45:32,362 - INFO - 127.0.0.1 - - [21/Oct/2024 15:45:32] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:45:37,003 - INFO - 127.0.0.1 - - [21/Oct/2024 15:45:37] "GET /admin/pending_loans HTTP/1.1" 200 -
+2024-10-21 15:45:37,104 - INFO - 127.0.0.1 - - [21/Oct/2024 15:45:37] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:45:37,108 - INFO - 127.0.0.1 - - [21/Oct/2024 15:45:37] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:45:37,111 - INFO - 127.0.0.1 - - [21/Oct/2024 15:45:37] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:45:52,087 - INFO - 127.0.0.1 - - [21/Oct/2024 15:45:52] "GET /loan_application_status HTTP/1.1" 200 -
+2024-10-21 15:45:52,128 - INFO - 127.0.0.1 - - [21/Oct/2024 15:45:52] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-21 15:45:52,140 - INFO - 127.0.0.1 - - [21/Oct/2024 15:45:52] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:45:52,143 - INFO - 127.0.0.1 - - [21/Oct/2024 15:45:52] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-21 15:46:12,126 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:12] "GET /overview HTTP/1.1" 200 -
+2024-10-21 15:46:12,178 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:12] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-21 15:46:12,189 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:12] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:46:12,197 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:12] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-21 15:46:14,435 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:14] "GET /application HTTP/1.1" 200 -
+2024-10-21 15:46:14,464 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:14] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-21 15:46:14,471 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:46:14,481 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:14] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-21 15:46:16,824 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:16] "GET /application HTTP/1.1" 200 -
+2024-10-21 15:46:16,892 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:16] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-21 15:46:16,907 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:16] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:46:16,910 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:16] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-21 15:46:18,033 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:18] "GET /loan_application_status HTTP/1.1" 200 -
+2024-10-21 15:46:18,109 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:18] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-21 15:46:18,123 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:46:18,124 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:18] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-21 15:46:19,277 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:19] "GET /deposit HTTP/1.1" 200 -
+2024-10-21 15:46:19,316 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:19] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-21 15:46:19,325 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:46:19,328 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:19] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-21 15:46:20,489 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:20] "GET /withdrawals HTTP/1.1" 200 -
+2024-10-21 15:46:20,534 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:20] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-21 15:46:20,547 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:20] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:46:20,562 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:20] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-21 15:46:21,890 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:21] "GET /overview HTTP/1.1" 200 -
+2024-10-21 15:46:21,924 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:21] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-21 15:46:21,933 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:21] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-21 15:46:21,934 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:21] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:46:25,346 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:25] "GET /application HTTP/1.1" 200 -
+2024-10-21 15:46:25,416 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:25] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-21 15:46:25,420 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:25] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:46:25,427 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:25] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-21 15:46:27,656 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:27] "GET /loan_application_status HTTP/1.1" 200 -
+2024-10-21 15:46:27,746 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:27] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-21 15:46:27,754 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:27] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:46:27,762 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:27] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-21 15:46:28,895 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:28] "GET /application HTTP/1.1" 200 -
+2024-10-21 15:46:28,948 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:28] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-21 15:46:28,961 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:28] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:46:28,970 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:28] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-21 15:46:32,954 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:32] "GET /overview HTTP/1.1" 200 -
+2024-10-21 15:46:33,011 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:33] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-21 15:46:33,031 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:33] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-21 15:46:33,032 - INFO - 127.0.0.1 - - [21/Oct/2024 15:46:33] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:47:37,024 - INFO - 127.0.0.1 - - [21/Oct/2024 15:47:37] "GET /admin HTTP/1.1" 200 -
+2024-10-21 15:47:37,062 - INFO - 127.0.0.1 - - [21/Oct/2024 15:47:37] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:47:37,064 - INFO - 127.0.0.1 - - [21/Oct/2024 15:47:37] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:47:38,592 - INFO - 127.0.0.1 - - [21/Oct/2024 15:47:38] "GET /admin HTTP/1.1" 200 -
+2024-10-21 15:47:38,624 - INFO - 127.0.0.1 - - [21/Oct/2024 15:47:38] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:47:38,627 - INFO - 127.0.0.1 - - [21/Oct/2024 15:47:38] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:47:41,198 - INFO - 127.0.0.1 - - [21/Oct/2024 15:47:41] "GET /admin HTTP/1.1" 200 -
+2024-10-21 15:47:41,298 - INFO - 127.0.0.1 - - [21/Oct/2024 15:47:41] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:47:41,300 - INFO - 127.0.0.1 - - [21/Oct/2024 15:47:41] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:47:42,388 - INFO - 127.0.0.1 - - [21/Oct/2024 15:47:42] "GET /admin HTTP/1.1" 200 -
+2024-10-21 15:47:42,444 - INFO - 127.0.0.1 - - [21/Oct/2024 15:47:42] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:47:42,447 - INFO - 127.0.0.1 - - [21/Oct/2024 15:47:42] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:47:43,429 - INFO - 127.0.0.1 - - [21/Oct/2024 15:47:43] "GET /admin HTTP/1.1" 200 -
+2024-10-21 15:47:43,473 - INFO - 127.0.0.1 - - [21/Oct/2024 15:47:43] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:47:43,473 - INFO - 127.0.0.1 - - [21/Oct/2024 15:47:43] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:47:44,449 - INFO - 127.0.0.1 - - [21/Oct/2024 15:47:44] "GET /admin/loans HTTP/1.1" 200 -
+2024-10-21 15:47:44,535 - INFO - 127.0.0.1 - - [21/Oct/2024 15:47:44] "[36mGET /static/css/loans.css HTTP/1.1[0m" 304 -
+2024-10-21 15:47:44,538 - INFO - 127.0.0.1 - - [21/Oct/2024 15:47:44] "[36mGET /static/js/loans.js HTTP/1.1[0m" 304 -
+2024-10-21 15:47:53,417 - INFO - 127.0.0.1 - - [21/Oct/2024 15:47:53] "GET /admin/members HTTP/1.1" 200 -
+2024-10-21 15:47:53,538 - INFO - 127.0.0.1 - - [21/Oct/2024 15:47:53] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:47:53,542 - INFO - 127.0.0.1 - - [21/Oct/2024 15:47:53] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:47:53,543 - INFO - 127.0.0.1 - - [21/Oct/2024 15:47:53] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
+2024-10-21 15:47:53,547 - INFO - 127.0.0.1 - - [21/Oct/2024 15:47:53] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:47:55,520 - INFO - 127.0.0.1 - - [21/Oct/2024 15:47:55] "GET /admin HTTP/1.1" 200 -
+2024-10-21 15:47:55,647 - INFO - 127.0.0.1 - - [21/Oct/2024 15:47:55] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:47:55,650 - INFO - 127.0.0.1 - - [21/Oct/2024 15:47:55] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:48:47,934 - INFO - 127.0.0.1 - - [21/Oct/2024 15:48:47] "GET /admin HTTP/1.1" 200 -
+2024-10-21 15:48:47,974 - INFO - 127.0.0.1 - - [21/Oct/2024 15:48:47] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:48:47,975 - INFO - 127.0.0.1 - - [21/Oct/2024 15:48:47] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:49:29,617 - INFO - 127.0.0.1 - - [21/Oct/2024 15:49:29] "GET /admin/pending_loans HTTP/1.1" 200 -
+2024-10-21 15:49:29,741 - INFO - 127.0.0.1 - - [21/Oct/2024 15:49:29] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:49:29,741 - INFO - 127.0.0.1 - - [21/Oct/2024 15:49:29] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:49:29,742 - INFO - 127.0.0.1 - - [21/Oct/2024 15:49:29] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:49:33,487 - INFO - 127.0.0.1 - - [21/Oct/2024 15:49:33] "GET /admin/approved_loans HTTP/1.1" 200 -
+2024-10-21 15:49:33,595 - INFO - 127.0.0.1 - - [21/Oct/2024 15:49:33] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:49:33,598 - INFO - 127.0.0.1 - - [21/Oct/2024 15:49:33] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:49:33,603 - INFO - 127.0.0.1 - - [21/Oct/2024 15:49:33] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:51:33,409 - INFO - 127.0.0.1 - - [21/Oct/2024 15:51:33] "GET /admin HTTP/1.1" 200 -
+2024-10-21 15:51:33,445 - INFO - 127.0.0.1 - - [21/Oct/2024 15:51:33] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:51:33,448 - INFO - 127.0.0.1 - - [21/Oct/2024 15:51:33] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:51:35,138 - INFO - 127.0.0.1 - - [21/Oct/2024 15:51:35] "GET /admin/approved_loans HTTP/1.1" 200 -
+2024-10-21 15:51:35,202 - INFO - 127.0.0.1 - - [21/Oct/2024 15:51:35] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:51:35,205 - INFO - 127.0.0.1 - - [21/Oct/2024 15:51:35] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:51:35,211 - INFO - 127.0.0.1 - - [21/Oct/2024 15:51:35] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:52:02,087 - INFO - 127.0.0.1 - - [21/Oct/2024 15:52:02] "GET /admin HTTP/1.1" 200 -
+2024-10-21 15:52:02,120 - INFO - 127.0.0.1 - - [21/Oct/2024 15:52:02] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:52:02,122 - INFO - 127.0.0.1 - - [21/Oct/2024 15:52:02] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:53:06,673 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 15:53:06,868 - INFO -  * Restarting with stat
+2024-10-21 15:53:07,635 - WARNING -  * Debugger is active!
+2024-10-21 15:53:07,636 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 15:53:13,709 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 15:53:13,861 - INFO -  * Restarting with stat
+2024-10-21 15:53:14,526 - WARNING -  * Debugger is active!
+2024-10-21 15:53:14,526 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 15:53:20,640 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 15:53:20,798 - INFO -  * Restarting with stat
+2024-10-21 15:53:21,459 - WARNING -  * Debugger is active!
+2024-10-21 15:53:21,459 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 15:53:39,794 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 15:53:39,955 - INFO -  * Restarting with stat
+2024-10-21 15:53:40,681 - WARNING -  * Debugger is active!
+2024-10-21 15:53:40,681 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 15:53:51,931 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 15:53:52,085 - INFO -  * Restarting with stat
+2024-10-21 15:53:52,755 - WARNING -  * Debugger is active!
+2024-10-21 15:53:52,755 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 15:54:00,933 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 15:54:01,096 - INFO -  * Restarting with stat
+2024-10-21 15:54:01,974 - WARNING -  * Debugger is active!
+2024-10-21 15:54:01,974 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 15:54:04,025 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 15:54:04,226 - INFO -  * Restarting with stat
+2024-10-21 15:54:04,931 - WARNING -  * Debugger is active!
+2024-10-21 15:54:04,932 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 15:54:15,103 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 15:54:15,360 - INFO -  * Restarting with stat
+2024-10-21 15:54:16,621 - WARNING -  * Debugger is active!
+2024-10-21 15:54:16,622 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 15:54:22,402 - INFO - 127.0.0.1 - - [21/Oct/2024 15:54:22] "GET /admin HTTP/1.1" 200 -
+2024-10-21 15:54:22,451 - INFO - 127.0.0.1 - - [21/Oct/2024 15:54:22] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:54:22,452 - INFO - 127.0.0.1 - - [21/Oct/2024 15:54:22] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:54:29,479 - INFO - 127.0.0.1 - - [21/Oct/2024 15:54:29] "GET /admin/approved_loans HTTP/1.1" 200 -
+2024-10-21 15:54:29,603 - INFO - 127.0.0.1 - - [21/Oct/2024 15:54:29] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:54:29,604 - INFO - 127.0.0.1 - - [21/Oct/2024 15:54:29] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:54:29,608 - INFO - 127.0.0.1 - - [21/Oct/2024 15:54:29] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:54:32,908 - INFO - 127.0.0.1 - - [21/Oct/2024 15:54:32] "GET /admin/approved_loans HTTP/1.1" 200 -
+2024-10-21 15:54:33,052 - INFO - 127.0.0.1 - - [21/Oct/2024 15:54:33] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:54:33,056 - INFO - 127.0.0.1 - - [21/Oct/2024 15:54:33] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:54:33,057 - INFO - 127.0.0.1 - - [21/Oct/2024 15:54:33] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:55:22,771 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:22] "GET /admin/staff HTTP/1.1" 200 -
+2024-10-21 15:55:22,833 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:22] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:55:22,838 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:22] "[36mGET /static/css/staff.css HTTP/1.1[0m" 304 -
+2024-10-21 15:55:22,841 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:22] "[36mGET /static/js/staff.js HTTP/1.1[0m" 304 -
+2024-10-21 15:55:23,880 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:23] "GET /admin/members HTTP/1.1" 200 -
+2024-10-21 15:55:24,012 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:24] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:55:24,020 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:24] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:55:24,022 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:24] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
+2024-10-21 15:55:24,023 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:24] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:55:25,057 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:25] "GET /admin/loans HTTP/1.1" 200 -
+2024-10-21 15:55:25,130 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:25] "[36mGET /static/css/loans.css HTTP/1.1[0m" 304 -
+2024-10-21 15:55:25,137 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:25] "[36mGET /static/js/loans.js HTTP/1.1[0m" 304 -
+2024-10-21 15:55:28,223 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:28] "GET /admin/deposit HTTP/1.1" 200 -
+2024-10-21 15:55:28,286 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:28] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:55:28,288 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:28] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-21 15:55:46,027 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:46] "GET /admin/reports HTTP/1.1" 200 -
+2024-10-21 15:55:46,106 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:46] "[36mGET /static/css/reports.css HTTP/1.1[0m" 304 -
+2024-10-21 15:55:46,110 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:46] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:55:46,111 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:46] "[36mGET /static/js/reports.js HTTP/1.1[0m" 304 -
+2024-10-21 15:55:49,964 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:49] "GET /admin/settings HTTP/1.1" 200 -
+2024-10-21 15:55:50,085 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:50] "[32mGET /static//css/settings.css HTTP/1.1[0m" 308 -
+2024-10-21 15:55:50,090 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:50] "[32mGET /static//js/settings.js HTTP/1.1[0m" 308 -
+2024-10-21 15:55:50,101 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:50] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:55:50,102 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:50] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:55:50,106 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:50] "GET /static/css/settings.css HTTP/1.1" 200 -
+2024-10-21 15:55:50,108 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:50] "GET /static/js/settings.js HTTP/1.1" 200 -
+2024-10-21 15:55:52,082 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:52] "GET /admin HTTP/1.1" 200 -
+2024-10-21 15:55:52,137 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:52] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:55:52,140 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:52] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:55:53,966 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:53] "GET /admin/members HTTP/1.1" 200 -
+2024-10-21 15:55:54,015 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:54] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:55:54,021 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:54] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:55:54,024 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:54] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
+2024-10-21 15:55:54,026 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:54] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:55:55,304 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:55] "GET /admin/staff HTTP/1.1" 200 -
+2024-10-21 15:55:55,408 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:55] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:55:55,413 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:55] "[36mGET /static/js/staff.js HTTP/1.1[0m" 304 -
+2024-10-21 15:55:55,413 - INFO - 127.0.0.1 - - [21/Oct/2024 15:55:55] "[36mGET /static/css/staff.css HTTP/1.1[0m" 304 -
+2024-10-21 15:56:15,016 - INFO - 127.0.0.1 - - [21/Oct/2024 15:56:15] "GET /admin HTTP/1.1" 200 -
+2024-10-21 15:56:15,072 - INFO - 127.0.0.1 - - [21/Oct/2024 15:56:15] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:56:15,073 - INFO - 127.0.0.1 - - [21/Oct/2024 15:56:15] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:56:19,406 - INFO - 127.0.0.1 - - [21/Oct/2024 15:56:19] "GET /admin/pending_loans HTTP/1.1" 200 -
+2024-10-21 15:56:19,457 - INFO - 127.0.0.1 - - [21/Oct/2024 15:56:19] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:56:19,460 - INFO - 127.0.0.1 - - [21/Oct/2024 15:56:19] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:56:19,460 - INFO - 127.0.0.1 - - [21/Oct/2024 15:56:19] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:56:23,063 - INFO - 127.0.0.1 - - [21/Oct/2024 15:56:23] "GET /admin/approved_loans HTTP/1.1" 200 -
+2024-10-21 15:56:23,181 - INFO - 127.0.0.1 - - [21/Oct/2024 15:56:23] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:56:23,182 - INFO - 127.0.0.1 - - [21/Oct/2024 15:56:23] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:56:23,186 - INFO - 127.0.0.1 - - [21/Oct/2024 15:56:23] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:56:28,475 - INFO - 127.0.0.1 - - [21/Oct/2024 15:56:28] "GET /admin/approved_loans HTTP/1.1" 200 -
+2024-10-21 15:56:28,611 - INFO - 127.0.0.1 - - [21/Oct/2024 15:56:28] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:56:28,614 - INFO - 127.0.0.1 - - [21/Oct/2024 15:56:28] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:56:28,618 - INFO - 127.0.0.1 - - [21/Oct/2024 15:56:28] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:56:33,160 - INFO - 127.0.0.1 - - [21/Oct/2024 15:56:33] "GET /admin/approved_loans HTTP/1.1" 200 -
+2024-10-21 15:56:33,283 - INFO - 127.0.0.1 - - [21/Oct/2024 15:56:33] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:56:33,285 - INFO - 127.0.0.1 - - [21/Oct/2024 15:56:33] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:56:33,287 - INFO - 127.0.0.1 - - [21/Oct/2024 15:56:33] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:57:18,973 - INFO - 127.0.0.1 - - [21/Oct/2024 15:57:18] "GET /admin/approved_loans HTTP/1.1" 200 -
+2024-10-21 15:57:19,076 - INFO - 127.0.0.1 - - [21/Oct/2024 15:57:19] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 15:57:19,081 - INFO - 127.0.0.1 - - [21/Oct/2024 15:57:19] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 15:57:19,081 - INFO - 127.0.0.1 - - [21/Oct/2024 15:57:19] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 15:59:51,389 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-21 15:59:51,594 - INFO -  * Restarting with stat
+2024-10-21 16:03:12,704 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.41:5000
+2024-10-21 16:03:12,704 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-21 16:03:12,705 - INFO -  * Restarting with stat
+2024-10-21 16:03:13,464 - WARNING -  * Debugger is active!
+2024-10-21 16:03:13,464 - INFO -  * Debugger PIN: 718-713-251
+2024-10-21 16:03:16,128 - INFO - 127.0.0.1 - - [21/Oct/2024 16:03:16] "GET /admin HTTP/1.1" 200 -
+2024-10-21 16:03:16,188 - INFO - 127.0.0.1 - - [21/Oct/2024 16:03:16] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 16:03:16,190 - INFO - 127.0.0.1 - - [21/Oct/2024 16:03:16] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 16:03:17,352 - INFO - 127.0.0.1 - - [21/Oct/2024 16:03:17] "GET /admin/members HTTP/1.1" 200 -
+2024-10-21 16:03:17,427 - INFO - 127.0.0.1 - - [21/Oct/2024 16:03:17] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 16:03:17,431 - INFO - 127.0.0.1 - - [21/Oct/2024 16:03:17] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 16:03:17,435 - INFO - 127.0.0.1 - - [21/Oct/2024 16:03:17] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
+2024-10-21 16:03:17,438 - INFO - 127.0.0.1 - - [21/Oct/2024 16:03:17] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 16:03:20,004 - INFO - 127.0.0.1 - - [21/Oct/2024 16:03:20] "GET /admin/staff HTTP/1.1" 200 -
+2024-10-21 16:03:20,180 - INFO - 127.0.0.1 - - [21/Oct/2024 16:03:20] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 16:03:20,183 - INFO - 127.0.0.1 - - [21/Oct/2024 16:03:20] "[36mGET /static/css/staff.css HTTP/1.1[0m" 304 -
+2024-10-21 16:03:20,184 - INFO - 127.0.0.1 - - [21/Oct/2024 16:03:20] "[36mGET /static/js/staff.js HTTP/1.1[0m" 304 -
+2024-10-21 16:03:22,678 - INFO - 127.0.0.1 - - [21/Oct/2024 16:03:22] "GET /admin/pending_loans HTTP/1.1" 200 -
+2024-10-21 16:03:22,787 - INFO - 127.0.0.1 - - [21/Oct/2024 16:03:22] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 16:03:22,788 - INFO - 127.0.0.1 - - [21/Oct/2024 16:03:22] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 16:03:22,791 - INFO - 127.0.0.1 - - [21/Oct/2024 16:03:22] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 16:03:25,614 - INFO - 127.0.0.1 - - [21/Oct/2024 16:03:25] "GET /admin/approved_loans HTTP/1.1" 200 -
+2024-10-21 16:03:25,730 - INFO - 127.0.0.1 - - [21/Oct/2024 16:03:25] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 16:03:25,735 - INFO - 127.0.0.1 - - [21/Oct/2024 16:03:25] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 16:03:25,737 - INFO - 127.0.0.1 - - [21/Oct/2024 16:03:25] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 16:03:31,833 - INFO - 127.0.0.1 - - [21/Oct/2024 16:03:31] "GET /admin/approved_loans HTTP/1.1" 200 -
+2024-10-21 16:03:31,962 - INFO - 127.0.0.1 - - [21/Oct/2024 16:03:31] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 16:03:31,963 - INFO - 127.0.0.1 - - [21/Oct/2024 16:03:31] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 16:03:31,965 - INFO - 127.0.0.1 - - [21/Oct/2024 16:03:31] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 16:03:33,774 - INFO - 127.0.0.1 - - [21/Oct/2024 16:03:33] "GET /admin/approved_loans HTTP/1.1" 200 -
+2024-10-21 16:03:33,812 - INFO - 127.0.0.1 - - [21/Oct/2024 16:03:33] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 16:03:33,817 - INFO - 127.0.0.1 - - [21/Oct/2024 16:03:33] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 16:03:33,818 - INFO - 127.0.0.1 - - [21/Oct/2024 16:03:33] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 16:03:37,459 - INFO - 127.0.0.1 - - [21/Oct/2024 16:03:37] "GET /admin/approved_loans HTTP/1.1" 200 -
+2024-10-21 16:03:37,527 - INFO - 127.0.0.1 - - [21/Oct/2024 16:03:37] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 16:03:37,530 - INFO - 127.0.0.1 - - [21/Oct/2024 16:03:37] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 16:03:37,535 - INFO - 127.0.0.1 - - [21/Oct/2024 16:03:37] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 16:06:52,356 - INFO - 127.0.0.1 - - [21/Oct/2024 16:06:52] "GET /admin HTTP/1.1" 200 -
+2024-10-21 16:06:52,403 - INFO - 127.0.0.1 - - [21/Oct/2024 16:06:52] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 16:06:52,405 - INFO - 127.0.0.1 - - [21/Oct/2024 16:06:52] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 16:06:54,054 - INFO - 127.0.0.1 - - [21/Oct/2024 16:06:54] "GET /admin/approved_loans HTTP/1.1" 200 -
+2024-10-21 16:06:54,155 - INFO - 127.0.0.1 - - [21/Oct/2024 16:06:54] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 16:06:54,159 - INFO - 127.0.0.1 - - [21/Oct/2024 16:06:54] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 16:06:54,160 - INFO - 127.0.0.1 - - [21/Oct/2024 16:06:54] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 16:07:03,388 - INFO - 127.0.0.1 - - [21/Oct/2024 16:07:03] "GET /admin/loans HTTP/1.1" 200 -
+2024-10-21 16:07:03,454 - INFO - 127.0.0.1 - - [21/Oct/2024 16:07:03] "[36mGET /static/css/loans.css HTTP/1.1[0m" 304 -
+2024-10-21 16:07:03,457 - INFO - 127.0.0.1 - - [21/Oct/2024 16:07:03] "[36mGET /static/js/loans.js HTTP/1.1[0m" 304 -
+2024-10-21 16:07:06,390 - INFO - 127.0.0.1 - - [21/Oct/2024 16:07:06] "GET /admin/members HTTP/1.1" 200 -
+2024-10-21 16:07:06,528 - INFO - 127.0.0.1 - - [21/Oct/2024 16:07:06] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 16:07:06,535 - INFO - 127.0.0.1 - - [21/Oct/2024 16:07:06] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 16:07:06,538 - INFO - 127.0.0.1 - - [21/Oct/2024 16:07:06] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
+2024-10-21 16:07:06,539 - INFO - 127.0.0.1 - - [21/Oct/2024 16:07:06] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 16:07:08,992 - INFO - 127.0.0.1 - - [21/Oct/2024 16:07:08] "GET /admin HTTP/1.1" 200 -
+2024-10-21 16:07:09,104 - INFO - 127.0.0.1 - - [21/Oct/2024 16:07:09] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 16:07:09,108 - INFO - 127.0.0.1 - - [21/Oct/2024 16:07:09] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 16:07:28,779 - INFO - 127.0.0.1 - - [21/Oct/2024 16:07:28] "GET /admin/approved_loans HTTP/1.1" 200 -
+2024-10-21 16:07:28,906 - INFO - 127.0.0.1 - - [21/Oct/2024 16:07:28] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 16:07:28,908 - INFO - 127.0.0.1 - - [21/Oct/2024 16:07:28] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 16:07:28,910 - INFO - 127.0.0.1 - - [21/Oct/2024 16:07:28] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 16:07:50,724 - INFO - 127.0.0.1 - - [21/Oct/2024 16:07:50] "GET /admin/disbursed_loans HTTP/1.1" 200 -
+2024-10-21 16:07:50,792 - INFO - 127.0.0.1 - - [21/Oct/2024 16:07:50] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 16:07:50,793 - INFO - 127.0.0.1 - - [21/Oct/2024 16:07:50] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 16:07:50,795 - INFO - 127.0.0.1 - - [21/Oct/2024 16:07:50] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 16:07:55,692 - INFO - 127.0.0.1 - - [21/Oct/2024 16:07:55] "GET /admin HTTP/1.1" 200 -
+2024-10-21 16:07:55,800 - INFO - 127.0.0.1 - - [21/Oct/2024 16:07:55] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 16:07:55,802 - INFO - 127.0.0.1 - - [21/Oct/2024 16:07:55] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 16:07:56,876 - INFO - 127.0.0.1 - - [21/Oct/2024 16:07:56] "GET /admin/approved_loans HTTP/1.1" 200 -
+2024-10-21 16:07:56,971 - INFO - 127.0.0.1 - - [21/Oct/2024 16:07:56] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 16:07:56,975 - INFO - 127.0.0.1 - - [21/Oct/2024 16:07:56] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 16:07:56,976 - INFO - 127.0.0.1 - - [21/Oct/2024 16:07:56] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 16:08:46,720 - INFO - 127.0.0.1 - - [21/Oct/2024 16:08:46] "GET /admin HTTP/1.1" 200 -
+2024-10-21 16:08:46,756 - INFO - 127.0.0.1 - - [21/Oct/2024 16:08:46] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 16:08:46,759 - INFO - 127.0.0.1 - - [21/Oct/2024 16:08:46] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 16:08:48,210 - INFO - 127.0.0.1 - - [21/Oct/2024 16:08:48] "GET /admin/disbursed_loans HTTP/1.1" 200 -
+2024-10-21 16:08:48,339 - INFO - 127.0.0.1 - - [21/Oct/2024 16:08:48] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 16:08:48,340 - INFO - 127.0.0.1 - - [21/Oct/2024 16:08:48] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 16:08:48,343 - INFO - 127.0.0.1 - - [21/Oct/2024 16:08:48] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 16:09:21,252 - INFO - 127.0.0.1 - - [21/Oct/2024 16:09:21] "GET /admin/rejected_loans HTTP/1.1" 200 -
+2024-10-21 16:09:21,363 - INFO - 127.0.0.1 - - [21/Oct/2024 16:09:21] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 16:09:21,367 - INFO - 127.0.0.1 - - [21/Oct/2024 16:09:21] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 16:09:21,368 - INFO - 127.0.0.1 - - [21/Oct/2024 16:09:21] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 16:09:35,277 - INFO - 127.0.0.1 - - [21/Oct/2024 16:09:35] "GET /admin/members HTTP/1.1" 200 -
+2024-10-21 16:09:35,417 - INFO - 127.0.0.1 - - [21/Oct/2024 16:09:35] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 16:09:35,421 - INFO - 127.0.0.1 - - [21/Oct/2024 16:09:35] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
+2024-10-21 16:09:35,424 - INFO - 127.0.0.1 - - [21/Oct/2024 16:09:35] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 16:09:35,426 - INFO - 127.0.0.1 - - [21/Oct/2024 16:09:35] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 16:09:59,302 - INFO - 127.0.0.1 - - [21/Oct/2024 16:09:59] "GET /admin/staff HTTP/1.1" 200 -
+2024-10-21 16:09:59,417 - INFO - 127.0.0.1 - - [21/Oct/2024 16:09:59] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 16:09:59,421 - INFO - 127.0.0.1 - - [21/Oct/2024 16:09:59] "[36mGET /static/css/staff.css HTTP/1.1[0m" 304 -
+2024-10-21 16:09:59,423 - INFO - 127.0.0.1 - - [21/Oct/2024 16:09:59] "[36mGET /static/js/staff.js HTTP/1.1[0m" 304 -
+2024-10-21 16:10:00,951 - INFO - 127.0.0.1 - - [21/Oct/2024 16:10:00] "GET /admin/members HTTP/1.1" 200 -
+2024-10-21 16:10:01,033 - INFO - 127.0.0.1 - - [21/Oct/2024 16:10:01] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 16:10:01,038 - INFO - 127.0.0.1 - - [21/Oct/2024 16:10:01] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 16:10:01,039 - INFO - 127.0.0.1 - - [21/Oct/2024 16:10:01] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
+2024-10-21 16:10:01,042 - INFO - 127.0.0.1 - - [21/Oct/2024 16:10:01] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 16:15:06,756 - INFO - 127.0.0.1 - - [21/Oct/2024 16:15:06] "GET /admin/members HTTP/1.1" 200 -
+2024-10-21 16:15:06,791 - INFO - 127.0.0.1 - - [21/Oct/2024 16:15:06] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 16:15:06,796 - INFO - 127.0.0.1 - - [21/Oct/2024 16:15:06] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 16:15:06,799 - INFO - 127.0.0.1 - - [21/Oct/2024 16:15:06] "GET /static/js/members.js HTTP/1.1" 200 -
+2024-10-21 16:15:06,800 - INFO - 127.0.0.1 - - [21/Oct/2024 16:15:06] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 16:15:08,172 - INFO - 127.0.0.1 - - [21/Oct/2024 16:15:08] "GET /admin/members HTTP/1.1" 200 -
+2024-10-21 16:15:08,205 - INFO - 127.0.0.1 - - [21/Oct/2024 16:15:08] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 16:15:08,208 - INFO - 127.0.0.1 - - [21/Oct/2024 16:15:08] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 16:15:08,212 - INFO - 127.0.0.1 - - [21/Oct/2024 16:15:08] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
+2024-10-21 16:15:08,214 - INFO - 127.0.0.1 - - [21/Oct/2024 16:15:08] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 16:15:09,028 - INFO - 127.0.0.1 - - [21/Oct/2024 16:15:09] "GET /admin/members HTTP/1.1" 200 -
+2024-10-21 16:15:09,071 - INFO - 127.0.0.1 - - [21/Oct/2024 16:15:09] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 16:15:09,072 - INFO - 127.0.0.1 - - [21/Oct/2024 16:15:09] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
+2024-10-21 16:15:09,074 - INFO - 127.0.0.1 - - [21/Oct/2024 16:15:09] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 16:15:09,077 - INFO - 127.0.0.1 - - [21/Oct/2024 16:15:09] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 16:15:09,664 - INFO - 127.0.0.1 - - [21/Oct/2024 16:15:09] "GET /admin/members HTTP/1.1" 200 -
+2024-10-21 16:15:09,718 - INFO - 127.0.0.1 - - [21/Oct/2024 16:15:09] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 16:15:09,722 - INFO - 127.0.0.1 - - [21/Oct/2024 16:15:09] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 16:15:09,727 - INFO - 127.0.0.1 - - [21/Oct/2024 16:15:09] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 16:15:09,728 - INFO - 127.0.0.1 - - [21/Oct/2024 16:15:09] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
+2024-10-21 16:15:41,310 - INFO - 127.0.0.1 - - [21/Oct/2024 16:15:41] "GET /admin/members HTTP/1.1" 200 -
+2024-10-21 16:15:41,371 - INFO - 127.0.0.1 - - [21/Oct/2024 16:15:41] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 16:15:41,374 - INFO - 127.0.0.1 - - [21/Oct/2024 16:15:41] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 16:15:41,376 - INFO - 127.0.0.1 - - [21/Oct/2024 16:15:41] "GET /static/js/members.js HTTP/1.1" 200 -
+2024-10-21 16:15:41,377 - INFO - 127.0.0.1 - - [21/Oct/2024 16:15:41] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 16:16:25,662 - INFO - 127.0.0.1 - - [21/Oct/2024 16:16:25] "GET /admin/members HTTP/1.1" 200 -
+2024-10-21 16:16:25,703 - INFO - 127.0.0.1 - - [21/Oct/2024 16:16:25] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 16:16:25,704 - INFO - 127.0.0.1 - - [21/Oct/2024 16:16:25] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
+2024-10-21 16:16:25,705 - INFO - 127.0.0.1 - - [21/Oct/2024 16:16:25] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 16:16:25,708 - INFO - 127.0.0.1 - - [21/Oct/2024 16:16:25] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 16:16:26,985 - INFO - 127.0.0.1 - - [21/Oct/2024 16:16:26] "GET /admin/members HTTP/1.1" 200 -
+2024-10-21 16:16:27,022 - INFO - 127.0.0.1 - - [21/Oct/2024 16:16:27] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 16:16:27,027 - INFO - 127.0.0.1 - - [21/Oct/2024 16:16:27] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
+2024-10-21 16:16:27,033 - INFO - 127.0.0.1 - - [21/Oct/2024 16:16:27] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 16:16:27,034 - INFO - 127.0.0.1 - - [21/Oct/2024 16:16:27] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 16:17:00,386 - INFO - 127.0.0.1 - - [21/Oct/2024 16:17:00] "GET /admin HTTP/1.1" 200 -
+2024-10-21 16:17:00,523 - INFO - 127.0.0.1 - - [21/Oct/2024 16:17:00] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 16:17:00,525 - INFO - 127.0.0.1 - - [21/Oct/2024 16:17:00] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 16:17:01,965 - INFO - 127.0.0.1 - - [21/Oct/2024 16:17:01] "GET /admin/disbursed_loans HTTP/1.1" 200 -
+2024-10-21 16:17:02,081 - INFO - 127.0.0.1 - - [21/Oct/2024 16:17:02] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 16:17:02,085 - INFO - 127.0.0.1 - - [21/Oct/2024 16:17:02] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 16:17:02,086 - INFO - 127.0.0.1 - - [21/Oct/2024 16:17:02] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 16:17:05,296 - INFO - 127.0.0.1 - - [21/Oct/2024 16:17:05] "GET /admin/rejected_loans HTTP/1.1" 200 -
+2024-10-21 16:17:05,413 - INFO - 127.0.0.1 - - [21/Oct/2024 16:17:05] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 16:17:05,417 - INFO - 127.0.0.1 - - [21/Oct/2024 16:17:05] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 16:17:05,418 - INFO - 127.0.0.1 - - [21/Oct/2024 16:17:05] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 16:17:17,907 - INFO - 127.0.0.1 - - [21/Oct/2024 16:17:17] "GET /admin/personal_data HTTP/1.1" 200 -
+2024-10-21 16:17:17,975 - INFO - 127.0.0.1 - - [21/Oct/2024 16:17:17] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-21 16:17:20,370 - INFO - 127.0.0.1 - - [21/Oct/2024 16:17:20] "GET /admin/pending_loans HTTP/1.1" 200 -
+2024-10-21 16:17:20,426 - INFO - 127.0.0.1 - - [21/Oct/2024 16:17:20] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 16:17:20,427 - INFO - 127.0.0.1 - - [21/Oct/2024 16:17:20] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 16:17:20,430 - INFO - 127.0.0.1 - - [21/Oct/2024 16:17:20] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-21 16:17:49,492 - INFO - 127.0.0.1 - - [21/Oct/2024 16:17:49] "GET /admin/loans HTTP/1.1" 200 -
+2024-10-21 16:17:49,581 - INFO - 127.0.0.1 - - [21/Oct/2024 16:17:49] "[36mGET /static/css/loans.css HTTP/1.1[0m" 304 -
+2024-10-21 16:17:49,584 - INFO - 127.0.0.1 - - [21/Oct/2024 16:17:49] "[36mGET /static/js/loans.js HTTP/1.1[0m" 304 -
+2024-10-21 16:17:53,573 - INFO - 127.0.0.1 - - [21/Oct/2024 16:17:53] "GET /admin/approved_loans HTTP/1.1" 200 -
+2024-10-21 16:17:53,706 - INFO - 127.0.0.1 - - [21/Oct/2024 16:17:53] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-21 16:17:53,707 - INFO - 127.0.0.1 - - [21/Oct/2024 16:17:53] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-21 16:17:53,710 - INFO - 127.0.0.1 - - [21/Oct/2024 16:17:53] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -

@@ -159,9 +159,16 @@ class Account(db.Model):
     user = db.relationship('User', back_populates='account')
     created_at = db.Column(db.DateTime, default=datetime.now())
     balance = db.Column(db.Float, default=0.0)  # Holds the account balance
-    account_type = db.Column(db.String(50), default='User')  # Could be 'User' or 'Bank'
-    
-    user = db.relationship('User', back_populates='account')
+    account_type = db.Column(db.String(50), default='User')  # Could be 'User' or 'Bank'   
+
+
+    def deposit(self, amount):
+        """Deposit an amount into the account."""
+        if amount <= 0:
+            raise ValueError("Deposit amount must be positive.")
+        
+        self.balance += amount  # Update the balance
+        db.session.commit()  # Save the changes to the database
 
     def __repr__(self):
         return f'<Account {self.id}, Type: {self.account_type}, Balance: {self.balance}>'
@@ -176,6 +183,7 @@ class Deposit(db.Model):
     reference_no = db.Column(db.String(50), nullable=False, unique=True)
     account_type = db.Column(db.String(50), nullable=False)
     created_at = db.Column(db.DateTime, default=datetime.now())
+
     
 
     def __repr__(self):

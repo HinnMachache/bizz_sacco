@@ -1,0 +1,36 @@
+{% extends "admin/layout.html" %}
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='/css/members.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='/css/Adminstyles.css') }}">
+{% endblock %}
+{% block main_cont %}
+<!-- admin_pending_loans.html -->
+<h1>Approved Loan Applications</h1>
+
+<table class="members-table" id="membersTable">
+    <thead>
+        <tr>
+            <th>Loan ID</th>
+            <th>User ID</th>
+            <th>Loan Amount</th>
+            <th>Status</th>
+            <th>Reason</th>
+        </tr>
+    </thead>   
+    {% for loan in loans %}
+    <tbody id="membersBody">
+        <tr>
+            <td>{{ loan.id }}</td>
+            <td>{{ loan.user_id }}</td>
+            <td>{{ loan.loan_amount }}</td>
+            <td>{{ loan.status }}</td>
+            <td>{{ loan.rejection_reason }}</td>
+        </tr>
+    </tbody>
+    
+    {% endfor %}
+</table>
+{% endblock %}
+{% block script %}
+<script src="{{ url_for('static', filename='/js/script.js') }}"></script>
+{% endblock %}

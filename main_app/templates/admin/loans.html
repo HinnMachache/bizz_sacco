@@ -29,6 +29,7 @@
                 <a href="{{ url_for('admin_staff')}}" class="sidebar-item">Staff</a>
                 <a href="{{ url_for('admin_loans')}}" class="sidebar-item">Loans</a>
                 <a href="{{ url_for('admin_reports')}}" class="sidebar-item">Reports</a>
+                <a href="{{ url_for('deposit_admin')}}" class="sidebar-item">Make Deposits</a>
                 <a href="{{ url_for('admin_settings')}}" class="sidebar-item">Settings</a>
             </nav>
         </aside>
@@ -48,9 +49,9 @@
                     <div class="snapshot-card">Pending Loans: <span id="pendingLoans">{{ pending_loan_count }}</span></div>
                 {% endif %}
                 {% if approved_loan_count %}
-                    <div class="snapshot-card">Approved Loans: <span id="approvedLoans">{{ approved_loan_count }}</span></div>
+                <a href="{{ url_for('view_approved_loans')}}" class="no-style-link"><div class="snapshot-card">Approved Loans: <span id="approvedLoans">{{ approved_loan_count }}</span></div></a>
                 {% else %}
-                    <div class="snapshot-card">Approved Loans: <span id="approvedLoans">0</span></div>
+                <a href="{{ url_for('view_approved_loans')}}" class="no-style-link"><div class="snapshot-card">Approved Loans: <span id="approvedLoans">0</span></div></a>
                 {% endif %}
                 {% if rejected_loan_count %}
                 <div class="snapshot-card">Rejected Loans: <span id="rejectedLoans">{{ rejected_loan_count }}</span></div>

@@ -3,17 +3,19 @@ import os
 import logging
 from datetime import datetime
 from sqlalchemy.exc import IntegrityError
+import uuid
+from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy import func
 from functools import wraps
 from PIL import Image
 from main_app import app, db, bcrypt, mail
-from flask import render_template, flash, request, url_for, redirect, current_app, abort
+from flask import render_template, flash, request, url_for, redirect, current_app, abort, jsonify
 from main_app.models import (User, User_personalData, Admin, Admin_personalData, Notification,
                              LoanNotification, Loan, Disbursement, Transaction, Repayment, Account,
                              Withdrawals, Deposit)
 from main_app.forms import (RegistrationForm, LoginForm, ApplicationForm,
                             ResetPasswordRequestForm, ResetPasswordForm,
-                            ChangePasswordForm, UpdateAccountForm, AdminRegistrationForm, LoanForm)
+                            ChangePasswordForm, UpdateAccountForm, AdminRegistrationForm)
 from flask_login import login_user, logout_user, current_user, login_required
 from flask_mail import Message
 from main_app import db
@@ -218,11 +220,14 @@ def admin_index():
     notifications = Notification.query.filter_by(is_read=False).all()
     pending_loan_count = Loan.query.filter_by(status='Pending').count()
     approved_loan_count = Loan.query.filter_by(status='Approved').count()
+    disbursed_loan_count = Loan.query.filter_by(status='Disbursed').count()
+    rejected_loan_count = Loan.query.filter_by(status='Rejected').count()
     loan_notifications = LoanNotification.query.filter_by(is_processed=False).all()
 
     return render_template("admin/index.html", staff_count=staff_count, member_count=member_count,
                            notifications=notifications, loan_notifications=loan_notifications,
                            approved_loan_count=approved_loan_count,pending_loan_count=pending_loan_count,
+                           disbursed_loan_count=disbursed_loan_count, rejected_loan_count=rejected_loan_count,
                            title="Admin Dashboard", logo_name="Admin Panel")
 
 
@@ -273,6 +278,30 @@ def admin_loans():
 def view_pending_loans():   
     loans = Loan.query.filter_by(status='Pending').all()
     return render_template('admin/pending_loans.html', loans=loans)
+
+
+@app.route('/admin/approved_loans')
+@role_required('admin')
+@login_required
+def view_approved_loans():   
+    loans = Loan.query.filter_by(status='Approved').all()
+    return render_template('admin/approved_loans.html', loans=loans)
+
+
+@app.route('/admin/disbursed_loans')
+@role_required('admin')
+@login_required
+def view_disbursed_loans():   
+    loans = Loan.query.filter_by(status='Disbursed').all()
+    return render_template('admin/disbursed_loans.html', loans=loans)
+
+
+@app.route('/admin/rejected_loans')
+@role_required('admin')
+@login_required
+def view_rejected_loans():   
+    loans = Loan.query.filter_by(status='Rejected').all()
+    return render_template('admin/rejected_loans.html', loans=loans)
 
 
 @app.route('/admin/approve_loan/<int:loan_id>', methods=['POST'])
@@ -339,7 +368,7 @@ def reject_loan(loan_id):
     flash('Loan has been rejected.', 'danger')
 
     return redirect(url_for('view_pending_loans'))
-    
+
 
 
 # Loan Section
@@ -407,6 +436,17 @@ def admin_staff():
                            title="Staff Management", logo_name="Staff Management")
 
 
+@app.route('/admin/initial_deposit', methods=['POST', 'GET'])
+@role_required('admin')
+@login_required
+def initial_deposit():
+    bank_account = Account(user_id=current_user.admin_id, balance=10040000.0, account_type='Bank')
+    db.session.add(bank_account)
+    db.session.commit()
+
+    return ("Deposited to the Bank Account")
+
+
 @app.route("/admin/settings")
 @login_required
 @role_required('admin')
@@ -418,10 +458,9 @@ def admin_settings():
 @login_required
 @role_required('admin')
 def admin_reports():
+    loans = Loan.query.count()
     member_count = User.query.count()
     approved_loan_count = Loan.query.filter_by(status='Approved').count()
-    loans = Loan.query.count()
-
     return render_template("admin/reports.html", title="Reports - Admin Dashboard", logo_name="Admin Panel",
                            members=member_count, approved_loan_count=approved_loan_count, loans=loans )
     
@@ -580,9 +619,9 @@ def logout():
 
 
 def get_next_ref_id():
-    current_max = db.session.query(func.max(Deposit.reference_no)).scalar()
-    next_id = int(current_max.split('_')[1]) + 1 if current_max else 1
-    return next_id
+    # Take only the first 8 characters of uuid4() and concatenate with "Ref_"
+    return f'{str(uuid.uuid4())[:8]}'
+
 
 
 @app.route("/deposit", methods=['POST', 'GET'])
@@ -596,22 +635,64 @@ def deposit():
             account_type = request.form['account']
             reference_no = f'Ref_{get_next_ref_id()}'
 
-            user_account = Account.query.filter_by(user_id=current_user.user_id).first()
-            user_account.balance += deposit_amount
+            if account_type == 'User':
+                user_account = Account.query.filter_by(user_id=current_user.user_id).first()
+
+                if user_account:
+                    user_account.balance += deposit_amount
+                    db.session.commit()           
                 
-            # Record the deposit transaction
+                # Record the deposit transaction
+                    
+                deposit = Deposit(user_id=current_user.user_id, amount=deposit_amount,
+                                deposit_method=deposit_method, account_type=account_type,
+                                reference_no=reference_no)
                 
-            deposit = Deposit(user_id=current_user.user_id, amount=deposit_amount,
-                            deposit_method=deposit_method, account_type=account_type,
-                            reference_no=reference_no)
-            
-            db.session.add(deposit)
-            db.session.commit()
+                db.session.add(deposit)
+                db.session.commit()
+
+
+
     elif request.method == 'GET':
         user_deposits = []
         user_deposits = Deposit.query.filter_by(user_id=current_user.user_id).all()
 
     return render_template("user/deposits.html", title="Deposits | SACCO Dashboard",
+                           deposits=user_deposits)
+
+
+# admin Deposit
+
+@app.route('/admin/deposit', methods=['POST', 'GET'])
+@login_required
+@role_required('admin')
+def deposit_admin():
+    user_deposits = []
+    if request.method == 'POST':
+        if 'amount' in request.form and 'deposit_method' in request.form and 'account' in request.form:
+            deposit_amount = float(request.form['amount'])
+            deposit_method = request.form['deposit_method']
+            account_type = request.form['account']
+            reference_no = f'Ref_{get_next_ref_id()}'
+
+            bank_account = Account.query.filter_by(account_type='Bank').first()
+            
+            if bank_account:
+                bank_account.balance += deposit_amount  # Update Bank account balance
+                db.session.commit()
+
+            # Record the deposit transaction for the Bank account
+            deposit = Deposit(user_id=current_user.admin_id, amount=deposit_amount,
+                                deposit_method=deposit_method, account_type=account_type,
+                                reference_no=reference_no)
+            db.session.add(deposit)
+            db.session.commit()
+            return redirect(url_for('admin_index'))
+    elif request.method == 'GET':
+        user_deposits = []
+        user_deposits = Deposit.query.filter_by(user_id=current_user.admin_id).all()
+
+    return render_template("admin/deposit_form.html", title="Deposits | SACCO Dashboard",
                            deposits=user_deposits)
 
 
@@ -738,6 +819,7 @@ def reset_request():
         flash('An email with reset instuction has been sent to your email', 'info') 
         return redirect(url_for('login'))
      return render_template('user/reset_request.html', form=form)
+
 
 @app.route("/reset_password/<token>", methods=['POST', 'GET'])
 def reset_token(token):
