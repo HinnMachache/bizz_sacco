@@ -296,6 +296,14 @@ def view_disbursed_loans():
     return render_template('admin/disbursed_loans.html', loans=loans)
 
 
+@app.route('/admin/total_loans')
+@role_required('admin')
+@login_required
+def view_total_loans():   
+    loans = Loan.query.all()
+    return render_template('admin/total_loans.html', loans=loans)
+
+
 @app.route('/admin/rejected_loans')
 @role_required('admin')
 @login_required
@@ -368,7 +376,6 @@ def reject_loan(loan_id):
     flash('Loan has been rejected.', 'danger')
 
     return redirect(url_for('view_pending_loans'))
-
 
 
 # Loan Section
@@ -951,11 +958,15 @@ def calculate_dti(monthly_debt, monthly_income):
 
 
 MAX_DTI = 0.4  # 40% Debt-to-Income Ratio
-MIN_INCOME = 25000  # Minimum annual income for loan
+MIN_INCOME = 5000  # Minimum annual income for loan
 
 # Function to check eligibility
 def check_loan_eligibility(user, loan_amount, monthly_debt):
-    monthly_income = user.personal_data.income / 12  # Convert annual income to monthly
+    try:
+        monthly_income = user.personal_data.income / 12  # Convert annual income to monthly
+    except AttributeError:
+        return False, "Please complete your registration before applying for a loan."
+    
     dti = calculate_dti(monthly_debt, monthly_income)
 
     if dti > MAX_DTI:

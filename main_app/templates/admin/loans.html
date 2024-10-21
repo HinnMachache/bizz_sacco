@@ -39,14 +39,14 @@
             
             <section class="dashboard-snapshot">
                 {% if loans %}
-                    <div class="snapshot-card">Total Loans: <span id="totalLoans">{{ loans }}</span></div>
+                <a href="{{ url_for('view_total_loans')}}" class="no-style-link"><div class="snapshot-card">Total Loans: <span id="totalLoans">{{ loans }}</span></div></a>
                 {% else %}
-                <div class="snapshot-card">Total Loans: <span id="totalLoans">0</span></div>
+                <a href="{{ url_for('view_total_loans')}}" class="no-style-link"><div class="snapshot-card">Total Loans: <span id="totalLoans">0</span></div></a>
                 {% endif %}
                 {% if pending_loan_count %}
                 <a href="{{ url_for('view_pending_loans')}}" class="no-style-link-link"><div class="snapshot-card">Pending Loans: <span id="pendingLoans">{{ pending_loan_count }}</span></div></a>
                 {% else %}
-                    <div class="snapshot-card">Pending Loans: <span id="pendingLoans">{{ pending_loan_count }}</span></div>
+                <a href="{{ url_for('view_pending_loans')}}" class="no-style-link"><div class="snapshot-card">Pending Loans: <span id="pendingLoans">{{ pending_loan_count }}</span></div></a>
                 {% endif %}
                 {% if approved_loan_count %}
                 <a href="{{ url_for('view_approved_loans')}}" class="no-style-link"><div class="snapshot-card">Approved Loans: <span id="approvedLoans">{{ approved_loan_count }}</span></div></a>
@@ -54,9 +54,9 @@
                 <a href="{{ url_for('view_approved_loans')}}" class="no-style-link"><div class="snapshot-card">Approved Loans: <span id="approvedLoans">0</span></div></a>
                 {% endif %}
                 {% if rejected_loan_count %}
-                <div class="snapshot-card">Rejected Loans: <span id="rejectedLoans">{{ rejected_loan_count }}</span></div>
+                <a href="{{ url_for('view_rejected_loans')}}" class="no-style-link"><div class="snapshot-card">Rejected Loans: <span id="rejectedLoans">{{ rejected_loan_count }}</span></div></a>
                 {% else %}
-                <div class="snapshot-card">Rejected Loans: <span id="rejectedLoans">0</span></div>
+                <a href="{{ url_for('view_rejected_loans')}}" class="no-style-link"><div class="snapshot-card">Rejected Loans: <span id="rejectedLoans">0</span></div></a>
                 {% endif %}                                  
                     
             </section>
