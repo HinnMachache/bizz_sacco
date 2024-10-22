@@ -130,7 +130,7 @@
                 <div class="card">
                     <h3>Account Balance</h3>
                     {% if user_balance %}                   
-                        <p class="balance acc-balance">KES {{ user_balance.balance }}</p>
+                        <p class="balance acc-balance">KES {{ '{:.2f}'.format(user_balance.balance) }}</p>
                     {% else %}
                         <p class="balance acc-balance">KES 0</p>
                     {% endif %}
@@ -152,22 +152,25 @@
                         onclick="showPopup('Deposit', 'Aug 20, 2024', 'KES 5,000.00', 'Deposit made to savings account.')">
                         <i class="fas fa-arrow-up"></i>
                         <div class="transaction-info">
-                            <div class="transaction-name">Deposit</div>
-                            <div class="transaction-date">Aug 20, 2024</div>
-                            <div class="transaction-amount">KES 5,000.00</div>
-                            <div class="transaction-type">Deposit</div>
+                            <div class="transaction-name">{{ first_transaction.transaction_type }}</div>
+                            <div class="transaction-date">{{ first_transaction.transaction_date.strftime('%b %d, %Y') }}</div>
+                            <div class="transaction-amount">KES {{ first_transaction.amount }}</div>
+                            <div class="transaction-type">{{ first_transaction.transaction_type }}</div>
                         </div>
                     </li>
-                    <li class="transaction-card withdrawal"
-                        onclick="showPopup('Loan Payment', 'Aug 15, 2024', 'KES 10,000.00', 'Loan payment made.')">
-                        <i class="fas fa-arrow-down"></i>
-                        <div class="transaction-info">
-                            <div class="transaction-name">Loan Payment</div>
-                            <div class="transaction-date">Aug 15, 2024</div>
-                            <div class="transaction-amount">KES 10,000.00</div>
-                            <div class="transaction-type">Withdrawal</div>
-                        </div>
-                    </li>
+                    {% if second_transaction %}
+                        <li class="transaction-card withdrawal"
+                            onclick="showPopup('Loan Payment', 'Aug 15, 2024', 'KES 10,000.00', 'Loan payment made.')">
+                            <i class="fas fa-arrow-down"></i>
+                            
+                            <div class="transaction-info">
+                                <div class="transaction-name">{{ second_transaction.transaction_type }}</div>
+                                <div class="transaction-date">{{ second_transaction.transaction_date.strftime('%b %d, %Y') }}</div>
+                                <div class="transaction-amount">KES {{ second_transaction.amount }}</div>
+                                <div class="transaction-type">{{ second_transaction.transaction_type }}</div>
+                            </div>
+                        </li>
+                    {% endif %}
                     <!-- Add more transactions here -->
                 </ul>
                

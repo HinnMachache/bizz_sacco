@@ -7,7 +7,7 @@
 
     <!-- Filter Form -->
     <div class="statements-filter">
-        <form action="filter-statements.php" method="post">
+        <form action="{{ url_for('filter_statements') }}" method="post">
             <label for="start-date">Start Date:</label>
             <input type="date" id="start-date" name="start-date" required>
             
@@ -20,7 +20,7 @@
 
     <!-- Download PDF -->
     <div class="download-pdf">
-        <button onclick="downloadPDF()">Download Statement PDF</button>
+        <a href="{{ url_for('download_statement') }}" class="btn btn-primary"><button>Download Statement PDF</button></a>
     </div>
 
     <!-- Statements Table -->
@@ -37,13 +37,13 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- Example rows; these should be dynamically populated from your backend -->
-                {% for transaction in transactions %}
+                <!-- Use transactions.items for pagination -->
+                {% for transaction in transactions.items %}
                 <tr>
                     <td>{{ transaction.transaction_date.strftime('%b %d, %Y') }}</td>
                     <td>{{ transaction.transaction_type }}</td>
                     <td>KSH {{ transaction.amount }}</td>
-                    <td>KSH {{ transaction.balance }}</td>
+                    <td>KSH {{ '{:.2f}'.format(transaction.balance) }}</td>
                     <td>{{ transaction.reference_no }}</td>
                 </tr>
                 {% endfor %}
@@ -53,23 +53,23 @@
     </div>
     
 </div>
-<nav aria-label="Page navigation"></nav>
+<nav aria-label="Page navigation">
     <ul class="pagination">
         {% if transactions.has_prev %}
             <li class="page-item">
-                <a class="page-link" href="{{ url_for('statements', page=transactions.prev_num) }}">Previous</a>
+                <a class="page-link" href="{{ url_for('filter_statements', page=transactions.prev_num) }}">Previous</a>
             </li>
         {% endif %}
         
         {% for page_num in transactions.iter_pages() %}
             <li class="page-item {% if page_num == transactions.page %}active{% endif %}">
-                <a class="page-link" href="{{ url_for('statements', page=page_num) }}">{{ page_num }}</a>
+                <a class="page-link" href="{{ url_for('filter_statements', page=page_num) }}">{{ page_num }}</a>
             </li>
         {% endfor %}
         
         {% if transactions.has_next %}
             <li class="page-item">
-                <a class="page-link" href="{{ url_for('statements', page=transactions.next_num) }}">Next</a>
+                <a class="page-link" href="{{ url_for('filter_statements', page=transactions.next_num) }}">Next</a>
             </li>
         {% endif %}
     </ul>

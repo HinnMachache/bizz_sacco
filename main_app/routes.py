@@ -4,13 +4,14 @@ import logging
 from datetime import datetime, timedelta
 from apscheduler.schedulers.background import BackgroundScheduler
 from sqlalchemy.exc import IntegrityError
+from io import BytesIO
 import uuid
-from sqlalchemy.exc import SQLAlchemyError
-from sqlalchemy import func
+from flask_weasyprint import HTML, render_pdf
+from sqlalchemy import func, desc
 from functools import wraps
 from PIL import Image
 from main_app import app, db, bcrypt, mail
-from flask import render_template, flash, request, url_for, redirect, current_app, abort, jsonify
+from flask import render_template, flash, request, url_for, redirect, current_app, abort, send_file
 from main_app.models import (User, User_personalData, Admin, Admin_personalData, Notification,
                              LoanNotification, Loan, Disbursement, Transaction, Repayment, Account,
                              Withdrawals, Deposit)
@@ -498,9 +499,17 @@ def admin_reports():
 @login_required
 def home():
     user_balance = Account.query.filter_by(user_id=current_user.user_id).first()
-    loan_balance = Loan.query.filter_by(user_id=current_user.user_id).first()
+    loan_balance = Loan.query.filter_by(user_id=current_user.user_id).order_by(desc(Loan.start_date)).first()
+    recent_transactions = Transaction.query.filter_by(user_id=current_user.user_id) \
+        .order_by(desc(Transaction.transaction_date)).limit(2).all()
+
+    # Accessing individual transactions
+    if recent_transactions:
+        first_transaction = recent_transactions[0]  # Most recent transaction
+        second_transaction = recent_transactions[1] if len(recent_transactions) > 1 else None
     return render_template("user/overview.html", title="Overview | SACCO Dashboard",
-                           user_balance=user_balance, loan_balance=loan_balance)
+                           user_balance=user_balance, loan_balance=loan_balance, first_transaction=first_transaction,
+                           second_transaction=second_transaction)
 
 
 @app.route('/apply_for_loan', methods=['POST'])
@@ -544,6 +553,30 @@ def apply_for_loan():
 
     flash('Loan application submitted successfully!')
     return redirect(url_for('loan_application_status'))
+
+
+@app.route('/filter-statements', methods=['POST', 'GET'])
+@login_required
+def filter_statements():
+    start_date = request.form.get('start-date')
+    end_date = request.form.get('end-date')
+
+    if not start_date or not end_date:
+        flash('Both start and end dates are required.')
+        return redirect(url_for('statements'))
+
+    try:
+        start_date = datetime.strptime(start_date, '%Y-%m-%d')
+        end_date = datetime.strptime(end_date, '%Y-%m-%d')
+
+        # Query your statements based on the date range
+        statements = Transaction.query.filter(Transaction.transaction_date.between(start_date, end_date)).all()
+
+        return render_template('user/statements.html', transactions=statements)
+
+    except Exception as e:
+        flash(f'An error occurred while filtering statements.: {e}')
+        return redirect(url_for('statements'))
 
 
 def is_loan_overdue(loan):
@@ -743,6 +776,11 @@ def register():
         db.session.commit()
 
         user_account = Account(user_id=user.user_id, balance=500.0, account_type='User')
+        transaction = Transaction(user_id=user.user_id, transaction_type='Deposit',
+                                          amount=500, method='Bank Deposit',
+                                          account_type='User', balance=500,
+                                          reference_no=f'Ref_{str(uuid.uuid4())[:8]}')
+        db.session.add(transaction)
         db.session.add(user_account)
         db.session.commit()
 
@@ -791,7 +829,6 @@ def get_next_ref_id():
     return f'{str(uuid.uuid4())[:8]}'
 
 
-from flask import render_template, request, redirect, url_for, flash
 
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
@@ -898,9 +935,7 @@ def deposit_admin():
 #     return render_template("user/transactions.html", title="Transactions | SACCO Dashboard")
 
 def get_next_with_ref_id():
-    current_max = db.session.query(func.max(Withdrawals.reference_no)).scalar()
-    next_id = int(current_max.split('_')[1]) + 1 if current_max else 1
-    return next_id
+    return f'{str(uuid.uuid4())[:8]}'
 
 
 @app.route("/withdrawals", methods=['POST', 'GET'])
@@ -983,6 +1018,28 @@ def statements():
     transactions = Transaction.query.filter_by(user_id=current_user.user_id).order_by(Transaction.transaction_date.desc()).paginate(page=page, per_page=per_page) 
     return render_template('user/statements.html', transactions=transactions, title="Statements | SACCO Dashboard")
 
+
+@app.route('/download_statement', methods=['GET'])
+@login_required
+def download_statement():
+    # Fetch the user's transactions
+    transactions = Transaction.query.filter_by(user_id=current_user.user_id).all()
+    current_date = datetime.now().strftime('%B %d, %Y')
+
+    # Render the PDF
+    html = render_template('user/pdf_statement.html', transactions=transactions, current_date=current_date)
+    
+    # Create a BytesIO object to hold the PDF
+    pdf_io = BytesIO()
+    
+    # Write the PDF to the BytesIO object
+    HTML(string=html).write_pdf(pdf_io)
+    
+    # Move the cursor to the beginning of the BytesIO object
+    pdf_io.seek(0)
+
+    # Send the PDF as a response
+    return send_file(pdf_io, download_name='statement.pdf', as_attachment=True, mimetype='application/pdf')
 
 @app.route("/news", methods=['POST', 'GET'])
 @login_required
