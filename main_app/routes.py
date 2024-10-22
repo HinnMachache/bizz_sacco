@@ -419,8 +419,14 @@ def disburse_loan(loan_id):
 
             # Update loan status to disbursed
             loan.status = 'Disbursed'
+
+            notification = Notification(user_id=loan.user_id,
+                                        message=f'''Your loan of Ksh {loan.loan_amount} has been disbursed.
+            Total amount payable is Ksh {loan.total_amount_due}. And should be cleared within {loan.loan_term} month(s).''',
+                                        notification_type='Loan Update')
             
             # Commit the changes
+            db.session.add(notification)
             db.session.add(transaction)
             db.session.add(disbursement)
             db.session.commit()

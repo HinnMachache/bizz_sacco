@@ -6,20 +6,16 @@
     <!-- Notifications List -->
     <div class="notification-list">
         <div class="notification-item">
-            <i class="fas fa-info-circle"></i>
-            <div class="notification-content">
-                <h3>System Update</h3>
-                <p>Your system has been updated to the latest version.</p>
-                <span class="notification-date">Sep 8, 2024</span>
-            </div>
-        </div>
-        <div class="notification-item">
             <i class="fas fa-credit-card"></i>
+            {% if current_user.disburse_notifications %}
             <div class="notification-content">
-                <h3>Payment Received</h3>
-                <p>Payment of KES 5,000.00 has been received.</p>
-                <span class="notification-date">Sep 7, 2024</span>
+                {% for notification in current_user.disburse_notifications %}
+                    <h3>{{ notification.notification_type }}</h3>
+                    <p>{{ notification.message }}</p>
+                    <span class="notification-date">{{ notification.created_at.strftime('%Y-%m-%d') }}</span>
+                {% endfor %}               
             </div>
+            {% endif %}
         </div>
         <!-- More notifications can be added here -->
     </div>

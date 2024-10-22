@@ -27,6 +27,7 @@ class User(db.Model, UserMixin):
     withdrawals = db.relationship('Withdrawals', back_populates='user', uselist=False)
     deposits = db.relationship('Deposit', back_populates='user', uselist=False)
     transactions = db.relationship('Transaction', back_populates='user', uselist=False)
+    disburse_notifications = db.relationship('DisbursementNotification', back_populates='user')
     # personal_data_submitted = db.Column(db.Boolean, default=False)
 
     def to_dict(self):
@@ -145,6 +146,15 @@ class Notification(db.Model):
     created_at = db.Column(db.DateTime, default=datetime.now())
     is_read = db.Column(db.Boolean, default=False)
 
+
+class DisbursementNotification(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('user.user_id'))
+    user = db.relationship('User', back_populates='disburse_notifications')
+    created_at = db.Column(db.DateTime, default=datetime.now())
+    is_read = db.Column(db.Boolean, default=False)
+    message = db.Column(db.String(255), nullable=False)
+    notification_type = db.Column(db.String(50), nullable=False)
 
 # Show newly submitted Loan to admin
 class LoanNotification(db.Model):
