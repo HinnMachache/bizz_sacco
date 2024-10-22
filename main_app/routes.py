@@ -608,7 +608,14 @@ def repay_loan():
         # Ensure the current user has sufficient balance
         if payment_amount > 0 and current_user.account.balance >= payment_amount:
             current_user.account.balance -= payment_amount
-            loan.amount_paid += payment_amount
+
+            # Calculate how much of the payment should be applied to the loan
+            if loan.amount_paid + payment_amount > loan.total_amount_due:
+                excess_payment = (loan.amount_paid + payment_amount) - loan.total_amount_due
+                loan.amount_paid = loan.total_amount_due  # Set loan balance to zero
+                current_user.account.balance += excess_payment  # Add excess back to user's balance
+            else: 
+                loan.amount_paid += payment_amount
 
             bank_account = Account.query.filter_by(account_type='Bank').first() 
             if bank_account:
@@ -619,7 +626,7 @@ def repay_loan():
 
             # Record Repayment Transaction
 
-            transaction = Transaction(user_id=loan_id, transaction_type='Loan Repayment',
+            transaction = Transaction(user_id=current_user.user_id, transaction_type='Loan Repayment',
                                           amount=payment_amount, method='Bank Transfer',
                                           account_type='User', balance=current_user.account.balance,
                                           reference_no=f'Ref_{str(uuid.uuid4())[:8]}')
@@ -971,8 +978,9 @@ def withdrawals():
 @login_required
 def statements():
     # Merge deposits and withdrawals
-    transactions = Transaction.query.filter_by(user_id=current_user.id).order_by(Transaction.created_at.desc()).all()
-    
+    page = request.args.get('page', 1, type=int)
+    per_page=10
+    transactions = Transaction.query.filter_by(user_id=current_user.user_id).order_by(Transaction.transaction_date.desc()).paginate(page=page, per_page=per_page) 
     return render_template('user/statements.html', transactions=transactions, title="Statements | SACCO Dashboard")
 
 

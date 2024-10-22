@@ -26,6 +26,7 @@ class User(db.Model, UserMixin):
     account = db.relationship('Account', back_populates='user', uselist=False)
     withdrawals = db.relationship('Withdrawals', back_populates='user', uselist=False)
     deposits = db.relationship('Deposit', back_populates='user', uselist=False)
+    transactions = db.relationship('Transaction', back_populates='user', uselist=False)
     # personal_data_submitted = db.Column(db.Boolean, default=False)
 
     def to_dict(self):
@@ -233,7 +234,7 @@ class Loan(db.Model):
 class Transaction(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.user_id'), nullable=False)
-    user = db.relationship('User', back_populates='transactions')
+    user = db.relationship('User', back_populates='transactions', uselist=False)
     transaction_type = db.Column(db.String(50))  # 'deposit', 'repayment', 'withdraw', 'disbursement'
     amount = db.Column(db.Float, nullable=False)
     method = db.Column(db.String(50), nullable=False)
@@ -255,7 +256,7 @@ class Disbursement(db.Model):
 class Repayment(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     loan_id = db.Column(db.Integer, db.ForeignKey('loan.id'))
-    loan = db.relationship('Loan', back_populates='repayment')
+    loan = db.relationship('Loan', back_populates='repayment', uselist=False)
     amount_paid = db.Column(db.Float, nullable=False)
     payment_date = db.Column(db.DateTime, default=datetime.now())
     destination_account = db.Column(db.String(50))

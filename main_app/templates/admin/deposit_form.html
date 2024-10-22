@@ -11,7 +11,7 @@
     <!-- Deposit Form -->    <div class="deposit-form">
 
         <h2>Add New Deposit</h2>
-        <form action="{{ url_for('deposit') }}" method="post">
+        <form action="{{ url_for('deposit_admin') }}" method="post">
             <label for="amount">Deposit Amount:</label>
             <input type="text" id="amount" name="amount" placeholder="KES 500.00" required>
 
@@ -26,7 +26,7 @@
             <label for="account">Deposit To:</label>
             <select id="account" name="account" required>
                 <option value="">Select Account</option>
-                <option value="User">User</option>
+                <option value="Bank">Bank</option>
             </select>
 
             <button type="submit">Submit Deposit</button>
@@ -71,22 +71,7 @@
         </table>
     </div>
 
-    <!-- Deposit Summary Section -->
-    <div class="deposit-summary">
-        <h2>Deposit Summary</h2>
-        <div class="summary-item">
-            <h3>Total Deposits (This Month)</h3>
-            <p><strong>KES 15,000.00</strong></p>
-        </div>
-        <div class="summary-item">
-            <h3>Total Deposits (Last Month)</h3>
-            <p><strong>KES 12,000.00</strong></p>
-        </div>
-        <div class="summary-item">
-            <h3>Average Deposit Amount</h3>
-            <p><strong>KES 7,500.00</strong></p>
-        </div>
-    </div>
+
 </div>
 {% endblock %}
 {% block script %}
