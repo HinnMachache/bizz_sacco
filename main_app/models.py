@@ -225,6 +225,10 @@ class Loan(db.Model):
     def set_initial_due_date(self):
         self.next_due_date = self.start_date + timedelta(days=30)  # First due date is 30 days after the loan is issued
 
+    @property
+    def rounded_total_amount_due(self):
+        return round(self.total_amount_due, 2)
+
 
 class Transaction(db.Model):
     id = db.Column(db.Integer, primary_key=True)

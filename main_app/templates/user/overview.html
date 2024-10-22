@@ -133,7 +133,11 @@
                 </div>
                 <div class="card">
                     <h3>Loan Balance</h3>
-                    <p class="balance loan-balance">KES 150,000.00</p>
+                    {% if loan_balance %}                   
+                        <p class="balance loan-balance">KES {{ '{:.2f}'.format(loan_balance.total_amount_due) }}</p>
+                    {% else %}
+                        <p class="balance loan-balance">KES 0</p>
+                    {% endif %}
                 </div>
                 <div class="card">
                     <h3>Savings</h3>

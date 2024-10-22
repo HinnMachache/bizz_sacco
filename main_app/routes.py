@@ -269,8 +269,10 @@ def admin_loans():
     pending_loan_count = Loan.query.filter_by(status='Pending').count()
     approved_loan_count = Loan.query.filter_by(status='Approved').count()
     rejected_loan_count = Loan.query.filter_by(status='Rejected').count()
+    disbursed_loan_count = Loan.query.filter_by(status='Disbursed').count()
     return render_template("admin/loans.html", loans=loans, pending_loan_count=pending_loan_count,
-                           approved_loan_count=approved_loan_count, rejected_loan_count=rejected_loan_count)
+                           approved_loan_count=approved_loan_count, rejected_loan_count=rejected_loan_count,
+                           disbursed_loan_count=disbursed_loan_count)
 
 
 @app.route('/admin/pending_loans')
@@ -492,7 +494,7 @@ def home():
     user_balance = Account.query.filter_by(user_id=current_user.user_id).first()
     loan_balance = Loan.query.filter_by(user_id=current_user.user_id).first()
     return render_template("user/overview.html", title="Overview | SACCO Dashboard",
-                           user_balance=user_balance)
+                           user_balance=user_balance, loan_balance=loan_balance)
 
 
 @app.route('/apply_for_loan', methods=['POST'])
@@ -570,42 +572,57 @@ def update_due_date(loan):
 @app.route('/repay_loan', methods=['POST', 'GET'])
 @login_required
 def repay_loan():
-    loan_id = request.form.get('loan_id')
+    if request.method == 'POST':
+        loan_id = request.form.get('loan_id')
+        payment_amount = request.form.get('payment_amount')  # Get payment amount
 
-    if not loan_id:
-        flash('No loan associated with this payment. Please apply for a loan first.')
-        return redirect(url_for('home'))  # Redirect to loan status page
+        if not loan_id:
+            flash('No loan associated with this payment. Please apply for a loan first.')
+            return redirect(url_for('home'))
 
-    loan = Loan.query.get(loan_id)
+        loan = Loan.query.get(loan_id)
 
-    if not loan:
-        flash('Loan does not exist.')
+        if not loan:
+            flash('Loan does not exist.')
+            return redirect(url_for('home'))
+
+        # Ensure the payment_amount is valid
+        if payment_amount is None or not payment_amount.isdigit():
+            flash('Invalid payment amount.')
+            return redirect(url_for('home'))
+        
+        payment_amount = float(payment_amount)  # Convert only after validation
+
+        # Ensure the loan has been disbursed before allowing repayment
+        if loan.status != 'Disbursed':
+            flash('You cannot make payments for this loan as it has not been disbursed yet.')
+            return redirect(url_for('loan_application_status'))
+
+        # Continue with payment processing only if the loan is disbursed
+        if payment_amount > 0 and current_user.account.balance >= payment_amount:
+            current_user.account.balance -= payment_amount
+            loan.amount_paid += payment_amount
+
+            loan.next_due_date += timedelta(days=30)
+
+            if loan.amount_paid >= loan.total_amount_due:
+                loan.status = 'Repaid'  # Mark loan as repaid if fully paid off
+
+            try:
+                db.session.commit()
+                flash('Payment successful!')
+            except Exception as e:
+                db.session.rollback()  # Rollback on error
+                flash('Error processing payment. Please try again.')
+        else:
+            flash('Invalid payment amount or insufficient balance.')
+
         return redirect(url_for('home'))
-    
-    payment_amount = float(request.get('payment_amount'))
-    
-    
-    # Ensure the loan has been disbursed before allowing repayment
-    if loan.status != 'Disbursed':
-        flash('You cannot make payments for this loan as it has not been disbursed yet.')
-        return redirect(url_for('loan_status'))
-    
-    # Continue with payment processing only if the loan is disbursed
-    if payment_amount > 0 and current_user.account.balance >= payment_amount:
-        current_user.account.balance -= payment_amount
-        loan.amount_paid += payment_amount
-        
-        loan.next_due_date += timedelta(days=30)
 
-        if loan.amount_paid >= loan.total_amount_due:
-            loan.status = 'Repaid'  # Mark loan as repaid if fully paid off
-        
-        db.session.commit()
-        flash('Payment successful!')
-    else:
-        flash('Invalid payment amount or insufficient balance.')
-    
-    return redirect(url_for('home'))
+
+    loan = Loan.query.filter_by(user_id=current_user.user_id).first()  # Get the user's loan
+    return render_template('user/repayment.html', loan=loan)
+
 
 
 def send_payment_reminder(loan):

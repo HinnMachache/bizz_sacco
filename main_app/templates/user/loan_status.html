@@ -1,19 +1,39 @@
 {% extends "user/layout.html" %}
 {% block content %}
 <!-- loan_status.html -->
-<h2>Your Loan Applications</h2>
-<ul>
-    {% for loan in loans %}
-        {% if loan.rejection_reason %}
-        <li>
-            Loan Amount: KSH. {{ loan.loan_amount }} | Status: {{ loan.status }} | Reason: {{ loan.rejection_reason }} |Purpose: {{ loan.purpose }}
-        </li>
-        {% else %}
-        <li>
-            Loan Amount: KSH. {{ loan.loan_amount }} | Status: {{ loan.status }} | Purpose: {{ loan.purpose }}
-        </li>
-        {% endif %}
-    {% endfor %}
-</ul>
+<div class="recent-deposits">
+    <h2>Your Loan Applications</h2>
+    <table class="deposit-history">
+        <thead>
+            <tr>
+                <th>Loan Amount</th>
+                <th>Status</th>
+                <th>Reason</th>
+                <th>Purpose</th>
+            </tr>
+        </thead>
+        <tbody>
+            <ul>
+                {% for loan in loans %}
+                <tr>
+                    {% if loan.rejection_reason %}
+                    <td>KSH. {{ loan.loan_amount }}</td>
+                    <td>{{ loan.status }}</td>
+                    <td>{{ loan.rejection_reason }}</td>
+                    <td>{{ loan.purpose }}</td>
+                    {% else %}
+                    <td>KSH. {{ loan.loan_amount }}</td>
+                    <td>{{ loan.status }}</td>
+                    <td>{{ loan.rejection_reason }}</td>
+                    <td>{{ loan.purpose }}</td>
+                    {% endif %}
+                </tr>
+                   
+                {% endfor %}
+            </ul>
+        </tbody>
+    </table>
+</div>
+
 
 {% endblock %}
