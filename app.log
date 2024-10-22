@@ -11093,3 +11093,18 @@
 2024-10-22 14:07:16,510 - INFO - 127.0.0.1 - - [22/Oct/2024 14:07:16] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
 2024-10-22 14:07:16,522 - INFO - 127.0.0.1 - - [22/Oct/2024 14:07:16] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
 2024-10-22 14:07:16,523 - INFO - 127.0.0.1 - - [22/Oct/2024 14:07:16] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 14:14:49,834 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 14:14:50,089 - INFO -  * Restarting with stat
+2024-10-22 14:14:50,967 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 14:14:50,968 - DEBUG - /etc/localtime found
+2024-10-22 14:14:50,969 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 14:14:50,971 - INFO - Scheduler started
+2024-10-22 14:14:50,971 - DEBUG - Looking for jobs to run
+2024-10-22 14:14:50,978 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 14:14:50,996 - WARNING -  * Debugger is active!
+2024-10-22 14:14:50,996 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 14:14:52,037 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 14:14:52,256 - INFO -  * Restarting with stat

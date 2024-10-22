@@ -33,23 +33,20 @@
                     <th>Description</th>
                     <th>Amount</th>
                     <th>Balance</th>
+                    <th>Reference No.</th>
                 </tr>
             </thead>
             <tbody>
                 <!-- Example rows; these should be dynamically populated from your backend -->
+                {% for transaction in transactions %}
                 <tr>
-                    <td>Aug 25, 2024</td>
-                    <td>Deposit</td>
-                    <td>KES 10,000.00</td>
-                    <td>KES 20,000.00</td>
+                    <td>{{ transaction.transaction_date.strftime('%b %d, %Y') }}</td>
+                    <td>{{ transaction.transaction_type }}</td>
+                    <td>${{ transaction.amount }}</td>
+                    <td>${{ transaction.balance }}</td>
+                    <td>${{ transaction.reference_no }}</td>
                 </tr>
-                <tr>
-                    <td>Aug 22, 2024</td>
-                    <td>Withdrawal</td>
-                    <td>KES 5,000.00</td>
-                    <td>KES 10,000.00</td>
-                </tr>
-                <!-- Add more rows as needed -->
+                {% endfor %}
             </tbody>
         </table>
     </div>

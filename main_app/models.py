@@ -219,7 +219,6 @@ class Loan(db.Model):
     amount_paid = db.Column(db.Float, default=0)
     penalty = db.Column(db.Float, nullable=False, default=0.0)  # Add a penalty field
     loan_user = db.relationship('User', back_populates='personal_loan', lazy=True, uselist=False)
-    transactions = db.relationship('Transaction', back_populates='loan', lazy=True, uselist=False)
     disbursement = db.relationship('Disbursement', back_populates='loan', lazy=True, uselist=False)
     repayment = db.relationship('Repayment', back_populates='loan', lazy=True, uselist=False)
 
@@ -233,19 +232,22 @@ class Loan(db.Model):
 
 class Transaction(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    loan_id = db.Column(db.Integer, db.ForeignKey('loan.id'), nullable=False)
-    loan = db.relationship('Loan', back_populates='transactions')
-    transaction_type = db.Column(db.String(50))  # 'disbursement' or 'repayment'
-    amount = db.Column(db.Float)
+    user_id = db.Column(db.Integer, db.ForeignKey('user.user_id'), nullable=False)
+    user = db.relationship('User', back_populates='transactions')
+    transaction_type = db.Column(db.String(50))  # 'deposit', 'repayment', 'withdraw', 'disbursement'
+    amount = db.Column(db.Float, nullable=False)
+    method = db.Column(db.String(50), nullable=False)
+    account_type = db.Column(db.String(50), nullable=False)
     transaction_date = db.Column(db.DateTime, default=datetime.now())
-    status = db.Column(db.String(50))
+    reference_no = db.Column(db.String(50), nullable=False)
+    balance = db.Column(db.Float, nullable=False)
 
 
 class Disbursement(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     loan_id = db.Column(db.Integer, db.ForeignKey('loan.id'))
     loan = db.relationship('Loan', back_populates='disbursement')
-    source_account = db.Column(db.String(100))  # Source of funds (e.g., bank account)
+    source_account = db.Column(db.String(50))  # Source of funds (e.g., bank account)
     disbursed_amount = db.Column(db.Float)
     disbursement_date = db.Column(db.DateTime, default=datetime.now())
 
@@ -254,6 +256,6 @@ class Repayment(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     loan_id = db.Column(db.Integer, db.ForeignKey('loan.id'))
     loan = db.relationship('Loan', back_populates='repayment')
-    amount_paid = db.Column(db.Float)
+    amount_paid = db.Column(db.Float, nullable=False)
     payment_date = db.Column(db.DateTime, default=datetime.now())
-    destination_account = db.Column(db.String(100))
+    destination_account = db.Column(db.String(50))

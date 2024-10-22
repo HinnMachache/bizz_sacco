@@ -405,10 +405,15 @@ def disburse_loan(loan_id):
             user_account.balance += loan.loan_amount
 
             # Record the disbursement transaction
-            transaction = Transaction(
-                loan_id=loan.id,
-                transaction_type='Disbursement',
-                amount=loan.loan_amount
+
+            transaction = Transaction(user_id=loan.user_id, transaction_type='Loan Disbursement',
+                                          amount=loan.loan_amount, method='Bank Transfer',
+                                          account_type='User', balance=user_account.balance,
+                                          reference_no=f'Ref_{str(uuid.uuid4())[:8]}')
+                       
+            disbursement = Disbursement(loan_id=loan.id,
+                         disbursed_amount=loan.loan_amount,
+                         source_account=bank_account.account_type
             )
 
             # Update loan status to disbursed
@@ -416,6 +421,7 @@ def disburse_loan(loan_id):
             
             # Commit the changes
             db.session.add(transaction)
+            db.session.add(disbursement)
             db.session.commit()
 
             flash('Loan disbursed successfully!', 'success')
@@ -571,9 +577,8 @@ def update_due_date(loan):
 
 @app.route('/repay_loan', methods=['GET', 'POST'])
 @login_required
-def repay_loan():   
+def repay_loan():
     if request.method == 'POST':
-        print("Repay POST route hit!")
         # Retrieve loan_id and payment_amount from the form
         loan_id = request.form.get('loan_id')
         payment_amount = request.form.get('payment_amount')
@@ -605,12 +610,24 @@ def repay_loan():
             current_user.account.balance -= payment_amount
             loan.amount_paid += payment_amount
 
-            bank_account = Account.query.filter_by(account_type='Bank').first()  # Adjust based on your model
+            bank_account = Account.query.filter_by(account_type='Bank').first() 
             if bank_account:
                 bank_account.balance += payment_amount
 
             # Adjust the loan's next due date
             loan.next_due_date += timedelta(days=30)
+
+            # Record Repayment Transaction
+
+            transaction = Transaction(user_id=loan_id, transaction_type='Loan Repayment',
+                                          amount=payment_amount, method='Bank Transfer',
+                                          account_type='User', balance=current_user.account.balance,
+                                          reference_no=f'Ref_{str(uuid.uuid4())[:8]}')
+
+            repayment = Repayment(loan_id=loan_id,
+                                  amount_paid=payment_amount,
+                                  destination_account=bank_account.account_type
+                                  )
 
             # If the loan is fully repaid, mark it as 'Repaid'
             if loan.amount_paid >= loan.total_amount_due:
@@ -618,6 +635,8 @@ def repay_loan():
 
             # Commit changes to the database
             try:
+                db.session.add(transaction)
+                db.session.add(repayment)
                 db.session.commit()
                 flash('Payment successful!')
             except Exception as e:
@@ -635,7 +654,6 @@ def repay_loan():
     return render_template('user/repayment.html', loan=loan)
 
 
-
 def send_payment_reminder(loan):
     days_left = (loan.next_due_date - datetime.now()).days
     
@@ -645,7 +663,6 @@ def send_payment_reminder(loan):
         
     # Add the reminder function to run daily
     scheduler.add_job(send_payment_reminder, 'interval', days=1, args=[loan])
-
 
 
 @app.route('/loan_application_status')
@@ -812,12 +829,17 @@ def deposit():
                     db.session.commit()           
                 
                 # Record the deposit transaction
-                    
+                transaction = Transaction(user_id=current_user.user_id, transaction_type='Deposit',
+                                          amount=deposit_amount, method=deposit_method,
+                                          account_type=account_type, balance=user_account.balance,
+                                          reference_no=reference_no)
+
                 deposit = Deposit(user_id=current_user.user_id, amount=deposit_amount,
                                 deposit_method=deposit_method, account_type=account_type,
                                 reference_no=reference_no)
                 
                 db.session.add(deposit)
+                db.session.add(transaction)
                 db.session.commit()
 
     elif request.method == 'GET':
@@ -902,6 +924,11 @@ def withdrawals():
                     user_account.balance -= total_deducted
                     
                     # Record the withdrawal transaction
+                    transaction = Transaction(user_id=current_user.user_id, transaction_type='Withdrawal',
+                                          amount=withdrawal_amount, method=withdrawal_method,
+                                          account_type=account_type, balance=user_account.balance,
+                                          reference_no=reference_no)
+                    
                     withdrawal = Withdrawals(
                         user_id=current_user.user_id,
                         amount=withdrawal_amount,
@@ -912,6 +939,8 @@ def withdrawals():
                         reference_no=reference_no
                     )
                     
+
+                    db.session.add(transaction)
                     db.session.add(withdrawal)
                     db.session.commit()
                     flash("Withdrawal processed successfully!", "success")
@@ -941,7 +970,10 @@ def withdrawals():
 @app.route("/statements", methods=['POST', 'GET'])
 @login_required
 def statements():
-    return render_template("user/statements.html", title="Statements | SACCO Dashboard")
+    # Merge deposits and withdrawals
+    transactions = Transaction.query.filter_by(user_id=current_user.id).order_by(Transaction.created_at.desc()).all()
+    
+    return render_template('user/statements.html', transactions=transactions, title="Statements | SACCO Dashboard")
 
 
 @app.route("/news", methods=['POST', 'GET'])
