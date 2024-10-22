@@ -569,58 +569,69 @@ def update_due_date(loan):
         db.session.commit()
 
 
-@app.route('/repay_loan', methods=['POST', 'GET'])
+@app.route('/repay_loan', methods=['GET', 'POST'])
 @login_required
-def repay_loan():
+def repay_loan():   
     if request.method == 'POST':
+        print("Repay POST route hit!")
+        # Retrieve loan_id and payment_amount from the form
         loan_id = request.form.get('loan_id')
-        payment_amount = request.form.get('payment_amount')  # Get payment amount
+        payment_amount = request.form.get('payment_amount')
 
-        if not loan_id:
-            flash('No loan associated with this payment. Please apply for a loan first.')
-            return redirect(url_for('home'))
+        # Validate the input fields
+        if not loan_id or not payment_amount:
+            flash('Please provide both loan ID and payment amount.')
+            return redirect(url_for('repay_loan'))
 
-        loan = Loan.query.get(loan_id)
-
-        if not loan:
-            flash('Loan does not exist.')
-            return redirect(url_for('home'))
-
-        # Ensure the payment_amount is valid
-        if payment_amount is None or not payment_amount.isdigit():
+        try:
+            payment_amount = float(payment_amount)
+        except ValueError:
             flash('Invalid payment amount.')
-            return redirect(url_for('home'))
-        
-        payment_amount = float(payment_amount)  # Convert only after validation
+            return redirect(url_for('repay_loan'))
 
-        # Ensure the loan has been disbursed before allowing repayment
+        # Fetch the loan from the database
+        loan = Loan.query.get(loan_id)
+        if not loan:
+            flash('Loan not found.')
+            return redirect(url_for('repay_loan'))
+
+        # Check if the loan is disbursed
         if loan.status != 'Disbursed':
-            flash('You cannot make payments for this loan as it has not been disbursed yet.')
-            return redirect(url_for('loan_application_status'))
+            flash('You cannot make payments for a loan that has not been disbursed.')
+            return redirect(url_for('repay_loan'))
 
-        # Continue with payment processing only if the loan is disbursed
+        # Ensure the current user has sufficient balance
         if payment_amount > 0 and current_user.account.balance >= payment_amount:
             current_user.account.balance -= payment_amount
             loan.amount_paid += payment_amount
 
+            bank_account = Account.query.filter_by(account_type='Bank').first()  # Adjust based on your model
+            if bank_account:
+                bank_account.balance += payment_amount
+
+            # Adjust the loan's next due date
             loan.next_due_date += timedelta(days=30)
 
+            # If the loan is fully repaid, mark it as 'Repaid'
             if loan.amount_paid >= loan.total_amount_due:
-                loan.status = 'Repaid'  # Mark loan as repaid if fully paid off
+                loan.status = 'Repaid'
 
+            # Commit changes to the database
             try:
                 db.session.commit()
                 flash('Payment successful!')
             except Exception as e:
-                db.session.rollback()  # Rollback on error
-                flash('Error processing payment. Please try again.')
+                db.session.rollback()
+                flash('An error occurred while processing the payment.')
+
         else:
             flash('Invalid payment amount or insufficient balance.')
 
-        return redirect(url_for('home'))
+        return redirect(url_for('repay_loan'))
 
-
-    loan = Loan.query.filter_by(user_id=current_user.user_id).first()  # Get the user's loan
+    # For GET requests, render the repayment form
+    # Fetch the user's loan (assuming each user can have only one active loan)
+    loan = Loan.query.filter_by(user_id=current_user.user_id, status='Disbursed').first()
     return render_template('user/repayment.html', loan=loan)
 
 
@@ -756,6 +767,31 @@ def get_next_ref_id():
     return f'{str(uuid.uuid4())[:8]}'
 
 
+from flask import render_template, request, redirect, url_for, flash
+
+@app.route('/contact', methods=['GET', 'POST'])
+def contact():
+    if request.method == 'POST':
+        name = request.form['name']
+        email = request.form['email']
+        message = request.form['message']
+
+        # Create an email message
+        msg = Message(subject=f"Contact Form Message from {name}",
+                      sender=email,
+                      recipients=[os.environ.get('EMAIL_USERNAME')],
+                      body=f"Name: {name}\nEmail: {email}\n\nMessage:\n{message}")
+
+        try:
+            mail.send(msg)  # Send the email
+            flash('Your message has been sent!', 'success')  # Notify user
+            return redirect(url_for('contact'))  # Redirect back to contact page
+        except Exception as e:
+            flash(f'Something went wrong: {e}', 'error')  # Handle errors
+
+    return render_template('user/support.html')
+
+
 
 @app.route("/deposit", methods=['POST', 'GET'])
 @login_required
@@ -783,8 +819,6 @@ def deposit():
                 
                 db.session.add(deposit)
                 db.session.commit()
-
-
 
     elif request.method == 'GET':
         user_deposits = []

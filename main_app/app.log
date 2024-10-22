@@ -1,0 +1,9 @@
+2024-10-22 12:00:12,612 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 12:00:12,613 - DEBUG - /etc/localtime found
+2024-10-22 12:00:12,614 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 12:00:12,614 - INFO - Scheduler started
+2024-10-22 12:00:12,615 - DEBUG - Looking for jobs to run
+2024-10-22 12:00:12,615 - DEBUG - No jobs; waiting until a job is added

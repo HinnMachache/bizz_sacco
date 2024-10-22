@@ -1,16 +1,28 @@
 {% extends "user/layout.html" %}
-{% block main_cont %}
-    <form action="{{ url_for('repay_loan') }}" method="POST" class="loan-form">
-        <input type="hidden" name="loan_id" value="{{ loan.id if loan else '' }}">
-        <div class="form-group">
-            <label for="payment_amount">Payment Amount:</label>
-            <input type="number" id="payment_amount" name="payment_amount" min="1" required>
-        </div>
-        <button type="submit">Make Payment</button>
-    </form>
-    {% if not loan %}
-        <p>No loan found. You can still attempt to make a payment, but there is no loan associated with your account.</p>
-    {% elif loan.status != 'Disbursed' %}
-        <p>This loan has not been disbursed yet. You cannot make payments.</p>
+{% block content %}
+    <h2>Repay Loan</h2>
+    
+    {% if loan %}
+    <div class="loan-application">
+        <h1>Repay Loan</h1>
+        <form action="{{ url_for('repay_loan') }}" method="POST" class="loan-form">
+            <input type="hidden" name="loan_id" value="{{ loan.id }}">
+            
+            <div class="form-group">
+                <label for="payment_amount">Payment Amount:</label>
+                <textarea id="payment_amount" name="payment_amount" rows="1" placeholder="Enter Amount..."
+            required></textarea>
+            </div>
+            
+            <button type="submit">Make Payment</button>
+        </form>
+        
+    
+        <p>Next Due Date: {{ loan.next_due_date.strftime('%Y-%m-%d') }}</p>
+    {% else %}
+        <p>You currently have no disbursed loans available for repayment.</p>
     {% endif %}
+    </div>
+       
+    
 {% endblock %}

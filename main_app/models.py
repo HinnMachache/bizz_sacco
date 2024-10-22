@@ -23,9 +23,9 @@ class User(db.Model, UserMixin):
     password = db.Column(db.String, nullable=False)
     personal_data = db.relationship('User_personalData', back_populates='user', uselist=False)
     personal_loan = db.relationship("Loan", back_populates="loan_user", uselist=False)
-    account = db.relationship('Account', back_populates='user')
-    withdrawals = db.relationship('Withdrawals', back_populates='user')
-    deposits = db.relationship('Deposit', back_populates='user')
+    account = db.relationship('Account', back_populates='user', uselist=False)
+    withdrawals = db.relationship('Withdrawals', back_populates='user', uselist=False)
+    deposits = db.relationship('Deposit', back_populates='user', uselist=False)
     # personal_data_submitted = db.Column(db.Boolean, default=False)
 
     def to_dict(self):
@@ -216,11 +216,12 @@ class Loan(db.Model):
     purpose = db.Column(db.String(120), nullable=False)
     start_date = db.Column(db.DateTime, nullable=False, default=datetime.now())
     next_due_date = db.Column(db.DateTime, nullable=False)
+    amount_paid = db.Column(db.Float, default=0)
     penalty = db.Column(db.Float, nullable=False, default=0.0)  # Add a penalty field
-    loan_user = db.relationship('User', back_populates='personal_loan', lazy=True)
-    transactions = db.relationship('Transaction', back_populates='loan', lazy=True)
-    disbursement = db.relationship('Disbursement', back_populates='loan', lazy=True)
-    repayment = db.relationship('Repayment', back_populates='loan', lazy=True)
+    loan_user = db.relationship('User', back_populates='personal_loan', lazy=True, uselist=False)
+    transactions = db.relationship('Transaction', back_populates='loan', lazy=True, uselist=False)
+    disbursement = db.relationship('Disbursement', back_populates='loan', lazy=True, uselist=False)
+    repayment = db.relationship('Repayment', back_populates='loan', lazy=True, uselist=False)
 
     def set_initial_due_date(self):
         self.next_due_date = self.start_date + timedelta(days=30)  # First due date is 30 days after the loan is issued

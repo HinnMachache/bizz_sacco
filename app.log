@@ -9409,3 +9409,1687 @@
 2024-10-22 08:09:30,979 - INFO - 127.0.0.1 - - [22/Oct/2024 08:09:30] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
 2024-10-22 08:09:30,982 - INFO - 127.0.0.1 - - [22/Oct/2024 08:09:30] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
 2024-10-22 08:09:30,991 - INFO - 127.0.0.1 - - [22/Oct/2024 08:09:30] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 08:10:22,576 - INFO - 127.0.0.1 - - [22/Oct/2024 08:10:22] "GET /overview HTTP/1.1" 200 -
+2024-10-22 08:10:22,657 - INFO - 127.0.0.1 - - [22/Oct/2024 08:10:22] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
+2024-10-22 08:10:22,666 - INFO - 127.0.0.1 - - [22/Oct/2024 08:10:22] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 08:10:22,676 - INFO - 127.0.0.1 - - [22/Oct/2024 08:10:22] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 08:10:23,591 - INFO - 127.0.0.1 - - [22/Oct/2024 08:10:23] "GET /application HTTP/1.1" 200 -
+2024-10-22 08:10:23,638 - INFO - 127.0.0.1 - - [22/Oct/2024 08:10:23] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
+2024-10-22 08:10:23,646 - INFO - 127.0.0.1 - - [22/Oct/2024 08:10:23] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 08:10:23,650 - INFO - 127.0.0.1 - - [22/Oct/2024 08:10:23] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 08:10:25,285 - INFO - 127.0.0.1 - - [22/Oct/2024 08:10:25] "GET /loan_application_status HTTP/1.1" 200 -
+2024-10-22 08:10:25,355 - INFO - 127.0.0.1 - - [22/Oct/2024 08:10:25] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
+2024-10-22 08:10:25,369 - INFO - 127.0.0.1 - - [22/Oct/2024 08:10:25] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 08:10:25,370 - INFO - 127.0.0.1 - - [22/Oct/2024 08:10:25] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 08:10:27,339 - INFO - 127.0.0.1 - - [22/Oct/2024 08:10:27] "GET /deposit HTTP/1.1" 200 -
+2024-10-22 08:10:27,364 - INFO - 127.0.0.1 - - [22/Oct/2024 08:10:27] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
+2024-10-22 08:10:27,371 - INFO - 127.0.0.1 - - [22/Oct/2024 08:10:27] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 08:10:27,375 - INFO - 127.0.0.1 - - [22/Oct/2024 08:10:27] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 08:10:28,758 - INFO - 127.0.0.1 - - [22/Oct/2024 08:10:28] "GET /withdrawals HTTP/1.1" 200 -
+2024-10-22 08:10:28,850 - INFO - 127.0.0.1 - - [22/Oct/2024 08:10:28] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
+2024-10-22 08:10:28,864 - INFO - 127.0.0.1 - - [22/Oct/2024 08:10:28] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 08:10:28,868 - INFO - 127.0.0.1 - - [22/Oct/2024 08:10:28] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 08:10:43,261 - INFO - 127.0.0.1 - - [22/Oct/2024 08:10:43] "POST /withdrawals HTTP/1.1" 200 -
+2024-10-22 08:10:43,295 - INFO - 127.0.0.1 - - [22/Oct/2024 08:10:43] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
+2024-10-22 08:10:43,301 - INFO - 127.0.0.1 - - [22/Oct/2024 08:10:43] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 08:10:43,303 - INFO - 127.0.0.1 - - [22/Oct/2024 08:10:43] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 08:10:56,677 - INFO - 127.0.0.1 - - [22/Oct/2024 08:10:56] "GET /overview HTTP/1.1" 200 -
+2024-10-22 08:10:56,703 - INFO - 127.0.0.1 - - [22/Oct/2024 08:10:56] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
+2024-10-22 08:10:56,710 - INFO - 127.0.0.1 - - [22/Oct/2024 08:10:56] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 08:10:56,712 - INFO - 127.0.0.1 - - [22/Oct/2024 08:10:56] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 08:11:05,801 - INFO - 127.0.0.1 - - [22/Oct/2024 08:11:05] "GET /application HTTP/1.1" 200 -
+2024-10-22 08:11:05,836 - INFO - 127.0.0.1 - - [22/Oct/2024 08:11:05] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
+2024-10-22 08:11:05,843 - INFO - 127.0.0.1 - - [22/Oct/2024 08:11:05] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 08:11:05,847 - INFO - 127.0.0.1 - - [22/Oct/2024 08:11:05] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 08:11:10,878 - INFO - 127.0.0.1 - - [22/Oct/2024 08:11:10] "GET /application HTTP/1.1" 200 -
+2024-10-22 08:11:10,905 - INFO - 127.0.0.1 - - [22/Oct/2024 08:11:10] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
+2024-10-22 08:11:10,918 - INFO - 127.0.0.1 - - [22/Oct/2024 08:11:10] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 08:11:10,918 - INFO - 127.0.0.1 - - [22/Oct/2024 08:11:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 08:11:14,277 - INFO - 127.0.0.1 - - [22/Oct/2024 08:11:14] "GET /deposit HTTP/1.1" 200 -
+2024-10-22 08:11:14,311 - INFO - 127.0.0.1 - - [22/Oct/2024 08:11:14] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
+2024-10-22 08:11:14,320 - INFO - 127.0.0.1 - - [22/Oct/2024 08:11:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 08:11:14,328 - INFO - 127.0.0.1 - - [22/Oct/2024 08:11:14] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 08:11:22,431 - INFO - 127.0.0.1 - - [22/Oct/2024 08:11:22] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 08:11:22,478 - INFO - 127.0.0.1 - - [22/Oct/2024 08:11:22] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
+2024-10-22 08:11:22,483 - INFO - 127.0.0.1 - - [22/Oct/2024 08:11:22] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 08:11:22,497 - INFO - 127.0.0.1 - - [22/Oct/2024 08:11:22] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 08:11:44,647 - INFO - 127.0.0.1 - - [22/Oct/2024 08:11:44] "GET /deposit HTTP/1.1" 200 -
+2024-10-22 08:11:44,744 - INFO - 127.0.0.1 - - [22/Oct/2024 08:11:44] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
+2024-10-22 08:11:44,757 - INFO - 127.0.0.1 - - [22/Oct/2024 08:11:44] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 08:11:44,760 - INFO - 127.0.0.1 - - [22/Oct/2024 08:11:44] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 08:12:39,758 - INFO - 127.0.0.1 - - [22/Oct/2024 08:12:39] "GET /deposit HTTP/1.1" 200 -
+2024-10-22 08:12:39,781 - INFO - 127.0.0.1 - - [22/Oct/2024 08:12:39] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
+2024-10-22 08:12:39,790 - INFO - 127.0.0.1 - - [22/Oct/2024 08:12:39] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 08:12:39,797 - INFO - 127.0.0.1 - - [22/Oct/2024 08:12:39] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 08:12:48,888 - INFO - 127.0.0.1 - - [22/Oct/2024 08:12:48] "GET /deposit HTTP/1.1" 200 -
+2024-10-22 08:12:48,971 - INFO - 127.0.0.1 - - [22/Oct/2024 08:12:48] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
+2024-10-22 08:12:48,990 - INFO - 127.0.0.1 - - [22/Oct/2024 08:12:48] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 08:12:48,990 - INFO - 127.0.0.1 - - [22/Oct/2024 08:12:48] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 08:12:52,957 - INFO - 127.0.0.1 - - [22/Oct/2024 08:12:52] "GET /withdrawals HTTP/1.1" 200 -
+2024-10-22 08:12:53,018 - INFO - 127.0.0.1 - - [22/Oct/2024 08:12:53] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
+2024-10-22 08:12:53,030 - INFO - 127.0.0.1 - - [22/Oct/2024 08:12:53] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 08:12:53,033 - INFO - 127.0.0.1 - - [22/Oct/2024 08:12:53] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 08:12:59,423 - INFO - 127.0.0.1 - - [22/Oct/2024 08:12:59] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 08:12:59,521 - INFO - 127.0.0.1 - - [22/Oct/2024 08:12:59] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
+2024-10-22 08:12:59,526 - INFO - 127.0.0.1 - - [22/Oct/2024 08:12:59] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 08:12:59,531 - INFO - 127.0.0.1 - - [22/Oct/2024 08:12:59] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 11:25:59,398 - INFO - 127.0.0.1 - - [22/Oct/2024 11:25:59] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 11:25:59,482 - INFO - 127.0.0.1 - - [22/Oct/2024 11:25:59] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
+2024-10-22 11:25:59,488 - INFO - 127.0.0.1 - - [22/Oct/2024 11:25:59] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 11:25:59,495 - INFO - 127.0.0.1 - - [22/Oct/2024 11:25:59] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 11:26:01,033 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:01] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 11:26:01,069 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:01] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
+2024-10-22 11:26:01,075 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:01] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 11:26:01,076 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:01] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 11:26:02,350 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:02] "GET /overview HTTP/1.1" 200 -
+2024-10-22 11:26:02,425 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:02] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
+2024-10-22 11:26:02,441 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:02] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 11:26:02,442 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:02] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 11:26:14,643 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:14] "GET /profile HTTP/1.1" 200 -
+2024-10-22 11:26:14,684 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:14] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
+2024-10-22 11:26:14,694 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 11:26:14,697 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:14] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 11:26:15,750 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:15] "GET /update_acount HTTP/1.1" 200 -
+2024-10-22 11:26:15,778 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:15] "[36mGET /static/assets/user.jpeg HTTP/1.1[0m" 304 -
+2024-10-22 11:26:15,784 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:15] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 11:26:15,787 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:15] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 11:26:34,327 - DEBUG - STREAM b'IHDR' 16 13
+2024-10-22 11:26:34,327 - DEBUG - STREAM b'sBIT' 41 3
+2024-10-22 11:26:34,327 - DEBUG - b'sBIT' 41 3 (unknown)
+2024-10-22 11:26:34,328 - DEBUG - STREAM b'IDAT' 56 8192
+2024-10-22 11:26:34,356 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:34] "[32mPOST /update_acount HTTP/1.1[0m" 302 -
+2024-10-22 11:26:34,361 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:34] "GET /profile HTTP/1.1" 200 -
+2024-10-22 11:26:34,381 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:34] "GET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1" 200 -
+2024-10-22 11:26:34,390 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:34] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 11:26:34,390 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:34] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 11:26:37,321 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:37] "GET /overview HTTP/1.1" 200 -
+2024-10-22 11:26:37,348 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:37] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 11:26:37,358 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:37] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 11:26:37,359 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:37] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 11:26:40,862 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:40] "GET /application HTTP/1.1" 200 -
+2024-10-22 11:26:40,889 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:40] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 11:26:40,897 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:40] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 11:26:40,898 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:40] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 11:26:42,616 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:42] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 11:26:42,698 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:42] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 11:26:42,709 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:42] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 11:26:42,718 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:42] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 11:26:48,889 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:48] "GET /overview HTTP/1.1" 200 -
+2024-10-22 11:26:48,945 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:48] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 11:26:48,960 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:48] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 11:26:48,963 - INFO - 127.0.0.1 - - [22/Oct/2024 11:26:48] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 11:30:19,686 - INFO - 127.0.0.1 - - [22/Oct/2024 11:30:19] "GET /overview HTTP/1.1" 200 -
+2024-10-22 11:30:19,711 - INFO - 127.0.0.1 - - [22/Oct/2024 11:30:19] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 11:30:19,715 - INFO - 127.0.0.1 - - [22/Oct/2024 11:30:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 11:30:19,723 - INFO - 127.0.0.1 - - [22/Oct/2024 11:30:19] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 11:30:21,698 - INFO - 127.0.0.1 - - [22/Oct/2024 11:30:21] "GET /application HTTP/1.1" 200 -
+2024-10-22 11:30:21,784 - INFO - 127.0.0.1 - - [22/Oct/2024 11:30:21] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 11:30:21,803 - INFO - 127.0.0.1 - - [22/Oct/2024 11:30:21] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 11:30:21,811 - INFO - 127.0.0.1 - - [22/Oct/2024 11:30:21] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 11:30:22,941 - INFO - 127.0.0.1 - - [22/Oct/2024 11:30:22] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 11:30:23,034 - INFO - 127.0.0.1 - - [22/Oct/2024 11:30:23] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 11:30:23,047 - INFO - 127.0.0.1 - - [22/Oct/2024 11:30:23] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 11:30:23,048 - INFO - 127.0.0.1 - - [22/Oct/2024 11:30:23] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 11:30:25,334 - INFO - 127.0.0.1 - - [22/Oct/2024 11:30:25] "GET /loan_application_status HTTP/1.1" 200 -
+2024-10-22 11:30:25,429 - INFO - 127.0.0.1 - - [22/Oct/2024 11:30:25] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 11:30:25,442 - INFO - 127.0.0.1 - - [22/Oct/2024 11:30:25] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 11:30:25,449 - INFO - 127.0.0.1 - - [22/Oct/2024 11:30:25] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 11:30:38,702 - INFO - 127.0.0.1 - - [22/Oct/2024 11:30:38] "GET /deposit HTTP/1.1" 200 -
+2024-10-22 11:30:38,790 - INFO - 127.0.0.1 - - [22/Oct/2024 11:30:38] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 11:30:38,800 - INFO - 127.0.0.1 - - [22/Oct/2024 11:30:38] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 11:30:38,800 - INFO - 127.0.0.1 - - [22/Oct/2024 11:30:38] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 11:30:41,155 - INFO - 127.0.0.1 - - [22/Oct/2024 11:30:41] "GET /withdrawals HTTP/1.1" 200 -
+2024-10-22 11:30:41,211 - INFO - 127.0.0.1 - - [22/Oct/2024 11:30:41] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 11:30:41,218 - INFO - 127.0.0.1 - - [22/Oct/2024 11:30:41] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 11:30:41,222 - INFO - 127.0.0.1 - - [22/Oct/2024 11:30:41] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 11:30:45,877 - INFO - 127.0.0.1 - - [22/Oct/2024 11:30:45] "GET /statements HTTP/1.1" 200 -
+2024-10-22 11:30:45,984 - INFO - 127.0.0.1 - - [22/Oct/2024 11:30:45] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 11:30:45,987 - INFO - 127.0.0.1 - - [22/Oct/2024 11:30:45] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 11:30:45,992 - INFO - 127.0.0.1 - - [22/Oct/2024 11:30:45] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 11:31:01,328 - INFO - 127.0.0.1 - - [22/Oct/2024 11:31:01] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 11:31:01,411 - INFO - 127.0.0.1 - - [22/Oct/2024 11:31:01] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 11:31:01,423 - INFO - 127.0.0.1 - - [22/Oct/2024 11:31:01] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 11:31:01,426 - INFO - 127.0.0.1 - - [22/Oct/2024 11:31:01] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 11:40:07,440 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 11:40:07,614 - INFO -  * Restarting with stat
+2024-10-22 11:40:08,184 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 11:40:08,185 - DEBUG - /etc/localtime found
+2024-10-22 11:40:08,186 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 11:40:08,186 - INFO - Scheduler started
+2024-10-22 11:40:08,187 - DEBUG - Looking for jobs to run
+2024-10-22 11:40:08,192 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 11:40:08,202 - WARNING -  * Debugger is active!
+2024-10-22 11:40:08,202 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 11:40:51,077 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 11:40:51,255 - INFO -  * Restarting with stat
+2024-10-22 11:40:51,850 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 11:40:51,851 - DEBUG - /etc/localtime found
+2024-10-22 11:40:51,851 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 11:40:51,852 - INFO - Scheduler started
+2024-10-22 11:40:51,853 - DEBUG - Looking for jobs to run
+2024-10-22 11:40:51,858 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 11:40:51,869 - WARNING -  * Debugger is active!
+2024-10-22 11:40:51,869 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 11:40:52,899 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 11:40:53,086 - INFO -  * Restarting with stat
+2024-10-22 11:40:53,726 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 11:40:53,727 - DEBUG - /etc/localtime found
+2024-10-22 11:40:53,728 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 11:40:53,728 - INFO - Scheduler started
+2024-10-22 11:40:53,729 - DEBUG - Looking for jobs to run
+2024-10-22 11:40:53,734 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 11:40:53,747 - WARNING -  * Debugger is active!
+2024-10-22 11:40:53,748 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 11:40:59,862 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 11:41:00,027 - INFO -  * Restarting with stat
+2024-10-22 11:41:00,624 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 11:41:00,624 - DEBUG - /etc/localtime found
+2024-10-22 11:41:00,625 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 11:41:00,626 - INFO - Scheduler started
+2024-10-22 11:41:00,626 - DEBUG - Looking for jobs to run
+2024-10-22 11:41:00,627 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 11:41:00,641 - WARNING -  * Debugger is active!
+2024-10-22 11:41:00,642 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 11:41:51,057 - INFO - 127.0.0.1 - - [22/Oct/2024 11:41:51] "[35m[1mGET /repay_loan HTTP/1.1[0m" 500 -
+2024-10-22 11:41:51,093 - INFO - 127.0.0.1 - - [22/Oct/2024 11:41:51] "[36mGET /repay_loan?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-22 11:41:51,094 - INFO - 127.0.0.1 - - [22/Oct/2024 11:41:51] "[36mGET /repay_loan?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-22 11:41:51,115 - INFO - 127.0.0.1 - - [22/Oct/2024 11:41:51] "GET /repay_loan?__debugger__=yes&cmd=resource&f=console.png&s=3HRv7924kPbQrNtthvKj HTTP/1.1" 200 -
+2024-10-22 11:41:51,130 - INFO - 127.0.0.1 - - [22/Oct/2024 11:41:51] "[36mGET /repay_loan?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-22 11:42:26,414 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 11:42:26,597 - INFO -  * Restarting with stat
+2024-10-22 11:42:27,533 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 11:42:27,534 - DEBUG - /etc/localtime found
+2024-10-22 11:42:27,535 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 11:42:27,536 - INFO - Scheduler started
+2024-10-22 11:42:27,536 - DEBUG - Looking for jobs to run
+2024-10-22 11:42:27,542 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 11:42:27,557 - WARNING -  * Debugger is active!
+2024-10-22 11:42:27,557 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 11:42:28,591 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 11:42:28,755 - INFO -  * Restarting with stat
+2024-10-22 11:42:29,379 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 11:42:29,380 - DEBUG - /etc/localtime found
+2024-10-22 11:42:29,381 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 11:42:29,383 - INFO - Scheduler started
+2024-10-22 11:42:29,383 - DEBUG - Looking for jobs to run
+2024-10-22 11:42:29,389 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 11:42:29,401 - WARNING -  * Debugger is active!
+2024-10-22 11:42:29,402 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 11:42:30,266 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:30] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 11:42:30,293 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:30] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 11:42:30,294 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:30] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 11:42:30,299 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:30] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 11:42:34,145 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:34] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 11:42:34,202 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:34] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 11:42:34,213 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:34] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 11:42:34,216 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:34] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 11:42:35,097 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:35] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 11:42:35,151 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:35] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 11:42:35,158 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:35] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 11:42:35,166 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:35] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 11:42:35,802 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:35] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 11:42:35,861 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:35] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 11:42:35,868 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:35] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 11:42:35,873 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:35] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 11:42:36,503 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:36] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 11:42:36,550 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:36] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 11:42:36,560 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:36] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 11:42:36,561 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:36] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 11:42:36,790 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:36] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 11:42:36,843 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:36] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 11:42:36,855 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:36] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 11:42:36,857 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:36] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 11:42:37,208 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:37] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 11:42:37,269 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:37] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 11:42:37,280 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:37] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 11:42:37,281 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:37] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 11:42:37,667 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:37] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 11:42:37,717 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:37] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 11:42:37,728 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:37] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 11:42:37,729 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:37] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 11:42:38,046 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:38] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 11:42:38,117 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:38] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 11:42:38,126 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:38] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 11:42:38,129 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:38] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 11:42:38,509 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:38] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 11:42:38,570 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:38] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 11:42:38,580 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:38] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 11:42:38,584 - INFO - 127.0.0.1 - - [22/Oct/2024 11:42:38] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 11:43:47,485 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 11:43:47,711 - INFO -  * Restarting with stat
+2024-10-22 11:43:48,432 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 11:43:48,432 - DEBUG - /etc/localtime found
+2024-10-22 11:43:48,433 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 11:43:48,434 - INFO - Scheduler started
+2024-10-22 11:43:48,434 - DEBUG - Looking for jobs to run
+2024-10-22 11:43:48,434 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 11:43:48,453 - WARNING -  * Debugger is active!
+2024-10-22 11:43:48,454 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 11:43:55,136 - INFO - 127.0.0.1 - - [22/Oct/2024 11:43:55] "GET /overview HTTP/1.1" 200 -
+2024-10-22 11:43:55,162 - INFO - 127.0.0.1 - - [22/Oct/2024 11:43:55] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 11:43:55,164 - INFO - 127.0.0.1 - - [22/Oct/2024 11:43:55] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 11:43:55,167 - INFO - 127.0.0.1 - - [22/Oct/2024 11:43:55] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 11:43:57,028 - INFO - 127.0.0.1 - - [22/Oct/2024 11:43:57] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 11:43:57,061 - INFO - 127.0.0.1 - - [22/Oct/2024 11:43:57] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 11:43:57,070 - INFO - 127.0.0.1 - - [22/Oct/2024 11:43:57] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 11:43:57,071 - INFO - 127.0.0.1 - - [22/Oct/2024 11:43:57] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 11:44:08,941 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 11:44:09,119 - INFO -  * Restarting with stat
+2024-10-22 11:44:09,695 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 11:44:09,695 - DEBUG - /etc/localtime found
+2024-10-22 11:44:09,696 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 11:44:09,697 - INFO - Scheduler started
+2024-10-22 11:44:09,697 - DEBUG - Looking for jobs to run
+2024-10-22 11:44:09,697 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 11:44:09,717 - WARNING -  * Debugger is active!
+2024-10-22 11:44:09,718 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 11:44:13,802 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 11:44:14,015 - INFO -  * Restarting with stat
+2024-10-22 11:44:14,979 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 11:44:14,980 - DEBUG - /etc/localtime found
+2024-10-22 11:44:14,981 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 11:44:14,982 - INFO - Scheduler started
+2024-10-22 11:44:14,983 - DEBUG - Looking for jobs to run
+2024-10-22 11:44:14,988 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 11:44:15,004 - WARNING -  * Debugger is active!
+2024-10-22 11:44:15,005 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 11:44:16,035 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 11:44:16,241 - INFO -  * Restarting with stat
+2024-10-22 11:44:16,993 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 11:44:16,993 - DEBUG - /etc/localtime found
+2024-10-22 11:44:16,994 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 11:44:16,995 - INFO - Scheduler started
+2024-10-22 11:44:16,995 - DEBUG - Looking for jobs to run
+2024-10-22 11:44:17,001 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 11:44:17,014 - WARNING -  * Debugger is active!
+2024-10-22 11:44:17,014 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 11:44:22,091 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 11:44:22,238 - INFO -  * Restarting with stat
+2024-10-22 11:44:22,900 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 11:44:22,901 - DEBUG - /etc/localtime found
+2024-10-22 11:44:22,902 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 11:44:22,904 - INFO - Scheduler started
+2024-10-22 11:44:22,904 - DEBUG - Looking for jobs to run
+2024-10-22 11:44:22,909 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 11:44:22,923 - WARNING -  * Debugger is active!
+2024-10-22 11:44:22,923 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 11:44:24,046 - INFO - 127.0.0.1 - - [22/Oct/2024 11:44:24] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 11:44:24,079 - INFO - 127.0.0.1 - - [22/Oct/2024 11:44:24] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 11:44:24,084 - INFO - 127.0.0.1 - - [22/Oct/2024 11:44:24] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 11:44:24,085 - INFO - 127.0.0.1 - - [22/Oct/2024 11:44:24] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 11:44:37,180 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 11:44:37,409 - INFO -  * Restarting with stat
+2024-10-22 11:44:38,039 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 11:44:38,041 - DEBUG - /etc/localtime found
+2024-10-22 11:44:38,042 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 11:44:38,043 - INFO - Scheduler started
+2024-10-22 11:44:38,044 - DEBUG - Looking for jobs to run
+2024-10-22 11:44:38,047 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 11:44:38,091 - WARNING -  * Debugger is active!
+2024-10-22 11:44:38,091 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 11:44:39,571 - INFO - 127.0.0.1 - - [22/Oct/2024 11:44:39] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 11:44:39,604 - INFO - 127.0.0.1 - - [22/Oct/2024 11:44:39] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 11:44:39,606 - INFO - 127.0.0.1 - - [22/Oct/2024 11:44:39] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 11:44:39,608 - INFO - 127.0.0.1 - - [22/Oct/2024 11:44:39] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 11:44:50,293 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 11:44:50,460 - INFO -  * Restarting with stat
+2024-10-22 11:44:51,057 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 11:44:51,058 - DEBUG - /etc/localtime found
+2024-10-22 11:44:51,059 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 11:44:51,060 - INFO - Scheduler started
+2024-10-22 11:44:51,061 - DEBUG - Looking for jobs to run
+2024-10-22 11:44:51,061 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 11:44:51,088 - WARNING -  * Debugger is active!
+2024-10-22 11:44:51,088 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 11:44:54,132 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 11:44:54,314 - INFO -  * Restarting with stat
+2024-10-22 11:44:54,959 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 11:44:54,960 - DEBUG - /etc/localtime found
+2024-10-22 11:44:54,961 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 11:44:54,963 - INFO - Scheduler started
+2024-10-22 11:44:54,964 - DEBUG - Looking for jobs to run
+2024-10-22 11:44:54,967 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 11:44:55,027 - WARNING -  * Debugger is active!
+2024-10-22 11:44:55,028 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 11:44:56,899 - INFO - 127.0.0.1 - - [22/Oct/2024 11:44:56] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 11:44:56,927 - INFO - 127.0.0.1 - - [22/Oct/2024 11:44:56] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 11:44:56,930 - INFO - 127.0.0.1 - - [22/Oct/2024 11:44:56] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 11:44:56,931 - INFO - 127.0.0.1 - - [22/Oct/2024 11:44:56] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 11:45:11,459 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 11:45:11,622 - INFO -  * Restarting with stat
+2024-10-22 11:45:12,207 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 11:45:12,208 - DEBUG - /etc/localtime found
+2024-10-22 11:45:12,208 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 11:45:12,209 - INFO - Scheduler started
+2024-10-22 11:45:12,209 - DEBUG - Looking for jobs to run
+2024-10-22 11:45:12,215 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 11:45:12,225 - WARNING -  * Debugger is active!
+2024-10-22 11:45:12,225 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 11:46:59,818 - INFO - 127.0.0.1 - - [22/Oct/2024 11:46:59] "[35m[1mGET /repay_loan HTTP/1.1[0m" 500 -
+2024-10-22 11:46:59,855 - INFO - 127.0.0.1 - - [22/Oct/2024 11:46:59] "[36mGET /repay_loan?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-22 11:46:59,856 - INFO - 127.0.0.1 - - [22/Oct/2024 11:46:59] "[36mGET /repay_loan?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-22 11:46:59,882 - INFO - 127.0.0.1 - - [22/Oct/2024 11:46:59] "GET /repay_loan?__debugger__=yes&cmd=resource&f=console.png&s=6Lnd1mEdnKX3RrsyzGZJ HTTP/1.1" 200 -
+2024-10-22 11:46:59,893 - INFO - 127.0.0.1 - - [22/Oct/2024 11:46:59] "[36mGET /repay_loan?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-22 11:48:20,329 - INFO - 127.0.0.1 - - [22/Oct/2024 11:48:20] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 11:48:20,393 - INFO - 127.0.0.1 - - [22/Oct/2024 11:48:20] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 11:48:20,397 - INFO - 127.0.0.1 - - [22/Oct/2024 11:48:20] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 11:48:20,411 - INFO - 127.0.0.1 - - [22/Oct/2024 11:48:20] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 11:48:42,352 - INFO - 127.0.0.1 - - [22/Oct/2024 11:48:42] "[35m[1mPOST /repay_loan HTTP/1.1[0m" 500 -
+2024-10-22 11:48:42,379 - INFO - 127.0.0.1 - - [22/Oct/2024 11:48:42] "[36mGET /repay_loan?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-22 11:48:42,381 - INFO - 127.0.0.1 - - [22/Oct/2024 11:48:42] "[36mGET /repay_loan?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-22 11:48:42,395 - INFO - 127.0.0.1 - - [22/Oct/2024 11:48:42] "[36mGET /repay_loan?__debugger__=yes&cmd=resource&f=console.png&s=6Lnd1mEdnKX3RrsyzGZJ HTTP/1.1[0m" 304 -
+2024-10-22 11:48:42,416 - INFO - 127.0.0.1 - - [22/Oct/2024 11:48:42] "[36mGET /repay_loan?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-22 11:51:52,740 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/models.py', reloading
+2024-10-22 11:51:53,024 - INFO -  * Restarting with stat
+2024-10-22 11:51:53,710 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 11:51:53,711 - DEBUG - /etc/localtime found
+2024-10-22 11:51:53,712 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 11:51:53,712 - INFO - Scheduler started
+2024-10-22 11:51:53,713 - DEBUG - Looking for jobs to run
+2024-10-22 11:51:53,718 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 11:51:53,728 - WARNING -  * Debugger is active!
+2024-10-22 11:51:53,728 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 11:52:07,946 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/models.py', reloading
+2024-10-22 11:52:08,190 - INFO -  * Restarting with stat
+2024-10-22 11:52:08,745 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 11:52:08,746 - DEBUG - /etc/localtime found
+2024-10-22 11:52:08,747 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 11:52:08,747 - INFO - Scheduler started
+2024-10-22 11:52:08,748 - DEBUG - Looking for jobs to run
+2024-10-22 11:52:08,748 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 11:52:08,765 - WARNING -  * Debugger is active!
+2024-10-22 11:52:08,766 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 11:52:13,865 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/models.py', reloading
+2024-10-22 11:52:14,031 - INFO -  * Restarting with stat
+2024-10-22 11:52:14,660 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 11:52:14,661 - DEBUG - /etc/localtime found
+2024-10-22 11:52:14,662 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 11:52:14,664 - INFO - Scheduler started
+2024-10-22 11:52:14,664 - DEBUG - Looking for jobs to run
+2024-10-22 11:52:14,669 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 11:52:14,681 - WARNING -  * Debugger is active!
+2024-10-22 11:52:14,682 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 11:52:23,538 - INFO - 127.0.0.1 - - [22/Oct/2024 11:52:23] "[35m[1mPOST /repay_loan HTTP/1.1[0m" 500 -
+2024-10-22 11:52:23,568 - INFO - 127.0.0.1 - - [22/Oct/2024 11:52:23] "[36mGET /repay_loan?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-22 11:52:23,575 - INFO - 127.0.0.1 - - [22/Oct/2024 11:52:23] "[36mGET /repay_loan?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-22 11:52:23,591 - INFO - 127.0.0.1 - - [22/Oct/2024 11:52:23] "GET /repay_loan?__debugger__=yes&cmd=resource&f=console.png&s=kDrFv8nxvGtSqHz60mlo HTTP/1.1" 200 -
+2024-10-22 11:52:23,603 - INFO - 127.0.0.1 - - [22/Oct/2024 11:52:23] "[36mGET /repay_loan?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-22 11:54:19,934 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/models.py', reloading
+2024-10-22 11:54:20,142 - INFO -  * Restarting with stat
+2024-10-22 11:54:20,702 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 11:54:20,703 - DEBUG - /etc/localtime found
+2024-10-22 11:54:20,703 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 11:54:20,704 - INFO - Scheduler started
+2024-10-22 11:54:20,705 - DEBUG - Looking for jobs to run
+2024-10-22 11:54:20,705 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 11:54:20,720 - WARNING -  * Debugger is active!
+2024-10-22 11:54:20,721 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 11:54:49,281 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/models.py', reloading
+2024-10-22 11:54:49,450 - INFO -  * Restarting with stat
+2024-10-22 11:54:50,012 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 11:54:50,013 - DEBUG - /etc/localtime found
+2024-10-22 11:54:50,013 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 11:54:50,014 - INFO - Scheduler started
+2024-10-22 11:54:50,015 - DEBUG - Looking for jobs to run
+2024-10-22 11:54:50,015 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 11:54:50,031 - WARNING -  * Debugger is active!
+2024-10-22 11:54:50,032 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 11:54:54,121 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/models.py', reloading
+2024-10-22 11:54:54,290 - INFO -  * Restarting with stat
+2024-10-22 11:54:54,866 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 11:54:54,866 - DEBUG - /etc/localtime found
+2024-10-22 11:54:54,867 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 11:54:54,868 - INFO - Scheduler started
+2024-10-22 11:54:54,868 - DEBUG - Looking for jobs to run
+2024-10-22 11:54:54,868 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 11:54:54,883 - WARNING -  * Debugger is active!
+2024-10-22 11:54:54,884 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 11:54:57,950 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/models.py', reloading
+2024-10-22 11:54:58,126 - INFO -  * Restarting with stat
+2024-10-22 11:54:58,839 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 11:54:58,840 - DEBUG - /etc/localtime found
+2024-10-22 11:54:58,841 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 11:54:58,842 - INFO - Scheduler started
+2024-10-22 11:54:58,843 - DEBUG - Looking for jobs to run
+2024-10-22 11:54:58,853 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 11:54:58,869 - WARNING -  * Debugger is active!
+2024-10-22 11:54:58,869 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 11:55:43,852 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 11:55:43,853 - DEBUG - /etc/localtime found
+2024-10-22 11:55:43,853 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 11:55:43,854 - INFO - Scheduler started
+2024-10-22 11:55:43,854 - DEBUG - Looking for jobs to run
+2024-10-22 11:55:43,860 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 11:56:09,551 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 11:56:09,552 - DEBUG - /etc/localtime found
+2024-10-22 11:56:09,552 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 11:56:09,553 - INFO - Scheduler started
+2024-10-22 11:56:09,553 - DEBUG - Looking for jobs to run
+2024-10-22 11:56:09,559 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 11:58:13,161 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/__init__.py', reloading
+2024-10-22 11:58:13,336 - INFO -  * Restarting with stat
+2024-10-22 12:00:46,235 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 12:00:46,235 - DEBUG - /etc/localtime found
+2024-10-22 12:00:46,236 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 12:00:46,237 - INFO - Scheduler started
+2024-10-22 12:00:46,237 - DEBUG - Looking for jobs to run
+2024-10-22 12:00:46,243 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 12:00:46,246 - ERROR - Error: Path doesn't exist: '/home/hinn/Documents/bizz_sacco/migrations'.  Please use the 'init' command to create a new scripts folder.
+2024-10-22 12:01:00,024 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 12:01:00,025 - DEBUG - /etc/localtime found
+2024-10-22 12:01:00,025 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 12:01:00,026 - INFO - Scheduler started
+2024-10-22 12:01:00,027 - DEBUG - Looking for jobs to run
+2024-10-22 12:01:00,032 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 12:01:00,036 - ERROR - Error: Path doesn't exist: '/home/hinn/Documents/bizz_sacco/migrations'.  Please use the 'init' command to create a new scripts folder.
+2024-10-22 12:02:58,237 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 12:02:58,238 - DEBUG - /etc/localtime found
+2024-10-22 12:02:58,238 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 12:02:58,239 - INFO - Scheduler started
+2024-10-22 12:02:58,239 - DEBUG - Looking for jobs to run
+2024-10-22 12:02:58,245 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 12:07:14,028 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 12:07:14,029 - DEBUG - /etc/localtime found
+2024-10-22 12:07:14,030 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 12:07:14,031 - INFO - Scheduler started
+2024-10-22 12:07:14,032 - DEBUG - Looking for jobs to run
+2024-10-22 12:07:14,037 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 12:07:14,050 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.41:5000
+2024-10-22 12:07:14,050 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-22 12:07:14,051 - INFO -  * Restarting with stat
+2024-10-22 12:07:14,685 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 12:07:14,686 - DEBUG - /etc/localtime found
+2024-10-22 12:07:14,687 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 12:07:14,688 - INFO - Scheduler started
+2024-10-22 12:07:14,688 - DEBUG - Looking for jobs to run
+2024-10-22 12:07:14,694 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 12:07:14,704 - WARNING -  * Debugger is active!
+2024-10-22 12:07:14,704 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 12:07:21,126 - INFO - 127.0.0.1 - - [22/Oct/2024 12:07:21] "[35m[1mPOST /repay_loan HTTP/1.1[0m" 500 -
+2024-10-22 12:07:21,164 - INFO - 127.0.0.1 - - [22/Oct/2024 12:07:21] "[36mGET /repay_loan?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-22 12:07:21,165 - INFO - 127.0.0.1 - - [22/Oct/2024 12:07:21] "[36mGET /repay_loan?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-22 12:07:21,193 - INFO - 127.0.0.1 - - [22/Oct/2024 12:07:21] "GET /repay_loan?__debugger__=yes&cmd=resource&f=console.png&s=uFybe0WNSg6MTbOyKQQr HTTP/1.1" 200 -
+2024-10-22 12:07:21,224 - INFO - 127.0.0.1 - - [22/Oct/2024 12:07:21] "[36mGET /repay_loan?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-22 12:16:19,901 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 12:16:19,902 - DEBUG - /etc/localtime found
+2024-10-22 12:16:19,903 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 12:16:19,904 - INFO - Scheduler started
+2024-10-22 12:16:19,904 - DEBUG - Looking for jobs to run
+2024-10-22 12:16:19,904 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 12:20:48,088 - INFO - 127.0.0.1 - - [22/Oct/2024 12:20:48] "[32mPOST /repay_loan HTTP/1.1[0m" 302 -
+2024-10-22 12:20:48,120 - INFO - 127.0.0.1 - - [22/Oct/2024 12:20:48] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 12:20:48,147 - INFO - 127.0.0.1 - - [22/Oct/2024 12:20:48] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:20:48,149 - INFO - 127.0.0.1 - - [22/Oct/2024 12:20:48] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:20:48,156 - INFO - 127.0.0.1 - - [22/Oct/2024 12:20:48] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:20:57,169 - INFO - 127.0.0.1 - - [22/Oct/2024 12:20:57] "GET /application HTTP/1.1" 200 -
+2024-10-22 12:20:57,263 - INFO - 127.0.0.1 - - [22/Oct/2024 12:20:57] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:20:57,266 - INFO - 127.0.0.1 - - [22/Oct/2024 12:20:57] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:20:57,270 - INFO - 127.0.0.1 - - [22/Oct/2024 12:20:57] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:22:01,170 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:01] "[32mPOST /apply_for_loan HTTP/1.1[0m" 302 -
+2024-10-22 12:22:01,182 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:01] "GET /loan_application_status HTTP/1.1" 200 -
+2024-10-22 12:22:01,204 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:01] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:22:01,208 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:01] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:22:01,218 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:01] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:22:14,157 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:14] "GET /admin HTTP/1.1" 200 -
+2024-10-22 12:22:14,196 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:14] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:22:14,202 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:14] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-22 12:22:15,815 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:15] "GET /admin/pending_loans HTTP/1.1" 200 -
+2024-10-22 12:22:15,906 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:15] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-22 12:22:15,906 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:15] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:22:15,910 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:15] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-22 12:22:17,653 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:17] "[32mPOST /admin/approve_loan/1 HTTP/1.1[0m" 302 -
+2024-10-22 12:22:17,660 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:17] "GET /admin/pending_loans HTTP/1.1" 200 -
+2024-10-22 12:22:17,686 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:17] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-22 12:22:17,689 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:17] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-22 12:22:17,691 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:17] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:22:20,262 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:20] "GET /admin HTTP/1.1" 200 -
+2024-10-22 12:22:20,330 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:20] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:22:20,333 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:20] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-22 12:22:22,631 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:22] "GET /admin/approved_loans HTTP/1.1" 200 -
+2024-10-22 12:22:22,731 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:22] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-22 12:22:22,736 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:22] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:22:22,736 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:22] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-22 12:22:24,332 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:24] "[32mPOST /disburse_loan/1 HTTP/1.1[0m" 302 -
+2024-10-22 12:22:24,350 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:24] "GET /admin/loans HTTP/1.1" 200 -
+2024-10-22 12:22:24,405 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:24] "[36mGET /static/css/loans.css HTTP/1.1[0m" 304 -
+2024-10-22 12:22:24,408 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:24] "[36mGET /static/js/loans.js HTTP/1.1[0m" 304 -
+2024-10-22 12:22:27,623 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:27] "GET /admin/disbursed_loans HTTP/1.1" 200 -
+2024-10-22 12:22:27,682 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:27] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-22 12:22:27,686 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:27] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:22:27,687 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:27] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-22 12:22:29,592 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:29] "GET /admin/members HTTP/1.1" 200 -
+2024-10-22 12:22:29,650 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:29] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-22 12:22:29,653 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:29] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:22:29,658 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:29] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
+2024-10-22 12:22:29,661 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:29] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-22 12:22:33,319 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:33] "GET /overview HTTP/1.1" 200 -
+2024-10-22 12:22:33,348 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:33] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:22:33,353 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:33] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:22:33,356 - INFO - 127.0.0.1 - - [22/Oct/2024 12:22:33] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:23:13,294 - INFO - 127.0.0.1 - - [22/Oct/2024 12:23:13] "GET /overview HTTP/1.1" 200 -
+2024-10-22 12:23:13,322 - INFO - 127.0.0.1 - - [22/Oct/2024 12:23:13] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:23:13,328 - INFO - 127.0.0.1 - - [22/Oct/2024 12:23:13] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:23:13,330 - INFO - 127.0.0.1 - - [22/Oct/2024 12:23:13] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:23:16,084 - INFO - 127.0.0.1 - - [22/Oct/2024 12:23:16] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 12:23:16,111 - INFO - 127.0.0.1 - - [22/Oct/2024 12:23:16] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:23:16,121 - INFO - 127.0.0.1 - - [22/Oct/2024 12:23:16] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:23:16,122 - INFO - 127.0.0.1 - - [22/Oct/2024 12:23:16] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:23:46,348 - INFO - 127.0.0.1 - - [22/Oct/2024 12:23:46] "GET /overview HTTP/1.1" 200 -
+2024-10-22 12:23:46,376 - INFO - 127.0.0.1 - - [22/Oct/2024 12:23:46] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:23:46,385 - INFO - 127.0.0.1 - - [22/Oct/2024 12:23:46] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:23:46,385 - INFO - 127.0.0.1 - - [22/Oct/2024 12:23:46] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:23:50,444 - INFO - 127.0.0.1 - - [22/Oct/2024 12:23:50] "GET /loan_application_status HTTP/1.1" 200 -
+2024-10-22 12:23:50,530 - INFO - 127.0.0.1 - - [22/Oct/2024 12:23:50] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:23:50,544 - INFO - 127.0.0.1 - - [22/Oct/2024 12:23:50] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:23:50,548 - INFO - 127.0.0.1 - - [22/Oct/2024 12:23:50] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:24:12,229 - INFO - 127.0.0.1 - - [22/Oct/2024 12:24:12] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 12:24:12,330 - INFO - 127.0.0.1 - - [22/Oct/2024 12:24:12] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:24:12,337 - INFO - 127.0.0.1 - - [22/Oct/2024 12:24:12] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:24:12,337 - INFO - 127.0.0.1 - - [22/Oct/2024 12:24:12] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:24:17,893 - INFO - 127.0.0.1 - - [22/Oct/2024 12:24:17] "[32mPOST /repay_loan HTTP/1.1[0m" 302 -
+2024-10-22 12:24:17,925 - INFO - 127.0.0.1 - - [22/Oct/2024 12:24:17] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 12:24:17,956 - INFO - 127.0.0.1 - - [22/Oct/2024 12:24:17] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:24:17,958 - INFO - 127.0.0.1 - - [22/Oct/2024 12:24:17] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:24:17,962 - INFO - 127.0.0.1 - - [22/Oct/2024 12:24:17] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:24:21,723 - INFO - 127.0.0.1 - - [22/Oct/2024 12:24:21] "GET /overview HTTP/1.1" 200 -
+2024-10-22 12:24:21,809 - INFO - 127.0.0.1 - - [22/Oct/2024 12:24:21] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:24:21,821 - INFO - 127.0.0.1 - - [22/Oct/2024 12:24:21] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:24:21,821 - INFO - 127.0.0.1 - - [22/Oct/2024 12:24:21] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:24:25,071 - INFO - 127.0.0.1 - - [22/Oct/2024 12:24:25] "GET /overview HTTP/1.1" 200 -
+2024-10-22 12:24:25,134 - INFO - 127.0.0.1 - - [22/Oct/2024 12:24:25] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:24:25,147 - INFO - 127.0.0.1 - - [22/Oct/2024 12:24:25] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:24:25,148 - INFO - 127.0.0.1 - - [22/Oct/2024 12:24:25] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:28:00,989 - INFO - 127.0.0.1 - - [22/Oct/2024 12:28:00] "GET /overview HTTP/1.1" 200 -
+2024-10-22 12:28:01,016 - INFO - 127.0.0.1 - - [22/Oct/2024 12:28:01] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:28:01,020 - INFO - 127.0.0.1 - - [22/Oct/2024 12:28:01] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:28:01,026 - INFO - 127.0.0.1 - - [22/Oct/2024 12:28:01] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:28:28,446 - INFO - 127.0.0.1 - - [22/Oct/2024 12:28:28] "GET /application HTTP/1.1" 200 -
+2024-10-22 12:28:28,536 - INFO - 127.0.0.1 - - [22/Oct/2024 12:28:28] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:28:28,548 - INFO - 127.0.0.1 - - [22/Oct/2024 12:28:28] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:28:28,549 - INFO - 127.0.0.1 - - [22/Oct/2024 12:28:28] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:28:31,139 - INFO - 127.0.0.1 - - [22/Oct/2024 12:28:31] "GET /application HTTP/1.1" 200 -
+2024-10-22 12:28:31,173 - INFO - 127.0.0.1 - - [22/Oct/2024 12:28:31] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:28:31,181 - INFO - 127.0.0.1 - - [22/Oct/2024 12:28:31] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:28:31,184 - INFO - 127.0.0.1 - - [22/Oct/2024 12:28:31] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:28:32,280 - INFO - 127.0.0.1 - - [22/Oct/2024 12:28:32] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 12:28:32,366 - INFO - 127.0.0.1 - - [22/Oct/2024 12:28:32] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:28:32,378 - INFO - 127.0.0.1 - - [22/Oct/2024 12:28:32] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:28:32,379 - INFO - 127.0.0.1 - - [22/Oct/2024 12:28:32] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:28:33,914 - INFO - 127.0.0.1 - - [22/Oct/2024 12:28:33] "GET /loan_application_status HTTP/1.1" 200 -
+2024-10-22 12:28:33,989 - INFO - 127.0.0.1 - - [22/Oct/2024 12:28:33] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:28:33,998 - INFO - 127.0.0.1 - - [22/Oct/2024 12:28:33] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:28:34,009 - INFO - 127.0.0.1 - - [22/Oct/2024 12:28:34] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:28:54,407 - INFO - 127.0.0.1 - - [22/Oct/2024 12:28:54] "GET /statements HTTP/1.1" 200 -
+2024-10-22 12:28:54,501 - INFO - 127.0.0.1 - - [22/Oct/2024 12:28:54] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:28:54,513 - INFO - 127.0.0.1 - - [22/Oct/2024 12:28:54] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:28:54,518 - INFO - 127.0.0.1 - - [22/Oct/2024 12:28:54] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:28:58,302 - INFO - 127.0.0.1 - - [22/Oct/2024 12:28:58] "GET /deposit HTTP/1.1" 200 -
+2024-10-22 12:28:58,380 - INFO - 127.0.0.1 - - [22/Oct/2024 12:28:58] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:28:58,387 - INFO - 127.0.0.1 - - [22/Oct/2024 12:28:58] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:28:58,389 - INFO - 127.0.0.1 - - [22/Oct/2024 12:28:58] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:29:02,758 - INFO - 127.0.0.1 - - [22/Oct/2024 12:29:02] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 12:29:02,849 - INFO - 127.0.0.1 - - [22/Oct/2024 12:29:02] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:29:02,859 - INFO - 127.0.0.1 - - [22/Oct/2024 12:29:02] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:29:02,862 - INFO - 127.0.0.1 - - [22/Oct/2024 12:29:02] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:29:04,333 - INFO - 127.0.0.1 - - [22/Oct/2024 12:29:04] "GET /overview HTTP/1.1" 200 -
+2024-10-22 12:29:04,433 - INFO - 127.0.0.1 - - [22/Oct/2024 12:29:04] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:29:04,445 - INFO - 127.0.0.1 - - [22/Oct/2024 12:29:04] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:29:04,446 - INFO - 127.0.0.1 - - [22/Oct/2024 12:29:04] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:31:37,145 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 12:31:37,382 - INFO -  * Restarting with stat
+2024-10-22 12:31:38,183 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 12:31:38,184 - DEBUG - /etc/localtime found
+2024-10-22 12:31:38,185 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 12:31:38,185 - INFO - Scheduler started
+2024-10-22 12:31:38,186 - DEBUG - Looking for jobs to run
+2024-10-22 12:31:38,191 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 12:31:38,201 - WARNING -  * Debugger is active!
+2024-10-22 12:31:38,201 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 12:32:05,282 - INFO - 127.0.0.1 - - [22/Oct/2024 12:32:05] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 12:32:05,315 - INFO - 127.0.0.1 - - [22/Oct/2024 12:32:05] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:32:05,317 - INFO - 127.0.0.1 - - [22/Oct/2024 12:32:05] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:32:05,318 - INFO - 127.0.0.1 - - [22/Oct/2024 12:32:05] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:32:09,977 - INFO - 127.0.0.1 - - [22/Oct/2024 12:32:09] "[32mPOST /repay_loan HTTP/1.1[0m" 302 -
+2024-10-22 12:32:09,990 - INFO - 127.0.0.1 - - [22/Oct/2024 12:32:09] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 12:32:10,022 - INFO - 127.0.0.1 - - [22/Oct/2024 12:32:10] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:32:10,028 - INFO - 127.0.0.1 - - [22/Oct/2024 12:32:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:32:10,034 - INFO - 127.0.0.1 - - [22/Oct/2024 12:32:10] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:32:12,721 - INFO - 127.0.0.1 - - [22/Oct/2024 12:32:12] "GET /overview HTTP/1.1" 200 -
+2024-10-22 12:32:12,797 - INFO - 127.0.0.1 - - [22/Oct/2024 12:32:12] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:32:12,803 - INFO - 127.0.0.1 - - [22/Oct/2024 12:32:12] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:32:12,806 - INFO - 127.0.0.1 - - [22/Oct/2024 12:32:12] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:38:51,030 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 12:38:51,267 - INFO -  * Restarting with stat
+2024-10-22 12:39:32,038 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 12:39:32,039 - DEBUG - /etc/localtime found
+2024-10-22 12:39:32,040 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 12:39:32,040 - INFO - Scheduler started
+2024-10-22 12:39:32,041 - DEBUG - Looking for jobs to run
+2024-10-22 12:39:32,046 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 12:39:32,061 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.41:5000
+2024-10-22 12:39:32,061 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-22 12:39:32,062 - INFO -  * Restarting with stat
+2024-10-22 12:39:32,993 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 12:39:32,993 - DEBUG - /etc/localtime found
+2024-10-22 12:39:32,995 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 12:39:32,996 - INFO - Scheduler started
+2024-10-22 12:39:32,996 - DEBUG - Looking for jobs to run
+2024-10-22 12:39:32,996 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 12:39:33,017 - WARNING -  * Debugger is active!
+2024-10-22 12:39:33,018 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 12:39:51,654 - INFO - 127.0.0.1 - - [22/Oct/2024 12:39:51] "GET /overview HTTP/1.1" 200 -
+2024-10-22 12:39:51,678 - INFO - 127.0.0.1 - - [22/Oct/2024 12:39:51] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:39:51,686 - INFO - 127.0.0.1 - - [22/Oct/2024 12:39:51] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:39:51,686 - INFO - 127.0.0.1 - - [22/Oct/2024 12:39:51] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:39:53,722 - INFO - 127.0.0.1 - - [22/Oct/2024 12:39:53] "GET /deposit HTTP/1.1" 200 -
+2024-10-22 12:39:53,761 - INFO - 127.0.0.1 - - [22/Oct/2024 12:39:53] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:39:53,777 - INFO - 127.0.0.1 - - [22/Oct/2024 12:39:53] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:39:53,781 - INFO - 127.0.0.1 - - [22/Oct/2024 12:39:53] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:40:08,113 - INFO - 127.0.0.1 - - [22/Oct/2024 12:40:08] "POST /deposit HTTP/1.1" 200 -
+2024-10-22 12:40:08,134 - INFO - 127.0.0.1 - - [22/Oct/2024 12:40:08] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:40:08,144 - INFO - 127.0.0.1 - - [22/Oct/2024 12:40:08] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:40:08,144 - INFO - 127.0.0.1 - - [22/Oct/2024 12:40:08] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:40:13,003 - INFO - 127.0.0.1 - - [22/Oct/2024 12:40:13] "GET /deposit HTTP/1.1" 200 -
+2024-10-22 12:40:13,087 - INFO - 127.0.0.1 - - [22/Oct/2024 12:40:13] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:40:13,102 - INFO - 127.0.0.1 - - [22/Oct/2024 12:40:13] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:40:13,103 - INFO - 127.0.0.1 - - [22/Oct/2024 12:40:13] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:43:00,828 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 12:43:01,036 - INFO -  * Restarting with stat
+2024-10-22 12:43:01,698 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 12:43:01,698 - DEBUG - /etc/localtime found
+2024-10-22 12:43:01,699 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 12:43:01,700 - INFO - Scheduler started
+2024-10-22 12:43:01,700 - DEBUG - Looking for jobs to run
+2024-10-22 12:43:01,705 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 12:43:01,714 - WARNING -  * Debugger is active!
+2024-10-22 12:43:01,715 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 12:43:51,897 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 12:43:52,102 - INFO -  * Restarting with stat
+2024-10-22 12:43:53,318 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 12:43:53,318 - DEBUG - /etc/localtime found
+2024-10-22 12:43:53,320 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 12:43:53,321 - INFO - Scheduler started
+2024-10-22 12:43:53,322 - DEBUG - Looking for jobs to run
+2024-10-22 12:43:53,322 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 12:43:53,350 - WARNING -  * Debugger is active!
+2024-10-22 12:43:53,351 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 12:43:54,391 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 12:43:54,582 - INFO -  * Restarting with stat
+2024-10-22 12:43:55,553 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 12:43:55,553 - DEBUG - /etc/localtime found
+2024-10-22 12:43:55,555 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 12:43:55,556 - INFO - Scheduler started
+2024-10-22 12:43:55,557 - DEBUG - Looking for jobs to run
+2024-10-22 12:43:55,557 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 12:43:55,582 - WARNING -  * Debugger is active!
+2024-10-22 12:43:55,583 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 12:43:56,623 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 12:43:56,850 - INFO -  * Restarting with stat
+2024-10-22 12:43:57,579 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 12:43:57,579 - DEBUG - /etc/localtime found
+2024-10-22 12:43:57,580 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 12:43:57,581 - INFO - Scheduler started
+2024-10-22 12:43:57,581 - DEBUG - Looking for jobs to run
+2024-10-22 12:43:57,587 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 12:43:57,598 - WARNING -  * Debugger is active!
+2024-10-22 12:43:57,598 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 12:44:06,759 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 12:44:06,934 - INFO -  * Restarting with stat
+2024-10-22 12:44:07,811 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 12:44:07,812 - DEBUG - /etc/localtime found
+2024-10-22 12:44:07,813 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 12:44:07,814 - INFO - Scheduler started
+2024-10-22 12:44:07,814 - DEBUG - Looking for jobs to run
+2024-10-22 12:44:07,819 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 12:44:07,834 - WARNING -  * Debugger is active!
+2024-10-22 12:44:07,835 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 12:44:11,893 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 12:44:12,076 - INFO -  * Restarting with stat
+2024-10-22 12:44:12,745 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 12:44:12,745 - DEBUG - /etc/localtime found
+2024-10-22 12:44:12,746 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 12:44:12,747 - INFO - Scheduler started
+2024-10-22 12:44:12,747 - DEBUG - Looking for jobs to run
+2024-10-22 12:44:12,748 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 12:44:12,762 - WARNING -  * Debugger is active!
+2024-10-22 12:44:12,762 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 12:44:37,669 - INFO - 127.0.0.1 - - [22/Oct/2024 12:44:37] "GET /deposit HTTP/1.1" 200 -
+2024-10-22 12:44:37,702 - INFO - 127.0.0.1 - - [22/Oct/2024 12:44:37] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:44:37,702 - INFO - 127.0.0.1 - - [22/Oct/2024 12:44:37] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:44:37,703 - INFO - 127.0.0.1 - - [22/Oct/2024 12:44:37] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:44:50,907 - INFO - 127.0.0.1 - - [22/Oct/2024 12:44:50] "POST /deposit HTTP/1.1" 200 -
+2024-10-22 12:44:50,929 - INFO - 127.0.0.1 - - [22/Oct/2024 12:44:50] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:44:50,936 - INFO - 127.0.0.1 - - [22/Oct/2024 12:44:50] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:44:50,937 - INFO - 127.0.0.1 - - [22/Oct/2024 12:44:50] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:44:54,519 - INFO - 127.0.0.1 - - [22/Oct/2024 12:44:54] "GET /deposit HTTP/1.1" 200 -
+2024-10-22 12:44:54,610 - INFO - 127.0.0.1 - - [22/Oct/2024 12:44:54] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:44:54,618 - INFO - 127.0.0.1 - - [22/Oct/2024 12:44:54] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:44:54,619 - INFO - 127.0.0.1 - - [22/Oct/2024 12:44:54] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:46:34,804 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 12:46:35,029 - INFO -  * Restarting with stat
+2024-10-22 12:46:35,801 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 12:46:35,801 - DEBUG - /etc/localtime found
+2024-10-22 12:46:35,802 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 12:46:35,803 - INFO - Scheduler started
+2024-10-22 12:46:35,803 - DEBUG - Looking for jobs to run
+2024-10-22 12:46:35,808 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 12:46:35,817 - WARNING -  * Debugger is active!
+2024-10-22 12:46:35,818 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 12:47:02,319 - INFO - 127.0.0.1 - - [22/Oct/2024 12:47:02] "GET /deposit HTTP/1.1" 200 -
+2024-10-22 12:47:02,344 - INFO - 127.0.0.1 - - [22/Oct/2024 12:47:02] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:47:02,347 - INFO - 127.0.0.1 - - [22/Oct/2024 12:47:02] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:47:02,350 - INFO - 127.0.0.1 - - [22/Oct/2024 12:47:02] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:47:07,700 - INFO - 127.0.0.1 - - [22/Oct/2024 12:47:07] "GET /overview HTTP/1.1" 200 -
+2024-10-22 12:47:07,723 - INFO - 127.0.0.1 - - [22/Oct/2024 12:47:07] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:47:07,729 - INFO - 127.0.0.1 - - [22/Oct/2024 12:47:07] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:47:07,732 - INFO - 127.0.0.1 - - [22/Oct/2024 12:47:07] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:47:30,063 - INFO - 127.0.0.1 - - [22/Oct/2024 12:47:30] "GET /overview HTTP/1.1" 200 -
+2024-10-22 12:47:30,082 - INFO - 127.0.0.1 - - [22/Oct/2024 12:47:30] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:47:30,090 - INFO - 127.0.0.1 - - [22/Oct/2024 12:47:30] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:47:30,091 - INFO - 127.0.0.1 - - [22/Oct/2024 12:47:30] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:48:09,952 - INFO - 127.0.0.1 - - [22/Oct/2024 12:48:09] "GET /application HTTP/1.1" 200 -
+2024-10-22 12:48:10,047 - INFO - 127.0.0.1 - - [22/Oct/2024 12:48:10] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:48:10,056 - INFO - 127.0.0.1 - - [22/Oct/2024 12:48:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:48:10,065 - INFO - 127.0.0.1 - - [22/Oct/2024 12:48:10] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:48:12,790 - INFO - 127.0.0.1 - - [22/Oct/2024 12:48:12] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 12:48:12,877 - INFO - 127.0.0.1 - - [22/Oct/2024 12:48:12] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:48:12,888 - INFO - 127.0.0.1 - - [22/Oct/2024 12:48:12] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:48:12,890 - INFO - 127.0.0.1 - - [22/Oct/2024 12:48:12] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:49:25,965 - INFO - 127.0.0.1 - - [22/Oct/2024 12:49:25] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 12:49:25,999 - INFO - 127.0.0.1 - - [22/Oct/2024 12:49:25] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:49:26,014 - INFO - 127.0.0.1 - - [22/Oct/2024 12:49:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:49:26,015 - INFO - 127.0.0.1 - - [22/Oct/2024 12:49:26] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:51:16,670 - INFO - 127.0.0.1 - - [22/Oct/2024 12:51:16] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 12:51:16,699 - INFO - 127.0.0.1 - - [22/Oct/2024 12:51:16] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:51:16,710 - INFO - 127.0.0.1 - - [22/Oct/2024 12:51:16] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:51:16,713 - INFO - 127.0.0.1 - - [22/Oct/2024 12:51:16] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:51:20,796 - INFO - 127.0.0.1 - - [22/Oct/2024 12:51:20] "GET /application HTTP/1.1" 200 -
+2024-10-22 12:51:20,883 - INFO - 127.0.0.1 - - [22/Oct/2024 12:51:20] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:51:20,896 - INFO - 127.0.0.1 - - [22/Oct/2024 12:51:20] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:51:20,909 - INFO - 127.0.0.1 - - [22/Oct/2024 12:51:20] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:53:31,421 - INFO - 127.0.0.1 - - [22/Oct/2024 12:53:31] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 12:53:31,508 - INFO - 127.0.0.1 - - [22/Oct/2024 12:53:31] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:53:31,517 - INFO - 127.0.0.1 - - [22/Oct/2024 12:53:31] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:53:31,518 - INFO - 127.0.0.1 - - [22/Oct/2024 12:53:31] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:54:26,472 - INFO - 127.0.0.1 - - [22/Oct/2024 12:54:26] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 12:54:26,520 - INFO - 127.0.0.1 - - [22/Oct/2024 12:54:26] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:54:26,528 - INFO - 127.0.0.1 - - [22/Oct/2024 12:54:26] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:54:26,529 - INFO - 127.0.0.1 - - [22/Oct/2024 12:54:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:54:44,551 - INFO - 127.0.0.1 - - [22/Oct/2024 12:54:44] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 12:54:44,585 - INFO - 127.0.0.1 - - [22/Oct/2024 12:54:44] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:54:44,592 - INFO - 127.0.0.1 - - [22/Oct/2024 12:54:44] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:54:44,599 - INFO - 127.0.0.1 - - [22/Oct/2024 12:54:44] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:54:49,902 - INFO - 127.0.0.1 - - [22/Oct/2024 12:54:49] "[32mPOST /repay_loan HTTP/1.1[0m" 302 -
+2024-10-22 12:54:49,913 - INFO - 127.0.0.1 - - [22/Oct/2024 12:54:49] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 12:54:49,933 - INFO - 127.0.0.1 - - [22/Oct/2024 12:54:49] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:54:49,945 - INFO - 127.0.0.1 - - [22/Oct/2024 12:54:49] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:54:49,945 - INFO - 127.0.0.1 - - [22/Oct/2024 12:54:49] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:54:51,822 - INFO - 127.0.0.1 - - [22/Oct/2024 12:54:51] "GET /overview HTTP/1.1" 200 -
+2024-10-22 12:54:51,869 - INFO - 127.0.0.1 - - [22/Oct/2024 12:54:51] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:54:51,878 - INFO - 127.0.0.1 - - [22/Oct/2024 12:54:51] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:54:51,882 - INFO - 127.0.0.1 - - [22/Oct/2024 12:54:51] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:54:55,313 - INFO - 127.0.0.1 - - [22/Oct/2024 12:54:55] "GET /application HTTP/1.1" 200 -
+2024-10-22 12:54:55,395 - INFO - 127.0.0.1 - - [22/Oct/2024 12:54:55] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:54:55,416 - INFO - 127.0.0.1 - - [22/Oct/2024 12:54:55] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:54:55,424 - INFO - 127.0.0.1 - - [22/Oct/2024 12:54:55] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:54:58,035 - INFO - 127.0.0.1 - - [22/Oct/2024 12:54:58] "GET /application HTTP/1.1" 200 -
+2024-10-22 12:54:58,062 - INFO - 127.0.0.1 - - [22/Oct/2024 12:54:58] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:54:58,069 - INFO - 127.0.0.1 - - [22/Oct/2024 12:54:58] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:54:58,070 - INFO - 127.0.0.1 - - [22/Oct/2024 12:54:58] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:54:59,704 - INFO - 127.0.0.1 - - [22/Oct/2024 12:54:59] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 12:54:59,790 - INFO - 127.0.0.1 - - [22/Oct/2024 12:54:59] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:54:59,798 - INFO - 127.0.0.1 - - [22/Oct/2024 12:54:59] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:54:59,801 - INFO - 127.0.0.1 - - [22/Oct/2024 12:54:59] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:55:01,024 - INFO - 127.0.0.1 - - [22/Oct/2024 12:55:01] "GET /loan_application_status HTTP/1.1" 200 -
+2024-10-22 12:55:01,092 - INFO - 127.0.0.1 - - [22/Oct/2024 12:55:01] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:55:01,098 - INFO - 127.0.0.1 - - [22/Oct/2024 12:55:01] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:55:01,099 - INFO - 127.0.0.1 - - [22/Oct/2024 12:55:01] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:55:12,632 - INFO - 127.0.0.1 - - [22/Oct/2024 12:55:12] "GET /deposit HTTP/1.1" 200 -
+2024-10-22 12:55:12,708 - INFO - 127.0.0.1 - - [22/Oct/2024 12:55:12] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:55:12,723 - INFO - 127.0.0.1 - - [22/Oct/2024 12:55:12] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:55:12,726 - INFO - 127.0.0.1 - - [22/Oct/2024 12:55:12] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:55:15,708 - INFO - 127.0.0.1 - - [22/Oct/2024 12:55:15] "GET /withdrawals HTTP/1.1" 200 -
+2024-10-22 12:55:15,740 - INFO - 127.0.0.1 - - [22/Oct/2024 12:55:15] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:55:15,748 - INFO - 127.0.0.1 - - [22/Oct/2024 12:55:15] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:55:15,750 - INFO - 127.0.0.1 - - [22/Oct/2024 12:55:15] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:55:17,338 - INFO - 127.0.0.1 - - [22/Oct/2024 12:55:17] "GET /statements HTTP/1.1" 200 -
+2024-10-22 12:55:17,441 - INFO - 127.0.0.1 - - [22/Oct/2024 12:55:17] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:55:17,444 - INFO - 127.0.0.1 - - [22/Oct/2024 12:55:17] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:55:17,451 - INFO - 127.0.0.1 - - [22/Oct/2024 12:55:17] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:56:37,590 - INFO - 127.0.0.1 - - [22/Oct/2024 12:56:37] "GET /profile HTTP/1.1" 200 -
+2024-10-22 12:56:37,682 - INFO - 127.0.0.1 - - [22/Oct/2024 12:56:37] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:56:37,687 - INFO - 127.0.0.1 - - [22/Oct/2024 12:56:37] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:56:37,698 - INFO - 127.0.0.1 - - [22/Oct/2024 12:56:37] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:56:39,764 - INFO - 127.0.0.1 - - [22/Oct/2024 12:56:39] "GET /support HTTP/1.1" 200 -
+2024-10-22 12:56:39,851 - INFO - 127.0.0.1 - - [22/Oct/2024 12:56:39] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:56:39,860 - INFO - 127.0.0.1 - - [22/Oct/2024 12:56:39] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:56:39,861 - INFO - 127.0.0.1 - - [22/Oct/2024 12:56:39] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:56:43,179 - INFO - 127.0.0.1 - - [22/Oct/2024 12:56:43] "GET /support?name=John+Doe&email=john.doe@example.com&message= HTTP/1.1" 200 -
+2024-10-22 12:56:43,208 - INFO - 127.0.0.1 - - [22/Oct/2024 12:56:43] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:56:43,214 - INFO - 127.0.0.1 - - [22/Oct/2024 12:56:43] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:56:43,223 - INFO - 127.0.0.1 - - [22/Oct/2024 12:56:43] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 12:56:59,006 - INFO - 127.0.0.1 - - [22/Oct/2024 12:56:59] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:58:19,196 - INFO - 127.0.0.1 - - [22/Oct/2024 12:58:19] "GET /support?name=John+Doe&email=john.doe@example.com&message= HTTP/1.1" 200 -
+2024-10-22 12:58:19,241 - INFO - 127.0.0.1 - - [22/Oct/2024 12:58:19] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 12:58:19,247 - INFO - 127.0.0.1 - - [22/Oct/2024 12:58:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 12:58:19,267 - INFO - 127.0.0.1 - - [22/Oct/2024 12:58:19] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:01:57,601 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 13:01:57,808 - INFO -  * Restarting with stat
+2024-10-22 13:01:58,506 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 13:01:58,506 - DEBUG - /etc/localtime found
+2024-10-22 13:01:58,507 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 13:01:58,508 - INFO - Scheduler started
+2024-10-22 13:01:58,508 - DEBUG - Looking for jobs to run
+2024-10-22 13:01:58,514 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 13:01:58,524 - WARNING -  * Debugger is active!
+2024-10-22 13:01:58,525 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 13:02:01,591 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 13:02:01,778 - INFO -  * Restarting with stat
+2024-10-22 13:02:02,725 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 13:02:02,726 - DEBUG - /etc/localtime found
+2024-10-22 13:02:02,727 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 13:02:02,728 - INFO - Scheduler started
+2024-10-22 13:02:02,729 - DEBUG - Looking for jobs to run
+2024-10-22 13:02:02,734 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 13:02:02,750 - WARNING -  * Debugger is active!
+2024-10-22 13:02:02,751 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 13:02:03,792 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 13:02:04,017 - INFO -  * Restarting with stat
+2024-10-22 13:02:04,687 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 13:02:04,688 - DEBUG - /etc/localtime found
+2024-10-22 13:02:04,688 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 13:02:04,689 - INFO - Scheduler started
+2024-10-22 13:02:04,690 - DEBUG - Looking for jobs to run
+2024-10-22 13:02:04,695 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 13:02:04,709 - WARNING -  * Debugger is active!
+2024-10-22 13:02:04,710 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 13:02:11,853 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 13:02:12,046 - INFO -  * Restarting with stat
+2024-10-22 13:02:12,699 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 13:02:12,699 - DEBUG - /etc/localtime found
+2024-10-22 13:02:12,700 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 13:02:12,701 - INFO - Scheduler started
+2024-10-22 13:02:12,701 - DEBUG - Looking for jobs to run
+2024-10-22 13:02:12,702 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 13:02:12,719 - WARNING -  * Debugger is active!
+2024-10-22 13:02:12,719 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 13:02:13,744 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 13:02:13,913 - INFO -  * Restarting with stat
+2024-10-22 13:02:14,580 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 13:02:14,580 - DEBUG - /etc/localtime found
+2024-10-22 13:02:14,581 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 13:02:14,582 - INFO - Scheduler started
+2024-10-22 13:02:14,582 - DEBUG - Looking for jobs to run
+2024-10-22 13:02:14,587 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 13:02:14,597 - WARNING -  * Debugger is active!
+2024-10-22 13:02:14,597 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 13:03:45,560 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 13:03:45,744 - INFO -  * Restarting with stat
+2024-10-22 13:03:46,782 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 13:03:46,782 - DEBUG - /etc/localtime found
+2024-10-22 13:03:46,784 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 13:03:46,786 - INFO - Scheduler started
+2024-10-22 13:03:46,786 - DEBUG - Looking for jobs to run
+2024-10-22 13:03:46,787 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 13:03:46,809 - WARNING -  * Debugger is active!
+2024-10-22 13:03:46,809 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 13:03:49,862 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 13:03:50,072 - INFO -  * Restarting with stat
+2024-10-22 13:03:51,041 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 13:03:51,042 - DEBUG - /etc/localtime found
+2024-10-22 13:03:51,044 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 13:03:51,046 - INFO - Scheduler started
+2024-10-22 13:03:51,047 - DEBUG - Looking for jobs to run
+2024-10-22 13:03:51,047 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 13:03:51,075 - WARNING -  * Debugger is active!
+2024-10-22 13:03:51,075 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 13:03:53,119 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 13:03:53,337 - INFO -  * Restarting with stat
+2024-10-22 13:03:54,261 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 13:03:54,261 - DEBUG - /etc/localtime found
+2024-10-22 13:03:54,262 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 13:03:54,263 - INFO - Scheduler started
+2024-10-22 13:03:54,263 - DEBUG - Looking for jobs to run
+2024-10-22 13:03:54,268 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 13:03:54,283 - WARNING -  * Debugger is active!
+2024-10-22 13:03:54,284 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 13:04:16,188 - INFO - 127.0.0.1 - - [22/Oct/2024 13:04:16] "GET /support?name=John+Doe&email=john.doe@example.com&message= HTTP/1.1" 200 -
+2024-10-22 13:04:16,223 - INFO - 127.0.0.1 - - [22/Oct/2024 13:04:16] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:04:16,226 - INFO - 127.0.0.1 - - [22/Oct/2024 13:04:16] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 13:04:16,227 - INFO - 127.0.0.1 - - [22/Oct/2024 13:04:16] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:05:51,380 - INFO - 127.0.0.1 - - [22/Oct/2024 13:05:51] "GET /support?name=John+Doe&email=john.doe@example.com&message= HTTP/1.1" 200 -
+2024-10-22 13:05:51,408 - INFO - 127.0.0.1 - - [22/Oct/2024 13:05:51] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 13:05:51,413 - INFO - 127.0.0.1 - - [22/Oct/2024 13:05:51] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:05:51,415 - INFO - 127.0.0.1 - - [22/Oct/2024 13:05:51] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:07:52,312 - INFO - 127.0.0.1 - - [22/Oct/2024 13:07:52] "GET /support?name=John+Doe&email=john.doe@example.com&message= HTTP/1.1" 200 -
+2024-10-22 13:07:52,379 - INFO - 127.0.0.1 - - [22/Oct/2024 13:07:52] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 13:07:52,383 - INFO - 127.0.0.1 - - [22/Oct/2024 13:07:52] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:07:52,394 - INFO - 127.0.0.1 - - [22/Oct/2024 13:07:52] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:08:34,148 - INFO - 127.0.0.1 - - [22/Oct/2024 13:08:34] "GET /support?name=John+Doe&email=john.doe@example.com&message= HTTP/1.1" 200 -
+2024-10-22 13:08:34,176 - INFO - 127.0.0.1 - - [22/Oct/2024 13:08:34] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 13:08:34,187 - INFO - 127.0.0.1 - - [22/Oct/2024 13:08:34] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:08:34,189 - INFO - 127.0.0.1 - - [22/Oct/2024 13:08:34] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:09:56,077 - INFO - 127.0.0.1 - - [22/Oct/2024 13:09:56] "GET /support?name=John+Doe&email=john.doe@example.com&message= HTTP/1.1" 200 -
+2024-10-22 13:09:56,108 - INFO - 127.0.0.1 - - [22/Oct/2024 13:09:56] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 13:09:56,120 - INFO - 127.0.0.1 - - [22/Oct/2024 13:09:56] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:09:56,120 - INFO - 127.0.0.1 - - [22/Oct/2024 13:09:56] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:10:11,854 - INFO - 127.0.0.1 - - [22/Oct/2024 13:10:11] "[35m[1mPOST /contact HTTP/1.1[0m" 500 -
+2024-10-22 13:10:11,884 - INFO - 127.0.0.1 - - [22/Oct/2024 13:10:11] "GET /contact?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-10-22 13:10:11,885 - INFO - 127.0.0.1 - - [22/Oct/2024 13:10:11] "GET /contact?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-10-22 13:10:11,903 - INFO - 127.0.0.1 - - [22/Oct/2024 13:10:11] "GET /contact?__debugger__=yes&cmd=resource&f=console.png&s=nM6UrhhevAc4M0xewyTP HTTP/1.1" 200 -
+2024-10-22 13:10:11,936 - INFO - 127.0.0.1 - - [22/Oct/2024 13:10:11] "GET /contact?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-10-22 13:14:21,447 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 13:14:21,650 - INFO -  * Restarting with stat
+2024-10-22 13:14:22,598 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 13:14:22,599 - DEBUG - /etc/localtime found
+2024-10-22 13:14:22,600 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 13:14:22,600 - INFO - Scheduler started
+2024-10-22 13:14:22,601 - DEBUG - Looking for jobs to run
+2024-10-22 13:14:22,606 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 13:14:22,616 - WARNING -  * Debugger is active!
+2024-10-22 13:14:22,617 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 13:14:29,938 - INFO - 127.0.0.1 - - [22/Oct/2024 13:14:29] "[35m[1mPOST /contact HTTP/1.1[0m" 500 -
+2024-10-22 13:14:29,989 - INFO - 127.0.0.1 - - [22/Oct/2024 13:14:29] "[36mGET /contact?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-22 13:14:29,990 - INFO - 127.0.0.1 - - [22/Oct/2024 13:14:29] "[36mGET /contact?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-22 13:14:30,010 - INFO - 127.0.0.1 - - [22/Oct/2024 13:14:30] "GET /contact?__debugger__=yes&cmd=resource&f=console.png&s=Kt5Fpvddp9OjRUz13BQh HTTP/1.1" 200 -
+2024-10-22 13:14:30,026 - INFO - 127.0.0.1 - - [22/Oct/2024 13:14:30] "[36mGET /contact?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-22 13:14:40,054 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 13:14:40,247 - INFO -  * Restarting with stat
+2024-10-22 13:14:41,070 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 13:14:41,070 - DEBUG - /etc/localtime found
+2024-10-22 13:14:41,071 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 13:14:41,072 - INFO - Scheduler started
+2024-10-22 13:14:41,072 - DEBUG - Looking for jobs to run
+2024-10-22 13:14:41,072 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 13:14:41,087 - WARNING -  * Debugger is active!
+2024-10-22 13:14:41,087 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 13:14:45,834 - INFO - 127.0.0.1 - - [22/Oct/2024 13:14:45] "POST /contact HTTP/1.1" 200 -
+2024-10-22 13:14:45,856 - INFO - 127.0.0.1 - - [22/Oct/2024 13:14:45] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 13:14:45,860 - INFO - 127.0.0.1 - - [22/Oct/2024 13:14:45] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:14:45,861 - INFO - 127.0.0.1 - - [22/Oct/2024 13:14:45] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:16:59,128 - INFO - 127.0.0.1 - - [22/Oct/2024 13:16:59] "GET /application HTTP/1.1" 200 -
+2024-10-22 13:16:59,155 - INFO - 127.0.0.1 - - [22/Oct/2024 13:16:59] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 13:16:59,160 - INFO - 127.0.0.1 - - [22/Oct/2024 13:16:59] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:16:59,161 - INFO - 127.0.0.1 - - [22/Oct/2024 13:16:59] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:32:59,522 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 13:32:59,523 - DEBUG - /etc/localtime found
+2024-10-22 13:32:59,524 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 13:32:59,524 - INFO - Scheduler started
+2024-10-22 13:32:59,525 - DEBUG - Looking for jobs to run
+2024-10-22 13:32:59,530 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 13:32:59,543 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.41:5000
+2024-10-22 13:32:59,543 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-22 13:32:59,544 - INFO -  * Restarting with stat
+2024-10-22 13:33:00,272 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 13:33:00,272 - DEBUG - /etc/localtime found
+2024-10-22 13:33:00,273 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 13:33:00,274 - INFO - Scheduler started
+2024-10-22 13:33:00,274 - DEBUG - Looking for jobs to run
+2024-10-22 13:33:00,274 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 13:33:00,293 - WARNING -  * Debugger is active!
+2024-10-22 13:33:00,294 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 13:33:37,183 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 13:33:37,417 - INFO -  * Restarting with stat
+2024-10-22 13:33:38,162 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 13:33:38,162 - DEBUG - /etc/localtime found
+2024-10-22 13:33:38,163 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 13:33:38,164 - INFO - Scheduler started
+2024-10-22 13:33:38,164 - DEBUG - Looking for jobs to run
+2024-10-22 13:33:38,164 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 13:33:38,181 - WARNING -  * Debugger is active!
+2024-10-22 13:33:38,182 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 13:34:03,987 - INFO - 127.0.0.1 - - [22/Oct/2024 13:34:03] "GET /application HTTP/1.1" 200 -
+2024-10-22 13:34:04,017 - INFO - 127.0.0.1 - - [22/Oct/2024 13:34:04] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 13:34:04,021 - INFO - 127.0.0.1 - - [22/Oct/2024 13:34:04] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:34:04,024 - INFO - 127.0.0.1 - - [22/Oct/2024 13:34:04] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:34:11,294 - INFO - 127.0.0.1 - - [22/Oct/2024 13:34:11] "GET /support HTTP/1.1" 200 -
+2024-10-22 13:34:11,332 - INFO - 127.0.0.1 - - [22/Oct/2024 13:34:11] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 13:34:11,336 - INFO - 127.0.0.1 - - [22/Oct/2024 13:34:11] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:34:11,344 - INFO - 127.0.0.1 - - [22/Oct/2024 13:34:11] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:34:11,650 - INFO - 127.0.0.1 - - [22/Oct/2024 13:34:11] "GET /support HTTP/1.1" 200 -
+2024-10-22 13:34:11,704 - INFO - 127.0.0.1 - - [22/Oct/2024 13:34:11] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 13:34:11,711 - INFO - 127.0.0.1 - - [22/Oct/2024 13:34:11] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:34:11,712 - INFO - 127.0.0.1 - - [22/Oct/2024 13:34:11] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:34:23,569 - INFO - 127.0.0.1 - - [22/Oct/2024 13:34:23] "POST /contact HTTP/1.1" 200 -
+2024-10-22 13:34:23,598 - INFO - 127.0.0.1 - - [22/Oct/2024 13:34:23] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 13:34:23,606 - INFO - 127.0.0.1 - - [22/Oct/2024 13:34:23] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:34:23,611 - INFO - 127.0.0.1 - - [22/Oct/2024 13:34:23] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:34:26,849 - INFO - 127.0.0.1 - - [22/Oct/2024 13:34:26] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 13:34:26,932 - INFO - 127.0.0.1 - - [22/Oct/2024 13:34:26] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 13:34:26,939 - INFO - 127.0.0.1 - - [22/Oct/2024 13:34:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:34:26,942 - INFO - 127.0.0.1 - - [22/Oct/2024 13:34:26] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:34:28,218 - INFO - 127.0.0.1 - - [22/Oct/2024 13:34:28] "GET /loan_application_status HTTP/1.1" 200 -
+2024-10-22 13:34:28,297 - INFO - 127.0.0.1 - - [22/Oct/2024 13:34:28] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 13:34:28,306 - INFO - 127.0.0.1 - - [22/Oct/2024 13:34:28] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:34:28,306 - INFO - 127.0.0.1 - - [22/Oct/2024 13:34:28] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:34:29,918 - INFO - 127.0.0.1 - - [22/Oct/2024 13:34:29] "GET /application HTTP/1.1" 200 -
+2024-10-22 13:34:29,984 - INFO - 127.0.0.1 - - [22/Oct/2024 13:34:29] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 13:34:29,995 - INFO - 127.0.0.1 - - [22/Oct/2024 13:34:29] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:34:29,996 - INFO - 127.0.0.1 - - [22/Oct/2024 13:34:29] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:35:02,627 - INFO - 127.0.0.1 - - [22/Oct/2024 13:35:02] "GET /overview HTTP/1.1" 200 -
+2024-10-22 13:35:02,646 - INFO - 127.0.0.1 - - [22/Oct/2024 13:35:02] "[36mGET /static/assets/96c68ddfb24a4e8ascreen.png HTTP/1.1[0m" 304 -
+2024-10-22 13:35:02,676 - INFO - 127.0.0.1 - - [22/Oct/2024 13:35:02] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:35:02,685 - INFO - 127.0.0.1 - - [22/Oct/2024 13:35:02] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:35:06,022 - INFO - 127.0.0.1 - - [22/Oct/2024 13:35:06] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-10-22 13:35:06,041 - INFO - 127.0.0.1 - - [22/Oct/2024 13:35:06] "GET /login HTTP/1.1" 200 -
+2024-10-22 13:35:06,090 - INFO - 127.0.0.1 - - [22/Oct/2024 13:35:06] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
+2024-10-22 13:35:06,091 - INFO - 127.0.0.1 - - [22/Oct/2024 13:35:06] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
+2024-10-22 13:35:08,872 - INFO - 127.0.0.1 - - [22/Oct/2024 13:35:08] "GET /reset_password HTTP/1.1" 200 -
+2024-10-22 13:35:08,909 - INFO - 127.0.0.1 - - [22/Oct/2024 13:35:08] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
+2024-10-22 13:35:08,910 - INFO - 127.0.0.1 - - [22/Oct/2024 13:35:08] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
+2024-10-22 13:35:45,829 - INFO - 127.0.0.1 - - [22/Oct/2024 13:35:45] "[35m[1mPOST /reset_password HTTP/1.1[0m" 500 -
+2024-10-22 13:35:45,853 - INFO - 127.0.0.1 - - [22/Oct/2024 13:35:45] "GET /reset_password?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-10-22 13:35:45,854 - INFO - 127.0.0.1 - - [22/Oct/2024 13:35:45] "GET /reset_password?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-10-22 13:35:45,881 - INFO - 127.0.0.1 - - [22/Oct/2024 13:35:45] "GET /reset_password?__debugger__=yes&cmd=resource&f=console.png&s=eYsBEa4CWbNS15hKpjix HTTP/1.1" 200 -
+2024-10-22 13:35:45,897 - INFO - 127.0.0.1 - - [22/Oct/2024 13:35:45] "GET /reset_password?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-10-22 13:37:32,516 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/__init__.py', reloading
+2024-10-22 13:37:32,760 - INFO -  * Restarting with stat
+2024-10-22 13:37:33,474 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 13:37:33,475 - DEBUG - /etc/localtime found
+2024-10-22 13:37:33,476 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 13:37:33,476 - INFO - Scheduler started
+2024-10-22 13:37:33,477 - DEBUG - Looking for jobs to run
+2024-10-22 13:37:33,477 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 13:37:33,493 - WARNING -  * Debugger is active!
+2024-10-22 13:37:33,494 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 13:37:53,014 - INFO - 127.0.0.1 - - [22/Oct/2024 13:37:53] "[35m[1mPOST /reset_password HTTP/1.1[0m" 500 -
+2024-10-22 13:37:53,056 - INFO - 127.0.0.1 - - [22/Oct/2024 13:37:53] "[36mGET /reset_password?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-22 13:37:53,057 - INFO - 127.0.0.1 - - [22/Oct/2024 13:37:53] "[36mGET /reset_password?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-22 13:37:53,080 - INFO - 127.0.0.1 - - [22/Oct/2024 13:37:53] "GET /reset_password?__debugger__=yes&cmd=resource&f=console.png&s=cncM9QJSafj0kT6htXRe HTTP/1.1" 200 -
+2024-10-22 13:37:53,099 - INFO - 127.0.0.1 - - [22/Oct/2024 13:37:53] "[36mGET /reset_password?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-22 13:38:37,196 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/__init__.py', reloading
+2024-10-22 13:38:37,408 - INFO -  * Restarting with stat
+2024-10-22 13:38:38,340 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 13:38:38,340 - DEBUG - /etc/localtime found
+2024-10-22 13:38:38,342 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 13:38:38,343 - INFO - Scheduler started
+2024-10-22 13:38:38,343 - DEBUG - Looking for jobs to run
+2024-10-22 13:38:38,349 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 13:38:38,370 - WARNING -  * Debugger is active!
+2024-10-22 13:38:38,370 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 13:38:39,397 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/__init__.py', reloading
+2024-10-22 13:38:39,580 - INFO -  * Restarting with stat
+2024-10-22 13:38:40,464 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 13:38:40,464 - DEBUG - /etc/localtime found
+2024-10-22 13:38:40,465 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 13:38:40,466 - INFO - Scheduler started
+2024-10-22 13:38:40,467 - DEBUG - Looking for jobs to run
+2024-10-22 13:38:40,472 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 13:38:40,487 - WARNING -  * Debugger is active!
+2024-10-22 13:38:40,488 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 13:38:45,107 - INFO - 127.0.0.1 - - [22/Oct/2024 13:38:45] "[35m[1mPOST /reset_password HTTP/1.1[0m" 500 -
+2024-10-22 13:38:45,142 - INFO - 127.0.0.1 - - [22/Oct/2024 13:38:45] "[36mGET /reset_password?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-22 13:38:45,142 - INFO - 127.0.0.1 - - [22/Oct/2024 13:38:45] "[36mGET /reset_password?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-22 13:38:45,160 - INFO - 127.0.0.1 - - [22/Oct/2024 13:38:45] "GET /reset_password?__debugger__=yes&cmd=resource&f=console.png&s=DqSH81bZvExmrf1jV6vK HTTP/1.1" 200 -
+2024-10-22 13:38:45,171 - INFO - 127.0.0.1 - - [22/Oct/2024 13:38:45] "[36mGET /reset_password?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-22 13:39:26,500 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/__init__.py', reloading
+2024-10-22 13:39:26,717 - INFO -  * Restarting with stat
+2024-10-22 13:39:27,664 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 13:39:27,665 - DEBUG - /etc/localtime found
+2024-10-22 13:39:27,666 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 13:39:27,667 - INFO - Scheduler started
+2024-10-22 13:39:27,668 - DEBUG - Looking for jobs to run
+2024-10-22 13:39:27,673 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 13:39:27,694 - WARNING -  * Debugger is active!
+2024-10-22 13:39:27,695 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 13:39:28,724 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/__init__.py', reloading
+2024-10-22 13:39:28,898 - INFO -  * Restarting with stat
+2024-10-22 13:39:29,557 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 13:39:29,558 - DEBUG - /etc/localtime found
+2024-10-22 13:39:29,559 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 13:39:29,559 - INFO - Scheduler started
+2024-10-22 13:39:29,560 - DEBUG - Looking for jobs to run
+2024-10-22 13:39:29,565 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 13:39:29,575 - WARNING -  * Debugger is active!
+2024-10-22 13:39:29,575 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 13:39:35,729 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/__init__.py', reloading
+2024-10-22 13:39:35,901 - INFO -  * Restarting with stat
+2024-10-22 13:39:36,710 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 13:39:36,710 - DEBUG - /etc/localtime found
+2024-10-22 13:39:36,712 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 13:39:36,713 - INFO - Scheduler started
+2024-10-22 13:39:36,713 - DEBUG - Looking for jobs to run
+2024-10-22 13:39:36,725 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 13:39:36,746 - WARNING -  * Debugger is active!
+2024-10-22 13:39:36,747 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 13:39:37,783 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/__init__.py', reloading
+2024-10-22 13:39:37,991 - INFO -  * Restarting with stat
+2024-10-22 13:39:38,734 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 13:39:38,735 - DEBUG - /etc/localtime found
+2024-10-22 13:39:38,735 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 13:39:38,736 - INFO - Scheduler started
+2024-10-22 13:39:38,737 - DEBUG - Looking for jobs to run
+2024-10-22 13:39:38,742 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 13:39:38,756 - WARNING -  * Debugger is active!
+2024-10-22 13:39:38,756 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 13:39:43,393 - INFO - 127.0.0.1 - - [22/Oct/2024 13:39:43] "[35m[1mPOST /reset_password HTTP/1.1[0m" 500 -
+2024-10-22 13:39:43,424 - INFO - 127.0.0.1 - - [22/Oct/2024 13:39:43] "[36mGET /reset_password?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-22 13:39:43,429 - INFO - 127.0.0.1 - - [22/Oct/2024 13:39:43] "[36mGET /reset_password?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-22 13:39:43,447 - INFO - 127.0.0.1 - - [22/Oct/2024 13:39:43] "GET /reset_password?__debugger__=yes&cmd=resource&f=console.png&s=90jOnQ0CyG7M2j5auFXQ HTTP/1.1" 200 -
+2024-10-22 13:39:43,466 - INFO - 127.0.0.1 - - [22/Oct/2024 13:39:43] "[36mGET /reset_password?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-10-22 13:46:51,577 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 13:46:51,578 - DEBUG - /etc/localtime found
+2024-10-22 13:46:51,579 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 13:46:51,580 - INFO - Scheduler started
+2024-10-22 13:46:51,580 - DEBUG - Looking for jobs to run
+2024-10-22 13:46:51,585 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 13:46:51,600 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.41:5000
+2024-10-22 13:46:51,600 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-22 13:46:51,601 - INFO -  * Restarting with stat
+2024-10-22 13:46:52,446 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 13:46:52,447 - DEBUG - /etc/localtime found
+2024-10-22 13:46:52,448 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 13:46:52,448 - INFO - Scheduler started
+2024-10-22 13:46:52,449 - DEBUG - Looking for jobs to run
+2024-10-22 13:46:52,449 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 13:46:52,467 - WARNING -  * Debugger is active!
+2024-10-22 13:46:52,467 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 13:47:01,383 - INFO - 127.0.0.1 - - [22/Oct/2024 13:47:01] "[32mPOST /reset_password HTTP/1.1[0m" 302 -
+2024-10-22 13:47:01,427 - INFO - 127.0.0.1 - - [22/Oct/2024 13:47:01] "GET /login HTTP/1.1" 200 -
+2024-10-22 13:47:01,466 - INFO - 127.0.0.1 - - [22/Oct/2024 13:47:01] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
+2024-10-22 13:47:01,466 - INFO - 127.0.0.1 - - [22/Oct/2024 13:47:01] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
+2024-10-22 13:48:26,052 - INFO - 127.0.0.1 - - [22/Oct/2024 13:48:26] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-10-22 13:48:26,075 - INFO - 127.0.0.1 - - [22/Oct/2024 13:48:26] "GET /overview HTTP/1.1" 200 -
+2024-10-22 13:48:26,113 - INFO - 127.0.0.1 - - [22/Oct/2024 13:48:26] "GET /static/assets/579be8fd15e25df3458227363_1176625970237162_7784013221116217385_n.jpg HTTP/1.1" 200 -
+2024-10-22 13:48:26,140 - INFO - 127.0.0.1 - - [22/Oct/2024 13:48:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:48:26,149 - INFO - 127.0.0.1 - - [22/Oct/2024 13:48:26] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:48:31,575 - INFO - 127.0.0.1 - - [22/Oct/2024 13:48:31] "GET /overview HTTP/1.1" 200 -
+2024-10-22 13:48:31,613 - INFO - 127.0.0.1 - - [22/Oct/2024 13:48:31] "[36mGET /static/assets/579be8fd15e25df3458227363_1176625970237162_7784013221116217385_n.jpg HTTP/1.1[0m" 304 -
+2024-10-22 13:48:31,616 - INFO - 127.0.0.1 - - [22/Oct/2024 13:48:31] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:48:31,619 - INFO - 127.0.0.1 - - [22/Oct/2024 13:48:31] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:48:34,036 - INFO - 127.0.0.1 - - [22/Oct/2024 13:48:34] "GET /deposit HTTP/1.1" 200 -
+2024-10-22 13:48:34,089 - INFO - 127.0.0.1 - - [22/Oct/2024 13:48:34] "[36mGET /static/assets/579be8fd15e25df3458227363_1176625970237162_7784013221116217385_n.jpg HTTP/1.1[0m" 304 -
+2024-10-22 13:48:34,113 - INFO - 127.0.0.1 - - [22/Oct/2024 13:48:34] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:48:34,118 - INFO - 127.0.0.1 - - [22/Oct/2024 13:48:34] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:48:42,661 - INFO - 127.0.0.1 - - [22/Oct/2024 13:48:42] "POST /deposit HTTP/1.1" 200 -
+2024-10-22 13:48:42,707 - INFO - 127.0.0.1 - - [22/Oct/2024 13:48:42] "[36mGET /static/assets/579be8fd15e25df3458227363_1176625970237162_7784013221116217385_n.jpg HTTP/1.1[0m" 304 -
+2024-10-22 13:48:42,709 - INFO - 127.0.0.1 - - [22/Oct/2024 13:48:42] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:48:42,711 - INFO - 127.0.0.1 - - [22/Oct/2024 13:48:42] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:48:44,621 - INFO - 127.0.0.1 - - [22/Oct/2024 13:48:44] "GET /overview HTTP/1.1" 200 -
+2024-10-22 13:48:44,706 - INFO - 127.0.0.1 - - [22/Oct/2024 13:48:44] "[36mGET /static/assets/579be8fd15e25df3458227363_1176625970237162_7784013221116217385_n.jpg HTTP/1.1[0m" 304 -
+2024-10-22 13:48:44,711 - INFO - 127.0.0.1 - - [22/Oct/2024 13:48:44] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:48:44,713 - INFO - 127.0.0.1 - - [22/Oct/2024 13:48:44] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:48:47,464 - INFO - 127.0.0.1 - - [22/Oct/2024 13:48:47] "GET /overview HTTP/1.1" 200 -
+2024-10-22 13:48:47,487 - INFO - 127.0.0.1 - - [22/Oct/2024 13:48:47] "[36mGET /static/assets/579be8fd15e25df3458227363_1176625970237162_7784013221116217385_n.jpg HTTP/1.1[0m" 304 -
+2024-10-22 13:48:47,500 - INFO - 127.0.0.1 - - [22/Oct/2024 13:48:47] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:48:47,500 - INFO - 127.0.0.1 - - [22/Oct/2024 13:48:47] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:48:50,502 - INFO - 127.0.0.1 - - [22/Oct/2024 13:48:50] "GET /overview HTTP/1.1" 200 -
+2024-10-22 13:48:50,565 - INFO - 127.0.0.1 - - [22/Oct/2024 13:48:50] "[36mGET /static/assets/579be8fd15e25df3458227363_1176625970237162_7784013221116217385_n.jpg HTTP/1.1[0m" 304 -
+2024-10-22 13:48:50,576 - INFO - 127.0.0.1 - - [22/Oct/2024 13:48:50] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:48:50,578 - INFO - 127.0.0.1 - - [22/Oct/2024 13:48:50] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:48:57,565 - INFO - 127.0.0.1 - - [22/Oct/2024 13:48:57] "GET /profile HTTP/1.1" 200 -
+2024-10-22 13:48:57,603 - INFO - 127.0.0.1 - - [22/Oct/2024 13:48:57] "[36mGET /static/assets/579be8fd15e25df3458227363_1176625970237162_7784013221116217385_n.jpg HTTP/1.1[0m" 304 -
+2024-10-22 13:48:57,609 - INFO - 127.0.0.1 - - [22/Oct/2024 13:48:57] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:48:57,610 - INFO - 127.0.0.1 - - [22/Oct/2024 13:48:57] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:49:02,130 - INFO - 127.0.0.1 - - [22/Oct/2024 13:49:02] "GET /withdrawals HTTP/1.1" 200 -
+2024-10-22 13:49:02,201 - INFO - 127.0.0.1 - - [22/Oct/2024 13:49:02] "[36mGET /static/assets/579be8fd15e25df3458227363_1176625970237162_7784013221116217385_n.jpg HTTP/1.1[0m" 304 -
+2024-10-22 13:49:02,215 - INFO - 127.0.0.1 - - [22/Oct/2024 13:49:02] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:49:02,216 - INFO - 127.0.0.1 - - [22/Oct/2024 13:49:02] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:49:05,261 - INFO - 127.0.0.1 - - [22/Oct/2024 13:49:05] "GET /deposit HTTP/1.1" 200 -
+2024-10-22 13:49:05,359 - INFO - 127.0.0.1 - - [22/Oct/2024 13:49:05] "[36mGET /static/assets/579be8fd15e25df3458227363_1176625970237162_7784013221116217385_n.jpg HTTP/1.1[0m" 304 -
+2024-10-22 13:49:05,375 - INFO - 127.0.0.1 - - [22/Oct/2024 13:49:05] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:49:05,376 - INFO - 127.0.0.1 - - [22/Oct/2024 13:49:05] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:49:09,400 - INFO - 127.0.0.1 - - [22/Oct/2024 13:49:09] "GET /overview HTTP/1.1" 200 -
+2024-10-22 13:49:09,478 - INFO - 127.0.0.1 - - [22/Oct/2024 13:49:09] "[36mGET /static/assets/579be8fd15e25df3458227363_1176625970237162_7784013221116217385_n.jpg HTTP/1.1[0m" 304 -
+2024-10-22 13:49:09,486 - INFO - 127.0.0.1 - - [22/Oct/2024 13:49:09] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:49:09,489 - INFO - 127.0.0.1 - - [22/Oct/2024 13:49:09] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:49:59,164 - INFO - 127.0.0.1 - - [22/Oct/2024 13:49:59] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-10-22 13:49:59,177 - INFO - 127.0.0.1 - - [22/Oct/2024 13:49:59] "GET /login HTTP/1.1" 200 -
+2024-10-22 13:49:59,216 - INFO - 127.0.0.1 - - [22/Oct/2024 13:49:59] "[36mGET /static/css/registration.css HTTP/1.1[0m" 304 -
+2024-10-22 13:49:59,217 - INFO - 127.0.0.1 - - [22/Oct/2024 13:49:59] "[36mGET /static/js/registration.js HTTP/1.1[0m" 304 -
+2024-10-22 13:50:09,875 - INFO - 127.0.0.1 - - [22/Oct/2024 13:50:09] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-10-22 13:50:09,880 - INFO - 127.0.0.1 - - [22/Oct/2024 13:50:09] "GET /overview HTTP/1.1" 200 -
+2024-10-22 13:50:09,908 - INFO - 127.0.0.1 - - [22/Oct/2024 13:50:09] "GET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1" 200 -
+2024-10-22 13:50:09,927 - INFO - 127.0.0.1 - - [22/Oct/2024 13:50:09] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:50:09,928 - INFO - 127.0.0.1 - - [22/Oct/2024 13:50:09] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:50:15,951 - INFO - 127.0.0.1 - - [22/Oct/2024 13:50:15] "GET /profile HTTP/1.1" 200 -
+2024-10-22 13:50:16,023 - INFO - 127.0.0.1 - - [22/Oct/2024 13:50:16] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-22 13:50:16,035 - INFO - 127.0.0.1 - - [22/Oct/2024 13:50:16] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:50:16,038 - INFO - 127.0.0.1 - - [22/Oct/2024 13:50:16] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:50:25,861 - INFO - 127.0.0.1 - - [22/Oct/2024 13:50:25] "GET /support HTTP/1.1" 200 -
+2024-10-22 13:50:25,886 - INFO - 127.0.0.1 - - [22/Oct/2024 13:50:25] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-22 13:50:25,896 - INFO - 127.0.0.1 - - [22/Oct/2024 13:50:25] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:50:25,896 - INFO - 127.0.0.1 - - [22/Oct/2024 13:50:25] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:51:03,564 - INFO - 127.0.0.1 - - [22/Oct/2024 13:51:03] "POST /contact HTTP/1.1" 200 -
+2024-10-22 13:51:03,636 - INFO - 127.0.0.1 - - [22/Oct/2024 13:51:03] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-22 13:51:03,649 - INFO - 127.0.0.1 - - [22/Oct/2024 13:51:03] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:51:03,654 - INFO - 127.0.0.1 - - [22/Oct/2024 13:51:03] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:51:06,900 - INFO - 127.0.0.1 - - [22/Oct/2024 13:51:06] "GET /loan_application_status HTTP/1.1" 200 -
+2024-10-22 13:51:06,965 - INFO - 127.0.0.1 - - [22/Oct/2024 13:51:06] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-22 13:51:06,974 - INFO - 127.0.0.1 - - [22/Oct/2024 13:51:06] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:51:06,976 - INFO - 127.0.0.1 - - [22/Oct/2024 13:51:06] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:51:09,215 - INFO - 127.0.0.1 - - [22/Oct/2024 13:51:09] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 13:51:09,287 - INFO - 127.0.0.1 - - [22/Oct/2024 13:51:09] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-22 13:51:09,301 - INFO - 127.0.0.1 - - [22/Oct/2024 13:51:09] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:51:09,305 - INFO - 127.0.0.1 - - [22/Oct/2024 13:51:09] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:51:10,880 - INFO - 127.0.0.1 - - [22/Oct/2024 13:51:10] "GET /application HTTP/1.1" 200 -
+2024-10-22 13:51:10,944 - INFO - 127.0.0.1 - - [22/Oct/2024 13:51:10] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-22 13:51:10,962 - INFO - 127.0.0.1 - - [22/Oct/2024 13:51:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:51:10,962 - INFO - 127.0.0.1 - - [22/Oct/2024 13:51:10] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:54:02,677 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 13:54:02,908 - INFO -  * Restarting with stat
+2024-10-22 13:54:08,919 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 13:54:08,919 - DEBUG - /etc/localtime found
+2024-10-22 13:54:08,920 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 13:54:08,921 - INFO - Scheduler started
+2024-10-22 13:54:08,921 - DEBUG - Looking for jobs to run
+2024-10-22 13:54:08,927 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 13:54:08,942 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.41:5000
+2024-10-22 13:54:08,942 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-22 13:54:08,943 - INFO -  * Restarting with stat
+2024-10-22 13:54:09,629 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 13:54:09,630 - DEBUG - /etc/localtime found
+2024-10-22 13:54:09,631 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 13:54:09,632 - INFO - Scheduler started
+2024-10-22 13:54:09,632 - DEBUG - Looking for jobs to run
+2024-10-22 13:54:09,637 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 13:54:09,652 - WARNING -  * Debugger is active!
+2024-10-22 13:54:09,653 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 13:54:18,894 - INFO - 127.0.0.1 - - [22/Oct/2024 13:54:18] "GET /application HTTP/1.1" 200 -
+2024-10-22 13:54:18,918 - INFO - 127.0.0.1 - - [22/Oct/2024 13:54:18] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-22 13:54:18,923 - INFO - 127.0.0.1 - - [22/Oct/2024 13:54:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:54:18,924 - INFO - 127.0.0.1 - - [22/Oct/2024 13:54:18] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:54:20,746 - INFO - 127.0.0.1 - - [22/Oct/2024 13:54:20] "GET /deposit HTTP/1.1" 200 -
+2024-10-22 13:54:20,812 - INFO - 127.0.0.1 - - [22/Oct/2024 13:54:20] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-22 13:54:20,825 - INFO - 127.0.0.1 - - [22/Oct/2024 13:54:20] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:54:20,832 - INFO - 127.0.0.1 - - [22/Oct/2024 13:54:20] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:54:22,105 - INFO - 127.0.0.1 - - [22/Oct/2024 13:54:22] "GET /statements HTTP/1.1" 200 -
+2024-10-22 13:54:22,137 - INFO - 127.0.0.1 - - [22/Oct/2024 13:54:22] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-22 13:54:22,154 - INFO - 127.0.0.1 - - [22/Oct/2024 13:54:22] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:54:22,155 - INFO - 127.0.0.1 - - [22/Oct/2024 13:54:22] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:54:33,121 - INFO - 127.0.0.1 - - [22/Oct/2024 13:54:33] "GET /support HTTP/1.1" 200 -
+2024-10-22 13:54:33,189 - INFO - 127.0.0.1 - - [22/Oct/2024 13:54:33] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-22 13:54:33,199 - INFO - 127.0.0.1 - - [22/Oct/2024 13:54:33] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:54:33,206 - INFO - 127.0.0.1 - - [22/Oct/2024 13:54:33] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:54:49,525 - INFO - 127.0.0.1 - - [22/Oct/2024 13:54:49] "POST /contact HTTP/1.1" 200 -
+2024-10-22 13:54:49,596 - INFO - 127.0.0.1 - - [22/Oct/2024 13:54:49] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-22 13:54:49,609 - INFO - 127.0.0.1 - - [22/Oct/2024 13:54:49] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:54:49,611 - INFO - 127.0.0.1 - - [22/Oct/2024 13:54:49] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:54:52,014 - INFO - 127.0.0.1 - - [22/Oct/2024 13:54:52] "GET /application HTTP/1.1" 200 -
+2024-10-22 13:54:52,104 - INFO - 127.0.0.1 - - [22/Oct/2024 13:54:52] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-22 13:54:52,114 - INFO - 127.0.0.1 - - [22/Oct/2024 13:54:52] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:54:52,116 - INFO - 127.0.0.1 - - [22/Oct/2024 13:54:52] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:55:07,323 - INFO - 127.0.0.1 - - [22/Oct/2024 13:55:07] "GET /loan_application_status HTTP/1.1" 200 -
+2024-10-22 13:55:07,394 - INFO - 127.0.0.1 - - [22/Oct/2024 13:55:07] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-22 13:55:07,405 - INFO - 127.0.0.1 - - [22/Oct/2024 13:55:07] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:55:07,409 - INFO - 127.0.0.1 - - [22/Oct/2024 13:55:07] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:55:11,060 - INFO - 127.0.0.1 - - [22/Oct/2024 13:55:11] "GET /news HTTP/1.1" 200 -
+2024-10-22 13:55:11,129 - INFO - 127.0.0.1 - - [22/Oct/2024 13:55:11] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-22 13:55:11,138 - INFO - 127.0.0.1 - - [22/Oct/2024 13:55:11] "[36mGET /static/assets/maintain.jpeg HTTP/1.1[0m" 304 -
+2024-10-22 13:55:11,138 - INFO - 127.0.0.1 - - [22/Oct/2024 13:55:11] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:55:11,146 - INFO - 127.0.0.1 - - [22/Oct/2024 13:55:11] "[36mGET /static/assets/feature.jpeg HTTP/1.1[0m" 304 -
+2024-10-22 13:55:11,147 - INFO - 127.0.0.1 - - [22/Oct/2024 13:55:11] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:55:17,720 - INFO - 127.0.0.1 - - [22/Oct/2024 13:55:17] "GET /support HTTP/1.1" 200 -
+2024-10-22 13:55:17,765 - INFO - 127.0.0.1 - - [22/Oct/2024 13:55:17] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-22 13:55:17,776 - INFO - 127.0.0.1 - - [22/Oct/2024 13:55:17] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:55:17,776 - INFO - 127.0.0.1 - - [22/Oct/2024 13:55:17] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:57:22,038 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 13:57:22,302 - INFO -  * Restarting with stat
+2024-10-22 13:57:22,941 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 13:57:22,941 - DEBUG - /etc/localtime found
+2024-10-22 13:57:22,942 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 13:57:22,943 - INFO - Scheduler started
+2024-10-22 13:57:22,943 - DEBUG - Looking for jobs to run
+2024-10-22 13:57:22,948 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 13:57:22,960 - WARNING -  * Debugger is active!
+2024-10-22 13:57:22,960 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 13:57:47,465 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 13:57:47,687 - INFO -  * Restarting with stat
+2024-10-22 13:57:48,540 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 13:57:48,541 - DEBUG - /etc/localtime found
+2024-10-22 13:57:48,541 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 13:57:48,542 - INFO - Scheduler started
+2024-10-22 13:57:48,542 - DEBUG - Looking for jobs to run
+2024-10-22 13:57:48,548 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 13:57:48,557 - WARNING -  * Debugger is active!
+2024-10-22 13:57:48,558 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 13:57:50,584 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 13:57:50,753 - INFO -  * Restarting with stat
+2024-10-22 13:57:51,466 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 13:57:51,466 - DEBUG - /etc/localtime found
+2024-10-22 13:57:51,467 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 13:57:51,468 - INFO - Scheduler started
+2024-10-22 13:57:51,468 - DEBUG - Looking for jobs to run
+2024-10-22 13:57:51,468 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 13:57:51,485 - WARNING -  * Debugger is active!
+2024-10-22 13:57:51,485 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 13:57:54,525 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 13:57:54,716 - INFO -  * Restarting with stat
+2024-10-22 13:58:33,428 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 13:58:33,429 - DEBUG - /etc/localtime found
+2024-10-22 13:58:33,430 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 13:58:33,430 - INFO - Scheduler started
+2024-10-22 13:58:33,431 - DEBUG - Looking for jobs to run
+2024-10-22 13:58:33,436 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 13:58:33,448 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.41:5000
+2024-10-22 13:58:33,449 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-22 13:58:33,449 - INFO -  * Restarting with stat
+2024-10-22 13:58:34,094 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 13:58:34,095 - DEBUG - /etc/localtime found
+2024-10-22 13:58:34,096 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 13:58:34,097 - INFO - Scheduler started
+2024-10-22 13:58:34,097 - DEBUG - Looking for jobs to run
+2024-10-22 13:58:34,097 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 13:58:34,112 - WARNING -  * Debugger is active!
+2024-10-22 13:58:34,112 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 13:58:54,225 - INFO - 127.0.0.1 - - [22/Oct/2024 13:58:54] "POST /contact HTTP/1.1" 200 -
+2024-10-22 13:58:54,266 - INFO - 127.0.0.1 - - [22/Oct/2024 13:58:54] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-22 13:58:54,290 - INFO - 127.0.0.1 - - [22/Oct/2024 13:58:54] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:58:54,300 - INFO - 127.0.0.1 - - [22/Oct/2024 13:58:54] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 13:58:58,408 - INFO - 127.0.0.1 - - [22/Oct/2024 13:58:58] "GET /application HTTP/1.1" 200 -
+2024-10-22 13:58:58,431 - INFO - 127.0.0.1 - - [22/Oct/2024 13:58:58] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-22 13:58:58,439 - INFO - 127.0.0.1 - - [22/Oct/2024 13:58:58] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 13:58:58,440 - INFO - 127.0.0.1 - - [22/Oct/2024 13:58:58] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 14:04:44,896 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-22 14:04:45,079 - INFO -  * Restarting with stat
+2024-10-22 14:04:45,736 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-22 14:04:45,737 - DEBUG - /etc/localtime found
+2024-10-22 14:04:45,737 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-22 14:04:45,738 - INFO - Scheduler started
+2024-10-22 14:04:45,739 - DEBUG - Looking for jobs to run
+2024-10-22 14:04:45,739 - DEBUG - No jobs; waiting until a job is added
+2024-10-22 14:04:45,753 - WARNING -  * Debugger is active!
+2024-10-22 14:04:45,754 - INFO -  * Debugger PIN: 718-713-251
+2024-10-22 14:05:15,226 - INFO - 127.0.0.1 - - [22/Oct/2024 14:05:15] "GET /application HTTP/1.1" 200 -
+2024-10-22 14:05:15,252 - INFO - 127.0.0.1 - - [22/Oct/2024 14:05:15] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-22 14:05:15,259 - INFO - 127.0.0.1 - - [22/Oct/2024 14:05:15] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 14:05:15,262 - INFO - 127.0.0.1 - - [22/Oct/2024 14:05:15] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 14:05:21,945 - INFO - 127.0.0.1 - - [22/Oct/2024 14:05:21] "GET /support HTTP/1.1" 200 -
+2024-10-22 14:05:22,015 - INFO - 127.0.0.1 - - [22/Oct/2024 14:05:22] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-22 14:05:22,022 - INFO - 127.0.0.1 - - [22/Oct/2024 14:05:22] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 14:05:22,023 - INFO - 127.0.0.1 - - [22/Oct/2024 14:05:22] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 14:05:35,461 - INFO - 127.0.0.1 - - [22/Oct/2024 14:05:35] "[32mPOST /contact HTTP/1.1[0m" 302 -
+2024-10-22 14:05:35,483 - INFO - 127.0.0.1 - - [22/Oct/2024 14:05:35] "GET /contact HTTP/1.1" 200 -
+2024-10-22 14:05:35,520 - INFO - 127.0.0.1 - - [22/Oct/2024 14:05:35] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-22 14:05:35,527 - INFO - 127.0.0.1 - - [22/Oct/2024 14:05:35] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 14:05:35,529 - INFO - 127.0.0.1 - - [22/Oct/2024 14:05:35] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 14:05:38,138 - INFO - 127.0.0.1 - - [22/Oct/2024 14:05:38] "GET /application HTTP/1.1" 200 -
+2024-10-22 14:05:38,170 - INFO - 127.0.0.1 - - [22/Oct/2024 14:05:38] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-22 14:05:38,177 - INFO - 127.0.0.1 - - [22/Oct/2024 14:05:38] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 14:05:38,178 - INFO - 127.0.0.1 - - [22/Oct/2024 14:05:38] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 14:06:21,473 - INFO - 127.0.0.1 - - [22/Oct/2024 14:06:21] "GET /application HTTP/1.1" 200 -
+2024-10-22 14:06:21,523 - INFO - 127.0.0.1 - - [22/Oct/2024 14:06:21] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-22 14:06:21,528 - INFO - 127.0.0.1 - - [22/Oct/2024 14:06:21] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 14:06:21,530 - INFO - 127.0.0.1 - - [22/Oct/2024 14:06:21] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 14:06:22,544 - INFO - 127.0.0.1 - - [22/Oct/2024 14:06:22] "GET /overview HTTP/1.1" 200 -
+2024-10-22 14:06:22,572 - INFO - 127.0.0.1 - - [22/Oct/2024 14:06:22] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-22 14:06:22,583 - INFO - 127.0.0.1 - - [22/Oct/2024 14:06:22] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 14:06:22,583 - INFO - 127.0.0.1 - - [22/Oct/2024 14:06:22] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 14:06:26,004 - INFO - 127.0.0.1 - - [22/Oct/2024 14:06:26] "GET /application HTTP/1.1" 200 -
+2024-10-22 14:06:26,085 - INFO - 127.0.0.1 - - [22/Oct/2024 14:06:26] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-22 14:06:26,091 - INFO - 127.0.0.1 - - [22/Oct/2024 14:06:26] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 14:06:26,097 - INFO - 127.0.0.1 - - [22/Oct/2024 14:06:26] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 14:06:27,275 - INFO - 127.0.0.1 - - [22/Oct/2024 14:06:27] "GET /repay_loan HTTP/1.1" 200 -
+2024-10-22 14:06:27,310 - INFO - 127.0.0.1 - - [22/Oct/2024 14:06:27] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-22 14:06:27,325 - INFO - 127.0.0.1 - - [22/Oct/2024 14:06:27] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 14:06:27,328 - INFO - 127.0.0.1 - - [22/Oct/2024 14:06:27] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 14:06:29,477 - INFO - 127.0.0.1 - - [22/Oct/2024 14:06:29] "GET /loan_application_status HTTP/1.1" 200 -
+2024-10-22 14:06:29,498 - INFO - 127.0.0.1 - - [22/Oct/2024 14:06:29] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-22 14:06:29,509 - INFO - 127.0.0.1 - - [22/Oct/2024 14:06:29] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 14:06:29,515 - INFO - 127.0.0.1 - - [22/Oct/2024 14:06:29] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 14:06:31,158 - INFO - 127.0.0.1 - - [22/Oct/2024 14:06:31] "GET /deposit HTTP/1.1" 200 -
+2024-10-22 14:06:31,197 - INFO - 127.0.0.1 - - [22/Oct/2024 14:06:31] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-22 14:06:31,210 - INFO - 127.0.0.1 - - [22/Oct/2024 14:06:31] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 14:06:31,217 - INFO - 127.0.0.1 - - [22/Oct/2024 14:06:31] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 14:06:32,888 - INFO - 127.0.0.1 - - [22/Oct/2024 14:06:32] "GET /withdrawals HTTP/1.1" 200 -
+2024-10-22 14:06:32,920 - INFO - 127.0.0.1 - - [22/Oct/2024 14:06:32] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-22 14:06:32,922 - INFO - 127.0.0.1 - - [22/Oct/2024 14:06:32] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 14:06:32,931 - INFO - 127.0.0.1 - - [22/Oct/2024 14:06:32] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 14:06:34,202 - INFO - 127.0.0.1 - - [22/Oct/2024 14:06:34] "GET /statements HTTP/1.1" 200 -
+2024-10-22 14:06:34,259 - INFO - 127.0.0.1 - - [22/Oct/2024 14:06:34] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-22 14:06:34,268 - INFO - 127.0.0.1 - - [22/Oct/2024 14:06:34] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 14:06:34,271 - INFO - 127.0.0.1 - - [22/Oct/2024 14:06:34] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 14:06:35,615 - INFO - 127.0.0.1 - - [22/Oct/2024 14:06:35] "GET /profile HTTP/1.1" 200 -
+2024-10-22 14:06:35,653 - INFO - 127.0.0.1 - - [22/Oct/2024 14:06:35] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-22 14:06:35,666 - INFO - 127.0.0.1 - - [22/Oct/2024 14:06:35] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 14:06:35,667 - INFO - 127.0.0.1 - - [22/Oct/2024 14:06:35] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 14:07:06,816 - INFO - 127.0.0.1 - - [22/Oct/2024 14:07:06] "GET /profile HTTP/1.1" 200 -
+2024-10-22 14:07:06,847 - INFO - 127.0.0.1 - - [22/Oct/2024 14:07:06] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-22 14:07:06,859 - INFO - 127.0.0.1 - - [22/Oct/2024 14:07:06] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 14:07:06,863 - INFO - 127.0.0.1 - - [22/Oct/2024 14:07:06] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 14:07:11,244 - INFO - 127.0.0.1 - - [22/Oct/2024 14:07:11] "GET /statements HTTP/1.1" 200 -
+2024-10-22 14:07:11,336 - INFO - 127.0.0.1 - - [22/Oct/2024 14:07:11] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-22 14:07:11,353 - INFO - 127.0.0.1 - - [22/Oct/2024 14:07:11] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 14:07:11,363 - INFO - 127.0.0.1 - - [22/Oct/2024 14:07:11] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 14:07:12,921 - INFO - 127.0.0.1 - - [22/Oct/2024 14:07:12] "GET /profile HTTP/1.1" 200 -
+2024-10-22 14:07:13,000 - INFO - 127.0.0.1 - - [22/Oct/2024 14:07:13] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-22 14:07:13,019 - INFO - 127.0.0.1 - - [22/Oct/2024 14:07:13] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 14:07:13,020 - INFO - 127.0.0.1 - - [22/Oct/2024 14:07:13] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 14:07:14,130 - INFO - 127.0.0.1 - - [22/Oct/2024 14:07:14] "GET /news HTTP/1.1" 200 -
+2024-10-22 14:07:14,174 - INFO - 127.0.0.1 - - [22/Oct/2024 14:07:14] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-22 14:07:14,190 - INFO - 127.0.0.1 - - [22/Oct/2024 14:07:14] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 14:07:14,194 - INFO - 127.0.0.1 - - [22/Oct/2024 14:07:14] "[36mGET /static/assets/maintain.jpeg HTTP/1.1[0m" 304 -
+2024-10-22 14:07:14,201 - INFO - 127.0.0.1 - - [22/Oct/2024 14:07:14] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-22 14:07:14,203 - INFO - 127.0.0.1 - - [22/Oct/2024 14:07:14] "[36mGET /static/assets/feature.jpeg HTTP/1.1[0m" 304 -
+2024-10-22 14:07:16,472 - INFO - 127.0.0.1 - - [22/Oct/2024 14:07:16] "GET /statements HTTP/1.1" 200 -
+2024-10-22 14:07:16,510 - INFO - 127.0.0.1 - - [22/Oct/2024 14:07:16] "[36mGET /static/assets/ac1fce6d60aae0deScreenshot_2024-10-11_17_54_58.png HTTP/1.1[0m" 304 -
+2024-10-22 14:07:16,522 - INFO - 127.0.0.1 - - [22/Oct/2024 14:07:16] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-22 14:07:16,523 - INFO - 127.0.0.1 - - [22/Oct/2024 14:07:16] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -

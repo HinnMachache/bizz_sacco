@@ -94,7 +94,11 @@
                     <img src="{{ url_for('static', filename='assets/user.jpeg') }}" alt="User" class="user-icon">
                      <!-- Placeholder image -->
                     {% endif %}       
+                    {% if current_user.personal_data %}    
+                    <span class="user-name">{{ current_user.personal_data.other_names ~ ' ' ~ current_user.personal_data.surname }}</span>
+                    {% else %}
                     <span class="user-name">{{ current_user.username }}</span>
+                    {% endif %}
                 </div>
                 <div class="header-icons">
                     <a href="{{ url_for('notification') }}"><i class="notification-icon fas fa-bell"
@@ -134,14 +138,10 @@
                 <div class="card">
                     <h3>Loan Balance</h3>
                     {% if loan_balance %}                   
-                        <p class="balance loan-balance">KES {{ '{:.2f}'.format(loan_balance.total_amount_due) }}</p>
+                        <p class="balance loan-balance">KES {{ '{:.2f}'.format(loan_balance.total_amount_due - loan_balance.amount_paid) }}</p>
                     {% else %}
                         <p class="balance loan-balance">KES 0</p>
                     {% endif %}
-                </div>
-                <div class="card">
-                    <h3>Savings</h3>
-                    <p class="balance savings">KES 80,000.00</p>
                 </div>
             </div>
 
