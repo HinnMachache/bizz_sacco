@@ -57,6 +57,11 @@
                 <a href="{{ url_for('view_rejected_loans')}}" class="no-style-link"><div class="snapshot-card">Rejected Loans: <span id="rejectedLoans">{{ rejected_loan_count }}</span></div></a>
                 {% else %}
                 <a href="{{ url_for('view_rejected_loans')}}" class="no-style-link"><div class="snapshot-card">Rejected Loans: <span id="rejectedLoans">0</span></div></a>
+                {% endif %}
+                {% if disbursed_loan_count %}
+                <a href="{{ url_for('view_disbursed_loans')}}" class="no-style-link"><div class="snapshot-card">Disbursed Loans: <span id="rejectedLoans">{{ disbursed_loan_count }}</span></div></a>
+                {% else %}
+                <a href="{{ url_for('view_disbursed_loans')}}" class="no-style-link"><div class="snapshot-card">Disbursed Loans: <span id="rejectedLoans">0</span></div></a>
                 {% endif %}                                  
                     
             </section>

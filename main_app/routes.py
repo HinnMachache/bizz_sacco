@@ -1,7 +1,8 @@
 import secrets
 import os
 import logging
-from datetime import datetime
+from datetime import datetime, timedelta
+from apscheduler.schedulers.background import BackgroundScheduler
 from sqlalchemy.exc import IntegrityError
 import uuid
 from sqlalchemy.exc import SQLAlchemyError
@@ -356,6 +357,10 @@ def approve_loan(loan_id):
         return redirect(url_for('admin_index'))
 
     # If all checks pass, approve the loan
+    total_amount_due = calculate_simple_interest(loan.loan_amount, loan.interest_rate, loan.loan_term)
+    monthly_payment = total_amount_due / loan.loan_term
+    loan.total_amount_due = total_amount_due
+    loan.monthly_payment = monthly_payment
     loan.status = 'Approved'
     loan.approved_at = datetime.now()
     db.session.commit()
@@ -420,6 +425,14 @@ def disburse_loan(loan_id):
     return redirect(url_for('admin_loans'))
 
 
+def calculate_simple_interest(principal, rate, duration_in_months):
+    time_in_years = duration_in_months / 12
+    interest = principal * rate * time_in_years
+    total_amount_due = principal + interest
+
+    return total_amount_due
+
+
 @app.route("/admin/members")
 @login_required
 @role_required('admin')
@@ -477,6 +490,7 @@ def admin_reports():
 @login_required
 def home():
     user_balance = Account.query.filter_by(user_id=current_user.user_id).first()
+    loan_balance = Loan.query.filter_by(user_id=current_user.user_id).first()
     return render_template("user/overview.html", title="Overview | SACCO Dashboard",
                            user_balance=user_balance)
 
@@ -499,7 +513,20 @@ def apply_for_loan():
         return redirect(url_for('application'))
 
     # If eligible, save the loan request
-    new_loan = Loan(user_id=current_user.user_id, loan_amount=loan_amount, purpose=loan_purpose, loan_term=loan_term)
+    if loan_amount <= 1000:
+        interest_rate = 0.1  # 10% for small loans
+    elif loan_amount <= 5000:
+        interest_rate = 0.04  # 4% for medium loans
+    else:
+        interest_rate = 0.07  # 7% for larger loans
+
+    start_date = datetime.now()
+
+    new_loan = Loan(user_id=current_user.user_id, loan_amount=loan_amount, purpose=loan_purpose, loan_term=loan_term, interest_rate=interest_rate, start_date=start_date)
+
+    # Set the initial due date
+    new_loan.set_initial_due_date()
+
     db.session.add(new_loan)
     db.session.commit()
 
@@ -509,6 +536,88 @@ def apply_for_loan():
 
     flash('Loan application submitted successfully!')
     return redirect(url_for('loan_application_status'))
+
+
+def is_loan_overdue(loan):
+    current_date = datetime.now()
+    return current_date > loan.next_due_date
+
+
+def calculate_penalty(loan):
+    current_date = datetime.now()
+    days_overdue = (current_date - loan.next_due_date).days
+
+    if days_overdue > 0:
+        daily_penalty_rate = 0.01  # 1% per day
+        penalty = loan.total_amount_due * daily_penalty_rate * days_overdue
+        loan.penalty += penalty
+        loan.total_amount_due += penalty  # Add penalty to the total amount due
+        db.session.commit()
+
+
+# Create an instance of the scheduler
+scheduler = BackgroundScheduler()
+scheduler.start()
+
+
+def update_due_date(loan):
+    if loan.status == 'Disbursed':
+        # Add 30 days to the current due date for monthly payments
+        loan.next_due_date += timedelta(days=30)
+        db.session.commit()
+
+
+@app.route('/repay_loan', methods=['POST', 'GET'])
+@login_required
+def repay_loan():
+    loan_id = request.form.get('loan_id')
+
+    if not loan_id:
+        flash('No loan associated with this payment. Please apply for a loan first.')
+        return redirect(url_for('home'))  # Redirect to loan status page
+
+    loan = Loan.query.get(loan_id)
+
+    if not loan:
+        flash('Loan does not exist.')
+        return redirect(url_for('home'))
+    
+    payment_amount = float(request.get('payment_amount'))
+    
+    
+    # Ensure the loan has been disbursed before allowing repayment
+    if loan.status != 'Disbursed':
+        flash('You cannot make payments for this loan as it has not been disbursed yet.')
+        return redirect(url_for('loan_status'))
+    
+    # Continue with payment processing only if the loan is disbursed
+    if payment_amount > 0 and current_user.account.balance >= payment_amount:
+        current_user.account.balance -= payment_amount
+        loan.amount_paid += payment_amount
+        
+        loan.next_due_date += timedelta(days=30)
+
+        if loan.amount_paid >= loan.total_amount_due:
+            loan.status = 'Repaid'  # Mark loan as repaid if fully paid off
+        
+        db.session.commit()
+        flash('Payment successful!')
+    else:
+        flash('Invalid payment amount or insufficient balance.')
+    
+    return redirect(url_for('home'))
+
+
+def send_payment_reminder(loan):
+    days_left = (loan.next_due_date - datetime.now()).days
+    
+    if days_left <= 5:  # Send reminder 5 days before due date
+        # send_email(loan.user.email, "Upcoming Loan Payment", "Your loan payment is due in 5 days. You can make a manual payment before then.")
+         flash(loan.user.email, "Upcoming Loan Payment", "Your loan payment is due in 5 days. You can make a manual payment before then.")
+        
+    # Add the reminder function to run daily
+    scheduler.add_job(send_payment_reminder, 'interval', days=1, args=[loan])
+
 
 
 @app.route('/loan_application_status')

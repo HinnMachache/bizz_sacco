@@ -1,5 +1,5 @@
 from main_app import db, login_manager, app
-from datetime import datetime
+from datetime import datetime, timedelta
 import jwt
 from time import time
 from flask_login import UserMixin   # Manage sessions
@@ -210,11 +210,20 @@ class Loan(db.Model):
     status = db.Column(db.String(20), nullable=False, default='Pending')
     rejection_reason = db.Column(db.String(120), nullable=True)
     loan_term = db.Column(db.Integer, nullable=False)
+    interest_rate = db.Column(db.Float, nullable=False)  # Annual interest rate
+    total_amount_due = db.Column(db.Float, nullable=False, default=0.0)  # Amount after interest
+    monthly_payment = db.Column(db.Float, nullable=False, default=0.0)  # Payment With interest
     purpose = db.Column(db.String(120), nullable=False)
+    start_date = db.Column(db.DateTime, nullable=False, default=datetime.now())
+    next_due_date = db.Column(db.DateTime, nullable=False)
+    penalty = db.Column(db.Float, nullable=False, default=0.0)  # Add a penalty field
     loan_user = db.relationship('User', back_populates='personal_loan', lazy=True)
     transactions = db.relationship('Transaction', back_populates='loan', lazy=True)
     disbursement = db.relationship('Disbursement', back_populates='loan', lazy=True)
     repayment = db.relationship('Repayment', back_populates='loan', lazy=True)
+
+    def set_initial_due_date(self):
+        self.next_due_date = self.start_date + timedelta(days=30)  # First due date is 30 days after the loan is issued
 
 
 class Transaction(db.Model):
