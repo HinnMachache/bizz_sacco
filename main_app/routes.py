@@ -502,14 +502,14 @@ def home():
     loan_balance = Loan.query.filter_by(user_id=current_user.user_id).order_by(desc(Loan.start_date)).first()
     recent_transactions = Transaction.query.filter_by(user_id=current_user.user_id) \
         .order_by(desc(Transaction.transaction_date)).limit(2).all()
-
+    expenses = [user_balance.balance, (loan_balance.total_amount_due - loan_balance.amount_paid)]
     # Accessing individual transactions
     if recent_transactions:
         first_transaction = recent_transactions[0]  # Most recent transaction
         second_transaction = recent_transactions[1] if len(recent_transactions) > 1 else None
     return render_template("user/overview.html", title="Overview | SACCO Dashboard",
                            user_balance=user_balance, loan_balance=loan_balance, first_transaction=first_transaction,
-                           second_transaction=second_transaction)
+                           second_transaction=second_transaction, expenses=expenses)
 
 
 @app.route('/apply_for_loan', methods=['POST'])
@@ -1040,6 +1040,7 @@ def download_statement():
 
     # Send the PDF as a response
     return send_file(pdf_io, download_name='statement.pdf', as_attachment=True, mimetype='application/pdf')
+
 
 @app.route("/news", methods=['POST', 'GET'])
 @login_required

@@ -101,9 +101,8 @@
                     {% endif %}
                 </div>
                 <div class="header-icons">
-                    <a href="{{ url_for('notification') }}"><i class="notification-icon fas fa-bell"
-                            onclick="showNotificationPopup()"></i></a>
-                    <i class="settings-icon fas fa-cog"></i>
+                    <a href="{{ url_for('news') }}"><i class="notification-icon fas fa-bell"></i></a>
+                    <a href="{{ url_for('profile') }}"><i class="settings-icon fas fa-cog"></i></a>
                 </div>
             </header>
 
@@ -118,10 +117,6 @@
                 <div class="chart-container">
                     <h2>Account Balance Overview</h2>
                     <canvas id="balanceChart"></canvas>
-                </div>
-                <div class="chart-container">
-                    <h2>Expenses vs Income</h2>
-                    <canvas id="expensesChart"></canvas>
                 </div>
             </div>
 
@@ -180,7 +175,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>© 2024 SACCO. All rights reserved. | Designed by SACCO IT Team</p>
+        <p>© 2024 SACCO. All rights reserved. | Designed by Benny Hinn</p>
     </footer>
 
     <!-- Transaction Popup -->
@@ -198,14 +193,15 @@
     <script src="{{ url_for('static', filename='/js/main.js') }}"></script>
     <script>
         // Chart.js Example
+        const expensesData = {{ expenses | tojson }};
         const ctxBalance = document.getElementById('balanceChart').getContext('2d');
         const balanceChart = new Chart(ctxBalance, {
             type: 'pie',
             data: {
-                labels: ['Savings', 'Investments', 'Loans'],
+                labels: ['Account Balance', 'Loans'],
                 datasets: [{
                     label: 'Account Balance Overview',
-                    data: [50, 30, 20],
+                    data: expensesData,
                     backgroundColor: ['#0066cc', '#004080', '#003366']
                 }]
             },

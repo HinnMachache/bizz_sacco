@@ -59,8 +59,8 @@
                 </div>
                 <div class="user-email">{{ current_user.email }}</div>
                 <div class="header-icons">
-                    <i class="notification-icon fas fa-bell" onclick="showNotificationPopup()"></i>
-                    <i class="settings-icon fas fa-cog"></i>
+                    <a href="{{ url_for('news') }}"><i class="notification-icon fas fa-bell"></i></a>
+                    <a href="{{ url_for('profile') }}"><i class="settings-icon fas fa-cog"></i></a>
                 </div>
             </header>
             <!-- Main Body -->
@@ -70,7 +70,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>© 2024 SACCO. All rights reserved. | Designed by SACCO IT Team</p>
+        <p>© 2024 SACCO. All rights reserved. | Designed by Benny Hinn</p>
     </footer>
     <script src="{{ url_for('static', filename='/js/main.js') }}"></script>
     {% block endBody %}{% endblock %}
