@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
         data: {
             labels: ['Loan Interest', 'Membership Fees', 'Fines', 'Other'],
             datasets: [{
-                data: [55, 25, 10, 10],
+                data: revenueData,
                 backgroundColor: ['rgba(54, 162, 235, 0.6)', 'rgba(75, 192, 192, 0.6)','rgba(153, 102, 255, 0.6)', '#4bc0c0'],
                 hoverOffset: 10,
             }]
@@ -117,9 +117,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const loanStatusChart = new Chart(document.getElementById('loanStatusChart'), {
         type: 'pie',
         data: {
-            labels: ['Approved', 'Rejected'],
+            labels: ['Disbursed', 'Rejected'],
             datasets: [{
-                data: [75, 25],
+                data: loanData,
                 backgroundColor: ['rgba(54, 162, 235, 0.6)', 'rgba(153, 102, 255, 0.6)'],
                 hoverOffset: 8,
             }]

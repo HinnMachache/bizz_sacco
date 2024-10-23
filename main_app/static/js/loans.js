@@ -1,15 +1,4 @@
-const loanData = [
-    { id: 1, name: 'Personal Loan', amount: 5000, status: 'approved' },
-    { id: 2, name: 'Home Loan', amount: 20000, status: 'pending' },
-    { id: 3, name: 'Car Loan', amount: 15000, status: 'approved' },
-    { id: 4, name: 'Education Loan', amount: 8000, status: 'rejected' },
-    { id: 5, name: 'Business Loan', amount: 30000, status: 'approved' },
-    { id: 6, name: 'Debt Consolidation', amount: 12000, status: 'pending' },
-    { id: 7, name: 'Medical Loan', amount: 6000, status: 'approved' },
-    { id: 8, name: 'Travel Loan', amount: 4000, status: 'rejected' },
-    { id: 9, name: 'Wedding Loan', amount: 10000, status: 'approved' },
-    { id: 10, name: 'Vacation Loan', amount: 7000, status: 'pending' },
-];
+const loanData = loansDataInfo;
 
 function renderLoans() {
     const activityLog = document.getElementById('activityLog');
@@ -58,10 +47,10 @@ const ctx1 = document.getElementById('loanStatusChart').getContext('2d');
 const loanStatusChart = new Chart(ctx1, {
     type: 'pie',
     data: {
-        labels: ['Approved', 'Pending', 'Rejected'],
+        labels: ['Disbursed', 'Pending', 'Rejected'],
         datasets: [{
             label: 'Loan Status',
-            data: getLoanStatusCounts(),
+            data: loanDataCount,
             backgroundColor: ['rgba(54, 162, 235, 0.6)', 'rgba(75, 192, 192, 0.6)','rgba(153, 102, 255, 0.6)'],
         }]
     },

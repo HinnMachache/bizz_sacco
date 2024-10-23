@@ -233,6 +233,15 @@ class Loan(db.Model):
     disbursement = db.relationship('Disbursement', back_populates='loan', lazy=True, uselist=False)
     repayment = db.relationship('Repayment', back_populates='loan', lazy=True, uselist=False)
 
+
+    def to_dict(self):
+            return {
+                'id': self.user_id,
+                'name': self.purpose,
+                'amount': self.total_amount_due,
+                'status': self.status
+            }
+    
     def set_initial_due_date(self):
         self.next_due_date = self.start_date + timedelta(days=30)  # First due date is 30 days after the loan is issued
 

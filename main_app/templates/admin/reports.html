@@ -30,8 +30,8 @@
     </div>
     <div class="summary-card">
         <h3>Total Revenue</h3>
-        {% if amount %}
-        <p>Ksh {{ amount }}</p>
+        {% if revenue %}
+        <p>Ksh {{ revenue.balance }}</p>
         {% else %}
         <p>KSH 0</p>
         {% endif %}
@@ -84,4 +84,9 @@
 
 <!-- <script src="{{ url_for('static', filename='/js/script.js') }}"></script> -->
 <script src="{{ url_for('static', filename='/js/reports.js') }}"></script>
+<script>
+    const loanData = {{ loan_count | tojson }};
+    const revenueData = {{ revenue_breakdown | tojson}}
+
+</script>
 {% endblock %}

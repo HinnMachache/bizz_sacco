@@ -267,13 +267,20 @@ def mark_notification_read(notification_id):
 @role_required('admin')
 def admin_loans():
     loans = Loan.query.count()
+    loan_info = Loan.query.all()
+
+    loan_dict = [loan.to_dict() for loan in loan_info]
+
     pending_loan_count = Loan.query.filter_by(status='Pending').count()
     approved_loan_count = Loan.query.filter_by(status='Approved').count()
     rejected_loan_count = Loan.query.filter_by(status='Rejected').count()
     disbursed_loan_count = Loan.query.filter_by(status='Disbursed').count()
+
+    loan_count = [disbursed_loan_count, pending_loan_count, rejected_loan_count]
     return render_template("admin/loans.html", loans=loans, pending_loan_count=pending_loan_count,
                            approved_loan_count=approved_loan_count, rejected_loan_count=rejected_loan_count,
-                           disbursed_loan_count=disbursed_loan_count)
+                           disbursed_loan_count=disbursed_loan_count, loan_count=loan_count, loan_info=loan_info,
+                           loans_dict_data=loan_dict)
 
 
 @app.route('/admin/pending_loans')
@@ -494,10 +501,30 @@ def admin_settings():
 @role_required('admin')
 def admin_reports():
     loans = Loan.query.count()
+    new_loans = Loan.query.all()
+
+    if not new_loans:
+        total_interest = 0
+    else:
+        total_interest = sum(new_loan.loan_amount * new_loan.interest_rate for new_loan in new_loans)
+    
+    total_penalty = sum(new_loan.penalty for new_loan in new_loans)
+    
     member_count = User.query.count()
+    revenue = Account.query.filter_by(account_type='Bank').first()
+
+    revenue_breakdown = [total_interest, (2500 * member_count), total_penalty, (revenue.balance - total_interest - (250 * member_count) - total_penalty)]
+      
     approved_loan_count = Loan.query.filter_by(status='Approved').count()
+    rejected_loan_count = Loan.query.filter_by(status='Rejected').count()
+    disbursed_loan_count = Loan.query.filter_by(status='Disbursed').count()
+
+    loan_count = [disbursed_loan_count, rejected_loan_count]
+
+   
     return render_template("admin/reports.html", title="Reports - Admin Dashboard", logo_name="Admin Panel",
-                           members=member_count, approved_loan_count=approved_loan_count, loans=loans )
+                           members=member_count, approved_loan_count=approved_loan_count, loans=loans,
+                            loan_count=loan_count, revenue=revenue, revenue_breakdown=revenue_breakdown)
     
 
 # User Section
@@ -782,11 +809,13 @@ def register():
         db.session.commit()
 
         user_account = Account(user_id=user.user_id, balance=500.0, account_type='User')
+        bank_account = Account(user_id=user.user_id, balance=250.0, account_type='Bank')
         transaction = Transaction(user_id=user.user_id, transaction_type='Deposit',
                                           amount=500, method='Bank Deposit',
                                           account_type='User', balance=500,
                                           reference_no=f'Ref_{str(uuid.uuid4())[:8]}')
         db.session.add(transaction)
+        db.session.add(bank_account)
         db.session.add(user_account)
         db.session.commit()
 

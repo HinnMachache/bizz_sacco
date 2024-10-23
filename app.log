@@ -15688,3 +15688,970 @@
 2024-10-22 23:06:51,241 - INFO - Scheduler started
 2024-10-22 23:06:51,241 - DEBUG - Looking for jobs to run
 2024-10-22 23:06:51,247 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 05:27:24,257 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 05:27:24,258 - DEBUG - /etc/localtime found
+2024-10-23 05:27:24,259 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 05:27:24,260 - INFO - Scheduler started
+2024-10-23 05:27:24,261 - DEBUG - Looking for jobs to run
+2024-10-23 05:27:24,266 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 05:27:24,283 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.41:5000
+2024-10-23 05:27:24,283 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-23 05:27:24,285 - INFO -  * Restarting with stat
+2024-10-23 05:27:25,401 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 05:27:25,402 - DEBUG - /etc/localtime found
+2024-10-23 05:27:25,403 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 05:27:25,404 - INFO - Scheduler started
+2024-10-23 05:27:25,404 - DEBUG - Looking for jobs to run
+2024-10-23 05:27:25,409 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 05:27:25,421 - WARNING -  * Debugger is active!
+2024-10-23 05:27:25,421 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 05:27:37,108 - INFO - 127.0.0.1 - - [23/Oct/2024 05:27:37] "GET /admin/loans HTTP/1.1" 200 -
+2024-10-23 05:27:37,355 - INFO - 127.0.0.1 - - [23/Oct/2024 05:27:37] "GET /static/css/loans.css HTTP/1.1" 200 -
+2024-10-23 05:27:43,666 - INFO - 127.0.0.1 - - [23/Oct/2024 05:27:43] "GET /admin/members HTTP/1.1" 200 -
+2024-10-23 05:27:43,774 - INFO - 127.0.0.1 - - [23/Oct/2024 05:27:43] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-23 05:27:43,778 - INFO - 127.0.0.1 - - [23/Oct/2024 05:27:43] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-23 05:27:43,782 - INFO - 127.0.0.1 - - [23/Oct/2024 05:27:43] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-23 05:27:43,783 - INFO - 127.0.0.1 - - [23/Oct/2024 05:27:43] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
+2024-10-23 05:27:45,294 - INFO - 127.0.0.1 - - [23/Oct/2024 05:27:45] "GET /admin HTTP/1.1" 200 -
+2024-10-23 05:27:45,368 - INFO - 127.0.0.1 - - [23/Oct/2024 05:27:45] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-23 05:27:45,372 - INFO - 127.0.0.1 - - [23/Oct/2024 05:27:45] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-23 05:28:27,839 - INFO - 127.0.0.1 - - [23/Oct/2024 05:28:27] "GET /admin HTTP/1.1" 200 -
+2024-10-23 05:28:27,900 - INFO - 127.0.0.1 - - [23/Oct/2024 05:28:27] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-23 05:28:27,905 - INFO - 127.0.0.1 - - [23/Oct/2024 05:28:27] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-23 05:28:45,081 - INFO - 127.0.0.1 - - [23/Oct/2024 05:28:45] "GET /admin/members HTTP/1.1" 200 -
+2024-10-23 05:28:45,210 - INFO - 127.0.0.1 - - [23/Oct/2024 05:28:45] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-23 05:28:45,215 - INFO - 127.0.0.1 - - [23/Oct/2024 05:28:45] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
+2024-10-23 05:28:45,216 - INFO - 127.0.0.1 - - [23/Oct/2024 05:28:45] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-23 05:28:45,219 - INFO - 127.0.0.1 - - [23/Oct/2024 05:28:45] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-23 05:28:49,375 - INFO - 127.0.0.1 - - [23/Oct/2024 05:28:49] "GET /admin/staff HTTP/1.1" 200 -
+2024-10-23 05:28:49,448 - INFO - 127.0.0.1 - - [23/Oct/2024 05:28:49] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-23 05:28:49,452 - INFO - 127.0.0.1 - - [23/Oct/2024 05:28:49] "[36mGET /static/css/staff.css HTTP/1.1[0m" 304 -
+2024-10-23 05:28:49,458 - INFO - 127.0.0.1 - - [23/Oct/2024 05:28:49] "[36mGET /static/js/staff.js HTTP/1.1[0m" 304 -
+2024-10-23 05:28:51,337 - INFO - 127.0.0.1 - - [23/Oct/2024 05:28:51] "GET /admin/loans HTTP/1.1" 200 -
+2024-10-23 05:28:51,413 - INFO - 127.0.0.1 - - [23/Oct/2024 05:28:51] "[36mGET /static/css/loans.css HTTP/1.1[0m" 304 -
+2024-10-23 05:28:51,414 - INFO - 127.0.0.1 - - [23/Oct/2024 05:28:51] "[36mGET /static/js/loans.js HTTP/1.1[0m" 304 -
+2024-10-23 05:29:09,406 - INFO - 127.0.0.1 - - [23/Oct/2024 05:29:09] "GET /admin/deposit HTTP/1.1" 200 -
+2024-10-23 05:29:09,522 - INFO - 127.0.0.1 - - [23/Oct/2024 05:29:09] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-23 05:29:09,523 - INFO - 127.0.0.1 - - [23/Oct/2024 05:29:09] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-23 05:29:15,176 - INFO - 127.0.0.1 - - [23/Oct/2024 05:29:15] "GET /admin/settings HTTP/1.1" 200 -
+2024-10-23 05:29:15,276 - INFO - 127.0.0.1 - - [23/Oct/2024 05:29:15] "[32mGET /static//css/settings.css HTTP/1.1[0m" 308 -
+2024-10-23 05:29:15,306 - INFO - 127.0.0.1 - - [23/Oct/2024 05:29:15] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+2024-10-23 05:29:15,333 - INFO - 127.0.0.1 - - [23/Oct/2024 05:29:15] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-23 05:29:15,339 - INFO - 127.0.0.1 - - [23/Oct/2024 05:29:15] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-23 05:29:15,341 - INFO - 127.0.0.1 - - [23/Oct/2024 05:29:15] "[36mGET /static/js/settings.js HTTP/1.1[0m" 304 -
+2024-10-23 05:30:33,891 - INFO - 127.0.0.1 - - [23/Oct/2024 05:30:33] "GET /admin/reports HTTP/1.1" 200 -
+2024-10-23 05:30:33,973 - INFO - 127.0.0.1 - - [23/Oct/2024 05:30:33] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-23 05:30:33,976 - INFO - 127.0.0.1 - - [23/Oct/2024 05:30:33] "[36mGET /static/css/reports.css HTTP/1.1[0m" 304 -
+2024-10-23 05:30:33,980 - INFO - 127.0.0.1 - - [23/Oct/2024 05:30:33] "[36mGET /static/js/reports.js HTTP/1.1[0m" 304 -
+2024-10-23 05:31:27,114 - INFO - 127.0.0.1 - - [23/Oct/2024 05:31:27] "GET /admin/loans HTTP/1.1" 200 -
+2024-10-23 05:31:27,254 - INFO - 127.0.0.1 - - [23/Oct/2024 05:31:27] "[36mGET /static/css/loans.css HTTP/1.1[0m" 304 -
+2024-10-23 05:31:27,254 - INFO - 127.0.0.1 - - [23/Oct/2024 05:31:27] "[36mGET /static/js/loans.js HTTP/1.1[0m" 304 -
+2024-10-23 05:31:38,472 - INFO - 127.0.0.1 - - [23/Oct/2024 05:31:38] "GET /admin/members HTTP/1.1" 200 -
+2024-10-23 05:31:38,610 - INFO - 127.0.0.1 - - [23/Oct/2024 05:31:38] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-23 05:31:38,616 - INFO - 127.0.0.1 - - [23/Oct/2024 05:31:38] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-23 05:31:38,621 - INFO - 127.0.0.1 - - [23/Oct/2024 05:31:38] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
+2024-10-23 05:31:38,622 - INFO - 127.0.0.1 - - [23/Oct/2024 05:31:38] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-23 05:31:39,798 - INFO - 127.0.0.1 - - [23/Oct/2024 05:31:39] "GET /admin HTTP/1.1" 200 -
+2024-10-23 05:31:39,907 - INFO - 127.0.0.1 - - [23/Oct/2024 05:31:39] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-23 05:31:39,908 - INFO - 127.0.0.1 - - [23/Oct/2024 05:31:39] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-23 05:31:47,199 - INFO - 127.0.0.1 - - [23/Oct/2024 05:31:47] "GET /admin/pending_loans HTTP/1.1" 200 -
+2024-10-23 05:31:47,308 - INFO - 127.0.0.1 - - [23/Oct/2024 05:31:47] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-23 05:31:47,309 - INFO - 127.0.0.1 - - [23/Oct/2024 05:31:47] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-23 05:31:47,310 - INFO - 127.0.0.1 - - [23/Oct/2024 05:31:47] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-23 05:32:14,890 - INFO - 127.0.0.1 - - [23/Oct/2024 05:32:14] "GET /admin/members HTTP/1.1" 200 -
+2024-10-23 05:32:14,950 - INFO - 127.0.0.1 - - [23/Oct/2024 05:32:14] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-23 05:32:14,951 - INFO - 127.0.0.1 - - [23/Oct/2024 05:32:14] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-23 05:32:14,952 - INFO - 127.0.0.1 - - [23/Oct/2024 05:32:14] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
+2024-10-23 05:32:14,954 - INFO - 127.0.0.1 - - [23/Oct/2024 05:32:14] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-23 05:32:16,527 - INFO - 127.0.0.1 - - [23/Oct/2024 05:32:16] "GET /admin/staff HTTP/1.1" 200 -
+2024-10-23 05:32:16,636 - INFO - 127.0.0.1 - - [23/Oct/2024 05:32:16] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-23 05:32:16,638 - INFO - 127.0.0.1 - - [23/Oct/2024 05:32:16] "[36mGET /static/js/staff.js HTTP/1.1[0m" 304 -
+2024-10-23 05:32:16,638 - INFO - 127.0.0.1 - - [23/Oct/2024 05:32:16] "[36mGET /static/css/staff.css HTTP/1.1[0m" 304 -
+2024-10-23 05:32:31,006 - INFO - 127.0.0.1 - - [23/Oct/2024 05:32:31] "GET /admin/settings HTTP/1.1" 200 -
+2024-10-23 05:32:31,071 - INFO - 127.0.0.1 - - [23/Oct/2024 05:32:31] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+2024-10-23 05:32:31,074 - INFO - 127.0.0.1 - - [23/Oct/2024 05:32:31] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-23 05:32:31,078 - INFO - 127.0.0.1 - - [23/Oct/2024 05:32:31] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-23 05:32:31,079 - INFO - 127.0.0.1 - - [23/Oct/2024 05:32:31] "[36mGET /static/js/settings.js HTTP/1.1[0m" 304 -
+2024-10-23 05:38:12,189 - INFO - 127.0.0.1 - - [23/Oct/2024 05:38:12] "GET /admin/settings HTTP/1.1" 200 -
+2024-10-23 05:38:12,241 - INFO - 127.0.0.1 - - [23/Oct/2024 05:38:12] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+2024-10-23 05:38:12,247 - INFO - 127.0.0.1 - - [23/Oct/2024 05:38:12] "[36mGET /static/js/settings.js HTTP/1.1[0m" 304 -
+2024-10-23 05:38:12,247 - INFO - 127.0.0.1 - - [23/Oct/2024 05:38:12] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-23 05:38:12,247 - INFO - 127.0.0.1 - - [23/Oct/2024 05:38:12] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-23 05:38:25,914 - INFO - 127.0.0.1 - - [23/Oct/2024 05:38:25] "GET /admin/settings HTTP/1.1" 200 -
+2024-10-23 05:38:25,972 - INFO - 127.0.0.1 - - [23/Oct/2024 05:38:25] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+2024-10-23 05:38:25,975 - INFO - 127.0.0.1 - - [23/Oct/2024 05:38:25] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-23 05:38:25,977 - INFO - 127.0.0.1 - - [23/Oct/2024 05:38:25] "[36mGET /static/js/settings.js HTTP/1.1[0m" 304 -
+2024-10-23 05:38:25,979 - INFO - 127.0.0.1 - - [23/Oct/2024 05:38:25] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-23 05:38:49,000 - INFO - 127.0.0.1 - - [23/Oct/2024 05:38:49] "GET /admin/settings HTTP/1.1" 200 -
+2024-10-23 05:38:49,050 - INFO - 127.0.0.1 - - [23/Oct/2024 05:38:49] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+2024-10-23 05:38:49,053 - INFO - 127.0.0.1 - - [23/Oct/2024 05:38:49] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-23 05:38:49,056 - INFO - 127.0.0.1 - - [23/Oct/2024 05:38:49] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-23 05:38:49,058 - INFO - 127.0.0.1 - - [23/Oct/2024 05:38:49] "[36mGET /static/js/settings.js HTTP/1.1[0m" 304 -
+2024-10-23 05:39:33,197 - INFO - 127.0.0.1 - - [23/Oct/2024 05:39:33] "GET /admin/settings HTTP/1.1" 200 -
+2024-10-23 05:39:33,257 - INFO - 127.0.0.1 - - [23/Oct/2024 05:39:33] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-23 05:39:33,258 - INFO - 127.0.0.1 - - [23/Oct/2024 05:39:33] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+2024-10-23 05:39:33,263 - INFO - 127.0.0.1 - - [23/Oct/2024 05:39:33] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-23 05:39:33,264 - INFO - 127.0.0.1 - - [23/Oct/2024 05:39:33] "[36mGET /static/js/settings.js HTTP/1.1[0m" 304 -
+2024-10-23 05:42:26,950 - INFO - 127.0.0.1 - - [23/Oct/2024 05:42:26] "GET /admin/settings HTTP/1.1" 200 -
+2024-10-23 05:42:27,042 - INFO - 127.0.0.1 - - [23/Oct/2024 05:42:27] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-23 05:42:27,044 - INFO - 127.0.0.1 - - [23/Oct/2024 05:42:27] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-23 05:42:27,046 - INFO - 127.0.0.1 - - [23/Oct/2024 05:42:27] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+2024-10-23 05:42:27,048 - INFO - 127.0.0.1 - - [23/Oct/2024 05:42:27] "[36mGET /static/js/settings.js HTTP/1.1[0m" 304 -
+2024-10-23 05:42:29,772 - INFO - 127.0.0.1 - - [23/Oct/2024 05:42:29] "GET /admin/deposit HTTP/1.1" 200 -
+2024-10-23 05:42:29,895 - INFO - 127.0.0.1 - - [23/Oct/2024 05:42:29] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-10-23 05:42:29,896 - INFO - 127.0.0.1 - - [23/Oct/2024 05:42:29] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2024-10-23 05:42:33,224 - INFO - 127.0.0.1 - - [23/Oct/2024 05:42:33] "GET /admin/reports HTTP/1.1" 200 -
+2024-10-23 05:42:33,374 - INFO - 127.0.0.1 - - [23/Oct/2024 05:42:33] "[36mGET /static/css/reports.css HTTP/1.1[0m" 304 -
+2024-10-23 05:42:33,377 - INFO - 127.0.0.1 - - [23/Oct/2024 05:42:33] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-23 05:42:33,378 - INFO - 127.0.0.1 - - [23/Oct/2024 05:42:33] "[36mGET /static/js/reports.js HTTP/1.1[0m" 304 -
+2024-10-23 05:43:25,033 - INFO - 127.0.0.1 - - [23/Oct/2024 05:43:25] "GET /admin/loans HTTP/1.1" 200 -
+2024-10-23 05:43:25,143 - INFO - 127.0.0.1 - - [23/Oct/2024 05:43:25] "[36mGET /static/css/loans.css HTTP/1.1[0m" 304 -
+2024-10-23 05:43:25,146 - INFO - 127.0.0.1 - - [23/Oct/2024 05:43:25] "[36mGET /static/js/loans.js HTTP/1.1[0m" 304 -
+2024-10-23 05:43:27,940 - INFO - 127.0.0.1 - - [23/Oct/2024 05:43:27] "GET /admin/total_loans HTTP/1.1" 200 -
+2024-10-23 05:43:28,037 - INFO - 127.0.0.1 - - [23/Oct/2024 05:43:28] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-23 05:43:28,040 - INFO - 127.0.0.1 - - [23/Oct/2024 05:43:28] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-23 05:43:28,042 - INFO - 127.0.0.1 - - [23/Oct/2024 05:43:28] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-23 05:44:20,270 - INFO - 127.0.0.1 - - [23/Oct/2024 05:44:20] "GET /admin/loans HTTP/1.1" 200 -
+2024-10-23 05:44:20,322 - INFO - 127.0.0.1 - - [23/Oct/2024 05:44:20] "[36mGET /static/css/loans.css HTTP/1.1[0m" 304 -
+2024-10-23 05:44:20,324 - INFO - 127.0.0.1 - - [23/Oct/2024 05:44:20] "[36mGET /static/js/loans.js HTTP/1.1[0m" 304 -
+2024-10-23 05:45:33,957 - INFO - 127.0.0.1 - - [23/Oct/2024 05:45:33] "GET /admin/total_loans HTTP/1.1" 200 -
+2024-10-23 05:45:34,082 - INFO - 127.0.0.1 - - [23/Oct/2024 05:45:34] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-23 05:45:34,085 - INFO - 127.0.0.1 - - [23/Oct/2024 05:45:34] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-23 05:45:34,086 - INFO - 127.0.0.1 - - [23/Oct/2024 05:45:34] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-23 05:52:57,513 - INFO - 127.0.0.1 - - [23/Oct/2024 05:52:57] "GET /admin/loans HTTP/1.1" 200 -
+2024-10-23 05:52:57,648 - INFO - 127.0.0.1 - - [23/Oct/2024 05:52:57] "[36mGET /static/css/loans.css HTTP/1.1[0m" 304 -
+2024-10-23 05:52:57,655 - INFO - 127.0.0.1 - - [23/Oct/2024 05:52:57] "[36mGET /static/js/loans.js HTTP/1.1[0m" 304 -
+2024-10-23 05:53:00,803 - INFO - 127.0.0.1 - - [23/Oct/2024 05:53:00] "GET /admin/reports HTTP/1.1" 200 -
+2024-10-23 05:53:00,931 - INFO - 127.0.0.1 - - [23/Oct/2024 05:53:00] "[36mGET /static/css/reports.css HTTP/1.1[0m" 304 -
+2024-10-23 05:53:00,935 - INFO - 127.0.0.1 - - [23/Oct/2024 05:53:00] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-23 05:53:00,937 - INFO - 127.0.0.1 - - [23/Oct/2024 05:53:00] "[36mGET /static/js/reports.js HTTP/1.1[0m" 304 -
+2024-10-23 05:53:19,982 - INFO - 127.0.0.1 - - [23/Oct/2024 05:53:19] "GET /admin HTTP/1.1" 200 -
+2024-10-23 05:53:20,079 - INFO - 127.0.0.1 - - [23/Oct/2024 05:53:20] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-23 05:53:20,082 - INFO - 127.0.0.1 - - [23/Oct/2024 05:53:20] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-23 05:53:25,962 - INFO - 127.0.0.1 - - [23/Oct/2024 05:53:25] "GET /admin/reports HTTP/1.1" 200 -
+2024-10-23 05:53:26,098 - INFO - 127.0.0.1 - - [23/Oct/2024 05:53:26] "[36mGET /static/css/reports.css HTTP/1.1[0m" 304 -
+2024-10-23 05:53:26,099 - INFO - 127.0.0.1 - - [23/Oct/2024 05:53:26] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-23 05:53:26,100 - INFO - 127.0.0.1 - - [23/Oct/2024 05:53:26] "[36mGET /static/js/reports.js HTTP/1.1[0m" 304 -
+2024-10-23 05:57:53,532 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 05:57:53,800 - INFO -  * Restarting with stat
+2024-10-23 05:57:55,585 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 05:57:55,586 - DEBUG - /etc/localtime found
+2024-10-23 05:57:55,588 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 05:57:55,589 - INFO - Scheduler started
+2024-10-23 05:57:55,590 - DEBUG - Looking for jobs to run
+2024-10-23 05:57:55,597 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 05:57:55,619 - WARNING -  * Debugger is active!
+2024-10-23 05:57:55,619 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 05:57:57,699 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 05:57:57,980 - INFO -  * Restarting with stat
+2024-10-23 06:02:30,392 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:02:30,392 - DEBUG - /etc/localtime found
+2024-10-23 06:02:30,394 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:02:30,396 - INFO - Scheduler started
+2024-10-23 06:02:30,397 - DEBUG - Looking for jobs to run
+2024-10-23 06:02:30,402 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:02:30,418 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.41:5000
+2024-10-23 06:02:30,418 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-23 06:02:30,419 - INFO -  * Restarting with stat
+2024-10-23 06:02:31,805 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:02:31,806 - DEBUG - /etc/localtime found
+2024-10-23 06:02:31,807 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:02:31,808 - INFO - Scheduler started
+2024-10-23 06:02:31,808 - DEBUG - Looking for jobs to run
+2024-10-23 06:02:31,813 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:02:31,823 - WARNING -  * Debugger is active!
+2024-10-23 06:02:31,823 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:02:33,274 - INFO - 127.0.0.1 - - [23/Oct/2024 06:02:33] "GET /admin/reports HTTP/1.1" 200 -
+2024-10-23 06:02:33,385 - INFO - 127.0.0.1 - - [23/Oct/2024 06:02:33] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-23 06:02:33,396 - INFO - 127.0.0.1 - - [23/Oct/2024 06:02:33] "[36mGET /static/css/reports.css HTTP/1.1[0m" 304 -
+2024-10-23 06:02:33,397 - INFO - 127.0.0.1 - - [23/Oct/2024 06:02:33] "GET /static/js/reports.js HTTP/1.1" 200 -
+2024-10-23 06:02:39,788 - INFO - 127.0.0.1 - - [23/Oct/2024 06:02:39] "GET /admin/loans HTTP/1.1" 200 -
+2024-10-23 06:02:39,872 - INFO - 127.0.0.1 - - [23/Oct/2024 06:02:39] "[36mGET /static/css/loans.css HTTP/1.1[0m" 304 -
+2024-10-23 06:02:39,873 - INFO - 127.0.0.1 - - [23/Oct/2024 06:02:39] "[36mGET /static/js/loans.js HTTP/1.1[0m" 304 -
+2024-10-23 06:02:45,823 - INFO - 127.0.0.1 - - [23/Oct/2024 06:02:45] "GET /admin/reports HTTP/1.1" 200 -
+2024-10-23 06:02:45,902 - INFO - 127.0.0.1 - - [23/Oct/2024 06:02:45] "[36mGET /static/css/reports.css HTTP/1.1[0m" 304 -
+2024-10-23 06:02:45,907 - INFO - 127.0.0.1 - - [23/Oct/2024 06:02:45] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-23 06:02:45,910 - INFO - 127.0.0.1 - - [23/Oct/2024 06:02:45] "[36mGET /static/js/reports.js HTTP/1.1[0m" 304 -
+2024-10-23 06:04:14,470 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 06:04:14,757 - INFO -  * Restarting with stat
+2024-10-23 06:04:16,834 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:04:16,835 - DEBUG - /etc/localtime found
+2024-10-23 06:04:16,836 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:04:16,837 - INFO - Scheduler started
+2024-10-23 06:04:16,838 - DEBUG - Looking for jobs to run
+2024-10-23 06:04:16,838 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:04:16,860 - WARNING -  * Debugger is active!
+2024-10-23 06:04:16,860 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:04:17,918 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 06:04:18,145 - INFO -  * Restarting with stat
+2024-10-23 06:06:26,366 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:06:26,367 - DEBUG - /etc/localtime found
+2024-10-23 06:06:26,368 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:06:26,369 - INFO - Scheduler started
+2024-10-23 06:06:26,369 - DEBUG - Looking for jobs to run
+2024-10-23 06:06:26,369 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:06:26,386 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.41:5000
+2024-10-23 06:06:26,386 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-23 06:06:26,387 - INFO -  * Restarting with stat
+2024-10-23 06:06:27,838 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:06:27,838 - DEBUG - /etc/localtime found
+2024-10-23 06:06:27,839 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:06:27,840 - INFO - Scheduler started
+2024-10-23 06:06:27,840 - DEBUG - Looking for jobs to run
+2024-10-23 06:06:27,845 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:06:27,854 - WARNING -  * Debugger is active!
+2024-10-23 06:06:27,854 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:06:29,052 - INFO - 127.0.0.1 - - [23/Oct/2024 06:06:29] "GET /admin/reports HTTP/1.1" 200 -
+2024-10-23 06:06:29,102 - INFO - 127.0.0.1 - - [23/Oct/2024 06:06:29] "[36mGET /static/css/reports.css HTTP/1.1[0m" 304 -
+2024-10-23 06:06:29,106 - INFO - 127.0.0.1 - - [23/Oct/2024 06:06:29] "[36mGET /static/js/reports.js HTTP/1.1[0m" 304 -
+2024-10-23 06:06:29,107 - INFO - 127.0.0.1 - - [23/Oct/2024 06:06:29] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-23 06:07:09,092 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 06:07:09,380 - INFO -  * Restarting with stat
+2024-10-23 06:07:25,579 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:07:25,580 - DEBUG - /etc/localtime found
+2024-10-23 06:07:25,581 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:07:25,582 - INFO - Scheduler started
+2024-10-23 06:07:25,582 - DEBUG - Looking for jobs to run
+2024-10-23 06:07:25,583 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:07:25,611 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.41:5000
+2024-10-23 06:07:25,611 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-23 06:07:25,612 - INFO -  * Restarting with stat
+2024-10-23 06:07:27,268 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:07:27,272 - DEBUG - /etc/localtime found
+2024-10-23 06:07:27,274 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:07:27,277 - INFO - Scheduler started
+2024-10-23 06:07:27,278 - DEBUG - Looking for jobs to run
+2024-10-23 06:07:27,287 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:07:27,316 - WARNING -  * Debugger is active!
+2024-10-23 06:07:27,317 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:07:34,084 - INFO - 127.0.0.1 - - [23/Oct/2024 06:07:34] "GET /admin/reports HTTP/1.1" 200 -
+2024-10-23 06:07:34,146 - INFO - 127.0.0.1 - - [23/Oct/2024 06:07:34] "[36mGET /static/css/reports.css HTTP/1.1[0m" 304 -
+2024-10-23 06:07:34,147 - INFO - 127.0.0.1 - - [23/Oct/2024 06:07:34] "[36mGET /static/js/reports.js HTTP/1.1[0m" 304 -
+2024-10-23 06:07:34,149 - INFO - 127.0.0.1 - - [23/Oct/2024 06:07:34] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-23 06:08:24,805 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 06:08:25,088 - INFO -  * Restarting with stat
+2024-10-23 06:26:28,569 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:26:28,570 - DEBUG - /etc/localtime found
+2024-10-23 06:26:28,571 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:26:28,572 - INFO - Scheduler started
+2024-10-23 06:26:28,572 - DEBUG - Looking for jobs to run
+2024-10-23 06:26:28,577 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:26:28,589 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.41:5000
+2024-10-23 06:26:28,589 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-23 06:26:28,590 - INFO -  * Restarting with stat
+2024-10-23 06:26:29,740 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:26:29,740 - DEBUG - /etc/localtime found
+2024-10-23 06:26:29,741 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:26:29,742 - INFO - Scheduler started
+2024-10-23 06:26:29,742 - DEBUG - Looking for jobs to run
+2024-10-23 06:26:29,748 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:26:29,758 - WARNING -  * Debugger is active!
+2024-10-23 06:26:29,759 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:26:42,496 - INFO - 127.0.0.1 - - [23/Oct/2024 06:26:42] "[35m[1mGET /admin/reports HTTP/1.1[0m" 500 -
+2024-10-23 06:26:42,555 - INFO - 127.0.0.1 - - [23/Oct/2024 06:26:42] "GET /admin/reports?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-10-23 06:26:42,557 - INFO - 127.0.0.1 - - [23/Oct/2024 06:26:42] "GET /admin/reports?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-10-23 06:26:42,590 - INFO - 127.0.0.1 - - [23/Oct/2024 06:26:42] "GET /admin/reports?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-10-23 06:26:42,592 - INFO - 127.0.0.1 - - [23/Oct/2024 06:26:42] "GET /admin/reports?__debugger__=yes&cmd=resource&f=console.png&s=50yFp18pnSnrgvhz50mZ HTTP/1.1" 200 -
+2024-10-23 06:28:24,761 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 06:28:25,043 - INFO -  * Restarting with stat
+2024-10-23 06:29:47,844 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:29:47,845 - DEBUG - /etc/localtime found
+2024-10-23 06:29:47,846 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:29:47,847 - INFO - Scheduler started
+2024-10-23 06:29:47,847 - DEBUG - Looking for jobs to run
+2024-10-23 06:29:47,852 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:29:47,864 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.41:5000
+2024-10-23 06:29:47,864 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-23 06:29:47,864 - INFO -  * Restarting with stat
+2024-10-23 06:29:49,330 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:29:49,331 - DEBUG - /etc/localtime found
+2024-10-23 06:29:49,332 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:29:49,333 - INFO - Scheduler started
+2024-10-23 06:29:49,334 - DEBUG - Looking for jobs to run
+2024-10-23 06:29:49,339 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:29:49,353 - WARNING -  * Debugger is active!
+2024-10-23 06:29:49,353 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:29:52,735 - INFO - 127.0.0.1 - - [23/Oct/2024 06:29:52] "[35m[1mGET /admin/reports HTTP/1.1[0m" 500 -
+2024-10-23 06:29:52,857 - INFO - 127.0.0.1 - - [23/Oct/2024 06:29:52] "[36mGET /admin/reports?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-23 06:29:52,875 - INFO - 127.0.0.1 - - [23/Oct/2024 06:29:52] "[36mGET /admin/reports?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-23 06:29:52,933 - INFO - 127.0.0.1 - - [23/Oct/2024 06:29:52] "GET /admin/reports?__debugger__=yes&cmd=resource&f=console.png&s=dEWbSKp9HsKLkJ5eNV93 HTTP/1.1" 200 -
+2024-10-23 06:30:51,034 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 06:30:51,341 - INFO -  * Restarting with stat
+2024-10-23 06:30:53,285 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:30:53,286 - DEBUG - /etc/localtime found
+2024-10-23 06:30:53,286 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:30:53,287 - INFO - Scheduler started
+2024-10-23 06:30:53,288 - DEBUG - Looking for jobs to run
+2024-10-23 06:30:53,293 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:30:53,302 - WARNING -  * Debugger is active!
+2024-10-23 06:30:53,302 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:31:04,643 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 06:31:04,907 - INFO -  * Restarting with stat
+2024-10-23 06:31:06,019 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:31:06,020 - DEBUG - /etc/localtime found
+2024-10-23 06:31:06,021 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:31:06,022 - INFO - Scheduler started
+2024-10-23 06:31:06,022 - DEBUG - Looking for jobs to run
+2024-10-23 06:31:06,028 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:31:06,036 - WARNING -  * Debugger is active!
+2024-10-23 06:31:06,037 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:31:13,209 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 06:31:13,449 - INFO -  * Restarting with stat
+2024-10-23 06:31:14,685 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:31:14,686 - DEBUG - /etc/localtime found
+2024-10-23 06:31:14,687 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:31:14,688 - INFO - Scheduler started
+2024-10-23 06:31:14,689 - DEBUG - Looking for jobs to run
+2024-10-23 06:31:14,689 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:31:14,708 - WARNING -  * Debugger is active!
+2024-10-23 06:31:14,708 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:31:19,873 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 06:31:20,142 - INFO -  * Restarting with stat
+2024-10-23 06:31:22,288 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:31:22,292 - DEBUG - /etc/localtime found
+2024-10-23 06:31:22,294 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:31:22,295 - INFO - Scheduler started
+2024-10-23 06:31:22,296 - DEBUG - Looking for jobs to run
+2024-10-23 06:31:22,306 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:31:22,335 - WARNING -  * Debugger is active!
+2024-10-23 06:31:22,341 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:31:23,413 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 06:31:23,642 - INFO -  * Restarting with stat
+2024-10-23 06:31:24,886 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:31:24,887 - DEBUG - /etc/localtime found
+2024-10-23 06:31:24,888 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:31:24,889 - INFO - Scheduler started
+2024-10-23 06:31:24,890 - DEBUG - Looking for jobs to run
+2024-10-23 06:31:24,890 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:31:24,914 - WARNING -  * Debugger is active!
+2024-10-23 06:31:24,915 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:31:29,049 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 06:31:29,350 - INFO -  * Restarting with stat
+2024-10-23 06:31:30,594 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:31:30,594 - DEBUG - /etc/localtime found
+2024-10-23 06:31:30,596 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:31:30,597 - INFO - Scheduler started
+2024-10-23 06:31:30,598 - DEBUG - Looking for jobs to run
+2024-10-23 06:31:30,603 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:31:30,618 - WARNING -  * Debugger is active!
+2024-10-23 06:31:30,619 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:31:33,700 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 06:31:33,957 - INFO -  * Restarting with stat
+2024-10-23 06:31:35,238 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:31:35,239 - DEBUG - /etc/localtime found
+2024-10-23 06:31:35,241 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:31:35,242 - INFO - Scheduler started
+2024-10-23 06:31:35,243 - DEBUG - Looking for jobs to run
+2024-10-23 06:31:35,248 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:31:35,266 - WARNING -  * Debugger is active!
+2024-10-23 06:31:35,267 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:31:39,883 - INFO - 127.0.0.1 - - [23/Oct/2024 06:31:39] "[35m[1mGET /admin/reports HTTP/1.1[0m" 500 -
+2024-10-23 06:31:39,932 - INFO - 127.0.0.1 - - [23/Oct/2024 06:31:39] "[36mGET /admin/reports?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-23 06:31:39,933 - INFO - 127.0.0.1 - - [23/Oct/2024 06:31:39] "[36mGET /admin/reports?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-23 06:31:39,957 - INFO - 127.0.0.1 - - [23/Oct/2024 06:31:39] "GET /admin/reports?__debugger__=yes&cmd=resource&f=console.png&s=Pci0yRduHyMiY8dl6A47 HTTP/1.1" 200 -
+2024-10-23 06:32:11,313 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 06:32:11,617 - INFO -  * Restarting with stat
+2024-10-23 06:32:12,779 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:32:12,780 - DEBUG - /etc/localtime found
+2024-10-23 06:32:12,781 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:32:12,782 - INFO - Scheduler started
+2024-10-23 06:32:12,782 - DEBUG - Looking for jobs to run
+2024-10-23 06:32:12,787 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:32:12,798 - WARNING -  * Debugger is active!
+2024-10-23 06:32:12,799 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:32:26,111 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 06:32:26,352 - INFO -  * Restarting with stat
+2024-10-23 06:32:27,892 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:32:27,893 - DEBUG - /etc/localtime found
+2024-10-23 06:32:27,894 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:32:27,896 - INFO - Scheduler started
+2024-10-23 06:32:27,896 - DEBUG - Looking for jobs to run
+2024-10-23 06:32:27,901 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:32:27,918 - WARNING -  * Debugger is active!
+2024-10-23 06:32:27,918 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:32:36,163 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 06:32:36,419 - INFO -  * Restarting with stat
+2024-10-23 06:32:37,822 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:32:37,823 - DEBUG - /etc/localtime found
+2024-10-23 06:32:37,824 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:32:37,825 - INFO - Scheduler started
+2024-10-23 06:32:37,825 - DEBUG - Looking for jobs to run
+2024-10-23 06:32:37,830 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:32:37,845 - WARNING -  * Debugger is active!
+2024-10-23 06:32:37,846 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:32:41,177 - INFO - 127.0.0.1 - - [23/Oct/2024 06:32:41] "[35m[1mGET /admin/reports HTTP/1.1[0m" 500 -
+2024-10-23 06:32:41,223 - INFO - 127.0.0.1 - - [23/Oct/2024 06:32:41] "[36mGET /admin/reports?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-23 06:32:41,225 - INFO - 127.0.0.1 - - [23/Oct/2024 06:32:41] "[36mGET /admin/reports?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-23 06:32:41,241 - INFO - 127.0.0.1 - - [23/Oct/2024 06:32:41] "GET /admin/reports?__debugger__=yes&cmd=resource&f=console.png&s=1LNFaEMzPPKza8ugTOCD HTTP/1.1" 200 -
+2024-10-23 06:32:43,992 - INFO - 127.0.0.1 - - [23/Oct/2024 06:32:43] "[35m[1mGET /admin/reports HTTP/1.1[0m" 500 -
+2024-10-23 06:32:44,023 - INFO - 127.0.0.1 - - [23/Oct/2024 06:32:44] "[36mGET /admin/reports?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-23 06:32:44,025 - INFO - 127.0.0.1 - - [23/Oct/2024 06:32:44] "[36mGET /admin/reports?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-23 06:32:44,042 - INFO - 127.0.0.1 - - [23/Oct/2024 06:32:44] "[36mGET /admin/reports?__debugger__=yes&cmd=resource&f=console.png&s=1LNFaEMzPPKza8ugTOCD HTTP/1.1[0m" 304 -
+2024-10-23 06:34:21,917 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 06:34:22,189 - INFO -  * Restarting with stat
+2024-10-23 06:34:23,952 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:34:23,953 - DEBUG - /etc/localtime found
+2024-10-23 06:34:23,955 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:34:23,956 - INFO - Scheduler started
+2024-10-23 06:34:23,957 - DEBUG - Looking for jobs to run
+2024-10-23 06:34:23,958 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:34:23,986 - WARNING -  * Debugger is active!
+2024-10-23 06:34:23,986 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:34:26,060 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 06:34:26,294 - INFO -  * Restarting with stat
+2024-10-23 06:34:27,376 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:34:27,376 - DEBUG - /etc/localtime found
+2024-10-23 06:34:27,377 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:34:27,378 - INFO - Scheduler started
+2024-10-23 06:34:27,378 - DEBUG - Looking for jobs to run
+2024-10-23 06:34:27,378 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:34:27,392 - WARNING -  * Debugger is active!
+2024-10-23 06:34:27,392 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:34:30,459 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 06:34:30,706 - INFO -  * Restarting with stat
+2024-10-23 06:34:32,033 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:34:32,033 - DEBUG - /etc/localtime found
+2024-10-23 06:34:32,034 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:34:32,035 - INFO - Scheduler started
+2024-10-23 06:34:32,035 - DEBUG - Looking for jobs to run
+2024-10-23 06:34:32,040 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:34:32,049 - WARNING -  * Debugger is active!
+2024-10-23 06:34:32,049 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:34:43,299 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 06:34:43,545 - INFO -  * Restarting with stat
+2024-10-23 06:34:45,543 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:34:45,544 - DEBUG - /etc/localtime found
+2024-10-23 06:34:45,546 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:34:45,547 - INFO - Scheduler started
+2024-10-23 06:34:45,548 - DEBUG - Looking for jobs to run
+2024-10-23 06:34:45,554 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:34:45,576 - WARNING -  * Debugger is active!
+2024-10-23 06:34:45,577 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:34:46,628 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 06:34:46,854 - INFO -  * Restarting with stat
+2024-10-23 06:35:25,956 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:35:25,957 - DEBUG - /etc/localtime found
+2024-10-23 06:35:25,958 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:35:25,959 - INFO - Scheduler started
+2024-10-23 06:35:25,959 - DEBUG - Looking for jobs to run
+2024-10-23 06:35:25,959 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:35:25,982 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.41:5000
+2024-10-23 06:35:25,982 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-23 06:35:25,983 - INFO -  * Restarting with stat
+2024-10-23 06:35:27,545 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:35:27,545 - DEBUG - /etc/localtime found
+2024-10-23 06:35:27,546 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:35:27,547 - INFO - Scheduler started
+2024-10-23 06:35:27,548 - DEBUG - Looking for jobs to run
+2024-10-23 06:35:27,553 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:35:27,562 - WARNING -  * Debugger is active!
+2024-10-23 06:35:27,563 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:35:29,271 - INFO - 127.0.0.1 - - [23/Oct/2024 06:35:29] "[35m[1mGET /admin/reports HTTP/1.1[0m" 500 -
+2024-10-23 06:35:29,326 - INFO - 127.0.0.1 - - [23/Oct/2024 06:35:29] "[36mGET /admin/reports?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-10-23 06:35:29,329 - INFO - 127.0.0.1 - - [23/Oct/2024 06:35:29] "[36mGET /admin/reports?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-10-23 06:35:29,347 - INFO - 127.0.0.1 - - [23/Oct/2024 06:35:29] "GET /admin/reports?__debugger__=yes&cmd=resource&f=console.png&s=GhaMijOHLePRZsuRsxdA HTTP/1.1" 200 -
+2024-10-23 06:35:52,146 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 06:35:52,484 - INFO -  * Restarting with stat
+2024-10-23 06:35:54,162 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:35:54,162 - DEBUG - /etc/localtime found
+2024-10-23 06:35:54,163 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:35:54,164 - INFO - Scheduler started
+2024-10-23 06:35:54,165 - DEBUG - Looking for jobs to run
+2024-10-23 06:35:54,170 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:35:54,179 - WARNING -  * Debugger is active!
+2024-10-23 06:35:54,179 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:35:56,223 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 06:35:56,459 - INFO -  * Restarting with stat
+2024-10-23 06:35:57,581 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:35:57,581 - DEBUG - /etc/localtime found
+2024-10-23 06:35:57,582 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:35:57,583 - INFO - Scheduler started
+2024-10-23 06:35:57,584 - DEBUG - Looking for jobs to run
+2024-10-23 06:35:57,589 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:35:57,605 - WARNING -  * Debugger is active!
+2024-10-23 06:35:57,605 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:35:59,652 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 06:35:59,887 - INFO -  * Restarting with stat
+2024-10-23 06:36:01,314 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:36:01,315 - DEBUG - /etc/localtime found
+2024-10-23 06:36:01,317 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:36:01,318 - INFO - Scheduler started
+2024-10-23 06:36:01,318 - DEBUG - Looking for jobs to run
+2024-10-23 06:36:01,323 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:36:01,337 - WARNING -  * Debugger is active!
+2024-10-23 06:36:01,338 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:36:25,989 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 06:36:26,228 - INFO -  * Restarting with stat
+2024-10-23 06:36:27,457 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:36:27,458 - DEBUG - /etc/localtime found
+2024-10-23 06:36:27,460 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:36:27,461 - INFO - Scheduler started
+2024-10-23 06:36:27,461 - DEBUG - Looking for jobs to run
+2024-10-23 06:36:27,462 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:36:27,488 - WARNING -  * Debugger is active!
+2024-10-23 06:36:27,489 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:36:29,552 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 06:36:29,783 - INFO -  * Restarting with stat
+2024-10-23 06:36:31,182 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:36:31,183 - DEBUG - /etc/localtime found
+2024-10-23 06:36:31,184 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:36:31,187 - INFO - Scheduler started
+2024-10-23 06:36:31,187 - DEBUG - Looking for jobs to run
+2024-10-23 06:36:31,194 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:36:31,216 - WARNING -  * Debugger is active!
+2024-10-23 06:36:31,217 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:36:32,253 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 06:36:32,475 - INFO -  * Restarting with stat
+2024-10-23 06:36:33,567 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:36:33,568 - DEBUG - /etc/localtime found
+2024-10-23 06:36:33,569 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:36:33,569 - INFO - Scheduler started
+2024-10-23 06:36:33,570 - DEBUG - Looking for jobs to run
+2024-10-23 06:36:33,570 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:36:33,583 - WARNING -  * Debugger is active!
+2024-10-23 06:36:33,583 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:36:37,685 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 06:36:37,982 - INFO -  * Restarting with stat
+2024-10-23 06:36:39,355 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:36:39,355 - DEBUG - /etc/localtime found
+2024-10-23 06:36:39,357 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:36:39,358 - INFO - Scheduler started
+2024-10-23 06:36:39,358 - DEBUG - Looking for jobs to run
+2024-10-23 06:36:39,359 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:36:39,377 - WARNING -  * Debugger is active!
+2024-10-23 06:36:39,377 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:36:40,761 - INFO - 127.0.0.1 - - [23/Oct/2024 06:36:40] "GET /admin/reports HTTP/1.1" 200 -
+2024-10-23 06:36:40,815 - INFO - 127.0.0.1 - - [23/Oct/2024 06:36:40] "[36mGET /static/css/reports.css HTTP/1.1[0m" 304 -
+2024-10-23 06:36:40,821 - INFO - 127.0.0.1 - - [23/Oct/2024 06:36:40] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-23 06:36:40,821 - INFO - 127.0.0.1 - - [23/Oct/2024 06:36:40] "GET /static/js/reports.js HTTP/1.1" 200 -
+2024-10-23 06:37:21,605 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 06:37:21,920 - INFO -  * Restarting with stat
+2024-10-23 06:37:23,031 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:37:23,031 - DEBUG - /etc/localtime found
+2024-10-23 06:37:23,032 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:37:23,033 - INFO - Scheduler started
+2024-10-23 06:37:23,033 - DEBUG - Looking for jobs to run
+2024-10-23 06:37:23,038 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:37:23,047 - WARNING -  * Debugger is active!
+2024-10-23 06:37:23,047 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:37:27,146 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 06:37:27,375 - INFO -  * Restarting with stat
+2024-10-23 06:37:28,457 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:37:28,457 - DEBUG - /etc/localtime found
+2024-10-23 06:37:28,458 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:37:28,459 - INFO - Scheduler started
+2024-10-23 06:37:28,459 - DEBUG - Looking for jobs to run
+2024-10-23 06:37:28,464 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:37:28,472 - WARNING -  * Debugger is active!
+2024-10-23 06:37:28,473 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:37:35,605 - INFO - 127.0.0.1 - - [23/Oct/2024 06:37:35] "GET /admin/reports HTTP/1.1" 200 -
+2024-10-23 06:37:35,649 - INFO - 127.0.0.1 - - [23/Oct/2024 06:37:35] "[36mGET /static/css/reports.css HTTP/1.1[0m" 304 -
+2024-10-23 06:37:35,658 - INFO - 127.0.0.1 - - [23/Oct/2024 06:37:35] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-23 06:37:35,660 - INFO - 127.0.0.1 - - [23/Oct/2024 06:37:35] "[36mGET /static/js/reports.js HTTP/1.1[0m" 304 -
+2024-10-23 06:38:04,671 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 06:38:04,913 - INFO -  * Restarting with stat
+2024-10-23 06:38:06,013 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:38:06,013 - DEBUG - /etc/localtime found
+2024-10-23 06:38:06,014 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:38:06,015 - INFO - Scheduler started
+2024-10-23 06:38:06,016 - DEBUG - Looking for jobs to run
+2024-10-23 06:38:06,021 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:38:06,029 - WARNING -  * Debugger is active!
+2024-10-23 06:38:06,030 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:38:15,274 - INFO - 127.0.0.1 - - [23/Oct/2024 06:38:15] "GET /admin/reports HTTP/1.1" 200 -
+2024-10-23 06:38:15,332 - INFO - 127.0.0.1 - - [23/Oct/2024 06:38:15] "[36mGET /static/js/reports.js HTTP/1.1[0m" 304 -
+2024-10-23 06:38:15,334 - INFO - 127.0.0.1 - - [23/Oct/2024 06:38:15] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-23 06:38:15,336 - INFO - 127.0.0.1 - - [23/Oct/2024 06:38:15] "[36mGET /static/css/reports.css HTTP/1.1[0m" 304 -
+2024-10-23 06:38:38,345 - INFO - 127.0.0.1 - - [23/Oct/2024 06:38:38] "GET /admin/loans HTTP/1.1" 200 -
+2024-10-23 06:38:38,427 - INFO - 127.0.0.1 - - [23/Oct/2024 06:38:38] "[36mGET /static/css/loans.css HTTP/1.1[0m" 304 -
+2024-10-23 06:38:38,431 - INFO - 127.0.0.1 - - [23/Oct/2024 06:38:38] "[36mGET /static/js/loans.js HTTP/1.1[0m" 304 -
+2024-10-23 06:40:26,130 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 06:40:26,380 - INFO -  * Restarting with stat
+2024-10-23 06:40:27,514 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:40:27,515 - DEBUG - /etc/localtime found
+2024-10-23 06:40:27,516 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:40:27,517 - INFO - Scheduler started
+2024-10-23 06:40:27,517 - DEBUG - Looking for jobs to run
+2024-10-23 06:40:27,522 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:40:27,531 - WARNING -  * Debugger is active!
+2024-10-23 06:40:27,532 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:40:30,626 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 06:40:30,903 - INFO -  * Restarting with stat
+2024-10-23 06:40:32,557 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:40:32,558 - DEBUG - /etc/localtime found
+2024-10-23 06:40:32,559 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:40:32,560 - INFO - Scheduler started
+2024-10-23 06:40:32,560 - DEBUG - Looking for jobs to run
+2024-10-23 06:40:32,565 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:40:32,577 - WARNING -  * Debugger is active!
+2024-10-23 06:40:32,577 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:40:34,635 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 06:40:34,872 - INFO -  * Restarting with stat
+2024-10-23 06:40:35,951 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:40:35,951 - DEBUG - /etc/localtime found
+2024-10-23 06:40:35,952 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:40:35,953 - INFO - Scheduler started
+2024-10-23 06:40:35,954 - DEBUG - Looking for jobs to run
+2024-10-23 06:40:35,959 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:40:35,970 - WARNING -  * Debugger is active!
+2024-10-23 06:40:35,971 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:40:47,183 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 06:40:47,467 - INFO -  * Restarting with stat
+2024-10-23 06:44:28,927 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:44:28,928 - DEBUG - /etc/localtime found
+2024-10-23 06:44:28,930 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:44:28,931 - INFO - Scheduler started
+2024-10-23 06:44:28,932 - DEBUG - Looking for jobs to run
+2024-10-23 06:44:28,932 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:44:28,954 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.41:5000
+2024-10-23 06:44:28,955 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-23 06:44:28,955 - INFO -  * Restarting with stat
+2024-10-23 06:44:30,434 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:44:30,434 - DEBUG - /etc/localtime found
+2024-10-23 06:44:30,435 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:44:30,436 - INFO - Scheduler started
+2024-10-23 06:44:30,437 - DEBUG - Looking for jobs to run
+2024-10-23 06:44:30,442 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:44:30,458 - WARNING -  * Debugger is active!
+2024-10-23 06:44:30,458 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:44:32,639 - INFO - 127.0.0.1 - - [23/Oct/2024 06:44:32] "GET /admin/loans HTTP/1.1" 200 -
+2024-10-23 06:44:32,695 - INFO - 127.0.0.1 - - [23/Oct/2024 06:44:32] "[36mGET /static/css/loans.css HTTP/1.1[0m" 304 -
+2024-10-23 06:44:32,696 - INFO - 127.0.0.1 - - [23/Oct/2024 06:44:32] "GET /static/js/loans.js HTTP/1.1" 200 -
+2024-10-23 06:46:41,927 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/models.py', reloading
+2024-10-23 06:46:42,227 - INFO -  * Restarting with stat
+2024-10-23 06:46:43,303 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:46:43,304 - DEBUG - /etc/localtime found
+2024-10-23 06:46:43,305 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:46:43,306 - INFO - Scheduler started
+2024-10-23 06:46:43,306 - DEBUG - Looking for jobs to run
+2024-10-23 06:46:43,306 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:46:43,321 - WARNING -  * Debugger is active!
+2024-10-23 06:46:43,321 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:46:45,359 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/models.py', reloading
+2024-10-23 06:46:45,630 - INFO -  * Restarting with stat
+2024-10-23 06:46:47,065 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:46:47,066 - DEBUG - /etc/localtime found
+2024-10-23 06:46:47,067 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:46:47,067 - INFO - Scheduler started
+2024-10-23 06:46:47,068 - DEBUG - Looking for jobs to run
+2024-10-23 06:46:47,068 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:46:47,082 - WARNING -  * Debugger is active!
+2024-10-23 06:46:47,083 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:47:37,452 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/models.py', reloading
+2024-10-23 06:47:37,690 - INFO -  * Restarting with stat
+2024-10-23 06:47:38,980 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:47:38,980 - DEBUG - /etc/localtime found
+2024-10-23 06:47:38,981 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:47:38,982 - INFO - Scheduler started
+2024-10-23 06:47:38,982 - DEBUG - Looking for jobs to run
+2024-10-23 06:47:38,982 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:47:38,997 - WARNING -  * Debugger is active!
+2024-10-23 06:47:38,997 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:47:44,155 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/models.py', reloading
+2024-10-23 06:47:44,412 - INFO -  * Restarting with stat
+2024-10-23 06:47:45,637 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:47:45,638 - DEBUG - /etc/localtime found
+2024-10-23 06:47:45,638 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:47:45,639 - INFO - Scheduler started
+2024-10-23 06:47:45,640 - DEBUG - Looking for jobs to run
+2024-10-23 06:47:45,645 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:47:45,655 - WARNING -  * Debugger is active!
+2024-10-23 06:47:45,656 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:47:50,797 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/models.py', reloading
+2024-10-23 06:47:51,086 - INFO -  * Restarting with stat
+2024-10-23 06:47:52,620 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:47:52,621 - DEBUG - /etc/localtime found
+2024-10-23 06:47:52,622 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:47:52,622 - INFO - Scheduler started
+2024-10-23 06:47:52,623 - DEBUG - Looking for jobs to run
+2024-10-23 06:47:52,628 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:47:52,640 - WARNING -  * Debugger is active!
+2024-10-23 06:47:52,641 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:48:05,080 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/models.py', reloading
+2024-10-23 06:48:05,317 - INFO -  * Restarting with stat
+2024-10-23 06:48:06,458 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:48:06,459 - DEBUG - /etc/localtime found
+2024-10-23 06:48:06,460 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:48:06,461 - INFO - Scheduler started
+2024-10-23 06:48:06,461 - DEBUG - Looking for jobs to run
+2024-10-23 06:48:06,466 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:48:06,478 - WARNING -  * Debugger is active!
+2024-10-23 06:48:06,478 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:48:30,183 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/models.py', reloading
+2024-10-23 06:48:30,488 - INFO -  * Restarting with stat
+2024-10-23 06:48:31,987 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:48:31,987 - DEBUG - /etc/localtime found
+2024-10-23 06:48:31,988 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:48:31,990 - INFO - Scheduler started
+2024-10-23 06:48:31,990 - DEBUG - Looking for jobs to run
+2024-10-23 06:48:31,991 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:48:32,014 - WARNING -  * Debugger is active!
+2024-10-23 06:48:32,014 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:48:39,246 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/models.py', reloading
+2024-10-23 06:48:39,581 - INFO -  * Restarting with stat
+2024-10-23 06:51:00,747 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:51:00,747 - DEBUG - /etc/localtime found
+2024-10-23 06:51:00,748 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:51:00,749 - INFO - Scheduler started
+2024-10-23 06:51:00,749 - DEBUG - Looking for jobs to run
+2024-10-23 06:51:00,754 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:51:00,767 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.41:5000
+2024-10-23 06:51:00,767 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-23 06:51:00,768 - INFO -  * Restarting with stat
+2024-10-23 06:51:02,036 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:51:02,037 - DEBUG - /etc/localtime found
+2024-10-23 06:51:02,038 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:51:02,040 - INFO - Scheduler started
+2024-10-23 06:51:02,041 - DEBUG - Looking for jobs to run
+2024-10-23 06:51:02,047 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:51:02,066 - WARNING -  * Debugger is active!
+2024-10-23 06:51:02,067 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:51:08,263 - INFO -  * Detected change in '/home/hinn/Documents/bizz_sacco/main_app/routes.py', reloading
+2024-10-23 06:51:08,510 - INFO -  * Restarting with stat
+2024-10-23 06:57:53,317 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:57:53,318 - DEBUG - /etc/localtime found
+2024-10-23 06:57:53,319 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:57:53,320 - INFO - Scheduler started
+2024-10-23 06:57:53,320 - DEBUG - Looking for jobs to run
+2024-10-23 06:57:53,320 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:57:53,337 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.41:5000
+2024-10-23 06:57:53,337 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-23 06:57:53,338 - INFO -  * Restarting with stat
+2024-10-23 06:57:54,921 - DEBUG - /etc/timezone found, contents:
+ Africa/Nairobi
+
+2024-10-23 06:57:54,921 - DEBUG - /etc/localtime found
+2024-10-23 06:57:54,922 - DEBUG - 2 found:
+ {'/etc/timezone': 'Africa/Nairobi', '/etc/localtime is a symlink to': 'Africa/Nairobi'}
+2024-10-23 06:57:54,923 - INFO - Scheduler started
+2024-10-23 06:57:54,924 - DEBUG - Looking for jobs to run
+2024-10-23 06:57:54,924 - DEBUG - No jobs; waiting until a job is added
+2024-10-23 06:57:54,940 - WARNING -  * Debugger is active!
+2024-10-23 06:57:54,941 - INFO -  * Debugger PIN: 718-713-251
+2024-10-23 06:57:56,637 - INFO - 127.0.0.1 - - [23/Oct/2024 06:57:56] "GET /admin/members HTTP/1.1" 200 -
+2024-10-23 06:57:56,702 - INFO - 127.0.0.1 - - [23/Oct/2024 06:57:56] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-23 06:57:56,703 - INFO - 127.0.0.1 - - [23/Oct/2024 06:57:56] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-23 06:57:56,705 - INFO - 127.0.0.1 - - [23/Oct/2024 06:57:56] "[36mGET /static/js/members.js HTTP/1.1[0m" 304 -
+2024-10-23 06:57:56,706 - INFO - 127.0.0.1 - - [23/Oct/2024 06:57:56] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-23 06:57:59,572 - INFO - 127.0.0.1 - - [23/Oct/2024 06:57:59] "GET /admin/loans HTTP/1.1" 200 -
+2024-10-23 06:57:59,691 - INFO - 127.0.0.1 - - [23/Oct/2024 06:57:59] "[36mGET /static/css/loans.css HTTP/1.1[0m" 304 -
+2024-10-23 06:57:59,695 - INFO - 127.0.0.1 - - [23/Oct/2024 06:57:59] "GET /static/js/loans.js HTTP/1.1" 200 -
+2024-10-23 06:58:04,484 - INFO - 127.0.0.1 - - [23/Oct/2024 06:58:04] "GET /admin/reports HTTP/1.1" 200 -
+2024-10-23 06:58:04,594 - INFO - 127.0.0.1 - - [23/Oct/2024 06:58:04] "[36mGET /static/css/reports.css HTTP/1.1[0m" 304 -
+2024-10-23 06:58:04,596 - INFO - 127.0.0.1 - - [23/Oct/2024 06:58:04] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-23 06:58:04,599 - INFO - 127.0.0.1 - - [23/Oct/2024 06:58:04] "[36mGET /static/js/reports.js HTTP/1.1[0m" 304 -
+2024-10-23 06:58:07,347 - INFO - 127.0.0.1 - - [23/Oct/2024 06:58:07] "GET /admin/loans HTTP/1.1" 200 -
+2024-10-23 06:58:07,508 - INFO - 127.0.0.1 - - [23/Oct/2024 06:58:07] "[36mGET /static/css/loans.css HTTP/1.1[0m" 304 -
+2024-10-23 06:58:07,510 - INFO - 127.0.0.1 - - [23/Oct/2024 06:58:07] "[36mGET /static/js/loans.js HTTP/1.1[0m" 304 -
+2024-10-23 06:58:25,586 - INFO - 127.0.0.1 - - [23/Oct/2024 06:58:25] "GET /admin/loans HTTP/1.1" 200 -
+2024-10-23 06:58:25,632 - INFO - 127.0.0.1 - - [23/Oct/2024 06:58:25] "[36mGET /static/css/loans.css HTTP/1.1[0m" 304 -
+2024-10-23 06:58:25,633 - INFO - 127.0.0.1 - - [23/Oct/2024 06:58:25] "GET /static/js/loans.js HTTP/1.1" 200 -
+2024-10-23 06:59:00,844 - INFO - 127.0.0.1 - - [23/Oct/2024 06:59:00] "GET /admin/loans HTTP/1.1" 200 -
+2024-10-23 06:59:00,888 - INFO - 127.0.0.1 - - [23/Oct/2024 06:59:00] "[36mGET /static/css/loans.css HTTP/1.1[0m" 304 -
+2024-10-23 06:59:00,891 - INFO - 127.0.0.1 - - [23/Oct/2024 06:59:00] "GET /static/js/loans.js HTTP/1.1" 200 -
+2024-10-23 07:00:36,114 - INFO - 127.0.0.1 - - [23/Oct/2024 07:00:36] "GET /admin/loans HTTP/1.1" 200 -
+2024-10-23 07:00:36,220 - INFO - 127.0.0.1 - - [23/Oct/2024 07:00:36] "[36mGET /static/css/loans.css HTTP/1.1[0m" 304 -
+2024-10-23 07:00:36,223 - INFO - 127.0.0.1 - - [23/Oct/2024 07:00:36] "[36mGET /static/js/loans.js HTTP/1.1[0m" 304 -
+2024-10-23 07:00:40,047 - INFO - 127.0.0.1 - - [23/Oct/2024 07:00:40] "GET /admin/disbursed_loans HTTP/1.1" 200 -
+2024-10-23 07:00:40,165 - INFO - 127.0.0.1 - - [23/Oct/2024 07:00:40] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-23 07:00:40,173 - INFO - 127.0.0.1 - - [23/Oct/2024 07:00:40] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
+2024-10-23 07:00:40,174 - INFO - 127.0.0.1 - - [23/Oct/2024 07:00:40] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-23 07:00:46,927 - INFO - 127.0.0.1 - - [23/Oct/2024 07:00:46] "GET /admin/approved_loans HTTP/1.1" 200 -
+2024-10-23 07:00:47,001 - INFO - 127.0.0.1 - - [23/Oct/2024 07:00:47] "[36mGET /static/css/members.css HTTP/1.1[0m" 304 -
+2024-10-23 07:00:47,002 - INFO - 127.0.0.1 - - [23/Oct/2024 07:00:47] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-10-23 07:00:47,007 - INFO - 127.0.0.1 - - [23/Oct/2024 07:00:47] "[36mGET /static/css/Adminstyles.css HTTP/1.1[0m" 304 -
