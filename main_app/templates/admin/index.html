@@ -108,17 +108,10 @@
         No new Loans.
     </div>
     {% endif %}
-</section>
-<section class="recent-activity">
-    <h3>Recent Activity</h3>
-    <ul id="activityLog">
-        <li><i class="fas fa-user-plus"></i> New member registered: John Doe</li>
-        <li><i class="fas fa-check-circle"></i> Loan approved for: Jane Smith</li>
-        <li><i class="fas fa-user-tie"></i> New staff added: Alex Johnson</li>
-        <li><i class="fas fa-file-invoice-dollar"></i> Loan request received: Mike Brown</li>
-    </ul>
-</section>
 {% endblock %}
 {% block script %}
+<script>
+    loan_data = {{loan_count_data | tojson}}
+</script>
 <script src="{{ url_for('static', filename='/js/script.js') }}"></script>
 {% endblock %}

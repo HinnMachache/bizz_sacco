@@ -25,6 +25,37 @@ from main_app.models import User, Admin, Loan
 
 
 
+@app.route('/')
+def landing():
+    return render_template("user/landing_page.html")
+
+
+@app.route('/admin_home')
+def admin_landing():
+    return render_template("admin/landing_page.html")
+
+@app.route('/Customercontact', methods=['GET', 'POST'])
+def customer_contact():
+    if request.method == 'POST':
+        name = request.form['name']
+        email = request.form['email']
+        message = request.form['message']
+
+        # Create an email message
+        msg = Message(subject=f"Contact Form Message from {name}",
+                      sender=email,
+                      recipients=[os.environ.get('EMAIL_USERNAME')],
+                      body=f"Name: {name}\nEmail: {email}\n\nMessage:\n{message}")
+
+        try:
+            mail.send(msg)  # Send the email
+            flash('Your message has been sent!', 'success')  # Notify user
+            return redirect(url_for('contact'))  # Redirect back to contact page
+        except Exception as e:
+            flash(f'Something went wrong: {e}', 'error')  # Handle errors
+
+    return redirect(url_for('landing'))
+
 # Role Required Decorator
 def role_required(role):
     def wrapper(fn):
@@ -226,11 +257,13 @@ def admin_index():
     rejected_loan_count = Loan.query.filter_by(status='Rejected').count()
     loan_notifications = LoanNotification.query.filter_by(is_processed=False).all()
 
+    loan_count_data = [disbursed_loan_count, pending_loan_count]
+
     return render_template("admin/index.html", staff_count=staff_count, member_count=member_count,
                            notifications=notifications, loan_notifications=loan_notifications,
                            approved_loan_count=approved_loan_count,pending_loan_count=pending_loan_count,
                            disbursed_loan_count=disbursed_loan_count, rejected_loan_count=rejected_loan_count,
-                           title="Admin Dashboard", logo_name="Admin Panel")
+                           title="Admin Dashboard", logo_name="Admin Panel", loan_count_data=loan_count_data)
 
 
 # View User registration state

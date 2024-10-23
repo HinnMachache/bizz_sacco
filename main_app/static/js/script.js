@@ -30,10 +30,10 @@ const memberGrowthData = {
 };
 
 const pendingVsApprovedData = {
-    labels: ['Approved', 'Pending'],
+    labels: ['Disbursed', 'Pending'],
     datasets: [{
         label: 'Loan Status',
-        data: [25, 5],
+        data: loan_data,
         backgroundColor: [
             'rgba(54, 162, 235, 0.6)', // Light Blue
             'rgba(75, 192, 192, 0.6)'  // Aqua
